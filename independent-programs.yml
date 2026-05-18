@@ -105,6 +105,39 @@ companies:
   response_sla_days: 10
   reporting_url: https://bambulab.com/en/bug-bounty-program/reports/create
 
+- company: bentley.com
+  url: https://www.bentley.com/legal/bug-bounty-report/
+  rewards:
+  - '*bounty'
+  program_type: bounty
+  status: active
+  description: At Bentley Systems, we take the security of our systems and products seriously, and we value the security community. The disclosure of security vulnerabilities helps us ensure the security and privacy of our users.
+  out_of_scope:
+  - Bentley Systems’ Infrastructure (VPN, Mail Server, SharePoint, Skype, etc.)
+  - Findings from physical testing, such as office access (e.g., open doors, tailgating)
+  - Findings derived primarily from social engineering (e.g., phishing, vishing)
+  - Findings from applications or systems not listed in the ‘Scope’ section
+  - Any services hosted by 3rd-party providers and services
+  - Obsolete/deprecated software
+  - Obsolete/deprecated software
+  - https://seequent.frontify.com/
+  - https://events.seequent.com/
+  - https://community.seequent.com/
+  - https://lms.seequentlearning.com/
+  - https://partners.seequent.com/
+  - eventhub.bentley.com
+  - On24 related issues
+  domains:
+  - All _.bentley.com subdomains
+  - All Bentley Systems desktop products (Only CONNECT Edition and Later)
+  - All Bentley Systems mobile apps (distributed only on Play and App stores)
+  - All Bentley Cloud Applications and Services
+  - All Bentley Open-Source Projects (including imodeljs.org)
+  min_payout: 100
+  max_payout: 1000
+  currency: USD
+  disclosure_timeline_days: 90
+
 - company: BSI Germany
   url: https://www.bsi.bund.de/EN/IT-Sicherheitsvorfall/IT-Schwachstellen/it-schwachstellen_node.html
   contact: mailto:vulnerability@bsi.bund.de
