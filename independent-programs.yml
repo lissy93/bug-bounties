@@ -585,6 +585,36 @@ companies:
   response_sla_days: 3
   swag_details: At our sole discretion, Nelko may provide product rewards (such as printers or consumable gift sets) to researchers who report significant, verified vulnerabilities as a token of our appreciation.
 
+- company: obol.org
+  url: https://docs.obol.org/advanced-and-troubleshooting/security/bug-bounty
+  contact: mailto:security@obol.tech
+  rewards:
+  - '*bounty'
+  program_type: bounty
+  status: active
+  description: At Obol Labs, we prioritize the security of our distributed validator software and related services. Our Bug Bounty Program is designed to encourage and reward security researchers for identifying and reporting potential vulnerabilities. This initiative supports our commitment to the security and integrity of our products.
+  out_of_scope:
+  - Social engineering
+  - Rate Limiting (Non-critical issues)
+  - Physical security breaches
+  - Non-security related UX/UI issues
+  - Third-party application vulnerabilities
+  - The Obol static website or the Obol infrastructure
+  - The operational security of node operators running or using Obol software
+  domains:
+  - Charon the DV Middleware Client
+  - Obol DV Launchpad and Public API
+  - Obol Splits Contracts
+  - Obol Labs hosted Public Relay Infrastructure
+  min_payout: 500
+  max_payout: 100000
+  currency: USD
+  payout_table:
+    critical: 100000
+    high: 10000
+    medium: 2500
+    low: 499
+
 - company: Orange Cyberdefense
   url: https://www.orangecyberdefense.com/de/vulnerability-disclosure-policy
   contact: mailto:vulnerability@orangecyberdefense.com
