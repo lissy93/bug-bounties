@@ -911,6 +911,44 @@ companies:
   - https://courses.tmgsec.com
   hall_of_fame_url: https://tmgsec.com/wall-of-fame/
 
+- company: Tribepad
+  url: https://tribepad.b-cdn.net/app/uploads/2025/09/Vulnerability-Disclosure-Program.pdf
+  contact: mailto:security@tribepad.com
+  rewards:
+  - '*bounty'
+  program_type: bounty
+  status: active
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - physical_access
+  scope:
+  - target: https://testing.tribepad.uk
+    type: Testing Team Careers Hub(web)
+  - target: https://tribepad.com
+    type: Main site(web)
+  - target: https://manage.tribepad.com
+    type: Trbepad Manage(web)
+  - target: https://insights.tribepad.com
+    type: Insights login(web)
+  out_of_scope:
+  - Report discovered vulnerabilities to Tribepad clients
+  - Attempt to access any accounts or private data that does not belong to you
+  - Attempt to modify or destroy any data of accounts that do not belong to you
+  - 'Excluded platform features include:'
+  - ● Groups
+  - ● Communities
+  - ● Clusters
+  - ● Connections
+  - ● Messages
+  domains:
+  - https://testing.tribepad.uk
+  - https://tribepad.com
+  - https://manage.tribepad.com
+  - https://insights.tribepad.com
+  response_sla_days: 2
+
 - company: voibly.app
   url: https://voibly.app/security
   contact: mailto:support@voibly.app
