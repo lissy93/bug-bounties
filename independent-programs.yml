@@ -603,6 +603,47 @@ companies:
   response_sla_days: 5
   pgp_key: https://advisories.orangecyberdefense.com
 
+- company: Pathé
+  url: https://www.pathe.com/wp-content/uploads/2023/12/Pathe-Politique-CVD.1.2.EN_.pdf
+  rewards:
+  - '*recognition'
+  program_type: vdp
+  status: active
+  description: |-
+    Pathé do care about the security of their systems, websites and applications as well as the protection of the data of their
+    customers, employees and partners. As a thank you for your help, we offer a reward for every report of an unknown vulnerability.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - physical_access
+  scope:
+  - target: https://pathe.com/
+    type: Pathé Corporate
+  - target: https://cannes.patheinternational.com/
+    type: Corner Digital Cannes
+  - target: https://tiff.patheinternational.com/
+    type: Corner Digital TIFF
+  - target: https://afm.patheinternational.com/
+    type: Corner Digital AFM
+  - target: https://parisrdv.patheinternational.com/
+    type: Corner Digital RDV PARIS
+  - target: https://efm.patheinternational.com/
+    type: Corner Digital EFM
+  out_of_scope:
+  - https://www.pathefilms.com/
+  - https://www.patheinternational.com/
+  - https://www.fondation-jeromeseydoux-pathe.com/
+  domains:
+  - pathe.com
+  - cannes.patheinternational.com
+  - tiff.patheinternational.com
+  - afm.patheinternational.com
+  - parisrdv.patheinternational.com
+  - efm.patheinternational.com
+  response_sla_days: 5
+  reporting_url: https://app.zerocopter.com/en/cvd/76f239d7-adfb-4fff-803c-5fcd9d813952
+
 - company: Pine AI
   url: https://www.19pine.ai/security
   contact: mailto:security@19pine.ai
