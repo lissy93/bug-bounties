@@ -1117,6 +1117,7 @@
 <details open><summary><h4>O</h4></summary>
 
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Oasis](https://immunefi.com/bug-bounty/oasis/) 💰
+- <img src='https://icon.horse/icon/docs.obol.org' width='16'/> [obol.org](https://docs.obol.org/advanced-and-troubleshooting/security/bug-bounty) 💰
 - <img src='https://icon.horse/icon/observu.com' width='16'/> [Observu](https://observu.com/security.php) 🏅
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Obyte](https://immunefi.com/bug-bounty/obyte/) 💰
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Octopus](https://bugcrowd.com/octopus-og) 💰 🏅
@@ -1649,6 +1650,7 @@
 - <img src='https://icon.horse/icon/success.trendmicro.com' width='16'/> [Trend Micro](https://success.trendmicro.com/vulnerability-response) 🏅
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [Trendyol](https://hackerone.com/trendyol) 💰
 - <img src='https://icon.horse/icon/trezor.io' width='16'/> [Trezor](https://trezor.io/security/) 💰 🏅
+- <img src='https://icon.horse/icon/tribepad.b-cdn.net' width='16'/> [Tribepad](https://tribepad.b-cdn.net/app/uploads/2025/09/Vulnerability-Disclosure-Program.pdf) 💰
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [Trint Ltd](https://hackerone.com/trint) 🏅
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Trip Advisor](https://bugcrowd.com/tripadvisor-vdp) 🏅
 - <img src='https://icon.horse/icon/trip.com' width='16'/> [Trip.com](http://trip.com) 💰
