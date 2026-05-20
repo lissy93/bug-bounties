@@ -36,6 +36,37 @@ companies:
   - API endpoints and authentication systems
   swag_details: Amazon gift cards, Atlan swag and merchandise Public recognition on our Hall of Fame
 
+- company: atmail.com
+  url: https://www.atmail.com/bug-bounty-terms/
+  contact: mailto:security@atmail.com.
+  rewards:
+  - '*bounty'
+  program_type: bounty
+  status: active
+  safe_harbor: full
+  allows_disclosure: true
+  description: Atmail is committed to protecting our customers and their users. As part of this commitment, we invite security researchers to help protect Atmail and its users by proactively identifying security vulnerabilities via our bug bounty program. Our program is inclusive of all Atmail brands and technologies and offers rewards for a wide array of vulnerabilities. We encourage security researchers looking to participate in our bug bounty program to review this policy to ensure compliance with our rules
+  out_of_scope:
+  - Any domain that is an alias (CNAME) for a third-party system, or is being proxied through a CDN such as Cloudflare directly to a third-party platform. e.g. billing.atmail.com, success.atmail.com, status.atmail.com.
+  - All third party services associated with Atmail services.
+  domains:
+  - '*.atmail.com, including www.atmail.com within the scope listed below. Excluding billing.atmail.com'
+  - '*.atmail.cloud'
+  - All Atmail code shipped with it’s product, both source and binaries (in binary form) as supplied.
+  - Only the latest versions of the currently shipped and supported products are in scope.
+  - All Atmail Hosted services, both public and private cloud installations.
+  - All Atmail supplied customer service portals, third-party components excluded.
+  - www.atmail.com, limited to the contents being served from this website, and not third-party components that may present as accessible via this website.
+  min_payout: 50
+  max_payout: 5000
+  currency: USD
+  payout_table:
+    critical: 5000
+    high: 2000
+    medium: 500
+    low: 48
+  disclosure_timeline_days: 90
+
 - company: AxisPay
   url: https://axispay.tech/legal/disclosure
   contact: mailto:security@axispay.tech
