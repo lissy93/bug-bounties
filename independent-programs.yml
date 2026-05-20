@@ -633,6 +633,27 @@ companies:
   response_sla_days: 5
   pgp_key: https://advisories.orangecyberdefense.com
 
+- company: panteracapital.com
+  url: https://panteracapital.com/pantera-bug-bounty/
+  contact: mailto:security@panteracapital.com
+  rewards:
+  - '*bounty'
+  program_type: bounty
+  status: active
+  description: Welcome to Pantera’s Bug Bounty Program. We appreciate your dedication to helping us improve our security and protect our users.
+  out_of_scope:
+  - Vulnerabilities in third-party services or applications
+  - Social engineering attacks
+  - Physical security vulnerabilities
+  - Issues related to outdated browsers or unsupported software
+  domains:
+  - Web applications
+  - Network infrastructure
+  max_payout: 5000
+  currency: USD
+  payout_table:
+    high: 1000
+
 - company: Pathé
   url: https://www.pathe.com/wp-content/uploads/2023/12/Pathe-Politique-CVD.1.2.EN_.pdf
   rewards:
