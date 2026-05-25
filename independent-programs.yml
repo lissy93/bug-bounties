@@ -357,6 +357,49 @@ companies:
   - '*.dnslookup.pro'
   hall_of_fame_url: https://dnslookup.pro/security
 
+- company: Fluxer
+  url: https://fluxer.app/security
+  contact: mailto:security@fluxer.app
+  rewards:
+  - '*bounty'
+  - '*recognition'
+  program_type: bounty
+  status: active
+  preferred_languages: English
+  description: Fluxer may award a Bug Hunter badge and Fluxer Plutonium gift codes for valid reports.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - physical_access
+  - automated_scanning
+  out_of_scope:
+  - Third-party services and infrastructure we do not control, including partner communities' independent integrations, bots, and external hosting providers.
+  - Physical security
+  - Social engineering
+  - Phishing
+  - Bribery
+  - Coercion
+  - Attempts to manipulate Fluxer staff or users are also out of scope.
+  - DoS attacks
+  - Traffic flooding
+  - Resource exhaustion testing
+  - Noisy automated scanning
+  - Bulk testing without a clear impact
+  - General UI bugs
+  - Feature requests and ordinary support issues are out of scope
+  - Application-layer DoS vulnerabilities that can be demonstrated with a single unauthenticated request or a small number of requests may be reported, but do not actively exploit them at scale.
+  - Issues in forked, modified, or outdated self-hosted deployments are out of scope unless they are reproducible on the latest official release. Low-impact or theoretical findings, such as missing best-practice headers, are usually not prioritised unless you can show a realistic attack path and concrete security impact.
+  domains:
+  - '*.fluxer.app'
+  - '*.fluxer.gg'
+  - '*.fluxer.gift'
+  - '*.fluxerapp.com'
+  - '*.fluxer.dev'
+  - '*.fluxerusercontent.com'
+  - '*.fluxerstatic.com'
+  - '*.fluxer.media'
+
 - company: foundation.xyz
   url: https://foundation.xyz/responsible-disclosure/
   contact: mailto:security@foundation.xyz
