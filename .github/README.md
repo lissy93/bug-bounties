@@ -1823,6 +1823,7 @@
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [WOOFi](https://immunefi.com/bug-bounty/woofi/) 💰
 - <img src='https://icon.horse/icon/www.wordfence.com' width='16'/> [Wordfence](https://www.wordfence.com/security/) 💰
 - <img src='https://icon.horse/icon/wordpress.org' width='16'/> [Wordpress](https://wordpress.org/about/security/) 💰
+- <img src='https://icon.horse/icon/workoutgen.app' width='16'/> [WorkoutGen](https://workoutgen.app/security/) 🏅
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Wormhole](https://immunefi.com/bug-bounty/wormhole/) 💰
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [WP Engine](https://bugcrowd.com/wpengine) 💰 🏅
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Wyze Bug Bounty](https://bugcrowd.com/engagements/wyze) 💰
