@@ -799,6 +799,7 @@
 - <img src='https://icon.horse/icon/www.ingenico.com' width='16'/> [Ingenico](https://www.ingenico.com/responsible-disclosure-program) 🏅
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Injective](https://immunefi.com/bug-bounty/injective/) 💰
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [InnoGames](https://hackerone.com/innogames) 💰 🏅
+- <img src='https://icon.horse/icon/www.insighthealth.ai' width='16'/> [Insight Health](https://www.insighthealth.ai/security) 🏅
 - <img src='https://icon.horse/icon/insightly.com' width='16'/> [Insightly](http://insightly.com) 💰
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [Insolar](https://hackerone.com/insolar) 💰
 - <img src='https://icon.horse/icon/inspectorio.com' width='16'/> [Inspectorio](http://inspectorio.com) 💰
