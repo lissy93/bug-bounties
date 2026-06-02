@@ -524,6 +524,48 @@ companies:
   - auth.iceline-hosting.com
   reporting_url: https://support.retraflow.io/iceline-hosting
 
+- company: Insight Health
+  url: https://www.insighthealth.ai/security
+  contact: mailto:security@insighthealth.ai
+  rewards:
+  - '*recognition'
+  program_type: vdp
+  status: active
+  preferred_languages: English
+  description: If you believe you've found a security vulnerability in an Insight Health product or service, we want to hear from you. Please email your report to [security@insighthealth.ai](mailto:security@insighthealth.ai)
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - physical_access
+  scope:
+  - target: nsighthealth.ai
+    type: Web application
+  - target: auth.insighthealth.ai
+    type: Authentication service
+  - target: app.insighthealth.ai
+    type: Application platform
+  - target: api.insighthealth.ai
+    type: API
+  out_of_scope:
+  - Reports from automated scanners without manual verification or demonstrated impact.
+  - Email auto-linking behavior (e.g., email clients rendering user-provided text as clickable hyperlinks).
+  - Social engineering, phishing, or physical attacks against Insight Health employees or users.
+  - Denial-of-service (DoS/DDoS) attacks or volumetric testing.
+  - Content injection without demonstrated security impact (e.g., entering text into input fields that is later displayed).
+  - Missing security headers that do not lead to a demonstrated exploit.
+  - Self-XSS (where the victim must paste code into their own browser console).
+  - Rate limiting or brute-force issues on non-authentication endpoints.
+  - Vulnerabilities in third-party services, libraries, or upstream providers unless they directly compromise Insight Health systems.
+  - Reports that require unlikely or impractical user interaction.
+  - SPF/DKIM/DMARC configuration suggestions without demonstrated spoofing impact.
+  domains:
+  - nsighthealth.ai
+  - auth.insighthealth.ai
+  - app.insighthealth.ai
+  - api.insighthealth.ai
+  response_sla_days: 3
+
 - company: keragon.com
   url: https://www.keragon.com/security/vulnerability-disclosure-program
   rewards:
