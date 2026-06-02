@@ -1122,6 +1122,28 @@ companies:
   - '*.wikimint.com'
   reporting_url: https://www.wikimint.com/legal#security-hall-of-fame
 
+- company: WorkoutGen
+  url: https://workoutgen.app/security/
+  contact: mailto:security@workoutgen.app
+  rewards:
+  - '*recognition'
+  program_type: vdp
+  status: active
+  description: If you found a vulnerability, please tell us. We cannot pay bug bounties - there is no VC behind this, just the two of us trying to keep the lights on. But we take every report seriously and will do everything we can to fix it fast.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - physical_access
+  scope:
+  - target: '*.workoutgen.app'
+    type: web
+  domains:
+  - workoutgen.app
+  - my.workoutgen.app
+  - '*.workoutgen.app'
+  hall_of_fame_url: https://workoutgen.app/security#hof-title
+
 - company: Yellow.ai
   url: https://yellow.ai/vulnerability-disclosure-program/
   contact: mailto:infosec@yellow.ai
