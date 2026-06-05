@@ -636,6 +636,18 @@ companies:
     high: 500
     medium: 150
 
+- company: Lark
+  url: https://www.larksuite.com/en_us/bugbounty
+  rewards:
+  - '*bounty'
+  program_type: bounty
+  status: active
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - physical_access
+
 - company: mintlify.com
   url: https://www.mintlify.com/security/responsible-disclosure
   contact: mailto:security@mintlify.com
