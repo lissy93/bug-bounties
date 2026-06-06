@@ -450,6 +450,7 @@
 - <img src='https://icon.horse/icon/www.deskpro.com' width='16'/> [DeskPro](https://www.deskpro.com/security/responsible-disclosure/) 💰 🏅
 - <img src='https://icon.horse/icon/detectify.com' width='16'/> [Detectify](https://detectify.com/responsible_disclosure) 🏅
 - <img src='https://icon.horse/icon/www.telekom.com' width='16'/> [Deutsche Telekom](https://www.telekom.com/en/corporate-responsibility/data-protection-data-security/security/details/closing-security-gaps-360054) 💰 🏅
+- <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [DevAcrobats](https://bugcrowd.com/engagements/devacrobats-market) 💰
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [DeXe Protocol](https://immunefi.com/bug-bounty/dexeprotocol/) 💰
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [dForce](https://immunefi.com/bug-bounty/dforce/) 💰
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [dfuse Platform](https://hackerone.com/dfuse) 💰 🏅
@@ -799,6 +800,7 @@
 - <img src='https://icon.horse/icon/www.ingenico.com' width='16'/> [Ingenico](https://www.ingenico.com/responsible-disclosure-program) 🏅
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Injective](https://immunefi.com/bug-bounty/injective/) 💰
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [InnoGames](https://hackerone.com/innogames) 💰 🏅
+- <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Inprowiser Bug Bounty](https://bugcrowd.com/engagements/inprowiser) 💰
 - <img src='https://icon.horse/icon/www.insighthealth.ai' width='16'/> [Insight Health](https://www.insighthealth.ai/security) 🏅
 - <img src='https://icon.horse/icon/insightly.com' width='16'/> [Insightly](http://insightly.com) 💰
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [Insolar](https://hackerone.com/insolar) 💰
@@ -863,6 +865,7 @@
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [K15t](https://bugcrowd.com/engagements/k15t) 💰
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Kaleido](https://bugcrowd.com/kaleido) 💰
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Kamino](https://immunefi.com/bug-bounty/kamino/) 💰
+- <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Kantega SSO](https://bugcrowd.com/engagements/kantega) 💰
 - <img src='https://icon.horse/icon/support.kaspersky.com' width='16'/> [Kaspersky](https://support.kaspersky.com/vulnerability) 💰 🏅
 - <img src='https://icon.horse/icon/www.kayak.co.in' width='16'/> [Kayak](https://www.kayak.co.in/security) 💰 🎁
 - <img src='https://icon.horse/icon/www.kaseya.com' width='16'/> [Kayesa](https://www.kaseya.com/legal/vulnerability-disclosure-policy) 🏅
@@ -906,6 +909,7 @@
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [LastPass](https://bugcrowd.com/lastpass) 💰 🏅
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Latitude Financial Services Bug Bounty](https://bugcrowd.com/engagements/latitude-financial-service-bugbounty) 💰
 - <img src='https://icon.horse/icon/launchdarkly.com' width='16'/> [LaunchDarkly](https://launchdarkly.com) 💰
+- <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [LaunchDarkly Managed Bug Bounty Engageme...](https://bugcrowd.com/engagements/launchdarkly-mbb-og) 💰
 - <img src='https://icon.horse/icon/layerzero.gitbook.io' width='16'/> [LayerZero](https://layerzero.gitbook.io/docs/bug-bounty/bug-bounty-program) 💰
 - <img src='https://icon.horse/icon/leantime.io' width='16'/> [Leantime.io](https://leantime.io/responsible-disclosure-policy/) 🏅
 - <img src='https://icon.horse/icon/donjon.ledger.com' width='16'/> [Ledger DonJon](https://donjon.ledger.com/bounty/) 🏅
@@ -1351,6 +1355,7 @@
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Refined](https://bugcrowd.com/engagements/refined2) 💰
 - <img src='https://icon.horse/icon/rei.com' width='16'/> [REI BBP](http://rei.com) 💰
 - <img src='https://icon.horse/icon/www.relaso.com' width='16'/> [Relaso](https://www.relaso.com/disclosure/) 💰
+- <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Release Management (by Y2 ENGR)](https://bugcrowd.com/engagements/releasemanagement) 💰
 - <img src='https://icon.horse/icon/security.remitano.com' width='16'/> [Remitano](https://security.remitano.com/) 💰
 - <img src='https://icon.horse/icon/www.remitly.com' width='16'/> [Remitly](https://www.remitly.com) 💰 🎁
 - <img src='https://icon.horse/icon/www.renofi.com' width='16'/> [RenoFi](https://www.renofi.com/security/) 💰
