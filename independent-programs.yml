@@ -859,6 +859,33 @@ companies:
   response_sla_days: 3
   hall_of_fame_url: https://www.19pine.ai/security#acknowledgments
 
+- company: Prop Firm Match
+  url: https://propfirmmatch.com/bug-bounty
+  rewards:
+  - '*bounty'
+  - '*recognition'
+  - '*swag'
+  program_type: bounty
+  status: active
+  preferred_languages: English
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - physical_access
+  out_of_scope:
+  - Requires physical access.
+  - Involves outdated/unpatched browsers.
+  - Cosmetic UI issues (e.g., misalignments).
+  - Clickjacking on non-sensitive/static pages.
+  - Missing headers without exploitability.
+  - Vulnerabilities in third-party software.
+  - Rate limit/caching glitches (like view/like counts).
+  - CSRF without proven exploit.
+  - Broken links/redirects without security impact.
+  - Unvalidated automated tool reports.
+  response_sla_days: 2
+
 - company: proxidize.com
   url: https://proxidize.com/legal/vulnerability-disclosure-policy/
   contact: mailto:security@proxidize.com
