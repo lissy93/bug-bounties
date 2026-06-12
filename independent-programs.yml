@@ -971,6 +971,26 @@ companies:
   - '*.redvilla.tech'
   hall_of_fame_url: https://redvilla.tech/bug-bounty/
 
+- company: requestfinance.com
+  url: https://help.request.finance/en/articles/8623679-bug-bounty-program-at-request
+  contact: mailto:security@request.finance
+  rewards:
+  - '*bounty'
+  program_type: bounty
+  status: active
+  domains:
+  - https://app.request.finance
+  - https://requestfinance.com
+  - Request Finance mobile app
+  min_payout: 500
+  max_payout: 20000
+  currency: USD
+  payout_table:
+    critical: 20000
+    high: 15000
+    medium: 10000
+    low: 2000
+
 - company: screenly.io
   url: https://www.screenly.io/bug-bounty/
   contact: mailto:security-advisory@screenly.io
