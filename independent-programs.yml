@@ -1021,6 +1021,22 @@ companies:
   - Our digital signage players (Screenly Player / Player Max only)
   requires_account: false
 
+- company: scribblemaps.com
+  url: https://help.scribblemaps.com/hc/en-us/articles/360049250211-Vulnerabilities-And-Bounties
+  rewards:
+  - '*bounty'
+  program_type: bounty
+  status: active
+  out_of_scope:
+  - Anonymous community maps. Maps with no owner that are editable by anyone are a long-standing community feature. Saving over an anonymous map is not a vulnerability.
+  - Unlisted (URL-as-credential) maps. Maps without LockView are intentionally accessible to anyone who knows the URL, similar to an unlisted YouTube video. Accessing or saving such a map by knowing its map code is by design.
+  - Third-party software we host but do not maintain. Issues in GeoServer, Tomcat, or other third-party stacks deployed alongside our services. Please report these to the respective upstream maintainers.
+  - Missing security headers without a concrete attack scenario. Reports about CSP, X-Frame-Options, HSTS, etc. without a working exploit are not eligible.
+  - Rate limiting in isolation. Lack of rate limiting on endpoints where rate limiting is not security-critical, without a demonstrated abuse scenario.
+  min_payout: 25
+  max_payout: 2000
+  currency: USD
+
 - company: simbase.com
   url: https://simbase.com/terms/responsible-disclosure-policy
   contact: mailto:security@simbase.com
