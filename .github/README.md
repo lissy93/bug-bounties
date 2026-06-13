@@ -1123,6 +1123,7 @@
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Nubank Brasil Managed Bug Bounty Program](https://bugcrowd.com/engagements/nubank) 💰
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Nucleus](https://immunefi.com/bug-bounty/nucleus/) 💰
 - <img src='https://icon.horse/icon/www.nutshell.com' width='16'/> [Nutshell](https://www.nutshell.com/security/) 🏅
+- <img src='https://icon.horse/icon/www.nuuvem.com' width='16'/> [nuuvem.com](https://www.nuuvem.com/us-en/security) 💰
 - <img src='https://icon.horse/icon/www.nvidia.com' width='16'/> [Nvidia](https://www.nvidia.com/object/submit-security-vulnerability.html) 💰 🏅
 - <img src='https://icon.horse/icon/www.intigriti.com' width='16'/> [NVIDIA Public Bug Bounty](https://www.intigriti.com/programs/nvidia/nvidiapublicbugbounty/detail) 💰
 - <img src='https://icon.horse/icon/www.nwbbank.com' width='16'/> [NWB Bank](https://www.nwbbank.com/en/responsible-disclosure) 💰 🏅
@@ -1368,6 +1369,7 @@
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Renzo Protocol](https://immunefi.com/bug-bounty/renzoprotocol/) 💰
 - <img src='https://icon.horse/icon/docs.repl.it' width='16'/> [Repl.it](https://docs.repl.it/misc/security) 🏅
 - <img src='https://icon.horse/icon/reportgarden.com' width='16'/> [ReportGarden](https://reportgarden.com/responsible-disclosure/) 💰
+- <img src='https://icon.horse/icon/help.request.finance' width='16'/> [requestfinance.com](https://help.request.finance/en/articles/8623679-bug-bounty-program-at-request) 💰
 - <img src='https://icon.horse/icon/explore.researchgate.net' width='16'/> [Research Gate](https://explore.researchgate.net/display/support/Security+and+vulnerability) 💰
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Reserve](https://immunefi.com/bug-bounty/reserve/) 💰
 - <img src='https://icon.horse/icon/www.resmed.com' width='16'/> [Resmed](https://www.resmed.com/en-us/security/) 🎁
