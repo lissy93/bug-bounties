@@ -248,6 +248,7 @@
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Braze Public BB](https://bugcrowd.com/engagements/braze-bb) 💰
 - <img src='https://icon.horse/icon/braze.com' width='16'/> [Braze, Inc.](http://braze.com) 💰
 - <img src='https://icon.horse/icon/www.briskinfosec.com' width='16'/> [Brisk Infosec](https://www.briskinfosec.com/responsibledisclosure) 🏅
+- <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Broken Build Bug Bounty](https://bugcrowd.com/engagements/brokenbuild) 💰
 - <img src='https://icon.horse/icon/www.bsi.bund.de' width='16'/> [BSI Germany](https://www.bsi.bund.de/EN/IT-Sicherheitsvorfall/IT-Schwachstellen/it-schwachstellen_node.html) 🏅
 - <img src='https://icon.horse/icon/www.bt.com' width='16'/> [BT Group](https://www.bt.com/about/contact-bt/responsible-disclosure) 🏅
 - <img src='https://icon.horse/icon/www.btcturk.com' width='16'/> [BtcTurk](https://www.btcturk.com/odul-avciligi) 💰
@@ -491,6 +492,7 @@
 - <img src='https://icon.horse/icon/www.drupal.org' width='16'/> [Drupal](https://www.drupal.org/drupal-security-team) 🏅
 - <img src='https://icon.horse/icon/www.intigriti.com' width='16'/> [Dstny](https://www.intigriti.com/programs/dstny/dstnybugbounty/detail) 💰
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [DuckDuckGo](https://hackerone.com/duckduckgo) 🏅 🎁
+- <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Dutch Beginners ZZP Marketplace Managed ...](https://bugcrowd.com/engagements/dutch-beginners-market) 💰
 - <img src='https://icon.horse/icon/www.belastingdienst.nl' width='16'/> [Dutch Tax Office](https://www.belastingdienst.nl/wps/wcm/connect/bldcontenten/standaard_functies/individuals/contact/data-leak-vulnerability-abuse-computer-systems/data-leak-vulnerability-abuse-computer-systems-report) 🎁
 - <img src='https://icon.horse/icon/dynamic.xyz' width='16'/> [Dynamic Labs](http://dynamic.xyz) 💰
 - <img src='https://icon.horse/icon/dynatrace.com' width='16'/> [Dynatrace](https://dynatrace.com) 💰
@@ -663,6 +665,7 @@
 - <img src='https://icon.horse/icon/about.gitlab.com' width='16'/> [Gitlab](https://about.gitlab.com/security/disclosure/) 💰 🏅
 - <img src='https://icon.horse/icon/www.glassdoor.com' width='16'/> [Glassdoor](https://www.glassdoor.com/) 💰
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Glean Technologies Public Engagement](https://bugcrowd.com/engagements/glean-technologies-public) 💰
+- <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Gliffy](https://bugcrowd.com/engagements/gliffy) 💰
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Glo Dollar](https://immunefi.com/bug-bounty/glodollar/) 💰
 - <img src='https://icon.horse/icon/global.com' width='16'/> [Global](https://global.com/bug-bounty-policy/) 💰
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [GMX](https://immunefi.com/bug-bounty/gmx/) 💰
@@ -734,6 +737,7 @@
 - <img src='https://icon.horse/icon/hitbtc.com' width='16'/> [HitBTC](https://hitbtc.com/bug-report) 💰
 - <img src='https://icon.horse/icon/hiverhq.com' width='16'/> [Hiver](https://hiverhq.com/disclosure) 🏅
 - <img src='https://icon.horse/icon/www.holland-controls.com' width='16'/> [Holland Controls](https://www.holland-controls.com/responsible-disclosure) 🏅
+- <img src='https://icon.horse/icon/home.bargains' width='16'/> [Home Bargains](https://home.bargains) 💰
 - <img src='https://icon.horse/icon/honest.co.id' width='16'/> [Honest](https://honest.co.id/vulnerability-disclosure-policy) 💰
 - <img src='https://icon.horse/icon/www.honeywell.com' width='16'/> [Honeywell](https://www.honeywell.com/us/en/product-security) 🏅
 - <img src='https://icon.horse/icon/hootsuite.com' width='16'/> [Hootsuite](https://hootsuite.com/security/response) 💰 🏅 🎁
@@ -840,6 +844,7 @@
 </details>
 <details open><summary><h4>J</h4></summary>
 
+- <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [J-Tricks - Marketplace Bug Bounty Progra...](https://bugcrowd.com/engagements/j-tricks) 💰
 - <img src='https://icon.horse/icon/www.jamieweb.net' width='16'/> [Jamieweb](https://www.jamieweb.net/contact/) 🏅
 - <img src='https://icon.horse/icon/www.jazznetworks.com' width='16'/> [Jazz Networks](https://www.jazznetworks.com/security/) 🏅
 - <img src='https://icon.horse/icon/jd-services.eu' width='16'/> [JD Services](https://jd-services.eu/vdp/) 💰 🏅
@@ -1119,6 +1124,7 @@
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Nucleus](https://immunefi.com/bug-bounty/nucleus/) 💰
 - <img src='https://icon.horse/icon/www.nutshell.com' width='16'/> [Nutshell](https://www.nutshell.com/security/) 🏅
 - <img src='https://icon.horse/icon/www.nvidia.com' width='16'/> [Nvidia](https://www.nvidia.com/object/submit-security-vulnerability.html) 💰 🏅
+- <img src='https://icon.horse/icon/www.intigriti.com' width='16'/> [NVIDIA Public Bug Bounty](https://www.intigriti.com/programs/nvidia/nvidiapublicbugbounty/detail) 💰
 - <img src='https://icon.horse/icon/www.nwbbank.com' width='16'/> [NWB Bank](https://www.nwbbank.com/en/responsible-disclosure) 💰 🏅
 - <img src='https://icon.horse/icon/www.nykaa.com' width='16'/> [Nykaa](https://www.nykaa.com/responsible-disclosure) 🏅
 
@@ -1877,6 +1883,7 @@
 - <img src='https://icon.horse/icon/www.zaful.com' width='16'/> [Zaful](https://www.zaful.com/report-security-issues) 💰
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Zano](https://immunefi.com/bug-bounty/zano/) 💰
 - <img src='https://icon.horse/icon/zapier.com' width='16'/> [Zapier](https://zapier.com/engineering/bug-bounty-program/) 💰 🏅
+- <img src='https://icon.horse/icon/zebra.com' width='16'/> [Zebra VDP](http://zebra.com) 🎁
 - <img src='https://icon.horse/icon/yeswehack.com' width='16'/> [ZECIBLE PUBLIC BUG BOUNTY PROGRAM](https://yeswehack.com/programs/zecible-public-bug-bounty-program) 💰
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [ZEIT](https://hackerone.com/zeit) 🏅
 - <img src='https://icon.horse/icon/www.zendesk.de' width='16'/> [Zendesk](https://www.zendesk.de/company/policies-procedures/responsible-disclosure-policy/) 💰 🏅
