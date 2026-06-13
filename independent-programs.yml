@@ -713,6 +713,34 @@ companies:
   response_sla_days: 3
   swag_details: At our sole discretion, Nelko may provide product rewards (such as printers or consumable gift sets) to researchers who report significant, verified vulnerabilities as a token of our appreciation.
 
+- company: nuuvem.com
+  url: https://www.nuuvem.com/us-en/security
+  contact: mailto:security@nuuvem.com
+  rewards:
+  - '*bounty'
+  program_type: bounty
+  status: active
+  description: |-
+    We know that, despite our continuous efforts to ensure the integrity of our systems, no security is infallible. That's why we are launching our Bug Bounty Program - an initiative aimed at further strengthening our digital security through collaboration with the security research and programming community.
+
+    We are excited to invite researchers and programmers to participate in our Bug Bounty Program, designed to identify and fix vulnerabilities that may affect the security and privacy of our user
+  domains:
+  - nuuvem.com
+  - nuuvem.com.br
+  - nuuvem.co
+  - nuuvem.host
+  - nuuvem.dev
+  - nuuvem.net
+  - nuuvem.games
+  - nuuvem.io
+  - n-arcade.io
+  max_payout: 5000
+  currency: USD
+  payout_table:
+    high: 1499
+    medium: 599
+    low: 299
+
 - company: obol.org
   url: https://docs.obol.org/advanced-and-troubleshooting/security/bug-bounty
   contact: mailto:security@obol.tech
