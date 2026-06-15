@@ -275,6 +275,26 @@ companies:
     medium: 100
     low: 50
 
+- company: codingame.com
+  url: https://www.codingame.com/work/vulnerability-disclosure-policy/
+  rewards:
+  - '*bounty'
+  program_type: bounty
+  status: active
+  allows_disclosure: true
+  out_of_scope:
+  - 'Our basic principle for this program : we consider as a valid vulnerability, only those that can reasonably lead to : data leak, credential leak, undue data modification or deletion, real and reproducible impact on performance / availability. A few low level issues of which impact can be questioned may also be out of scope purposely (due to risk VS benefit considerations).'
+  domains:
+  - Accepted targets are codingame.com, codingame.eu, codingame-app.com and all their existing subdomains, with the exception of metabase.codingame.com.
+  min_payout: 50
+  max_payout: 500
+  currency: USD
+  payout_table:
+    critical: 500
+    high: 250
+    medium: 100
+    low: 50
+
 - company: CrowdProof
   url: https://crowdproof.id/security
   contact: mailto:security@crowdproof.id
