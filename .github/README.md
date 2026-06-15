@@ -1509,6 +1509,7 @@
 - <img src='https://icon.horse/icon/yeswehack.com' width='16'/> [Sogexia](https://yeswehack.com/programs/sogexia) 💰
 - <img src='https://icon.horse/icon/www.solaredge.com' width='16'/> [SolarEdge](https://www.solaredge.com/us/cyber-security-policy) 💰 🏅
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [Solidus](https://hackerone.com/solidus) 🏅
+- <img src='https://icon.horse/icon/sleepsomno.com' width='16'/> [SomnoAI Digital Sleep Lab](https://sleepsomno.com/en/security/bug-bounty) 🏅
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [Sony](https://hackerone.com/sony) 🏅 🎁
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Sophos](https://bugcrowd.com/sophos) 💰 🏅
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [SORA](https://immunefi.com/bug-bounty/sora/) 💰
