@@ -648,6 +648,21 @@ companies:
   - phishing
   - physical_access
 
+- company: Mamentis
+  url: https://mamentis.com/docs/resources/miscellaneous/submit-bug-request#security-issues
+  contact: mailto:security@mamentis.com
+  rewards:
+  - '*bounty'
+  program_type: bounty
+  status: active
+  preferred_languages: English
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - physical_access
+  response_sla_days: 1
+
 - company: mintlify.com
   url: https://www.mintlify.com/security/responsible-disclosure
   contact: mailto:security@mintlify.com
