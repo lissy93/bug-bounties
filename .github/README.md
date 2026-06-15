@@ -1692,6 +1692,7 @@
 - <img src='https://icon.horse/icon/corporate.tuenti.com' width='16'/> [Tuenti](https://corporate.tuenti.com/en/dev/security) 🏅
 - <img src='https://icon.horse/icon/tumblr.zendesk.com' width='16'/> [Tumblr](https://tumblr.zendesk.com/hc/en-us/articles/234583348-Bug-Bounty-Program) 💰 🏅
 - <img src='https://icon.horse/icon/www.federacy.com' width='16'/> [Tuple](https://www.federacy.com/tuple) 💰
+- <img src='https://icon.horse/icon/tuturuuu.com' width='16'/> [Tuturuuu](https://tuturuuu.com/security) 🏅
 - <img src='https://icon.horse/icon/app.intigriti.com' width='16'/> [Tweakers](https://app.intigriti.com/programs/dpgm/tweakers/detail) 💰
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Twilio](https://bugcrowd.com/twilio) 💰 🏅
 - <img src='https://icon.horse/icon/twintechsolutions.in' width='16'/> [Twintech Solutions](https://twintechsolutions.in/security-research/vulnerability-disclosure/) 🏅
