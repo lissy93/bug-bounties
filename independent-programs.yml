@@ -902,6 +902,36 @@ companies:
   response_sla_days: 3
   hall_of_fame_url: https://www.19pine.ai/security#acknowledgments
 
+- company: pokee.ai
+  url: https://pokee.ai/bug-bounty
+  contact: mailto:support@pokee.ai
+  rewards:
+  - '*bounty'
+  program_type: bounty
+  status: active
+  description: At Pokee AI, security is a top priority. We value the work of security researchers who help us keep our platform and users safe. If you discover a security vulnerability, we want to hear from you.
+  out_of_scope:
+  - Third-party services and integrations not operated by Pokee
+  - Social engineering, phishing, or physical attacks against Pokee employees
+  - Denial-of-service (DoS/DDoS) attacks
+  - Spam or rate-limiting issues without a security impact
+  - Vulnerabilities in outdated browsers or platforms we do not support
+  - Reports from automated scanners without a demonstrated proof of concept
+  - Clickjacking on pages with no sensitive actions
+  - Missing security headers that do not lead to a demonstrable exploit
+  domains:
+  - pokee.ai — main website and web application
+  - api.pokee.ai — public-facing API endpoints
+  - Authentication and authorization mechanisms
+  - Payment and billing flows
+  - User data handling and storage
+  - PokeeClaw environment isolation
+  currency: USD
+  payout_table:
+    critical: 500
+    medium: 200
+    low: 100
+
 - company: Prop Firm Match
   url: https://propfirmmatch.com/bug-bounty
   rewards:
