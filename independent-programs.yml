@@ -1230,6 +1230,28 @@ companies:
   - https://insights.tribepad.com
   response_sla_days: 2
 
+- company: Tuturuuu
+  url: https://tuturuuu.com/security
+  contact: mailto:security@tuturuuu.com
+  rewards:
+  - '*recognition'
+  program_type: vdp
+  status: active
+  preferred_languages: English
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - physical_access
+  out_of_scope:
+  - Social engineering, phishing, harassment, or attempts to target Tuturuuu staff or users.
+  - Denial-of-service, load testing, spam, automated scanning at scale, or resource exhaustion.
+  - Physical attacks, employee device compromise, or issues requiring stolen credentials.
+  - Provider-native behavior without a demonstrated Tuturuuu product impact.
+  response_sla_days: 1
+  testing_policy_url: https://tuturuuu.com/security/policy
+  hall_of_fame_url: https://tuturuuu.com/security/bug-bounty
+
 - company: voibly.app
   url: https://voibly.app/security
   contact: mailto:support@voibly.app
