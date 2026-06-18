@@ -1480,3 +1480,13 @@ companies:
   standards:
   - ISO 29147
   - ISO 30111
+
+- company: Zulip
+  url: https://zulip.com/security/
+  contact: mailto:security@zulip.com
+  rewards:
+  - '*recognition'
+  program_type: vdp
+  status: active
+  safe_harbor: partial
+  description: Zulip operates a private HackerOne vulnerability disclosure program, but also credits and rewards external reporters for issues in the self-hosted version. Security releases are published with CVE numbers and disclosed on the Zulip blog
