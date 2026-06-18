@@ -3,7 +3,7 @@ import type { APIRoute } from "astro";
 export const prerender = false;
 
 const GITGOST_ENDPOINT =
-  "https://gitgost.leapcell.app/v1/gh/Lissy93/bug-bounties/issues/anonymous";
+  "https://gitgost.fly.dev/v1/gh/Lissy93/bug-bounties/issues/anonymous";
 
 const json = (status: number, payload: unknown) =>
   new Response(JSON.stringify(payload), {
@@ -12,7 +12,7 @@ const json = (status: number, payload: unknown) =>
   });
 
 // Server-side proxy for gitGost anonymous-issue submissions. Browsers can't
-// call gitgost.leapcell.app directly because of CORS, so the form posts here
+// call gitgost.fly.dev directly because of CORS, so the form posts here
 // and we forward the request with the anonymous key header.
 export const POST: APIRoute = async ({ request }) => {
   let payload: { title?: unknown; body?: unknown };
