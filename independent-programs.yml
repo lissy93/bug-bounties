@@ -377,6 +377,24 @@ companies:
   - '*.dnslookup.pro'
   hall_of_fame_url: https://dnslookup.pro/security
 
+- company: FinalRental Aruba
+  url: https://www.finalrentalsaw.com/
+  rewards:
+  - '*bounty'
+  program_type: bounty
+  status: active
+  safe_harbor: full
+  allows_disclosure: true
+  excluded_methods:
+  - automated_scanning
+  domains:
+  - https://www.finalrentalsaw.com/city/aw/car-rental-at-queen-beatrix-international-airport
+  - https://www.finalrentalsaw.com/blog/single/book-a-manual-or-automatic-car-rental-in-aruba
+  - https://www.finalrentalsaw.com/blog/single/is-it-really-worth-it-to-book-a-rental-car-in-aruba
+  min_payout: 100
+  disclosure_timeline_days: 90
+  requires_account: false
+
 - company: Fluxer
   url: https://fluxer.app/security
   contact: mailto:security@fluxer.app
