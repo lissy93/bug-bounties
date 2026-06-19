@@ -1084,6 +1084,21 @@ companies:
     medium: 10000
     low: 2000
 
+- company: Schuberg Philis
+  url: https://schubergphilis.com/security
+  contact: mailto:abuse@schubergphilis.com
+  rewards:
+  - '*bounty'
+  - '*recognition'
+  - '*swag'
+  program_type: bounty
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - physical_access
+  hall_of_fame_url: https://schubergphilis.com/security-hall-of-fame
+
 - company: screenly.io
   url: https://www.screenly.io/bug-bounty/
   contact: mailto:security-advisory@screenly.io
