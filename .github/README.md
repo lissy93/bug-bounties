@@ -136,6 +136,7 @@
 - <img src='https://icon.horse/icon/audible.com' width='16'/> [Audible](http://audible.com) 💰
 - <img src='https://icon.horse/icon/www.augur.net' width='16'/> [Augur](https://www.augur.net/bounty/) 💰
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Aura Finance](https://immunefi.com/bug-bounty/aurafinance/) 💰
+- <img src='https://icon.horse/icon/www.aurasell.ai' width='16'/> [aurasell.ai](https://www.aurasell.ai/bug-bounty) 💰
 - <img src='https://icon.horse/icon/auspost.com.au' width='16'/> [Australia Post](https://auspost.com.au/about-us/about-our-site/responsible-disclosure) 🏅
 - <img src='https://icon.horse/icon/www.health.gov.au' width='16'/> [Australian Government Department of Heal...](https://www.health.gov.au/using-our-websites/vulnerability-disclosure-policy) 🏅
 - <img src='https://icon.horse/icon/auth0.com' width='16'/> [Auth0](https://auth0.com/responsible-disclosure-policy/) 🏅
