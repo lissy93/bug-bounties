@@ -335,6 +335,12 @@ companies:
   contact: https://bugcrowd.com/engagements/agilislt
   rewards:
   - '*bounty'
+- company: Agoda Public
+  url: https://www.agoda.com/
+  handle: agoda-public
+  contact: https://hackerone.com/agoda-public
+  rewards:
+  - '*bounty'
 - company: Ahold Delhaize
   url: https://www.aholddelhaize.com/en/security/
   contact: mailto:ad.itsecurity.group@aholddelhaize.com
@@ -778,6 +784,11 @@ companies:
   url: https://docs.appsmith.com/product/security
   contact: mailto:security@appsmith.com
   rewards: []
+- company: Appsvio Marketplace Bug Bounty
+  url: https://bugcrowd.com/engagements/appsvio
+  contact: https://bugcrowd.com/engagements/appsvio
+  rewards:
+  - '*bounty'
 - company: Apptentive
   url: https://www.apptentive.com/contact
   contact: https://www.apptentive.com/about/contact-us/
@@ -2280,6 +2291,11 @@ companies:
   handle: challenge0426
   contact: https://www.intigriti.com/programs/intigriti/challenge0426/detail
   rewards: []
+- company: Challenge 0626
+  url: https://www.intigriti.com/programs/intigriti/challenge0626/detail
+  handle: challenge0626
+  contact: https://www.intigriti.com/programs/intigriti/challenge0626/detail
+  rewards: []
 - company: Chameleon
   url: https://www.trychameleon.com/security/disclosure
   contact: https://www.trychameleon.com/security/disclosure
@@ -3588,6 +3604,11 @@ companies:
   contact: https://bugcrowd.com/engagements/devacrobats-market
   rewards:
   - '*bounty'
+- company: Deviniti
+  url: https://bugcrowd.com/engagements/deviniti
+  contact: https://bugcrowd.com/engagements/deviniti
+  rewards:
+  - '*bounty'
 - company: Devo
   url: https://www.devo.com/responsible-vulnerability-disclosure-program/
   contact: mailto:vuln-report@devo.com
@@ -3975,6 +3996,11 @@ companies:
   url: https://www.earlywarning.com/responsible-disclosure-program
   handle: early_warning
   contact: mailto:bugbounty@earlywarning.com
+  rewards:
+  - '*bounty'
+- company: Easy Agile
+  url: https://bugcrowd.com/engagements/easyagile
+  contact: https://bugcrowd.com/engagements/easyagile
   rewards:
   - '*bounty'
 - company: Easycollect Services
@@ -6672,6 +6698,11 @@ companies:
 - company: J-Tricks - Marketplace Bug Bounty Program
   url: https://bugcrowd.com/engagements/j-tricks
   contact: https://bugcrowd.com/engagements/j-tricks
+  rewards:
+  - '*bounty'
+- company: Jaanga Marketplace Bug Bounty
+  url: https://bugcrowd.com/engagements/JaangaInc-mbb-market
+  contact: https://bugcrowd.com/engagements/JaangaInc-mbb-market
   rewards:
   - '*bounty'
 - company: James Madison Memorial Fellowship Foundation
@@ -13864,8 +13895,10 @@ companies:
   - '*bounty'
 - company: Veriff
   url: https://www.veriff.com/responsible-disclosure
+  handle: veriffbugbounty
   contact: mailto:security@veriff.net
-  rewards: []
+  rewards:
+  - '*bounty'
 - company: Verily Life Sciences
   url: http://verily.com
   handle: verily_life_sciences
