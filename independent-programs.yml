@@ -1084,7 +1084,7 @@ companies:
     medium: 10000
     low: 2000
 
-- company: Schuberg Philis.com VDP
+- company: Schuberg Philis
   url: https://schubergphilis.com/security
   contact: mailto:abuse@schubergphilis.com
   rewards:
