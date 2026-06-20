@@ -420,6 +420,30 @@ companies:
   - '*.fluxerstatic.com'
   - '*.fluxer.media'
 
+- company: forexfactory.com
+  url: https://www.forexfactory.com/bug-bounty
+  rewards:
+  - '*bounty'
+  program_type: bounty
+  status: active
+  description: |-
+    If you're a security researcher or believe you've found a vulnerability in one of our products, the Bug Bounty Program at Forex Factory allows you to submit vulnerability reports directly to us and receive a reward.
+
+    We believe responsible disclosure should be compensated fairly and encourage the security researcher community to hunt for, find, and report issues.
+  domains:
+  - '*.forexfactory.com'
+  - '*.cryptocraft.com'
+  - '*.energyexch.com'
+  - '*.metalsmine.com'
+  min_payout: 100
+  max_payout: 10000
+  currency: USD
+  payout_table:
+    critical: 10000
+    high: 5000
+    medium: 1000
+    low: 100
+
 - company: foundation.xyz
   url: https://foundation.xyz/responsible-disclosure/
   contact: mailto:security@foundation.xyz
