@@ -1285,6 +1285,20 @@ companies:
   - https://courses.tmgsec.com
   hall_of_fame_url: https://tmgsec.com/wall-of-fame/
 
+- company: Toolglade
+  url: https://toolglade.com/security-policy
+  contact: mailto:security@toolglade.com
+  rewards:
+  - '*recognition'
+  program_type: vdp
+  status: active
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - physical_access
+  response_sla_days: 7
+
 - company: Tribepad
   url: https://tribepad.b-cdn.net/app/uploads/2025/09/Vulnerability-Disclosure-Program.pdf
   contact: mailto:security@tribepad.com
