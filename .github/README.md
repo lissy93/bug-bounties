@@ -1914,6 +1914,7 @@
 - <img src='https://icon.horse/icon/zoom.us' width='16'/> [Zoom](https://zoom.us/docs/en-us/vulnerability-disclosure-policy.html) 💰 🏅
 - <img src='https://icon.horse/icon/zooplus.de' width='16'/> [Zooplus](http://zooplus.de) 💰
 - <img src='https://icon.horse/icon/www.zte.com.cn' width='16'/> [ZTE](https://www.zte.com.cn/global/about/trust-center/ztepsirt.html) 💰 🏅
+- <img src='https://icon.horse/icon/zulip.com' width='16'/> [Zulip](https://zulip.com/security/) 🏅
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Zynga Whitehat](https://bugcrowd.com/zynga-vdp) 🏅
 
 </details>
