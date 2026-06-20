@@ -1660,6 +1660,7 @@
 - <img src='https://icon.horse/icon/bounty.tokopedia.net' width='16'/> [Tokopedia](https://bounty.tokopedia.net/rules) 💰
 - <img src='https://icon.horse/icon/www.intigriti.com' width='16'/> [Tomorrowland](https://www.intigriti.com/programs/tomorrowland/tomorrowland/detail) 💰
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [TomTom](https://hackerone.com/tomtom) 🏅 🎁
+- <img src='https://icon.horse/icon/toolglade.com' width='16'/> [Toolglade](https://toolglade.com/security-policy) 🏅
 - <img src='https://icon.horse/icon/toolsforhumanity.com' width='16'/> [Tools for Humanity](https://toolsforhumanity.com) 💰
 - <img src='https://icon.horse/icon/yeswehack.com' width='16'/> [toom Baumarkt GmbH - Bug Bounty Program ...](https://yeswehack.com/programs/toom-baumarkt-gmbh-bug-bounty-program) 💰
 - <img src='https://icon.horse/icon/yeswehack.com' width='16'/> [toom Baumarkt GmbH - Webshop](https://yeswehack.com/programs/toom-baumarkt-gmbh-bug-bounty-program) 💰
