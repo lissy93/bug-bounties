@@ -1426,6 +1426,7 @@
 - <img src='https://icon.horse/icon/www.sbab.se' width='16'/> [SBAB](https://www.sbab.se/1/sidfotsmeny_2/sakerhet/responsible_disclosure.html) 🏅
 - <img src='https://icon.horse/icon/app.intigriti.com' width='16'/> [SBB - Swiss Federal Railways](https://app.intigriti.com/programs/sbb/sbbglobal/detail) 💰
 - <img src='https://icon.horse/icon/www.scholarfundwa.org' width='16'/> [Scholar Fund](https://www.scholarfundwa.org/bug-bounty) 💰
+- <img src='https://icon.horse/icon/schubergphilis.com' width='16'/> [Schuberg Philis.com VDP](https://schubergphilis.com/security) 💰 🏅 🎁
 - <img src='https://icon.horse/icon/scopely.com' width='16'/> [Scopely](https://scopely.com) 💰
 - <img src='https://icon.horse/icon/scrapinghub.com' width='16'/> [Scraping Hub](https://scrapinghub.com/responsible-disclosure-policy/) 💰 🏅
 - <img src='https://icon.horse/icon/www.screenly.io' width='16'/> [screenly.io](https://www.screenly.io/bug-bounty/) 🏅
