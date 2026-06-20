@@ -67,6 +67,31 @@ companies:
     low: 48
   disclosure_timeline_days: 90
 
+- company: aurasell.ai
+  url: https://www.aurasell.ai/bug-bounty
+  contact: mailto:security@aurasell.ai
+  rewards:
+  - '*bounty'
+  program_type: bounty
+  status: active
+  description: |-
+    At Aurasell, security is a top priority. While we work hard to protect our platform and customers, we recognize that vulnerabilities can still occur. We encourage independent security researchers to help us improve the safety of our products and services.
+
+    If you believe you have discovered a security vulnerability in Aurasell, we want to hear from you. Please review this page carefully before submitting a report.
+  domains:
+  - Aurasell web applications
+  - Aurasell administrative consoles
+  - Aurasell APIs
+  - Other Aurasell-owned production services
+  min_payout: 5
+  max_payout: 1000
+  currency: USD
+  payout_table:
+    critical: 1000
+    high: 500
+    medium: 200
+    low: 5
+
 - company: AxisPay
   url: https://axispay.tech/legal/disclosure
   contact: mailto:security@axispay.tech
