@@ -1342,6 +1342,39 @@ companies:
   - '*.starnum.com.tw'
   reporting_url: 'https://Instagram DM: https://www.instagram.com/mychenan/'
 
+- company: superside.com
+  url: https://www.superside.com/bug-bounty-program-policy
+  rewards:
+  - '*bounty'
+  program_type: bounty
+  status: active
+  description: Superside is dedicated to safeguarding the security of our users and customers. In line with this dedication, we extend an invitation to security researchers to assist us in protecting Superside and our users by proactively identifying security vulnerabilities through our bug bounty program. Our program offers an extensive array of rewards tailored to different types of vulnerabilities, ensuring that your efforts are not only recognized but also duly compensated. We encourage security researcher
+  excluded_methods:
+  - dos
+  - social_engineering
+  - physical_access
+  out_of_scope:
+  - Denial of Service attacks
+  - Descriptive error messages or headers (e.g. Stack Traces, banner grabbing)
+  - Attacks requiring physical access to a user's device
+  - Mail configuration issues including SPF, DKIM, DMARC settings
+  - IDORs using UUIDs without a direct way to enumerate those UUIDs
+  - EXIF metadata stripping related reports
+  - Third-party applications and third-party APIs
+  domains:
+  - https://app.supersidestaging.com/
+  - https://internal.supersidestaging.com/
+  - https://admin.supersidestaging.com/
+  - https://api.supersidestaging.com/
+  - https://api-internal.supersidestaging.com/
+  min_payout: 0
+  max_payout: 2000
+  payout_table:
+    critical: 2000
+    high: 1000
+    medium: 400
+    low: 0
+
 - company: Texas Instruments
   url: https://www.ti.com/technologies/security/report-product-security-vulnerabilities.html
   contact: mailto:psirt@ti.com
