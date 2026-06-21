@@ -1508,6 +1508,23 @@ companies:
   url: https://www.volvocars.com/intl/l/legal/vulnerability-reporting/
   contact: mailto:responsible-disclosure@volvocars.com
 
+- company: whatruns.com
+  url: https://www.whatruns.com/bug-bounty
+  contact: mailto:hello@WhatRuns.com
+  rewards:
+  - '*bounty'
+  program_type: bounty
+  status: active
+  description: |-
+    We love software security researchers. They engage with internet companies to find and fix vulnerabilities that otherwise would have gone unnoticed.
+
+    WhatRuns is proud to introduce a bug bounty program to reward researchers for their efforts in finding out vulnerabilities in our product.
+
+    WhatRuns is not affiliated with or endorse the technology companies we list on our website or extension.
+  min_payout: 100
+  max_payout: 5000
+  currency: USD
+
 - company: Wikimint
   url: https://www.wikimint.com/legal#security-hall-of-fame
   contact: mailto:support@wikimint.com
