@@ -1837,6 +1837,7 @@
 - <img src='https://icon.horse/icon/yeswehack.com' width='16'/> [WGR Industries - Open Bug Bounty Program](https://yeswehack.com/programs/wgr-industries-holding-open-bug-bounty-program) 💰
 - <img src='https://icon.horse/icon/whatbox.ca' width='16'/> [Whatbox](https://whatbox.ca/policies/security) 💰
 - <img src='https://icon.horse/icon/www.whatnot.com' width='16'/> [Whatnot](https://www.whatnot.com) 💰
+- <img src='https://icon.horse/icon/www.whatruns.com' width='16'/> [whatruns.com](https://www.whatruns.com/bug-bounty) 💰
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Whmcs](https://bugcrowd.com/whmcs) 💰 🏅
 - <img src='https://icon.horse/icon/www.whoop.com' width='16'/> [Whoop Bug Bounty](https://www.whoop.com) 💰
 - <img src='https://icon.horse/icon/wickr.com' width='16'/> [Wickr](https://wickr.com/security/bug-bounty/) 💰
