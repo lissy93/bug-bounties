@@ -402,6 +402,55 @@ companies:
   - '*.dnslookup.pro'
   hall_of_fame_url: https://dnslookup.pro/security
 
+- company: docs.range.org
+  url: https://docs.range.org/resources/bug-bounty
+  contact: mailto:security@range.org
+  rewards:
+  - '*bounty'
+  program_type: bounty
+  status: active
+  safe_harbor: full
+  allows_disclosure: true
+  description: Range runs a bug bounty program that rewards security researchers who help protect our platform and customers. Submit vulnerabilities in any Range product or infrastructure to security@range.org.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - physical_access
+  - automated_scanning
+  out_of_scope:
+  - stage.range.org and other non-production environments
+  - Social engineering, phishing, or physical attacks
+  - Denial of service (DoS/DDoS) and volumetric testing
+  - Issues in third-party services we do not control
+  - Reports from automated scanners without a working proof of concept
+  - Best-practice recommendations without a demonstrable vulnerability
+  - Missing security headers (CSP, HSTS, X-Frame-Options) without a demonstrated exploit
+  - SPF, DKIM, or DMARC configuration issues
+  - Self-XSS, clickjacking on pages without sensitive actions, and CSRF on logout or non-state-changing endpoints
+  - Rate limiting or brute-force concerns without a clear impact path
+  - Username or email enumeration
+  - Vulnerabilities in outdated browsers or already-patched dependencies without a working proof of concept
+  - Issues already known to the team or previously reported
+  domains:
+  - range.org and all *.range.org subdomains
+  - Range platform, APIs (Risk, Data, Faraday), and dashboards
+  - Authentication and authorization flows
+  - Remote code execution, SQL injection, SSRF, and server-side template injection
+  - Broken access control, IDOR, and privilege escalation
+  - Authentication bypass and account takeover
+  - Sensitive data exposure and information disclosure
+  - Stored or reflected XSS with demonstrable impact
+  min_payout: 250
+  max_payout: 10000
+  currency: USD
+  payout_table:
+    critical: 10000
+    high: 1000
+    medium: 5000
+    low: 250
+  disclosure_timeline_days: 90
+
 - company: Fluxer
   url: https://fluxer.app/security
   contact: mailto:security@fluxer.app
