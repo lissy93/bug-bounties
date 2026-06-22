@@ -818,6 +818,7 @@
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [Instacart](https://hackerone.com/instacart) 💰 🏅
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Instadapp](https://immunefi.com/bug-bounty/instadapp/) 💰
 - <img src='https://icon.horse/icon/support.instamojo.com' width='16'/> [Instamojo](https://support.instamojo.com/hc/en-us/articles/207758769-Instamojo-Bug-Bounty-Policy) 💰
+- <img src='https://icon.horse/icon/www.instant-gaming.com' width='16'/> [Instant Gaming](https://www.instant-gaming.com/en/docs/bugbounty/) 💰
 - <img src='https://icon.horse/icon/www.instructure.com' width='16'/> [Instructure](https://www.instructure.com/canvas/blog/instructures-proven-security-vulnerability-disclosure-program) 💰 🏅
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Integral](https://immunefi.com/bug-bounty/integral/) 💰
 - <img src='https://icon.horse/icon/www.integraxor.com' width='16'/> [IntegraXor (SCADA)](https://www.integraxor.com/integraxor-hmi-scada-bug-bounty-program/) 💰 🏅 🎁
