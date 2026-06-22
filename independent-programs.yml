@@ -684,6 +684,43 @@ companies:
   - api.insighthealth.ai
   response_sla_days: 3
 
+- company: Instant Gaming
+  url: https://www.instant-gaming.com/en/docs/bugbounty/
+  contact: https://www.instant-gaming.com/en/support/
+  rewards:
+  - '*bounty'
+  program_type: bounty
+  status: active
+  safe_harbor: full
+  preferred_languages: English
+  description: Instant Gaming invites security researchers to responsibly disclose vulnerabilities affecting its website, public APIs, and mobile applications. Bounties are awarded based on severity using CVSS and internal risk assessment.
+  excluded_methods:
+  - dos
+  - ddos
+  - spam
+  - brute_force
+  - automated_abuse
+  - social_engineering
+  - phishing
+  - physical_access
+  scope:
+  - target: instant-gaming.com and publicly discoverable subdomains
+    type: web
+  - target: Public APIs
+    type: api
+  - target: Instant Gaming and Instant Gaming News mobile applications
+    type: mobile
+  domains:
+  - instant-gaming.com
+  - '*.instant-gaming.com'
+  - Public APIs
+  - Instant Gaming iOS application
+  - Instant Gaming Android application
+  - Instant Gaming News iOS application
+  - Instant Gaming News Android application
+  reporting_url: https://www.instant-gaming.com/en/support/
+  response_sla_days: 3
+
 - company: keragon.com
   url: https://www.keragon.com/security/vulnerability-disclosure-program
   rewards:
