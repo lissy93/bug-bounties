@@ -330,6 +330,11 @@ companies:
   contact: https://agicap.com/en/bug-bounty/
   rewards:
   - '*bounty'
+- company: AgilePulse Marketplace Bug Bounty Program
+  url: https://bugcrowd.com/engagements/agile-pulse
+  contact: https://bugcrowd.com/engagements/agile-pulse
+  rewards:
+  - '*bounty'
 - company: Agilis LT Bug Bounty
   url: https://bugcrowd.com/engagements/agilislt
   contact: https://bugcrowd.com/engagements/agilislt
@@ -7245,6 +7250,11 @@ companies:
   url: https://yeswehack.com/programs/lazada
   contact: https://yeswehack.com/programs/lazada
   rewards: []
+- company: LeakyJar Challenge
+  url: https://www.intigriti.com/programs/intigriti/challengeleakyjar/detail
+  handle: challengeleakyjar
+  contact: https://www.intigriti.com/programs/intigriti/challengeleakyjar/detail
+  rewards: []
 - company: Leantime.io
   url: https://leantime.io/responsible-disclosure-policy/
   contact: mailto:security@leantime.io
@@ -10815,6 +10825,11 @@ companies:
   handle: redis-vdp
   contact: https://hackerone.com/redis-vdp
   rewards: []
+- company: Redmoon
+  url: https://bugcrowd.com/engagements/redmoon
+  contact: https://bugcrowd.com/engagements/redmoon
+  rewards:
+  - '*bounty'
 - company: Redox
   url: https://bugcrowd.com/redox
   handle: redox_bbp
@@ -10924,6 +10939,11 @@ companies:
 - company: ReportGarden
   url: https://reportgarden.com/responsible-disclosure/
   contact: mailto:devops@reportgarden.com
+  rewards:
+  - '*bounty'
+- company: Requirement Yogi (Bug bounty)
+  url: https://bugcrowd.com/engagements/requirement-yogi
+  contact: https://bugcrowd.com/engagements/requirement-yogi
   rewards:
   - '*bounty'
 - company: Research Gate
@@ -12041,6 +12061,12 @@ companies:
   rewards:
   - '*bounty'
   - '*recognition'
+- company: Soundtrack Technologies
+  url: https://www.intigriti.com/programs/syb/soundtrackyourbrand/detail
+  handle: soundtrackyourbrand
+  contact: https://www.intigriti.com/programs/syb/soundtrackyourbrand/detail
+  rewards:
+  - '*bounty'
 - company: Soundtrack Your Brand
   url: https://www.intigriti.com/programs/syb/soundtrackyourbrand/detail
   handle: soundtrackyourbrand
@@ -12753,6 +12779,11 @@ companies:
   rewards:
   - '*bounty'
   - '*swag'
+- company: Tekion VDP
+  url: https://www.intigriti.com/programs/tekion/tekionvdp/detail
+  handle: tekionvdp
+  contact: https://www.intigriti.com/programs/tekion/tekionvdp/detail
+  rewards: []
 - company: Tele2
   url: https://www.tele2.nl/thuis/internet/veilig-internetten/stappenplan/
   contact: mailto:point@tele2.com
@@ -14700,6 +14731,7 @@ companies:
   - '*recognition'
 - company: Yuga Labs
   url: https://hackerone.com/yuga_labs
+  handle: yuga_labs
   contact: https://hackerone.com/yuga_labs
   rewards:
   - '*bounty'
