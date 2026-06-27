@@ -1143,6 +1143,20 @@ companies:
     medium: 500
     low: 100
 
+- company: PubNub
+  url: https://www.pubnub.com/bug-bounty-policy/
+  contact: mailto:support@pubnub.com
+  rewards:
+  - '*bounty'
+  program_type: bounty
+  status: active
+  preferred_languages: English
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - physical_access
+
 - company: Recap Innovations
   url: https://recap-innovations.com/security/
   contact: mailto:security@recap-innovations.com
