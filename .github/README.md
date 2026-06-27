@@ -42,6 +42,7 @@
 - <img src='https://icon.horse/icon/www.affirm.com' width='16'/> [Affirm](http://www.affirm.com) 💰
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Afterpay Bug Bounty Program](https://bugcrowd.com/engagements/afterpay) 💰
 - <img src='https://icon.horse/icon/agicap.com' width='16'/> [Agicap](https://agicap.com/en/bug-bounty/) 💰
+- <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [AgilePulse Marketplace Bug Bounty Progra...](https://bugcrowd.com/engagements/agile-pulse) 💰
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Agilis LT Bug Bounty](https://bugcrowd.com/engagements/agilislt) 💰
 - <img src='https://icon.horse/icon/www.agoda.com' width='16'/> [Agoda Public](https://www.agoda.com/) 💰
 - <img src='https://icon.horse/icon/www.aholddelhaize.com' width='16'/> [Ahold Delhaize](https://www.aholddelhaize.com/en/security/) 💰 🎁
@@ -1365,6 +1366,7 @@
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Recorded Future Public Managed Bug Bount...](https://bugcrowd.com/engagements/recorded-future-mbb-og) 💰
 - <img src='https://icon.horse/icon/code.reddit.com' width='16'/> [Reddit](https://code.reddit.com/wiki/help/whitehat) 💰 🏅
 - <img src='https://icon.horse/icon/access.redhat.com' width='16'/> [RedHat](https://access.redhat.com/articles/66234) 🏅
+- <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Redmoon](https://bugcrowd.com/engagements/redmoon) 💰
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Redox](https://bugcrowd.com/redox) 💰 🏅
 - <img src='https://icon.horse/icon/redvilla.tech' width='16'/> [Redvilla](https://redvilla.tech/bug-bounty/) 🏅
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Ref Finance](https://immunefi.com/bug-bounty/reffinance/) 💰
@@ -1380,6 +1382,7 @@
 - <img src='https://icon.horse/icon/docs.repl.it' width='16'/> [Repl.it](https://docs.repl.it/misc/security) 🏅
 - <img src='https://icon.horse/icon/reportgarden.com' width='16'/> [ReportGarden](https://reportgarden.com/responsible-disclosure/) 💰
 - <img src='https://icon.horse/icon/help.request.finance' width='16'/> [requestfinance.com](https://help.request.finance/en/articles/8623679-bug-bounty-program-at-request) 💰
+- <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Requirement Yogi (Bug bounty)](https://bugcrowd.com/engagements/requirement-yogi) 💰
 - <img src='https://icon.horse/icon/explore.researchgate.net' width='16'/> [Research Gate](https://explore.researchgate.net/display/support/Security+and+vulnerability) 💰
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Reserve](https://immunefi.com/bug-bounty/reserve/) 💰
 - <img src='https://icon.horse/icon/www.resmed.com' width='16'/> [Resmed](https://www.resmed.com/en-us/security/) 🎁
@@ -1526,6 +1529,7 @@
 - <img src='https://icon.horse/icon/sorare.com' width='16'/> [Sorare](https://sorare.com) 💰
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Soteri Marketplace Bug Bounty](https://bugcrowd.com/engagements/soteri) 💰
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [SoundCloud](https://bugcrowd.com/soundcloud) 💰 🏅
+- <img src='https://icon.horse/icon/www.intigriti.com' width='16'/> [Soundtrack Technologies](https://www.intigriti.com/programs/syb/soundtrackyourbrand/detail) 💰
 - <img src='https://icon.horse/icon/www.intigriti.com' width='16'/> [Soundtrack Your Brand](https://www.intigriti.com/programs/syb/soundtrackyourbrand/detail) 💰
 - <img src='https://icon.horse/icon/www.federacy.com' width='16'/> [Spacelift](https://www.federacy.com/spacelift) 💰
 - <img src='https://icon.horse/icon/yeswehack.com' width='16'/> [Spacelift.io - Bug Bounty Program](https://yeswehack.com/programs/spacelift-io-bug-bounty-program) 💰
