@@ -1318,6 +1318,7 @@
 - <img src='https://icon.horse/icon/proxidize.com' width='16'/> [proxidize.com](https://proxidize.com/legal/vulnerability-disclosure-policy/) 💰 🏅
 - <img src='https://icon.horse/icon/www.ptc.com' width='16'/> [PTC](https://www.ptc.com/en/documents/security/coordinated-vulnerability-disclosure) 🏅
 - <img src='https://icon.horse/icon/pubg.com' width='16'/> [PUBG](https://pubg.com/en/main) 🎁
+- <img src='https://icon.horse/icon/www.pubnub.com' width='16'/> [PubNub](https://www.pubnub.com/bug-bounty-policy/) 💰
 - <img src='https://icon.horse/icon/puppet.com' width='16'/> [Puppet](https://puppet.com/blog/responsible-disclosure-of-security-vulnerabilities) 🏅
 - <img src='https://icon.horse/icon/puppet.com' width='16'/> [Puppet Labs](https://puppet.com/security) 🏅
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [PureVPN](https://bugcrowd.com/purevpn) 💰 🏅
