@@ -1286,6 +1286,44 @@ companies:
   max_payout: 2000
   currency: USD
 
+- company: shieldfive.com
+  url: https://shieldfive.com/security/bug-bounty
+  contact: mailto:security@shieldfive.com
+  rewards:
+  - '*bounty'
+  - '*recognition'
+  program_type: bounty
+  status: active
+  description: |-
+    ShieldFive runs a public bug bounty program for the open-source cryptography library that powers shieldfive.com: @shieldfive/crypto.
+
+    We pay researchers who report security vulnerabilities in the library in good faith, under the rules below. The program is operated directly by ShieldFive — there is no third-party platform between you and us.
+
+    If you are a customer trying to decide whether to trust ShieldFive with your files, this page is probably not what you're looking for. The customer-facing
+  out_of_scope:
+  - These are not eligible for bounty under this program. Reports of these will be acknowledged and read, but will not be paid.
+  - The shieldfive.com web application, infrastructure, or any service ShieldFive operates other than the crypto library. The web application is not yet open-source and is not yet eligible for a public bounty; we plan to extend the program after the web application has been independently audited.
+  - Vulnerabilities in dependencies (@noble/post-quantum, libsodium-wrappers-sumo, Node.js, browsers, V8, JSC, WebKit) — please report those upstream.
+  - Theoretical attacks on the underlying primitives (AES, ChaCha20, ML-KEM-1024, SHA-256, Argon2id) at the construction level — these belong in the academic literature.
+  - Side-channel attacks against the underlying browser SubtleCrypto runtime, the user's CPU microarchitecture, or libsodium's WASM build. These are documented as out-of-scope in spec/threat-model.md.
+  - Vulnerabilities that require an attacker to already control the user's device (malware, malicious browser extensions, keyloggers).
+  - Denial-of-service against the public website or against npm registry endpoints.
+  domains:
+  - 'The following code and specifications, at the latest published version of @shieldfive/crypto on npm, or any version still readable from a production deployment of shieldfive.com:'
+  - 'The four cipher suites: aes-256-gcm-v1 (suite 0x01), xchacha20-poly1305-v1 (0x02), pq-hybrid-xchacha-mlkem1024-v1 (0x03), and the read-only legacy aes-gcm-v0 reader.'
+  - The v1 wire format as specified in spec/format-v1.md.
+  - The KDF wrapper in src/kdf/argon2id.ts.
+  - The HKDF-SHA-256 and HMAC-SHA-256 primitives in src/internal/.
+  - The identity and sharing module in src/identity/.
+  - The format header parser in src/format/header.ts.
+  - The threat model claims in spec/threat-model.md — if you can falsify a specific claim from that document, we want to know.
+  max_payout: 1000
+  currency: USD
+  payout_table:
+    critical: 1000
+    high: 500
+    medium: 250
+
 - company: simbase.com
   url: https://simbase.com/terms/responsible-disclosure-policy
   contact: mailto:security@simbase.com
