@@ -1473,6 +1473,7 @@
 - <img src='https://icon.horse/icon/www.sheer.com' width='16'/> [Sheer](https://www.sheer.com/) 💰
 - <img src='https://icon.horse/icon/shein.com' width='16'/> [SHEIN](http://shein.com) 💰
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Sherlock](https://immunefi.com/bug-bounty/sherlock/) 💰
+- <img src='https://icon.horse/icon/shieldfive.com' width='16'/> [shieldfive.com](https://shieldfive.com/security/bug-bounty) 💰 🏅
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [Shieldox Security LTD](https://hackerone.com/shieldox_security) 🏅
 - <img src='https://icon.horse/icon/shiftcrypto.ch' width='16'/> [Shift Crypto](https://shiftcrypto.ch/policies/bug-bounty-policy/) 🏅
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [Shipt](https://hackerone.com/shipt) 💰 🏅
