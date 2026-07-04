@@ -1017,6 +1017,11 @@ companies:
   handle: atollsvdp
   contact: https://www.intigriti.com/programs/atolls/atollsvdp/detail
   rewards: []
+- company: Attentia VDP
+  url: https://www.intigriti.com/programs/attentia/attentiavdp/detail
+  handle: attentiavdp
+  contact: https://www.intigriti.com/programs/attentia/attentiavdp/detail
+  rewards: []
 - company: Audere
   url: https://auderenow.org/security
   contact: mailto:security@auderenow.org
@@ -1722,6 +1727,11 @@ companies:
   rewards:
   - '*bounty'
   - '*recognition'
+- company: Blofin Crypto Managed Bug Bounty Engagement
+  url: https://bugcrowd.com/engagements/blofin-crypto-mbb-og
+  contact: https://bugcrowd.com/engagements/blofin-crypto-mbb-og
+  rewards:
+  - '*bounty'
 - company: blog.oneiroi.co.uk
   url: https://oneiroi.co.uk/.well-known/policy.txt
   contact: mailto:security@oneiroi.co.uk
@@ -7175,6 +7185,11 @@ companies:
   rewards:
   - '*bounty'
 - company: KU Leuven Responsible Disclosure Program
+  url: https://www.intigriti.com/programs/kuleuven/kuleuvenrdp/detail
+  handle: kuleuvenrdp
+  contact: https://www.intigriti.com/programs/kuleuven/kuleuvenrdp/detail
+  rewards: []
+- company: KU Leuven Vulnerability Disclosure Program (VDP)
   url: https://www.intigriti.com/programs/kuleuven/kuleuvenrdp/detail
   handle: kuleuvenrdp
   contact: https://www.intigriti.com/programs/kuleuven/kuleuvenrdp/detail
