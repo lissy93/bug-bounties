@@ -228,6 +228,7 @@
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [Blockchain](https://hackerone.com/blockchain) 💰 🏅
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Blockchain.com Managed Bug Bounty Engage...](https://bugcrowd.com/engagements/blockchain-dot-com) 💰
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [BlockPI Network](https://immunefi.com/bug-bounty/blockpinetwork/) 💰
+- <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Blofin Crypto Managed Bug Bounty Engagem...](https://bugcrowd.com/engagements/blofin-crypto-mbb-og) 💰
 - <img src='https://icon.horse/icon/www.google.com' width='16'/> [Blogger](https://www.google.com/about/appsecurity/reward-program/) 💰 🏅
 - <img src='https://icon.horse/icon/bluecanvas.io' width='16'/> [Blue Canvas](https://bluecanvas.io/report-vulnerability) 🏅
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Blue Jeans Network](https://bugcrowd.com/bluejeans) 💰
