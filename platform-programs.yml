@@ -107,6 +107,11 @@ companies:
   rewards:
   - '*recognition'
   - '*swag'
+- company: 55 Degrees
+  url: https://bugcrowd.com/engagements/fiftyfivedegrees
+  contact: https://bugcrowd.com/engagements/fiftyfivedegrees
+  rewards:
+  - '*bounty'
 - company: 84codes
   url: https://www.84codes.com/security
   contact: mailto:security@84codes.com
@@ -781,6 +786,11 @@ companies:
   url: https://bugcrowd.com/engagements/barracuda
   contact: https://bugcrowd.com/engagements/barracuda
   rewards: []
+- company: AppLiger
+  url: https://bugcrowd.com/engagements/appliger
+  contact: https://bugcrowd.com/engagements/appliger
+  rewards:
+  - '*bounty'
 - company: Appoptics
   url: https://www.appoptics.com/security
   contact: mailto:psirt@solarwinds.com
@@ -2692,6 +2702,13 @@ companies:
   contact: https://hackerone.com/coda_bbp
   rewards:
   - '*bounty'
+- company: Codacy
+  url: https://www.codacy.com
+  handle: codacy
+  contact: https://hackerone.com/codacy
+  rewards:
+  - '*bounty'
+  - '*swag'
 - company: Code Climate
   url: https://codeclimate.com/security
   contact: mailto:security@codeclimate.com
@@ -2938,6 +2955,10 @@ companies:
 - company: Consumer Product Safety Commission
   url: https://www.cpsc.gov/vulnerability-disclosure-policy
   contact: mailto:security@cpsc.gov
+  rewards: []
+- company: contensis.com
+  url: https://www.contensis.com/security
+  contact: mailto:security@contensis.com
   rewards: []
 - company: Contentful
   url: https://www.contentful.com/security/
@@ -3281,6 +3302,7 @@ companies:
   - '*bounty'
 - company: Dashlane
   url: https://hackerone.com/dashlane
+  handle: dashlanevulnerabilitydisclosureprogram
   contact: https://hackerone.com/dashlane
   rewards:
   - '*bounty'
@@ -3333,6 +3355,10 @@ companies:
   rewards:
   - '*bounty'
   - '*swag'
+- company: dbs.com
+  url: https://www.dbs.com/vdp/default.page?pid=id-bh-group-pweb-footer-vdp
+  contact: ''
+  rewards: []
 - company: DC.Gov
   url: https://octo.dc.gov/publication/responsible-disclosure-policy
   contact: mailto:octo@dc.gov
@@ -3748,6 +3774,11 @@ companies:
   rewards:
   - '*bounty'
   - '*recognition'
+- company: Discover VDP
+  url: http://www.discover.com
+  handle: discover-vdp
+  contact: https://hackerone.com/discover-vdp
+  rewards: []
 - company: District of Columbia Government
   url: https://octo.dc.gov/sites/default/files/dc/sites/octo/publication/attachments/Responsible%20Disclosure%20Policy%20.pdf
   contact: mailto:responsibledisclosure@dc.gov
@@ -4394,6 +4425,10 @@ companies:
   contact: mailto:security@ethereum.org
   rewards:
   - '*bounty'
+- company: Etherlinx
+  url: https://bugcrowd.com/engagements/etherlinx-vdpc
+  contact: mailto:security@etherlinx.net
+  rewards: []
 - company: Etherscan
   url: https://etherscan.io/bugbounty
   contact: mailto:info@EtherScan.io
@@ -6133,6 +6168,11 @@ companies:
   rewards:
   - '*bounty'
   - '*recognition'
+- company: Hypixel Studios Managed Bug Bounty Engagement
+  url: https://bugcrowd.com/engagements/hypixel-studios-mbb-og
+  contact: https://bugcrowd.com/engagements/hypixel-studios-mbb-og
+  rewards:
+  - '*bounty'
 - company: HYPR
   url: https://www.hypr.com
   handle: hypr-corp
@@ -6579,6 +6619,11 @@ companies:
   contact: https://app.intigriti.com/programs/intigriti/intigriti/detail
   rewards:
   - '*bounty'
+- company: intl.nothing.tech
+  url: https://intl.nothing.tech/pages/vulnerability-report
+  contact: mailto:g_feedback@nothing.tech
+  rewards:
+  - '*bounty'
 - company: INTMAX
   url: https://immunefi.com/bug-bounty/intmax/
   contact: https://immunefi.com/bug-bounty/intmax/
@@ -6970,6 +7015,11 @@ companies:
   url: https://305.nl/en/terms-and-conditions/security/
   contact: mailto:security@305.nl
   rewards: []
+- company: kelashack.id
+  url: https://kelashack.id/vulnerability-disclosure-program
+  contact: mailto:admin@kelashack.id
+  rewards:
+  - '*recognition'
 - company: Kelp DAO
   url: https://immunefi.com/bug-bounty/kelp-dao/
   contact: https://immunefi.com/bug-bounty/kelp-dao/
@@ -7214,6 +7264,10 @@ companies:
   url: https://www.kustomer.com/policy/disclosure/
   contact: mailto:support@kustomer.com
   rewards: []
+- company: kynekt.id
+  url: https://kynekt.id/legal-page/vulnerability-disclosure-policy
+  contact: mailto:security@kynekt.id
+  rewards: []
 - company: Lacework
   url: https://hackerone.com/lacework
   contact: https://hackerone.com/lacework
@@ -7240,6 +7294,11 @@ companies:
   handle: latamairlines
   contact: https://hackerone.com/latamairlines
   rewards: []
+- company: Latent Patterns
+  url: https://latentpatterns.com/security
+  contact: mailto:security@latentpatterns.com
+  rewards:
+  - '*bounty'
 - company: Latitude Financial Services Bug Bounty
   url: https://bugcrowd.com/engagements/latitude-financial-service-bugbounty
   contact: https://bugcrowd.com/engagements/latitude-financial-service-bugbounty
@@ -7923,6 +7982,10 @@ companies:
   contact: https://bugcrowd.com/engagements/mattermost-mbb-public
   rewards:
   - '*bounty'
+- company: matthewd.xyz
+  url: https://matthewd.xyz/security
+  contact: mailto:security@matthewd.xyz
+  rewards: []
 - company: Maximum
   url: https://hackerone.com/maximum
   contact: https://hackerone.com/maximum
@@ -8020,6 +8083,10 @@ companies:
   url: https://mendix.com
   handle: mendix
   contact: https://hackerone.com/mendix
+  rewards: []
+- company: mention-me.com
+  url: https://mention-me.com/vulnerability-disclosure
+  contact: mailto:security@mention-me.com
   rewards: []
 - company: MercadoLibre
   url: https://www.mercadolibre.com
@@ -8158,6 +8225,10 @@ companies:
 - company: missguided.com
   url: https://www.missguided.co.uk/responsible-disclosure
   contact: mailto:cybersecurity@missguided.com
+  rewards: []
+- company: mlaify.io
+  url: https://mlaify.io/security
+  contact: mailto:security@mlaify.io
   rewards: []
 - company: Mobikwik
   url: https://www.mobikwik.com/bug-bounty
@@ -9464,6 +9535,11 @@ companies:
   contact: https://bugcrowd.com/engagements/optus-mbb-og
   rewards:
   - '*bounty'
+- company: Opus Guard Marketplace Managed Bug Bounty Engagement
+  url: https://bugcrowd.com/engagements/opus-guard-market
+  contact: https://bugcrowd.com/engagements/opus-guard-market
+  rewards:
+  - '*bounty'
 - company: Oracle
   url: https://www.oracle.com/africa/corporate/security-practices/assurance/vulnerability/reporting.html
   contact: mailto:secalert_us@oracle.com
@@ -9796,6 +9872,11 @@ companies:
   contact: mailto:support@pastecoin.com
   rewards:
   - '*bounty'
+  - '*recognition'
+- company: patchstack.com
+  url: https://patchstack.com/vulnerability-disclosure-policy
+  contact: mailto:report-vulnerability@patchstack.com
+  rewards:
   - '*recognition'
 - company: Pathao
   url: https://pathao.com/bug-bounty/
@@ -10856,6 +10937,12 @@ companies:
   url: https://www.redstor.com/en-us/about/vulnerability-disclosure-policy/
   contact: mailto:security@redstor.com
   rewards: []
+- company: redstorm.io
+  url: https://www.redstorm.io/researcher/programs/rswebapppltf
+  contact: https://www.redstorm.io/researcher/programs/rswebapppltf
+  rewards:
+  - '*bounty'
+  - '*recognition'
 - company: Redtube
   url: https://hackerone.com/redtube
   contact: ''
@@ -11255,6 +11342,11 @@ companies:
   url: https://www.rust-lang.org/policies/security
   contact: mailto:security@rust-lang.org
   rewards: []
+- company: RV Softwares Marketplace Bug Bounty Program
+  url: https://bugcrowd.com/engagements/rv-softwares
+  contact: https://bugcrowd.com/engagements/rv-softwares
+  rewards:
+  - '*bounty'
 - company: S-Pankki
   url: https://www.s-pankki.fi
   handle: s-pankki
@@ -11351,6 +11443,10 @@ companies:
   contact: https://bugcrowd.com/engagements/sap-private-invite
   rewards:
   - '*bounty'
+- company: Sardine VDP
+  url: https://bugcrowd.com/engagements/sardine-vdp-ess
+  contact: https://bugcrowd.com/engagements/sardine-vdp-ess
+  rewards: []
 - company: SaveDroid
   url: https://hackerone.com/savedroid
   contact: https://hackerone.com/savedroid
@@ -11491,6 +11587,10 @@ companies:
 - company: Security Innovation
   url: https://www.securityinnovation.com/about/security/
   contact: mailto:security@securityinnovation.com
+  rewards: []
+- company: security.berkeley.edu
+  url: https://security.berkeley.edu/quick-links/report-security-vulnerability
+  contact: mailto:security@berkeley.edu
   rewards: []
 - company: SecurityScorecard
   url: https://hackerone.com/securityscorecard
@@ -13308,6 +13408,10 @@ companies:
   rewards:
   - '*bounty'
   - '*recognition'
+- company: Tricentis
+  url: https://www.tricentis.com/trust/vulnerability-disclosure-policy
+  contact: mailto:vdp@tricentis.com
+  rewards: []
 - company: Trint Ltd
   url: https://hackerone.com/trint
   contact: https://hackerone.com/trint
@@ -14136,6 +14240,10 @@ companies:
 - company: VNG
   url: https://vng.nl/kwetsbaarheid-melden
   contact: https://vng.nl/kwetsbaarheid-melden
+  rewards: []
+- company: vobesoft.com
+  url: https://www.vobesoft.com/security/report
+  contact: mailto:support@vobesoft.com
   rewards: []
 - company: Vodafone
   url: https://www.vodafone.nl/over-deze-website/privacy-en-disclaimer/report-security-leak.shtml
