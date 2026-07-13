@@ -1059,6 +1059,7 @@
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Money on Chain](https://immunefi.com/bug-bounty/moneyonchain/) 💰
 - <img src='https://icon.horse/icon/www.moneybird.nl' width='16'/> [Moneybird](https://www.moneybird.nl/security/) 💰 🏅
 - <img src='https://icon.horse/icon/yeswehack.com' width='16'/> [Moneybox Bug Bounty](https://yeswehack.com/programs/moneybox-bug-bounty) 💰
+- <img src='https://icon.horse/icon/moneykit.com' width='16'/> [moneykit.com](https://moneykit.com/bounty) 💰
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Moneytree KK](https://bugcrowd.com/moneytreekkog) 💰 🏅
 - <img src='https://icon.horse/icon/www.mongodb.com' width='16'/> [MongoDB](https://www.mongodb.com/security) 💰 🏅
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [Monolith](https://hackerone.com/monolith) 💰
