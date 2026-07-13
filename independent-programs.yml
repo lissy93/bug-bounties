@@ -862,6 +862,25 @@ companies:
   standards:
   - ISO 29147
 
+- company: moneykit.com
+  url: https://moneykit.com/bounty
+  contact: mailto:security@moneykit.com
+  rewards:
+  - '*bounty'
+  program_type: bounty
+  status: active
+  description: MoneyKit encourages members of the security community to find vulnerabilities with our systems. To this end, we pay monetary rewards to those who report meaningful vulnerabilities.
+  domains:
+  - Any MoneyKit-maintained domain, API, documentation, or repository is in-scope for this program. Out-of-scope domains or properties may be accepted at MoneyKit's discretion.
+  min_payout: 1000
+  max_payout: 5000
+  currency: USD
+  payout_table:
+    critical: 5000
+    high: 3000
+    medium: 2000
+    low: 1000
+
 - company: nelko.com
   url: https://nelko.com/pages/vulnerability-disclosure-policy
   rewards:
