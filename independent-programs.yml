@@ -1458,6 +1458,25 @@ companies:
   - phishing
   - physical_access
 
+- company: spectrocoin.com
+  url: https://spectrocoin.com/bug-bounty.html
+  contact: mailto:technical@spectrocoin.com
+  rewards:
+  - '*bounty'
+  program_type: bounty
+  status: active
+  description: SpectroCoin is determined to ensure secure environment for its users. Although our IT specialists are doing their best to find every possible vulnerability on our platform, there is always a slight possibility that a few of them could have been overlooked. Thus, we decided to introduce a bug bounty program. Every SpectroCoin user can take part in the program and earn rewards by reporting the bugs they find in our system.
+  domains:
+  - All services provided by SpectroCoin are eligible for our bug bounty program, including the iOS and Android SpectroCoin apps, SpectroCoin Wallet, API, Merchant Tools, Cards and Exchange. In general, vulnerabilities that have the potential for financial loss or data breach are considered of sufficient severity.
+  min_payout: 200
+  max_payout: 15000
+  currency: USD
+  payout_table:
+    critical: 15000
+    high: 4000
+    medium: 1000
+    low: 200
+
 - company: Starnum.com.tw
   url: https://www.instagram.com/mychenan/
   contact: https://www.instagram.com/mychenan/
