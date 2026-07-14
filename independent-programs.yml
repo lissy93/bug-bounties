@@ -1305,6 +1305,39 @@ companies:
   max_payout: 2000
   currency: USD
 
+- company: setpointmedical.com
+  url: https://setpointmedical.com/security/
+  contact: mailto:productsecurity@setpointmedical.com
+  rewards:
+  - '*bounty'
+  - '*recognition'
+  program_type: bounty
+  status: active
+  description: |-
+    etPoint Medical is committed to ensuring our medical devices and systems are safe from vulnerabilities that would impact the integrity of our products or the privacy of our patients and customers. SetPoint Medical employs Secure by Design and Secure by Default principles in all its development efforts and has made cybersecurity an integral part of its Quality Management System.
+
+    As the cybersecurity landscape is constantly evolving and cyberattacks are consistently becoming more sophisticated, S
+  out_of_scope:
+  - 'Some categories of security reports are out of scope for our bug bounty reward program. These sorts of attack vectors often have already been considered and evaluated. Reports related to the following areas are considered out-of-scope for the bug bounty reward system:'
+  - Already-reported issues
+  - Attacks against products that are not commercially available (including clinical trial devices)
+  - Attacks against websites used solely for product marketing (SetPoint Medical devices interact with services on the setpointmedical.cloud domain)
+  - Attacks against SetPoint Medical engineering, testing, and development systems
+  - Reports from automated scanning tools
+  - Social engineering and phishing attacks against patients, employees, or healthcare providers (including creation of counterfeit applications to harvest credentials)
+  - SetPoint Medical’s internal business systems (i.e., those that do not interact with SetPoint Medical devices or patient information)
+  - Attacks that require physical disassembly of devices
+  - Communication denial-of-service attacks including, but not limited to, signal jamming, blocking of HTTP requests, and Distributed Denial of Service (DDOS)
+  - Compromises due to credential stuffing attacks, or attacks that are results of user credentials existing in breach corpuses
+  - While we cannot promise a response or reward for an out-of-scope category, all reports will still be considered and evaluated.
+  min_payout: 100
+  max_payout: 10000
+  currency: USD
+  payout_table:
+    critical: 10000
+    medium: 1000
+    low: 100
+
 - company: shieldfive.com
   url: https://shieldfive.com/security/bug-bounty
   contact: mailto:security@shieldfive.com
