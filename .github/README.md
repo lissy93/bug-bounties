@@ -240,6 +240,7 @@
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [BMW Group](https://hackerone.com/bmwgroup) 💰
 - <img src='https://icon.horse/icon/www.intigriti.com' width='16'/> [BMW Group Automotive](https://www.intigriti.com/programs/bmw/bmwgroup-automotive/detail) 💰
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Boba Network](https://immunefi.com/bug-bounty/bobanetwork/) 💰
+- <img src='https://icon.horse/icon/boldcommerce.com' width='16'/> [boldcommerce.com](https://boldcommerce.com/bug-bounty) 💰
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Bolt Technology OÜ](https://bugcrowd.com/engagements/bolt-og) 💰
 - <img src='https://icon.horse/icon/yeswehack.com' width='16'/> [BookBeat](https://yeswehack.com/programs/bookbeat) 💰
 - <img src='https://icon.horse/icon/www.booking.com' width='16'/> [Booking.com](http://www.booking.com) 💰
