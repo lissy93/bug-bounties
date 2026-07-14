@@ -1551,6 +1551,7 @@
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [SpaceX](https://bugcrowd.com/spacex) 💰
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [SpaceX/Starlink](https://bugcrowd.com/engagements/spacex) 💰
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Spark](https://immunefi.com/bug-bounty/sparklend/) 💰
+- <img src='https://icon.horse/icon/spectrocoin.com' width='16'/> [spectrocoin.com](https://spectrocoin.com/bug-bounty.html) 💰
 - <img src='https://icon.horse/icon/support.sphero.com' width='16'/> [Sphero](https://support.sphero.com/article/5drs94lhk5-vulnerability-disclosure-program) 💰 🎁
 - <img src='https://icon.horse/icon/www.splendiddata.com' width='16'/> [Splendid Data](https://www.splendiddata.com/responsible-disclosure-policy/) 💰
 - <img src='https://icon.horse/icon/blog.splitwise.com' width='16'/> [Splitwise](https://blog.splitwise.com/about/responsible-disclosure-special-thanks/) 🏅
