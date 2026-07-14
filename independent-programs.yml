@@ -194,6 +194,26 @@ companies:
   currency: USD
   disclosure_timeline_days: 90
 
+- company: boldcommerce.com
+  url: https://boldcommerce.com/bug-bounty
+  contact: mailto:bugbounty@boldcommerce.com
+  rewards:
+  - '*bounty'
+  program_type: bounty
+  status: paused
+  description: |-
+    Accordingly, recognizing that we may have missed something, we encourage individual security researchers to analyze our solutions to make them safer for our merchants. Bold’s Bug Bounty Program is our way to reward security researchers for finding serious security vulnerabilities in the In-Scope properties listed below.
+
+    If you think you have found a security vulnerability in our solutions, please contact us! We’ll investigate the issue and try to resolve it quickly. Before you report an issue,
+  min_payout: 150
+  max_payout: 1500
+  currency: CAD
+  payout_table:
+    critical: 1500
+    high: 650
+    medium: 300
+    low: 150
+
 - company: BSI Germany
   url: https://www.bsi.bund.de/EN/IT-Sicherheitsvorfall/IT-Schwachstellen/it-schwachstellen_node.html
   contact: mailto:vulnerability@bsi.bund.de
