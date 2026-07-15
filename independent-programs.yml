@@ -1465,6 +1465,32 @@ companies:
   - '*.snapdeploy.dev'
   response_sla_days: 7
 
+- company: Soldera
+  url: https://www.soldera.org/terms/vdp
+  contact: mailto:security@soldera.org
+  rewards:
+  - '*recognition'
+  program_type: vdp
+  status: active
+  safe_harbor: full
+  allows_disclosure: true
+  preferred_languages: English
+  pgp_key: https://www.soldera.org/.well-known/pgp-key.txt
+  description: Disclosure-only programme for good-faith reporting of security vulnerabilities in Soldera's platform. No bounties offered.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - physical_access
+  - automated_scanning
+  out_of_scope:
+  - Third-party services
+  - Integrated platforms
+  - EAC registries
+  testing_policy_url: https://www.soldera.org/terms/vdp
+  legal_terms_url: https://www.soldera.org/terms
+  hall_of_fame_url: https://www.soldera.org/terms/vdp/acknowledgments
+
 - company: SomnoAI Digital Sleep Lab
   url: https://sleepsomno.com/en/security/bug-bounty
   contact: mailto:sleepsomno.com
