@@ -1465,7 +1465,7 @@ companies:
   - '*.snapdeploy.dev'
   response_sla_days: 7
 
-- company: Soldera OÜ
+- company: Soldera
   url: https://www.soldera.org/terms/vdp
   contact: mailto:security@soldera.org
   rewards:
