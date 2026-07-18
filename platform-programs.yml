@@ -1825,6 +1825,11 @@ companies:
   url: https://www.boeing.com/principles/ethics-and-compliance.page
   contact: mailto:VulnerabilityDisclosure@boeing.com
   rewards: []
+- company: BOJA Consulting Bug Bounty
+  url: https://bugcrowd.com/engagements/boja
+  contact: https://bugcrowd.com/engagements/boja
+  rewards:
+  - '*bounty'
 - company: bol.com
   url: https://www.bol.com/nl/m/algemeen/kwetsbaarheid-melden/subject/64209061/index.html
   contact: mailto:rd@bol.com
@@ -2446,6 +2451,11 @@ companies:
 - company: Cisco Meraki
   url: https://bugcrowd.com/ciscomeraki
   contact: https://bugcrowd.com/ciscomeraki
+  rewards:
+  - '*bounty'
+- company: Cisco Networking
+  url: https://bugcrowd.com/engagements/cisconetworking
+  contact: https://bugcrowd.com/engagements/cisconetworking
   rewards:
   - '*bounty'
 - company: Cisco ThousandEyes Vulnerability Hunting aka Bug Bounty
@@ -3653,6 +3663,10 @@ companies:
 - company: Devo
   url: https://www.devo.com/responsible-vulnerability-disclosure-program/
   contact: mailto:vuln-report@devo.com
+  rewards: []
+- company: Devs Nepal, Nepal Government backed Developer Community
+  url: https://pmdevcore.gov.np/security
+  contact: mailto:steeringcommittee@opmcm.gov.np
   rewards: []
 - company: DeXe Protocol
   url: https://immunefi.com/bug-bounty/dexeprotocol/
@@ -6746,6 +6760,11 @@ companies:
   contact: mailto:responsible.disclosure@ivanti.com
   rewards:
   - '*swag'
+- company: 'Ivo: AI VDP'
+  url: https://www.intigriti.com/programs/ivoai/ivovulnerabilitydisclosureprogram/detail
+  handle: ivovulnerabilitydisclosureprogram
+  contact: https://www.intigriti.com/programs/ivoai/ivovulnerabilitydisclosureprogram/detail
+  rewards: []
 - company: iwalton.com
   url: https://iwalton.com/legal.html
   contact: mailto:iwalton3@gmail.com
@@ -7139,6 +7158,11 @@ companies:
   url: https://www.klarna.com/responsible-disclosure/
   handle: klarna
   contact: mailto:responsible-disclosure@klarna.com
+  rewards:
+  - '*bounty'
+- company: Klaviyo Managed Bug Bounty
+  url: https://bugcrowd.com/engagements/klaviyo-og
+  contact: https://bugcrowd.com/engagements/klaviyo-og
   rewards:
   - '*bounty'
 - company: Klenty
