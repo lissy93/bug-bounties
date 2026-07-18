@@ -240,6 +240,7 @@
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [BMW Group](https://hackerone.com/bmwgroup) 💰
 - <img src='https://icon.horse/icon/www.intigriti.com' width='16'/> [BMW Group Automotive](https://www.intigriti.com/programs/bmw/bmwgroup-automotive/detail) 💰
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Boba Network](https://immunefi.com/bug-bounty/bobanetwork/) 💰
+- <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [BOJA Consulting Bug Bounty](https://bugcrowd.com/engagements/boja) 💰
 - <img src='https://icon.horse/icon/boldcommerce.com' width='16'/> [boldcommerce.com](https://boldcommerce.com/bug-bounty) 💰
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Bolt Technology OÜ](https://bugcrowd.com/engagements/bolt-og) 💰
 - <img src='https://icon.horse/icon/yeswehack.com' width='16'/> [BookBeat](https://yeswehack.com/programs/bookbeat) 💰
@@ -318,6 +319,7 @@
 - <img src='https://icon.horse/icon/www.circle.com' width='16'/> [Circle](https://www.circle.com/) 💰
 - <img src='https://icon.horse/icon/circleci.com' width='16'/> [CircleCi](https://circleci.com/security) 💰 🎁
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Cisco Meraki](https://bugcrowd.com/ciscomeraki) 💰
+- <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Cisco Networking](https://bugcrowd.com/engagements/cisconetworking) 💰
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Cisco ThousandEyes Vulnerability Hunting...](https://bugcrowd.com/engagements/thousandeyes-og) 💰
 - <img src='https://icon.horse/icon/www.citrix.com' width='16'/> [Citrix](https://www.citrix.com/about/trust-center/vulnerability-process.html) 💰
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [City of Vienna Managed Bug Bounty](https://bugcrowd.com/engagements/city-of-vienna-mbb-og) 💰
@@ -908,6 +910,7 @@
 - <img src='https://icon.horse/icon/security.kiteworks.com' width='16'/> [Kiteworks](https://security.kiteworks.com) 💰
 - <img src='https://icon.horse/icon/www.kiwi.com' width='16'/> [Kiwi.com](https://www.kiwi.com/us/pages/security) 💰 🎁
 - <img src='https://icon.horse/icon/www.klarna.com' width='16'/> [Klarna](https://www.klarna.com/responsible-disclosure/) 💰
+- <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Klaviyo Managed Bug Bounty](https://bugcrowd.com/engagements/klaviyo-og) 💰
 - <img src='https://icon.horse/icon/www.klenty.com' width='16'/> [Klenty](https://www.klenty.com/responsible-disclosure) 🏅
 - <img src='https://icon.horse/icon/www.knb.nl' width='16'/> [KNB NL](https://www.knb.nl/english/responsible-disclosure) 🏅
 - <img src='https://icon.horse/icon/www.knowledgeowl.com' width='16'/> [Knowledgeowl](https://www.knowledgeowl.com/home/vulnerability-disclosure-policy) 🏅
