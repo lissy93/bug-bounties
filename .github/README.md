@@ -735,6 +735,7 @@
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Haven1](https://immunefi.com/bug-bounty/haven1/) 💰
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Hedera](https://immunefi.com/bug-bounty/hedera/) 💰
 - <img src='https://icon.horse/icon/www.helium.com' width='16'/> [Helium](http://www.helium.com) 💰
+- <img src='https://icon.horse/icon/hellomatik.com' width='16'/> [Hellomatik](https://hellomatik.com/security) 🏅
 - <img src='https://icon.horse/icon/www.hellosign.com' width='16'/> [Hellosign](https://www.hellosign.com/legal/security) 💰
 - <img src='https://icon.horse/icon/www.intigriti.com' width='16'/> [Here Technologies](https://www.intigriti.com/programs/heretechnologies/heretechnologies/detail) 💰
 - <img src='https://icon.horse/icon/www.heroku.com' width='16'/> [Heroku](https://www.heroku.com/policy/security) 💰 🏅 🎁
