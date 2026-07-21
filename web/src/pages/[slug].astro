@@ -11,6 +11,9 @@ import PayoutTable from "@components/results/PayoutTable.astro";
 import KeyInfoBar from "@components/results/KeyInfoBar.astro";
 import ScopeSection from "@components/results/ScopeSection.astro";
 import KevSection from "@components/results/KevSection.astro";
+import ListingRemoved, {
+  REMOVED_PAGES,
+} from "@components/ListingRemoved.astro";
 import { Mail, Globe, House } from "lucide-svelte";
 import {
   formatDate,
@@ -329,238 +332,222 @@ const hasResponseMetrics = responseMetrics.length > 0 || showResponseEfficiency;
   jsonLd={breadcrumbJsonLd}
 >
   <Header />
-  <article class="detail-page">
-    <nav class="breadcrumbs" aria-label="Breadcrumb">
-      <BackLink />
-    </nav>
+  {
+    REMOVED_PAGES.includes(program.slug) ? (
+      <ListingRemoved />
+    ) : (
+      <article class="detail-page">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <BackLink />
+        </nav>
 
-    <!-- Header -->
-    <section class="program-header">
-      <FaviconImage
-        url={program.url}
-        alt={program.company}
-        size="4rem"
-        slug={program.slug}
-        domains={program.domains}
-      />
-      <div>
-        <div class="title-row">
-          <h1>{program.company}</h1>
-          {
-            rankBadge && (
+        <section class="program-header">
+          <FaviconImage
+            url={program.url}
+            alt={program.company}
+            size="4rem"
+            slug={program.slug}
+            domains={program.domains}
+          />
+          <div>
+            <div class="title-row">
+              <h1>{program.company}</h1>
+              {rankBadge && (
+                <Chip
+                  color="var(--accent)"
+                  tooltip={tips.trancoRank}
+                  size="sm"
+                  filled
+                >
+                  <span class="rank-text">{rankBadge}</span>
+                </Chip>
+              )}
+            </div>
+            <div class="header-links">
+              <a
+                href={program.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="external-link"
+              >
+                {hostname} &rarr;
+              </a>
+              {homepageUrl && (
+                <a
+                  href={homepageUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="header-btn"
+                >
+                  <House size={14} />
+                  Homepage
+                </a>
+              )}
+              {showContact && (
+                <a href={program.contact} class="header-btn">
+                  {program.contact?.includes("mailto:") ? (
+                    <Mail size={14} />
+                  ) : (
+                    <Globe size={14} />
+                  )}
+                  Contact
+                </a>
+              )}
+            </div>
+          </div>
+        </section>
+
+        <KeyInfoBar
+          programType={program.program_type}
+          status={program.status}
+          rewards={program.rewards}
+          safeHarbor={program.safe_harbor}
+          payout={payout}
+        />
+
+        {hasProgramDetails && (
+          <ResultSection heading="Program Details">
+            {program.description && (
+              <p class="program-description">{program.description}</p>
+            )}
+            {programDetails.length > 0 && <DefList items={programDetails} />}
+          </ResultSection>
+        )}
+
+        {hasResponseMetrics && (
+          <ResultSection heading="Response Metrics">
+            {responseMetrics.length > 0 && <DefList items={responseMetrics} />}
+            {showResponseEfficiency && (
+              <div class="efficiency-row">
+                <span class="efficiency-label">
+                  <Tooltip text={tips.responseEfficiency}>
+                    Response Efficiency
+                  </Tooltip>
+                </span>
+                <div class="efficiency-bar">
+                  <div
+                    class="efficiency-fill"
+                    style={`width: ${program.response_efficiency}%`}
+                  />
+                </div>
+                <span class="efficiency-value">
+                  {program.response_efficiency}%
+                </span>
+              </div>
+            )}
+          </ResultSection>
+        )}
+
+        {payoutTableRows && (
+          <ResultSection heading="Payout Structure">
+            <Tooltip slot="badge" text={tips.payoutTable} />
+            <PayoutTable
+              rows={payoutTableRows}
+              swagDetails={program.swag_details}
+            />
+          </ResultSection>
+        )}
+
+        {hasRulesSection && (
+          <ResultSection heading="Rules & Testing">
+            {rulesItems.length > 0 && <DefList items={rulesItems} />}
+            {program.excluded_methods &&
+              program.excluded_methods.length > 0 && (
+                <div class="sub-section">
+                  <h3>
+                    <Tooltip text={tips.excludedMethods}>
+                      Excluded Methods
+                    </Tooltip>
+                  </h3>
+                  <div class="chip-group">
+                    {program.excluded_methods.map((m) => (
+                      <Chip color="var(--danger)" size="sm">
+                        {formatExcludedMethod(m)}
+                      </Chip>
+                    ))}
+                  </div>
+                </div>
+              )}
+          </ResultSection>
+        )}
+
+        <ScopeSection
+          platformData={platformData}
+          scope={program.scope}
+          domains={program.domains}
+          outOfScope={program.out_of_scope}
+        />
+
+        {kevData && <KevSection kevData={kevData} />}
+
+        {(legalItems.length > 0 ||
+          (program.standards && program.standards.length > 0)) && (
+          <ResultSection heading="Legal & Standards">
+            {legalItems.length > 0 && <DefList items={legalItems} />}
+            {program.standards && program.standards.length > 0 && (
+              <div class="sub-section">
+                <h3>
+                  <Tooltip text={tips.standards}>Standards</Tooltip>
+                </h3>
+                <div class="chip-group">
+                  {program.standards.map((s) => (
+                    <Chip color="var(--muted)" size="sm">
+                      {s}
+                    </Chip>
+                  ))}
+                </div>
+              </div>
+            )}
+          </ResultSection>
+        )}
+
+        {recognitionItems.length > 0 && (
+          <ResultSection heading="Recognition">
+            <DefList items={recognitionItems} />
+          </ResultSection>
+        )}
+
+        {securityItems.length > 0 && (
+          <ResultSection heading="Security">
+            <DefList items={securityItems} />
+          </ResultSection>
+        )}
+
+        {securityTxt && securityTxtItems.length > 0 && (
+          <ResultSection heading="security.txt">
+            {securityTxt.is_expired && (
               <Chip
-                color="var(--accent)"
-                tooltip={tips.trancoRank}
+                slot="badge"
+                color="var(--warning)"
+                tooltip={tips.securityTxtExpired}
                 size="sm"
                 filled
               >
-                <span class="rank-text">{rankBadge}</span>
+                expired
               </Chip>
-            )
-          }
-        </div>
-        <div class="header-links">
-          <a
-            href={program.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="external-link"
-          >
-            {hostname} &rarr;
-          </a>
-          {
-            homepageUrl && (
+            )}
+            <DefList items={securityTxtItems} />
+            {securityTxt.raw_url && (
               <a
-                href={homepageUrl}
+                href={securityTxt.raw_url}
                 target="_blank"
                 rel="noopener noreferrer"
-                class="header-btn"
+                class="text-link"
               >
-                <House size={14} />
-                Homepage
+                View raw security.txt &rarr;
               </a>
-            )
-          }
-          {
-            showContact && (
-              <a href={program.contact} class="header-btn">
-                {program.contact?.includes("mailto:") ? (
-                  <Mail size={14} />
-                ) : (
-                  <Globe size={14} />
-                )}
-                Contact
-              </a>
-            )
-          }
-        </div>
-      </div>
-    </section>
+            )}
+          </ResultSection>
+        )}
 
-    <KeyInfoBar
-      programType={program.program_type}
-      status={program.status}
-      rewards={program.rewards}
-      safeHarbor={program.safe_harbor}
-      payout={payout}
-    />
-
-    {
-      hasProgramDetails && (
-        <ResultSection heading="Program Details">
-          {program.description && (
-            <p class="program-description">{program.description}</p>
-          )}
-          {programDetails.length > 0 && <DefList items={programDetails} />}
-        </ResultSection>
-      )
-    }
-
-    {
-      hasResponseMetrics && (
-        <ResultSection heading="Response Metrics">
-          {responseMetrics.length > 0 && <DefList items={responseMetrics} />}
-          {showResponseEfficiency && (
-            <div class="efficiency-row">
-              <span class="efficiency-label">
-                <Tooltip text={tips.responseEfficiency}>
-                  Response Efficiency
-                </Tooltip>
-              </span>
-              <div class="efficiency-bar">
-                <div
-                  class="efficiency-fill"
-                  style={`width: ${program.response_efficiency}%`}
-                />
-              </div>
-              <span class="efficiency-value">
-                {program.response_efficiency}%
-              </span>
-            </div>
-          )}
-        </ResultSection>
-      )
-    }
-
-    {
-      payoutTableRows && (
-        <ResultSection heading="Payout Structure">
-          <Tooltip slot="badge" text={tips.payoutTable} />
-          <PayoutTable
-            rows={payoutTableRows}
-            swagDetails={program.swag_details}
-          />
-        </ResultSection>
-      )
-    }
-
-    {
-      hasRulesSection && (
-        <ResultSection heading="Rules & Testing">
-          {rulesItems.length > 0 && <DefList items={rulesItems} />}
-          {program.excluded_methods && program.excluded_methods.length > 0 && (
-            <div class="sub-section">
-              <h3>
-                <Tooltip text={tips.excludedMethods}>Excluded Methods</Tooltip>
-              </h3>
-              <div class="chip-group">
-                {program.excluded_methods.map((m) => (
-                  <Chip color="var(--danger)" size="sm">
-                    {formatExcludedMethod(m)}
-                  </Chip>
-                ))}
-              </div>
-            </div>
-          )}
-        </ResultSection>
-      )
-    }
-
-    <ScopeSection
-      platformData={platformData}
-      scope={program.scope}
-      domains={program.domains}
-      outOfScope={program.out_of_scope}
-    />
-
-    {kevData && <KevSection kevData={kevData} />}
-
-    {
-      (legalItems.length > 0 ||
-        (program.standards && program.standards.length > 0)) && (
-        <ResultSection heading="Legal & Standards">
-          {legalItems.length > 0 && <DefList items={legalItems} />}
-          {program.standards && program.standards.length > 0 && (
-            <div class="sub-section">
-              <h3>
-                <Tooltip text={tips.standards}>Standards</Tooltip>
-              </h3>
-              <div class="chip-group">
-                {program.standards.map((s) => (
-                  <Chip color="var(--muted)" size="sm">
-                    {s}
-                  </Chip>
-                ))}
-              </div>
-            </div>
-          )}
-        </ResultSection>
-      )
-    }
-
-    {
-      recognitionItems.length > 0 && (
-        <ResultSection heading="Recognition">
-          <DefList items={recognitionItems} />
-        </ResultSection>
-      )
-    }
-
-    {
-      securityItems.length > 0 && (
-        <ResultSection heading="Security">
-          <DefList items={securityItems} />
-        </ResultSection>
-      )
-    }
-
-    {
-      securityTxt && securityTxtItems.length > 0 && (
-        <ResultSection heading="security.txt">
-          {securityTxt.is_expired && (
-            <Chip
-              slot="badge"
-              color="var(--warning)"
-              tooltip={tips.securityTxtExpired}
-              size="sm"
-              filled
-            >
-              expired
-            </Chip>
-          )}
-          <DefList items={securityTxtItems} />
-          {securityTxt.raw_url && (
-            <a
-              href={securityTxt.raw_url}
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-link"
-            >
-              View raw security.txt &rarr;
-            </a>
-          )}
-        </ResultSection>
-      )
-    }
-
-    {
-      additionalItems.length > 0 && (
-        <ResultSection heading="Additional Info">
-          <DefList items={additionalItems} />
-        </ResultSection>
-      )
-    }
-  </article>
+        {additionalItems.length > 0 && (
+          <ResultSection heading="Additional Info">
+            <DefList items={additionalItems} />
+          </ResultSection>
+        )}
+      </article>
+    )
+  }
 </DefaultLayout>
 
 <style>

@@ -1,0 +1,34 @@
+---
+// List of companies who hate security
+export const REMOVED_PAGES = ["early-warning"];
+---
+
+<div class="listing-removed card">
+  <h1>Listing Removed</h1>
+  <p>
+    The owner of this program has requested security issues not be reported.
+  </p>
+</div>
+
+<style>
+  .listing-removed {
+    text-align: center;
+    padding: 3rem 1rem;
+    max-width: 36rem;
+    margin: 2rem auto;
+    border: 2px solid transparent;
+    color: var(--foreground);
+    border-radius: var(--curve);
+    transition: var(--transition);
+    box-shadow: var(--shadow);
+    background: var(--background-lighter);
+    h1 {
+      color: var(--danger);
+      margin-bottom: 0.5rem;
+    }
+    p {
+      color: var(--muted);
+    }
+  }
+
+</style>
