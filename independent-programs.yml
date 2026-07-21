@@ -597,6 +597,31 @@ companies:
   - physical_access
   hall_of_fame_url: https://www.joindeed.com/security
 
+- company: Hellomatik
+  url: https://hellomatik.com/security
+  contact: mailto:administracion@hellomatik.com
+  rewards:
+  - '*recognition'
+  program_type: vdp
+  status: active
+  safe_harbor: full
+  allows_disclosure: true
+  preferred_languages: en, es
+  description: 'Hellomatik''s public Vulnerability Disclosure Policy for good-faith security research on Hellomatik-operated services. Reports are acknowledged within 3 business days, with safe harbor for good-faith research and coordinated disclosure after fixes are confirmed. In scope: hellomatik.com and Hellomatik application services. Recognition/credit is offered (no monetary bounty).'
+  out_of_scope:
+  - Customer-owned websites and systems
+  - Third-party services used by Hellomatik
+  - Automated scanner results without demonstrated impact
+  - Missing security headers on pages without sensitive actions
+  - Findings requiring physical access
+  domains:
+  - hellomatik.com
+  response_sla_days: 3
+  testing_policy_url: https://hellomatik.com/security
+  reporting_url: https://hellomatik.com/contact
+  standards:
+  - RFC 9116
+
 - company: Hitachi
   url: https://www.hitachi.com/hirt/
   contact: https://www8.hitachi.co.jp/inquiry/hitachi-ltd/it/hirt/en/form.jsp
