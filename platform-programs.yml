@@ -160,7 +160,8 @@ companies:
   url: http://abercrombie.com
   handle: abercrombie_fitch
   contact: https://hackerone.com/abercrombie_fitch
-  rewards: []
+  rewards:
+  - '*bounty'
 - company: Abn Amro
   url: https://www.abnamro.nl/en/personal/overabnamro/secure-banking/responsible-disclosure.html
   contact: mailto:responsible.disclosure@nl.abnamro.com
@@ -12141,6 +12142,7 @@ companies:
   - '*recognition'
 - company: SolarWinds
   url: https://www.solarwinds.com/information-security/vulnerability-disclosure-policy
+  handle: solarwindsvdp
   contact: mailto:security@solarwinds.com
   rewards: []
 - company: Solidus
