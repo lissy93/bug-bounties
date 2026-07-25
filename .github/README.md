@@ -21,6 +21,7 @@
 <details open><summary><h4>A</h4></summary>
 
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [AAVE](https://immunefi.com/bug-bounty/aave/) 💰
+- <img src='https://icon.horse/icon/abercrombie.com' width='16'/> [Abercrombie & Fitch Management Co.](http://abercrombie.com) 💰
 - <img src='https://icon.horse/icon/www.abnamro.nl' width='16'/> [Abn Amro](https://www.abnamro.nl/en/personal/overabnamro/secure-banking/responsible-disclosure.html) 💰
 - <img src='https://icon.horse/icon/personal.rbs.co.uk' width='16'/> [ABNAMRO BANK](https://personal.rbs.co.uk/personal/fraud-and-security/responsible-disclosure.html) 🏅
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Acala](https://immunefi.com/bug-bounty/acala/) 💰
