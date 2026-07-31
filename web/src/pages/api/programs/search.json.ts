@@ -178,6 +178,7 @@ export const GET: APIRoute = async ({ url }) => {
       currency: p.currency,
       safe_harbor: p.safe_harbor,
       managed: p.managed,
+      contact: p.contact,
       domains: p.domains,
       program_type: p.program_type,
       tranco_rank: null,
