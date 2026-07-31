@@ -125,7 +125,8 @@ async function main() {
   const trimmedTop = trimmed.structuredContent?.results?.[0];
   check(
     "verbose=true keeps fields stripped from default trim",
-    Array.isArray(verboseTop?.domains) && trimmedTop?.domains === undefined,
+    typeof verboseTop?.contact === "string" &&
+      trimmedTop?.contact === undefined,
   );
 
   const get = await call("tools/call", {
