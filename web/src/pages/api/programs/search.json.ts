@@ -1,5 +1,5 @@
 import type { APIRoute } from "astro";
-import { loadAllPrograms } from "@lib/load-all-programs";
+import { loadBounties } from "@lib/data";
 import {
   ALL_FIELDS,
   isSearchField,
@@ -158,11 +158,11 @@ export const GET: APIRoute = async ({ url }) => {
     filters.programType = programType as SearchFilters["programType"];
   }
 
-  const { programs, trancoRanks, kevCounts } = await loadAllPrograms();
+  const programs = loadBounties();
   const { scored, tokens } = searchPrograms(
     programs,
     { q, fields, sort, filters },
-    trancoRanks,
+    {},
   );
 
   const page = scored
@@ -180,8 +180,8 @@ export const GET: APIRoute = async ({ url }) => {
       managed: p.managed,
       domains: p.domains,
       program_type: p.program_type,
-      tranco_rank: trancoRanks[p.slug] ?? null,
-      kev_count: kevCounts[p.slug] ?? 0,
+      tranco_rank: null,
+      kev_count: 0,
       score: Math.round(score),
       matched_fields: matchedFields,
     }));
