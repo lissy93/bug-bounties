@@ -39,6 +39,14 @@ export const OPTIONS: APIRoute = () =>
     },
   });
 
+/* Accurate HEAD for routes whose GET is cheap */
+export const headOf =
+  (get: APIRoute): APIRoute =>
+  async (ctx) => {
+    const { status, headers } = await get(ctx);
+    return new Response(null, { status, headers });
+  };
+
 /* ALL shadows Astro's HEAD-from-GET fallback, so answer HEAD here */
 export const ALL: APIRoute = ({ request }) =>
   request.method === "HEAD"

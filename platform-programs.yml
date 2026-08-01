@@ -9976,8 +9976,6 @@ companies:
   contact: https://hackerone.com/hyland_software
   rewards: []
   managed: true
-  domains:
-  - experience.hyland.com,*.app.hyland.eu
 - company: Hyperlane
   url: https://immunefi.com/bug-bounty/hyperlane/
   contact: https://immunefi.com/bug-bounty/hyperlane/
@@ -13150,8 +13148,6 @@ companies:
   managed: true
   safe_harbor: full
   max_payout: 2000.0
-  domains:
-  - bugcrowd-*your-own-instance*.cloud.mattermost.com
 - company: matthewd.xyz
   url: https://matthewd.xyz/security
   contact: mailto:security@matthewd.xyz

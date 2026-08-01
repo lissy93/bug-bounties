@@ -1,5 +1,5 @@
 import type { APIRoute } from "astro";
-import { ALL, OPTIONS, cacheFor, error, json } from "@lib/api";
+import { ALL, OPTIONS, cacheFor, error, headOf, json } from "@lib/api";
 import { loadBounties } from "@lib/data";
 import {
   ALL_FIELDS,
@@ -187,3 +187,5 @@ export const GET: APIRoute = async ({ url }) => {
     cacheFor(300),
   );
 };
+
+export const HEAD = headOf(GET);
