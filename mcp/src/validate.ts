@@ -1,6 +1,6 @@
 const SLUG = /^[a-z0-9-]+$/;
 const PRIVATE_HOST =
-  /^(localhost|.*\.local|127\.|10\.|192\.168\.|169\.254\.|::1$|0\.0\.0\.0$)/i;
+  /^(localhost$|.*\.local(host)?$|127\.|10\.|172\.(1[6-9]|2\d|3[01])\.|192\.168\.|169\.254\.|\[?::1\]?$|0\.0\.0\.0$)/i;
 
 export function validSlug(s: string): boolean {
   return SLUG.test(s) && s.length > 0 && s.length <= 100;

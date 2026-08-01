@@ -13533,7 +13533,7 @@ companies:
   - '*swag'
 - company: TTS
   url: https://github.com/18F/vulnerability-disclosure-policy/blob/master/vulnerability-disclosure-policy.md
-  handle: github
+  handle: tts
   contact: https://hackerone.com/tts
   rewards:
   - '*bounty'
@@ -14755,9 +14755,7 @@ companies:
   rewards:
   - '*bounty'
 - company: XT
-  url: https://hackenproof.com/1inch/1inch-smart-contract
-  handle: metamask
-  contact: mailto:support@plisio.net
+  url: https://hackenproof.com/xt
   rewards:
   - '*bounty'
   - '*swag'
