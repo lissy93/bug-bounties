@@ -33,11 +33,19 @@ export const OPTIONS: APIRoute = () =>
     status: 204,
     headers: {
       "Access-Control-Allow-Origin": "*",
-      "Access-Control-Allow-Methods": "GET, OPTIONS",
+      "Access-Control-Allow-Methods": "GET, HEAD, OPTIONS",
       "Access-Control-Allow-Headers": "Content-Type",
       "Access-Control-Max-Age": "86400",
     },
   });
 
-export const ALL: APIRoute = () =>
-  error(405, "Method not allowed", { Allow: "GET, OPTIONS" });
+/* ALL shadows Astro's HEAD-from-GET fallback, so answer HEAD here */
+export const ALL: APIRoute = ({ request }) =>
+  request.method === "HEAD"
+    ? new Response(null, {
+        headers: {
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*",
+        },
+      })
+    : error(405, "Method not allowed", { Allow: "GET, HEAD, OPTIONS" });

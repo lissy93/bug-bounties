@@ -141,8 +141,7 @@ export const GET: APIRoute = async ({ url }) => {
     filters.programType = programType as SearchFilters["programType"];
   }
 
-  const programs = loadBounties();
-  const { scored, tokens } = searchPrograms(programs, {
+  const { scored, tokens } = searchPrograms(loadBounties(), {
     q,
     fields,
     sort,

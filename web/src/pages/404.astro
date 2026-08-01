@@ -1,6 +1,16 @@
 ---
 import DefaultLayout from "@layouts/DefaultLayout.astro";
 import Header from "@components/Header.astro";
+import { error } from "@lib/api";
+
+export const prerender = false;
+
+/* An HTML 404 reads as a broken endpoint to API clients */
+const { pathname } = Astro.url;
+const apiNotFound = pathname.startsWith("/api/")
+  ? error(404, `Not found: ${pathname}`)
+  : null;
+if (apiNotFound) return apiNotFound;
 ---
 
 <DefaultLayout

@@ -79,6 +79,11 @@ export function stripWww(hostname: string): string {
   return hostname.startsWith("www.") ? hostname.slice(4) : hostname;
 }
 
+/* "www.acme.co.uk" -> "acme" */
+export function registrableLabel(hostname: string): string {
+  return getRegistrableDomain(stripWww(hostname.toLowerCase())).split(".")[0];
+}
+
 // Domains that appear in many programs' scope as third-party services,
 // not as the company's own domain. Only filtered when picking from the
 // domains list (not when the program URL points directly to these).

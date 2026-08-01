@@ -15,7 +15,9 @@ export const GET: APIRoute = async () => {
     if (p.rewards?.includes("*bounty")) rewards.bounty++;
     if (p.rewards?.includes("*recognition")) rewards.recognition++;
     if (p.rewards?.includes("*swag")) rewards.swag++;
-    if (p.safe_harbor) withSafeHarbor++;
+    /* Upstream writes a literal "none" */
+    if (p.safe_harbor && p.safe_harbor.toLowerCase() !== "none")
+      withSafeHarbor++;
     if (p.managed) withManaged++;
     if (p.max_payout != null && p.max_payout > 0) {
       if (p.max_payout < minPayout) minPayout = p.max_payout;

@@ -18,6 +18,10 @@
       "type": "string",
       "description": "Platform-specific program handle or slug"
     },
+    "managed": {
+      "type": "boolean",
+      "description": "Program is triaged by the platform"
+    },
     "contact": {
       "type": "string",
       "description": "Contact URL (mailto: or https://) or empty string"

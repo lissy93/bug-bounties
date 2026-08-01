@@ -23,6 +23,10 @@ const spec = {
   },
   servers: [
     { url: "https://bug-bounties.as93.net", description: "Production" },
+    {
+      url: "https://bug-bounties.vercel.app",
+      description: "Production mirror",
+    },
     { url: "http://localhost:4321", description: "Development" },
   ],
   tags: [
@@ -383,7 +387,7 @@ const spec = {
           },
           "429": {
             description:
-              "Rate limit exceeded. All /api/lookup/* endpoints share one budget: 8/min, 100/hour, 300/day per IP.",
+              "Rate limit exceeded. All /api/lookup/* endpoints share one budget: 8/min, 100/hour, 300/day per IP, per instance.",
             headers: {
               "Retry-After": {
                 description: "Seconds until the rate limit resets",
@@ -472,7 +476,7 @@ const spec = {
           },
           "429": {
             description:
-              "Rate limit exceeded. All /api/lookup/* endpoints share one budget: 8/min, 100/hour, 300/day per IP.",
+              "Rate limit exceeded. All /api/lookup/* endpoints share one budget: 8/min, 100/hour, 300/day per IP, per instance.",
             headers: {
               "Retry-After": {
                 description: "Seconds until the rate limit resets",
@@ -554,7 +558,7 @@ const spec = {
           },
           "429": {
             description:
-              "Rate limit exceeded. All /api/lookup/* endpoints share one budget: 8/min, 100/hour, 300/day per IP.",
+              "Rate limit exceeded. All /api/lookup/* endpoints share one budget: 8/min, 100/hour, 300/day per IP, per instance.",
             headers: {
               "Retry-After": {
                 description: "Seconds until the rate limit resets",
@@ -630,7 +634,7 @@ const spec = {
           },
           "429": {
             description:
-              "Rate limit exceeded. All /api/lookup/* endpoints share one budget: 8/min, 100/hour, 300/day per IP.",
+              "Rate limit exceeded. All /api/lookup/* endpoints share one budget: 8/min, 100/hour, 300/day per IP, per instance.",
             headers: {
               "Retry-After": {
                 description: "Seconds until the rate limit resets",
@@ -718,7 +722,7 @@ const spec = {
           },
           "429": {
             description:
-              "Rate limit exceeded. All /api/lookup/* endpoints share one budget: 8/min, 100/hour, 300/day per IP.",
+              "Rate limit exceeded. All /api/lookup/* endpoints share one budget: 8/min, 100/hour, 300/day per IP, per instance.",
             headers: {
               "Retry-After": {
                 description: "Seconds until the rate limit resets",

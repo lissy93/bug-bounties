@@ -58,7 +58,8 @@ PAREN_RE = re.compile(r"\s*\([^)]*\)\s*")
 
 FIELD_ORDER = [
     "company", "url", "handle", "contact",
-    "rewards",
+    "rewards", "managed", "safe_harbor",
+    "max_payout", "min_payout", "currency", "domains",
 ]
 
 DEFAULT_HEADER = """\
@@ -205,6 +206,43 @@ def _get(p: dict, key: str, fallback: str = "") -> str:
     return str(val if val is not None else fallback).strip()
 
 
+# Refreshed from upstream on every run, unlike curated fields
+DERIVED_FIELDS = ("managed", "safe_harbor", "max_payout",
+                  "min_payout", "currency", "domains")
+MAX_DOMAINS = 25
+TARGET_KEYS = ("asset_identifier", "name", "uri", "endpoint", "target")
+# Scope entries are free text: wildcards, ports, IPs, regex and prose
+HOSTNAME_RE = re.compile(r"^[a-z0-9-]+(\.[a-z0-9-]+)+$")
+
+
+def scope_domains(p: dict) -> list[str]:
+    """Hostnames from a program's in-scope targets."""
+    hosts = set()
+    for t in (p.get("targets") or {}).get("in_scope") or []:
+        raw = next((_get(t, k) for k in TARGET_KEYS if _get(t, k)), "")
+        host = raw.split("://")[-1].lstrip("*.").split("/")[0].strip().lower()
+        host = host.removeprefix("www.")
+        if HOSTNAME_RE.match(host) and not host.replace(".", "").isdigit():
+            hosts.add(host)
+    return sorted(hosts)[:MAX_DOMAINS]
+
+
+def payout(val: object) -> float | None:
+    """Payout, which upstream gives as a number or {value, currency}."""
+    return safe_float(val) or None
+
+
+def currency_of(val: object) -> str:
+    """Upstream nests the currency inside the payout object."""
+    return _get(val, "currency") if isinstance(val, dict) else ""
+
+
+def safe_harbor(val: object) -> str:
+    """Upstream also sends 'none', 'yes' and 'Partial'; the schema allows two."""
+    v = str(val or "").strip().lower()
+    return v if v in ("full", "partial") else ""
+
+
 def normalize_hackerone(data: list[dict]) -> list[dict]:
     """Normalize HackerOne program data."""
     entries = []
@@ -226,6 +264,7 @@ def normalize_hackerone(data: list[dict]) -> list[dict]:
             name, url,
             contact=platform_url, rewards=rewards,
             handle=_get(p, "handle"),
+            managed=p.get("managed_program"), domains=scope_domains(p),
         ))
     return entries
 
@@ -245,6 +284,9 @@ def normalize_bugcrowd(data: list[dict]) -> list[dict]:
         entries.append(make_entry(
             name, url,
             contact=url, rewards=rewards,
+            managed=p.get("managed_by_bugcrowd"),
+            safe_harbor=safe_harbor(p.get("safe_harbor")),
+            max_payout=payout(p.get("max_payout")), domains=scope_domains(p),
         ))
     return entries
 
@@ -267,6 +309,10 @@ def normalize_intigriti(data: list[dict]) -> list[dict]:
             name, url,
             contact=url, rewards=rewards,
             handle=_get(p, "handle") or _get(p, "company_handle"),
+            max_payout=payout(p.get("max_bounty")),
+            min_payout=payout(p.get("min_bounty")),
+            currency=currency_of(p.get("max_bounty")),
+            domains=scope_domains(p),
         ))
     return entries
 
@@ -288,6 +334,7 @@ def normalize_yeswehack(data: list[dict]) -> list[dict]:
         entries.append(make_entry(
             name, url,
             contact=url, rewards=rewards,
+            max_payout=payout(p.get("max_bounty")), domains=scope_domains(p),
         ))
     return entries
 
@@ -333,6 +380,7 @@ def normalize_disclose(data: list | dict) -> list[dict]:
         entries.append(make_entry(
             name, url,
             contact=contact, rewards=rewards,
+            safe_harbor=safe_harbor(p.get("safe_harbor")),
         ))
     return entries
 
@@ -374,6 +422,7 @@ def normalize_immunefi(data: list[dict]) -> list[dict]:
         entries.append(make_entry(
             name, url,
             contact=url, rewards=rewards,
+            max_payout=payout(p.get("maximum_reward")),
         ))
     return entries
 
@@ -407,7 +456,7 @@ def normalize_all(raw_data: dict[str, list | dict]) -> tuple[list[dict], dict[st
 
 
 def _merge_group(group: list[dict]) -> dict:
-    """Merge a group of duplicate entries into one (core fields only)."""
+    """Merge a group of duplicate entries into one."""
     best = min(group, key=lambda e: len(e["company"]))
     merged = {"company": best["company"], "url": best["url"]}
 
@@ -433,6 +482,13 @@ def _merge_group(group: list[dict]) -> dict:
         if e.get("handle"):
             merged["handle"] = e["handle"]
             break
+
+    # Derived platform fields: first non-empty wins
+    for key in DERIVED_FIELDS:
+        for e in group:
+            if e.get(key) is not None:
+                merged[key] = e[key]
+                break
 
     # Rewards: union
     rewards = {v for e in group for v in e.get("rewards", [])}
@@ -502,8 +558,8 @@ def validate_entries(entries: list[dict], schema: dict) -> list[dict]:
 
 
 def enrich_entry(existing: dict, incoming: dict) -> None:
-    """Enrich an existing entry with incoming data (existing values win).
-    Only fills core fields - enrichment data is derived at build time."""
+    """Enrich an existing entry with incoming data (curated values win).
+    Derived platform fields are refreshed, since upstream is authoritative."""
     # Contact: only fill gaps
     if not existing.get("contact") and incoming.get("contact"):
         existing["contact"] = incoming["contact"]
@@ -511,6 +567,10 @@ def enrich_entry(existing: dict, incoming: dict) -> None:
     # Handle: only fill gaps (needed for non-platform-URL matching)
     if "handle" not in existing and incoming.get("handle"):
         existing["handle"] = incoming["handle"]
+
+    for key in DERIVED_FIELDS:
+        if incoming.get(key) is not None:
+            existing[key] = incoming[key]
 
     # Rewards: union
     items = set(existing.get("rewards") or [])

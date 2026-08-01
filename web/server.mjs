@@ -22,11 +22,26 @@ const serveStatic = sirv(clientDir, {
 	immutable: false,
 });
 
+/* Real ones are prerendered above; Astro 500s on the rest, unlike Vercel/Netlify */
+const MISSING_PROGRAM = /^\/api\/programs\/(?!search\.json)[^/]+\.json(\?|$)/;
+
 const server = createServer((req, res) => {
 	for (const [k, v] of Object.entries(securityHeaders)) res.setHeader(k, v);
 	if (req.url?.startsWith('/api/'))
 		res.setHeader('Access-Control-Allow-Origin', '*');
-	serveStatic(req, res, () => ssr(req, res));
+	serveStatic(req, res, () => {
+		if (MISSING_PROGRAM.test(req.url ?? '')) {
+			const path = (req.url ?? '').split('?')[0];
+			res.writeHead(404, {
+				'Content-Type': 'application/json',
+				'Cache-Control': 'no-store',
+			});
+			return res.end(
+				JSON.stringify({ error: `Not found: ${path}`, status: 404 }),
+			);
+		}
+		return ssr(req, res);
+	});
 });
 
 const shutdown = (signal) => {

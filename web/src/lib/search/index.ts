@@ -6,7 +6,7 @@ import {
   type ScoredProgram,
   type SearchField,
 } from "./score";
-import { normalize, tokenize } from "./tokens";
+import { normalize, tokenizeQuery } from "./tokens";
 
 export type SortMode = "relevance" | "name" | "payout";
 
@@ -35,7 +35,9 @@ function passesFilters(p: BountyProgram, f: SearchFilters): boolean {
     Boolean(p.rewards?.includes("*bounty")) !== f.hasBounty
   )
     return false;
-  if (f.safeHarbor && p.safe_harbor !== f.safeHarbor) return false;
+  /* Upstream mixes "Partial" and "partial" */
+  if (f.safeHarbor && p.safe_harbor?.toLowerCase() !== f.safeHarbor)
+    return false;
   if (f.managed != null && Boolean(p.managed) !== f.managed) return false;
   if (f.programType && p.program_type !== f.programType) return false;
   return true;
@@ -62,19 +64,19 @@ export function searchPrograms(
   programs: BountyProgram[],
   opts: SearchOptions,
 ): SearchOutcome {
-  const tokens = tokenize(opts.q);
+  const tokens = tokenizeQuery(opts.q);
   if (!tokens.length) return { scored: [], tokens };
 
   const fields = opts.fields?.length ? opts.fields : ALL_FIELDS;
   const filters = opts.filters ?? {};
   const prepared = prepare(programs);
   const sort = opts.sort ?? "relevance";
-  const phrase = tokens.length > 1 ? normalize(opts.q) : null;
+  const normalized = normalize(opts.q.trim());
 
   const scored: ScoredProgram[] = [];
   for (const pp of prepared) {
     if (!passesFilters(pp.program, filters)) continue;
-    const s = scoreProgram(pp, tokens, phrase, fields);
+    const s = scoreProgram(pp, tokens, normalized, fields);
     if (s) scored.push(s);
   }
   scored.sort((a, b) => compareScored(a, b, sort));
