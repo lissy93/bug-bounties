@@ -168,23 +168,16 @@ export function registerTools(server: McpServer, api: ApiClient): void {
     input: SearchInput,
     output: SearchOutput,
     run: async ({ verbose, ...rest }, c) => {
-      const data = (await c.get("/api/programs.json")) as {
+      const data = (await c.get("/api/programs/search.json", rest)) as {
         meta: unknown;
-        programs: Record<string, unknown>[];
+        results: Record<string, unknown>[];
+        hint?: unknown;
       };
-      const q = String(rest.q || "").toLowerCase().trim();
-      let results: Record<string, unknown>[];
-      if (q) {
-        results = data.programs.filter((p: Record<string, unknown>) =>
-          [p.company, p.slug, p.domains, p.url, p.handle]
-            .some(f => f && String(f).toLowerCase().includes(q))
-        );
-      } else {
-        results = data.programs;
-      }
+      const results = verbose ? data.results : data.results.map(trimResult);
       return {
         meta: data.meta,
-        results: verbose ? results : results.map(trimResult),
+        results,
+        ...(data.hint ? { hint: data.hint } : {}),
       };
     },
   });
