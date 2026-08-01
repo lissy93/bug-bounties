@@ -6,6 +6,7 @@ export function levenshtein(a: string, b: string, max: number): number {
   if (!al) return bl;
   if (!bl) return al;
 
+  let prev2: number[] | null = null;
   let prev = new Array<number>(bl + 1);
   for (let j = 0; j <= bl; j++) prev[j] = j;
 
@@ -15,11 +16,24 @@ export function levenshtein(a: string, b: string, max: number): number {
     let rowMin = curr[0];
     const ac = a.charCodeAt(i - 1);
     for (let j = 1; j <= bl; j++) {
-      const cost = ac === b.charCodeAt(j - 1) ? 0 : 1;
-      curr[j] = Math.min(curr[j - 1] + 1, prev[j] + 1, prev[j - 1] + cost);
-      if (curr[j] < rowMin) rowMin = curr[j];
+      const bc = b.charCodeAt(j - 1);
+      const cost = ac === bc ? 0 : 1;
+      let v = Math.min(curr[j - 1] + 1, prev[j] + 1, prev[j - 1] + cost);
+      /* Damerau: a swap ("appel"/"apple") is one edit */
+      if (
+        prev2 &&
+        i > 1 &&
+        j > 1 &&
+        ac === b.charCodeAt(j - 2) &&
+        a.charCodeAt(i - 2) === bc
+      ) {
+        v = Math.min(v, prev2[j - 2] + 1);
+      }
+      curr[j] = v;
+      if (v < rowMin) rowMin = v;
     }
     if (rowMin > max) return max + 1;
+    prev2 = prev;
     prev = curr;
   }
   return prev[bl];

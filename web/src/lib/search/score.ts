@@ -1,4 +1,10 @@
 import type { BountyProgram } from "@app-types/Company";
+import {
+  getRegistrableDomain,
+  isPlatformHost,
+  registrableLabel,
+  stripWww,
+} from "@lib/domain";
 import { normalize, tokenize } from "./tokens";
 import { fuzzyThreshold, levenshtein } from "./levenshtein";
 
@@ -9,6 +15,7 @@ export type SearchField =
   | "domains"
   | "description"
   | "notes"
+  | "url"
   | "standards"
   | "scope";
 
@@ -19,6 +26,7 @@ const FIELD_WEIGHTS: Record<SearchField, number> = {
   domains: 0.7,
   description: 0.45,
   notes: 0.4,
+  url: 0.3,
   standards: 0.3,
   scope: 0.3,
 };
@@ -27,8 +35,10 @@ export const ALL_FIELDS: SearchField[] = Object.keys(
   FIELD_WEIGHTS,
 ) as SearchField[];
 
+const IDENTITY_FIELDS: SearchField[] = ["company", "slug", "handle", "url"];
+
 export function isSearchField(v: string): v is SearchField {
-  return v in FIELD_WEIGHTS;
+  return Object.hasOwn(FIELD_WEIGHTS, v);
 }
 
 interface FieldEntry {
@@ -50,11 +60,29 @@ function entries(values: (string | undefined | null)[]): FieldEntry[] {
     .map((v) => ({ raw: normalize(v), tokens: tokenize(v) }));
 }
 
+/* Separate from PLATFORM_HOSTNAMES, which logo and enrichment still need */
+const SHARED_HOSTS = new Set(["zendesk.com", "responsibledisclosure.com"]);
+
+/* Shared hosts name the host, not the company, so index nothing */
+function urlLabel(url: string): string | null {
+  let host: string;
+  try {
+    host = stripWww(new URL(url).hostname);
+  } catch {
+    return null;
+  }
+  if (isPlatformHost(host)) return null;
+  if (SHARED_HOSTS.has(getRegistrableDomain(host))) return null;
+  return registrableLabel(host);
+}
+
 function prepareOne(p: BountyProgram): PreparedProgram {
   const fields: Partial<Record<SearchField, FieldEntry[]>> = {};
   fields.company = entries([p.company]);
   if (p.handle) fields.handle = entries([p.handle]);
   fields.slug = entries([p.slug]);
+  const label = urlLabel(p.url);
+  if (label) fields.url = entries([label]);
   if (p.domains?.length) fields.domains = entries(p.domains);
   if (p.description) fields.description = entries([p.description]);
   if (p.notes) fields.notes = entries([p.notes]);
@@ -106,7 +134,7 @@ export interface ScoredProgram {
 export function scoreProgram(
   pp: PreparedProgram,
   queryTokens: string[],
-  normalizedPhrase: string | null,
+  normalizedQuery: string,
   fields: SearchField[],
 ): ScoredProgram | null {
   if (!queryTokens.length) return null;
@@ -118,7 +146,7 @@ export function scoreProgram(
     let bestField: SearchField | null = null;
     for (const field of fields) {
       const list = pp.fields[field];
-      if (!list) continue;
+      if (!Array.isArray(list)) continue;
       const w = FIELD_WEIGHTS[field];
       for (const entry of list) {
         const pts = scoreToken(tok, entry) * w;
@@ -133,9 +161,21 @@ export function scoreProgram(
     if (bestField) matched.add(bestField);
   }
 
-  if (normalizedPhrase) {
+  /* Keeps "Crypto.com" above "Crypto" after the TLD is dropped. Identity
+     fields only: one of 25 scope domains must not outrank a company's name */
+  let exact = 0;
+  for (const field of IDENTITY_FIELDS) {
+    if (!fields.includes(field)) continue;
+    const list = pp.fields[field];
+    if (list?.some((e) => e.raw === normalizedQuery)) {
+      exact = Math.max(exact, 100 * FIELD_WEIGHTS[field]);
+    }
+  }
+  total += exact;
+
+  if (normalizedQuery.includes(" ")) {
     const company = pp.fields.company?.[0];
-    if (company?.raw.includes(normalizedPhrase)) total += 30;
+    if (company?.raw.includes(normalizedQuery)) total += 30;
   }
 
   return { program: pp.program, score: total, matchedFields: [...matched] };

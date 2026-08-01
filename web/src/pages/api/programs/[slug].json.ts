@@ -1,4 +1,5 @@
 import type { APIRoute, GetStaticPaths } from "astro";
+import { json } from "@lib/api";
 import { loadAllPrograms } from "@lib/load-all-programs";
 import type {
   BountyProgram,
@@ -35,27 +36,21 @@ export const GET: APIRoute = async ({ props }) => {
   const { program, trancoRank, securityTxt, platformData, kevData } =
     props as Props;
 
-  return new Response(
-    JSON.stringify({
-      program,
-      enrichment: {
-        tranco_rank: trancoRank,
-        security_txt: securityTxt,
-        platform_scope: platformData
-          ? {
-              scope_stats: platformData.scopeStats,
-              in_scope_targets: platformData.inScopeTargets,
-              out_of_scope_targets: platformData.outOfScopeTargets,
-              allows_bounty_splitting:
-                platformData.allowsBountySplitting ?? null,
-              max_severity: platformData.maxSeverity ?? null,
-            }
-          : null,
-        kev: kevData,
-      },
-    }),
-    {
-      headers: { "Content-Type": "application/json" },
+  return json({
+    program,
+    enrichment: {
+      tranco_rank: trancoRank,
+      security_txt: securityTxt,
+      platform_scope: platformData
+        ? {
+            scope_stats: platformData.scopeStats,
+            in_scope_targets: platformData.inScopeTargets,
+            out_of_scope_targets: platformData.outOfScopeTargets,
+            allows_bounty_splitting: platformData.allowsBountySplitting ?? null,
+            max_severity: platformData.maxSeverity ?? null,
+          }
+        : null,
+      kev: kevData,
     },
-  );
+  });
 };

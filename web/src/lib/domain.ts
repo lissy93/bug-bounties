@@ -9,6 +9,9 @@ export const PLATFORM_HOSTNAMES = new Set([
   "cobalt.io",
   "federacy.com",
   "immunefi.com",
+  "hackenproof.com",
+  "openbugbounty.org",
+  "zerocopter.com",
 ]);
 
 // Two-part TLDs where the registrable domain is the last 3 segments
@@ -17,6 +20,14 @@ const TWO_PART_TLDS = new Set([
   "org.uk",
   "ac.uk",
   "gov.uk",
+  "gov.au",
+  "gov.sg",
+  "gov.it",
+  "gov.np",
+  "gov.ua",
+  "co.id",
+  "or.id",
+  "org.pl",
   "co.jp",
   "or.jp",
   "ne.jp",
@@ -66,6 +77,11 @@ export function getRegistrableDomain(hostname: string): string {
 
 export function stripWww(hostname: string): string {
   return hostname.startsWith("www.") ? hostname.slice(4) : hostname;
+}
+
+/* "www.acme.co.uk" -> "acme" */
+export function registrableLabel(hostname: string): string {
+  return getRegistrableDomain(stripWww(hostname.toLowerCase())).split(".")[0];
 }
 
 // Domains that appear in many programs' scope as third-party services,

@@ -105,7 +105,7 @@ export async function runFullPackageLookup(
     /* Run website lookup against the homepage if it's not a repo host */
     if (homepage && isUsableHomepage(homepage)) {
       try {
-        const domainCtx = resolveDomain(homepage);
+        const domainCtx = await resolveDomain(homepage);
         mergeResponse(
           data,
           await runLookup(domainCtx, webTier1, webTier2, deep),

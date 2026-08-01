@@ -32,14 +32,14 @@ if (!domain) {
   errorSuggestion = "Try entering a valid domain like stripe.com.";
 } else {
   try {
-    const ctx = resolveDomain(domain);
+    const ctx = await resolveDomain(domain);
     data = await runLookup(ctx, webTier1, webTier2, deep);
   } catch (err) {
     const msg = err instanceof Error ? err.message : "Unknown error";
     if (
       msg.includes("Invalid") ||
-      msg.includes("private") ||
-      msg.includes("reserved")
+      msg.includes("Private") ||
+      msg.includes("resolve")
     ) {
       errorTitle = "Invalid Domain";
       errorMessage = msg;

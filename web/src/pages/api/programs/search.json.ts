@@ -1,4 +1,5 @@
 import type { APIRoute } from "astro";
+import { ALL, OPTIONS, cacheFor, error, json } from "@lib/api";
 import { loadBounties } from "@lib/data";
 import {
   ALL_FIELDS,
@@ -10,6 +11,7 @@ import {
 } from "@lib/search";
 
 export const prerender = false;
+export { ALL, OPTIONS };
 
 const MAX_Q = 200;
 const MAX_LIMIT = 100;
@@ -18,7 +20,6 @@ const MAX_OFFSET = 10000;
 const VALID_SORTS: ReadonlySet<SortMode> = new Set([
   "relevance",
   "name",
-  "popularity",
   "payout",
 ]);
 const VALID_PROGRAM_TYPES = new Set(["bounty", "vdp", "hybrid"]);
@@ -48,24 +49,6 @@ function noResultsHint(q: string) {
     ],
   };
 }
-
-const baseHeaders = {
-  "Content-Type": "application/json",
-  "Access-Control-Allow-Origin": "*",
-};
-
-const json = (body: unknown, status = 200) =>
-  new Response(JSON.stringify(body), {
-    status,
-    headers: {
-      ...baseHeaders,
-      "Cache-Control":
-        status === 200 ? "public, max-age=300, s-maxage=300" : "no-store",
-    },
-  });
-
-const error = (status: number, message: string) =>
-  json({ error: message, status }, status);
 
 function clampInt(
   raw: string | null,
@@ -158,12 +141,12 @@ export const GET: APIRoute = async ({ url }) => {
     filters.programType = programType as SearchFilters["programType"];
   }
 
-  const programs = loadBounties();
-  const { scored, tokens } = searchPrograms(
-    programs,
-    { q, fields, sort, filters },
-    {},
-  );
+  const { scored, tokens } = searchPrograms(loadBounties(), {
+    q,
+    fields,
+    sort,
+    filters,
+  });
 
   const page = scored
     .slice(offset, offset + limit)
@@ -181,41 +164,26 @@ export const GET: APIRoute = async ({ url }) => {
       contact: p.contact,
       domains: p.domains,
       program_type: p.program_type,
-      tranco_rank: null,
-      kev_count: 0,
       score: Math.round(score),
       matched_fields: matchedFields,
     }));
 
-  return json({
-    meta: {
-      query: q,
-      tokens,
-      total: scored.length,
-      count: page.length,
-      limit,
-      offset,
-      sort,
-      generated: new Date().toISOString(),
+  return json(
+    {
+      meta: {
+        query: q,
+        tokens,
+        total: scored.length,
+        count: page.length,
+        limit,
+        offset,
+        sort,
+        generated: new Date().toISOString(),
+      },
+      results: page,
+      ...(scored.length === 0 ? { hint: noResultsHint(q) } : {}),
     },
-    results: page,
-    ...(scored.length === 0 ? { hint: noResultsHint(q) } : {}),
-  });
+    200,
+    cacheFor(300),
+  );
 };
-
-export const OPTIONS: APIRoute = () =>
-  new Response(null, {
-    status: 204,
-    headers: {
-      "Access-Control-Allow-Origin": "*",
-      "Access-Control-Allow-Methods": "GET, OPTIONS",
-      "Access-Control-Allow-Headers": "Content-Type",
-      "Access-Control-Max-Age": "86400",
-    },
-  });
-
-export const ALL: APIRoute = () =>
-  new Response(JSON.stringify({ error: "Method not allowed", status: 405 }), {
-    status: 405,
-    headers: { ...baseHeaders, Allow: "GET, OPTIONS" },
-  });

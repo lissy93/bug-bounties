@@ -32,7 +32,7 @@ export async function runFullGitHubLookup(
 
     if (hp) {
       try {
-        const domainCtx = resolveDomain(hp);
+        const domainCtx = await resolveDomain(hp);
         const webData = await runLookup(domainCtx, webTier1, webTier2, deep);
         data.results.push(...webData.results);
         data.errors.push(...webData.errors);
