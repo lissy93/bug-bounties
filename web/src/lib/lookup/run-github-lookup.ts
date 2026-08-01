@@ -25,9 +25,10 @@ export async function runFullGitHubLookup(
   const timer = setTimeout(() => ac.abort(), 15_000);
 
   try {
+    /* A homepage failure must not discard the repo results already collected */
     const [data, hp] = await Promise.all([
       runGitHubLookup(ctx, ghTier1, ghTier2, ghSkipT2Only, deep),
-      getRepoHomepage(owner, repo, ac.signal),
+      getRepoHomepage(owner, repo, ac.signal).catch(() => null),
     ]);
 
     if (hp) {

@@ -37,19 +37,30 @@ export async function resolveDomain(input: string): Promise<ResolvedDomain> {
     throw new Error("Only http/https URLs are allowed");
   }
 
-  const hostname = url.hostname;
+  /* Trailing dots are valid in DNS but break registrable-domain parsing */
+  const hostname = url.hostname.replace(/\.$/, "");
   if (!hostname.includes(".")) throw new Error("Invalid hostname");
+
+  const clean = stripWww(hostname);
+  const baseDomain = getRegistrableDomain(clean);
 
   /* Resolving first also normalises IP literals written in octal, decimal or
      IPv4-mapped form, which a textual check on the hostname would miss */
   const addresses = await lookup(hostname, { all: true }).catch(() => []);
   if (!addresses.length) throw new Error("Could not resolve hostname");
-  if (addresses.some(({ address }) => isPrivateAddress(address))) {
-    throw new Error("Private/reserved addresses are not allowed");
+
+  /* Sources fetch clean and baseDomain too, so those must also be checked */
+  const derived = await Promise.all(
+    [...new Set([clean, baseDomain])]
+      .filter((h) => h !== hostname)
+      .map((h) => lookup(h, { all: true }).catch(() => [])),
+  );
+  for (const { address } of [addresses, ...derived].flat()) {
+    if (isPrivateAddress(address)) {
+      throw new Error("Private/reserved addresses are not allowed");
+    }
   }
 
-  const clean = stripWww(hostname);
-  const baseDomain = getRegistrableDomain(clean);
   const companyHint = baseDomain.split(".")[0].toLowerCase();
 
   return { domain: clean, baseDomain, companyHint };

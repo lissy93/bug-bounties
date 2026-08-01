@@ -64,4 +64,13 @@
   .bookmark-btn:hover {
     color: var(--primary, #fdc500);
   }
+  /* Card hover is the only other reveal, so touch and keyboard need these */
+  .bookmark-btn:focus-visible {
+    opacity: 1;
+  }
+  @media (hover: none) {
+    .bookmark-btn {
+      opacity: 1;
+    }
+  }
 </style>

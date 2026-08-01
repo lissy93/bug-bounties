@@ -63,5 +63,5 @@ const structuredData = jsonLd || defaultSchema(description);
 <script
   is:inline
   type="application/ld+json"
-  set:html={JSON.stringify(structuredData)}
+  set:html={JSON.stringify(structuredData).replace(/</g, "\\u003c")}
 />

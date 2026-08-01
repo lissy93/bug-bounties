@@ -12,6 +12,7 @@ import DeepSearchToggle from "@components/results/DeepSearchToggle.svelte";
 import { formatDate } from "@lib/format";
 import { runFullGitHubLookup } from "@lib/lookup/run-github-lookup";
 import { hasGitHubToken } from "@lib/lookup/github-fetch";
+import { resolveRepo } from "@lib/lookup/resolve-repo";
 import type { LookupResponse } from "@lib/lookup/types";
 
 export const prerender = false;
@@ -36,7 +37,11 @@ if (!owner || !repo) {
     "Set GITHUB_TOKEN in the environment to enable GitHub lookups.";
 } else {
   try {
-    data = await runFullGitHubLookup(owner, repo, deep);
+    /* Route params are unvalidated, so apply the same checks as the API */
+    const { owner: safeOwner, repo: safeRepo } = resolveRepo(
+      `${owner}/${repo}`,
+    );
+    data = await runFullGitHubLookup(safeOwner, safeRepo, deep);
   } catch (err) {
     const msg = err instanceof Error ? err.message : "Unknown error";
     errorTitle = "Lookup Failed";

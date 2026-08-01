@@ -41,50 +41,60 @@ async function apiGet(
   const ctrl = new AbortController();
   const timer = setTimeout(() => ctrl.abort(), TIMEOUT_MS);
 
-  let res: Response;
   try {
-    res = await fetch(url, {
-      headers: { Accept: "application/json", "User-Agent": USER_AGENT },
-      signal: ctrl.signal,
-    });
-  } catch (err) {
+    let res: Response;
+    try {
+      res = await fetch(url, {
+        headers: { Accept: "application/json", "User-Agent": USER_AGENT },
+        signal: ctrl.signal,
+      });
+    } catch (err) {
+      const cause = err instanceof Error ? err.message : String(err);
+      throw new ApiError(`Network error: ${cause}`);
+    }
+
+    if (res.status === 429) {
+      const retryAfter = Number(res.headers.get("retry-after") ?? "");
+      throw new ApiError(
+        `Rate limited by upstream API${Number.isFinite(retryAfter) ? `, retry after ${retryAfter}s` : ""}`,
+        429,
+        Number.isFinite(retryAfter) ? retryAfter : undefined,
+      );
+    }
+
+    let text: string;
+    try {
+      text = await readCapped(res, MAX_BYTES);
+    } catch (err) {
+      if (err instanceof ApiError) throw err;
+      const cause = err instanceof Error ? err.message : String(err);
+      throw new ApiError(`Network error while reading response: ${cause}`);
+    }
+
+    let body: unknown;
+    try {
+      body = JSON.parse(text);
+    } catch {
+      const looksHtml = /^\s*<(?:!doctype|html)/i.test(text);
+      throw new ApiError(
+        looksHtml
+          ? `Upstream returned HTML, not JSON (status ${res.status}). The endpoint may not exist on this instance.`
+          : `Invalid JSON from upstream (status ${res.status})`,
+        res.status,
+      );
+    }
+
+    if (!res.ok) {
+      const msg =
+        (typeof body === "object" && body && "error" in body
+          ? String((body as { error: unknown }).error)
+          : null) ?? `Upstream error (status ${res.status})`;
+      throw new ApiError(msg, res.status);
+    }
+    return body;
+  } finally {
     clearTimeout(timer);
-    const cause = err instanceof Error ? err.message : String(err);
-    throw new ApiError(`Network error: ${cause}`);
   }
-  clearTimeout(timer);
-
-  if (res.status === 429) {
-    const retryAfter = Number(res.headers.get("retry-after") ?? "");
-    throw new ApiError(
-      `Rate limited by upstream API${Number.isFinite(retryAfter) ? `, retry after ${retryAfter}s` : ""}`,
-      429,
-      Number.isFinite(retryAfter) ? retryAfter : undefined,
-    );
-  }
-
-  const text = await readCapped(res, MAX_BYTES);
-  let body: unknown;
-  try {
-    body = JSON.parse(text);
-  } catch {
-    const looksHtml = /^\s*<(?:!doctype|html)/i.test(text);
-    throw new ApiError(
-      looksHtml
-        ? `Upstream returned HTML, not JSON (status ${res.status}). The endpoint may not exist on this instance.`
-        : `Invalid JSON from upstream (status ${res.status})`,
-      res.status,
-    );
-  }
-
-  if (!res.ok) {
-    const msg =
-      (typeof body === "object" && body && "error" in body
-        ? String((body as { error: unknown }).error)
-        : null) ?? `Upstream error (status ${res.status})`;
-    throw new ApiError(msg, res.status);
-  }
-  return body;
 }
 
 async function readCapped(res: Response, max: number): Promise<string> {

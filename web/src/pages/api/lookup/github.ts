@@ -19,9 +19,10 @@ export const GET: APIRoute = async ({ url, request }) => {
   const limited = enforceRateLimit(getClientIp(request));
   if (limited) return limited;
 
+  /* Server misconfiguration, not a client credential problem, so not a 401 */
   if (!hasGitHubToken()) {
     return error(
-      401,
+      503,
       "GitHub API token not configured. GitHub lookups are unavailable.",
     );
   }

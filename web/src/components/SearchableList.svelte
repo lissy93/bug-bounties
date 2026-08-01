@@ -92,7 +92,9 @@
   });
 
   $: sorted = (() => {
-    if (sortBy === "name") return filtered;
+    if (sortBy === "name") {
+      return [...filtered].sort((a, b) => a.company.localeCompare(b.company));
+    }
     if (sortBy === "recommended") {
       return [...filtered].sort((a, b) => b.completeness - a.completeness);
     }

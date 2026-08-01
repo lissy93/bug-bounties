@@ -1,8 +1,11 @@
 import type { ForgeHost, ResolvedForgeRepo } from "./types";
 
 const GITLAB_RE = /gitlab\.com\/(.+?)(?:\.git)?(?:[#?].*)?$/;
-const CODEBERG_RE = /codeberg\.org\/([^/\s]+)\/([^/\s#?.]+)/;
+const CODEBERG_RE = /codeberg\.org\/([^/\s]+)\/([^/\s#?]+)/;
 const VALID_NAME = /^[a-zA-Z0-9._-]+$/;
+
+/* Dot-only segments pass VALID_NAME but traverse once in an API path */
+const isSafeSegment = (s: string) => VALID_NAME.test(s) && !/^\.+$/.test(s);
 
 const FORGE_CONFIG: Record<ForgeHost, { base: string; apiBase: string }> = {
   gitlab: {
@@ -24,7 +27,7 @@ export function resolveForgeFromUrl(input: string): ResolvedForgeRepo | null {
     const segments = path.split("/").filter(Boolean);
     if (segments.length < 2) return null;
     for (const s of segments) {
-      if (!VALID_NAME.test(s)) return null;
+      if (!isSafeSegment(s)) return null;
     }
     const owner = segments.slice(0, -1).join("/");
     const repo = segments[segments.length - 1];
@@ -35,7 +38,7 @@ export function resolveForgeFromUrl(input: string): ResolvedForgeRepo | null {
   if (cb) {
     const owner = cb[1];
     const repo = cb[2].replace(/\.git$/, "");
-    if (!VALID_NAME.test(owner) || !VALID_NAME.test(repo)) return null;
+    if (!isSafeSegment(owner) || !isSafeSegment(repo)) return null;
     return buildResolved("codeberg", owner, repo, `${owner}/${repo}`);
   }
 
@@ -61,7 +64,7 @@ export function resolveForgeRepo(
     );
   }
   for (const s of segments) {
-    if (!VALID_NAME.test(s)) {
+    if (!isSafeSegment(s)) {
       throw new Error("Invalid characters in owner or repo name.");
     }
   }

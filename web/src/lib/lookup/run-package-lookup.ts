@@ -4,6 +4,7 @@ import { resolveDomain } from "./resolve-domain";
 import { runFullGitHubLookup } from "./run-github-lookup";
 import { runFullForgeLookup } from "./run-forge-lookup";
 import { resolveForgeFromUrl } from "./resolve-forge-repo";
+import { resolveRepo } from "./resolve-repo";
 import { pkgTier1, pkgTier2, pkgSkipT2Only } from "./package-tiers";
 import { webTier1, webTier2 } from "./website-tiers";
 import type { ResolvedPackage, LookupResponse } from "./types";
@@ -81,15 +82,12 @@ export async function runFullPackageLookup(
     /* Run the linked repository through the appropriate lookup pipeline */
     if (repository) {
       try {
-        const ghMatch = repository.match(GITHUB_RE);
-        if (ghMatch) {
+        /* Registry metadata is third-party, so validate it like user input */
+        if (GITHUB_RE.test(repository)) {
+          const gh = resolveRepo(repository);
           mergeResponse(
             data,
-            await runFullGitHubLookup(
-              ghMatch[1],
-              ghMatch[2].replace(/\.git$/, ""),
-              deep,
-            ),
+            await runFullGitHubLookup(gh.owner, gh.repo, deep),
           );
         } else {
           const forgeCtx = resolveForgeFromUrl(repository);

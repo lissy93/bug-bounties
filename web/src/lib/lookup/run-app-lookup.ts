@@ -35,36 +35,24 @@ export async function runFullAppLookup(
   ctx: ResolvedApp,
   deep = false,
 ): Promise<LookupResponse> {
-  const timer = setTimeout(() => {}, 15_000);
+  const data = await runAppLookup(ctx, appTier1, appTier2, appSkipT2Only, deep);
 
-  try {
-    const data = await runAppLookup(
-      ctx,
-      appTier1,
-      appTier2,
-      appSkipT2Only,
-      deep,
-    );
-
-    const devSite = extractDeveloperWebsite(data);
-    if (devSite && isUsableSite(devSite)) {
-      try {
-        const domainCtx = await resolveDomain(devSite);
-        const webData = await runLookup(domainCtx, webTier1, webTier2, deep);
-        data.results.push(...webData.results);
-        data.errors.push(...webData.errors);
-        data.summary.push(...webData.summary);
-      } catch (err) {
-        log.warn(
-          "app-lookup",
-          `Developer website lookup failed for ${devSite}`,
-          err,
-        );
-      }
+  const devSite = extractDeveloperWebsite(data);
+  if (devSite && isUsableSite(devSite)) {
+    try {
+      const domainCtx = await resolveDomain(devSite);
+      const webData = await runLookup(domainCtx, webTier1, webTier2, deep);
+      data.results.push(...webData.results);
+      data.errors.push(...webData.errors);
+      data.summary.push(...webData.summary);
+    } catch (err) {
+      log.warn(
+        "app-lookup",
+        `Developer website lookup failed for ${devSite}`,
+        err,
+      );
     }
-
-    return data;
-  } finally {
-    clearTimeout(timer);
   }
+
+  return data;
 }

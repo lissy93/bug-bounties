@@ -466,8 +466,8 @@ const spec = {
               },
             },
           },
-          "401": {
-            description: "GitHub token not configured",
+          "503": {
+            description: "GitHub token not configured on this instance",
             content: {
               "application/json": {
                 schema: { $ref: "#/components/schemas/Error" },

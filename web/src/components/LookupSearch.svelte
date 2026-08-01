@@ -12,9 +12,9 @@
   let loadingType: "website" | "github" | "package" | "forge" | "app" =
     "website";
 
-  const GITHUB_RE = /github\.com[/:]([^/\s]+)\/([^/\s#?.]+)/;
+  const GITHUB_RE = /github\.com[/:]([^/\s]+)\/([^/\s#?]+)/;
   const GITLAB_RE = /gitlab\.com\/(.+?)(?:\.git)?(?:[#?].*)?$/;
-  const CODEBERG_RE = /codeberg\.org\/([^/\s]+)\/([^/\s#?.]+)/;
+  const CODEBERG_RE = /codeberg\.org\/([^/\s]+)\/([^/\s#?]+)/;
   const NPM_RE = /npmjs\.com\/package\/(@?[^/\s#?]+(?:\/[^/\s#?]+)?)/;
   const PYPI_RE = /pypi\.org\/project\/([^/\s#?]+)/;
   const CRATES_RE = /crates\.io\/crates\/([^/\s#?]+)/;

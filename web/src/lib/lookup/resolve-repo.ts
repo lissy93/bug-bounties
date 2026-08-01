@@ -1,6 +1,6 @@
 const VALID_NAME = /^[a-zA-Z0-9._-]+$/;
 
-const GITHUB_RE = /github\.com[/:]([^/\s]+)\/([^/\s#?.]+)/;
+const GITHUB_RE = /github\.com[/:]([^/\s]+)\/([^/\s#?]+)/;
 
 export function resolveRepo(input: string): {
   owner: string;
@@ -32,6 +32,11 @@ export function resolveRepo(input: string): {
 
   if (!VALID_NAME.test(owner) || !VALID_NAME.test(repo)) {
     throw new Error("Invalid characters in owner or repo name.");
+  }
+
+  /* Dot-only names traverse once in an API path: /repos/../user hits /user */
+  if (/^\.+$/.test(owner) || /^\.+$/.test(repo)) {
+    throw new Error("Invalid owner or repo name.");
   }
 
   const slug = `${owner}/${repo}`;

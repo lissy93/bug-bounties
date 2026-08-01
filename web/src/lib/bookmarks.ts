@@ -3,18 +3,20 @@ import { writable } from "svelte/store";
 const STORAGE_KEY = "bookmarked-programs";
 
 function loadBookmarks(): Set<string> {
-  if (typeof localStorage === "undefined") return new Set();
+  /* Reading localStorage itself throws when site data is blocked */
   try {
+    if (typeof localStorage === "undefined") return new Set();
     const raw = localStorage.getItem(STORAGE_KEY);
-    return raw ? new Set(JSON.parse(raw)) : new Set();
+    const parsed = raw ? JSON.parse(raw) : null;
+    return Array.isArray(parsed) ? new Set(parsed) : new Set();
   } catch {
     return new Set();
   }
 }
 
 function persist(slugs: Set<string>) {
-  if (typeof localStorage === "undefined") return;
   try {
+    if (typeof localStorage === "undefined") return;
     localStorage.setItem(STORAGE_KEY, JSON.stringify([...slugs]));
   } catch {}
 }

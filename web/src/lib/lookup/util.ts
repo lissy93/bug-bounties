@@ -40,7 +40,8 @@ export const EMAIL_RE = /[\w.+-]+@[\w.-]+\.[a-z]{2,}/gi;
 export const URL_RE = /https?:\/\/[^\s,;>"')}]+/gi;
 export const UA = "bug-bounties-lookup/1.0";
 
-export const SECURITY_RE = /security|vulnerabilit|report|bounty|disclosure/gi;
+/* No /g: this is used with .test(), which would advance lastIndex between calls */
+export const SECURITY_RE = /security|vulnerabilit|report|bounty|disclosure/i;
 
 export const SKIP_EMAIL_RE =
   /no-?reply|donotreply|example\.|localhost|test\.|noreply\.github\.com/i;
