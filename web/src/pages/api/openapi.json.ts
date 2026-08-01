@@ -1,4 +1,5 @@
 import type { APIRoute } from "astro";
+import { json } from "@lib/api";
 
 const spec = {
   openapi: "3.1.0",
@@ -105,7 +106,7 @@ const spec = {
             required: false,
             schema: { type: "string" },
             description:
-              "Comma-separated fields to search. Default: all. Values: company, handle, slug, domains, description, notes, standards, scope.",
+              "Comma-separated fields to search. Default: all. Values: company, handle, slug, domains, description, notes, url, standards, scope.",
           },
           {
             name: "sort",
@@ -113,7 +114,7 @@ const spec = {
             required: false,
             schema: {
               type: "string",
-              enum: ["relevance", "name", "popularity", "payout"],
+              enum: ["relevance", "name", "payout"],
               default: "relevance",
             },
             description: "Sort order for results",
@@ -135,7 +136,8 @@ const spec = {
             in: "query",
             required: false,
             schema: { type: "boolean" },
-            description: "Restrict to programs offering bounties",
+            description:
+              "true: only programs offering bounties. false: only those that do not.",
           },
           {
             name: "safe_harbor",
@@ -380,7 +382,8 @@ const spec = {
             },
           },
           "429": {
-            description: "Rate limit exceeded",
+            description:
+              "Rate limit exceeded. All /api/lookup/* endpoints share one budget: 8/min, 100/hour, 300/day per IP.",
             headers: {
               "Retry-After": {
                 description: "Seconds until the rate limit resets",
@@ -468,7 +471,8 @@ const spec = {
             },
           },
           "429": {
-            description: "Rate limit exceeded",
+            description:
+              "Rate limit exceeded. All /api/lookup/* endpoints share one budget: 8/min, 100/hour, 300/day per IP.",
             headers: {
               "Retry-After": {
                 description: "Seconds until the rate limit resets",
@@ -549,7 +553,8 @@ const spec = {
             },
           },
           "429": {
-            description: "Rate limit exceeded",
+            description:
+              "Rate limit exceeded. All /api/lookup/* endpoints share one budget: 8/min, 100/hour, 300/day per IP.",
             headers: {
               "Retry-After": {
                 description: "Seconds until the rate limit resets",
@@ -624,7 +629,8 @@ const spec = {
             },
           },
           "429": {
-            description: "Rate limit exceeded",
+            description:
+              "Rate limit exceeded. All /api/lookup/* endpoints share one budget: 8/min, 100/hour, 300/day per IP.",
             headers: {
               "Retry-After": {
                 description: "Seconds until the rate limit resets",
@@ -711,7 +717,8 @@ const spec = {
             },
           },
           "429": {
-            description: "Rate limit exceeded",
+            description:
+              "Rate limit exceeded. All /api/lookup/* endpoints share one budget: 8/min, 100/hour, 300/day per IP.",
             headers: {
               "Retry-After": {
                 description: "Seconds until the rate limit resets",
@@ -791,13 +798,12 @@ const spec = {
           currency: { type: ["string", "null"] },
           safe_harbor: { type: ["string", "null"] },
           managed: { type: ["boolean", "null"] },
+          contact: { type: ["string", "null"] },
           domains: { type: "array", items: { type: "string" } },
           program_type: {
             type: ["string", "null"],
             enum: ["bounty", "vdp", "hybrid", null],
           },
-          tranco_rank: { type: ["integer", "null"] },
-          kev_count: { type: "integer" },
           score: { type: "integer", description: "Relevance score" },
           matched_fields: {
             type: "array",
@@ -1155,8 +1161,4 @@ const spec = {
   },
 };
 
-export const GET: APIRoute = () => {
-  return new Response(JSON.stringify(spec), {
-    headers: { "Content-Type": "application/json" },
-  });
-};
+export const GET: APIRoute = () => json(spec);

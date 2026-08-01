@@ -24,6 +24,8 @@ const serveStatic = sirv(clientDir, {
 
 const server = createServer((req, res) => {
 	for (const [k, v] of Object.entries(securityHeaders)) res.setHeader(k, v);
+	if (req.url?.startsWith('/api/'))
+		res.setHeader('Access-Control-Allow-Origin', '*');
 	serveStatic(req, res, () => ssr(req, res));
 });
 

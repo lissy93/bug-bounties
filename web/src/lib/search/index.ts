@@ -8,7 +8,7 @@ import {
 } from "./score";
 import { normalize, tokenize } from "./tokens";
 
-export type SortMode = "relevance" | "name" | "popularity" | "payout";
+export type SortMode = "relevance" | "name" | "payout";
 
 export interface SearchFilters {
   hasBounty?: boolean;
@@ -30,7 +30,11 @@ export interface SearchOutcome {
 }
 
 function passesFilters(p: BountyProgram, f: SearchFilters): boolean {
-  if (f.hasBounty && !p.rewards?.includes("*bounty")) return false;
+  if (
+    f.hasBounty != null &&
+    Boolean(p.rewards?.includes("*bounty")) !== f.hasBounty
+  )
+    return false;
   if (f.safeHarbor && p.safe_harbor !== f.safeHarbor) return false;
   if (f.managed != null && Boolean(p.managed) !== f.managed) return false;
   if (f.programType && p.program_type !== f.programType) return false;
@@ -41,16 +45,9 @@ function compareScored(
   a: ScoredProgram,
   b: ScoredProgram,
   sort: SortMode,
-  trancoRanks: Record<string, number>,
 ): number {
   if (sort === "name")
     return a.program.company.localeCompare(b.program.company);
-  if (sort === "popularity") {
-    const ra = trancoRanks[a.program.slug] ?? Infinity;
-    const rb = trancoRanks[b.program.slug] ?? Infinity;
-    if (ra !== rb) return ra - rb;
-    return b.score - a.score;
-  }
   if (sort === "payout") {
     const pa = a.program.max_payout ?? -Infinity;
     const pb = b.program.max_payout ?? -Infinity;
@@ -64,7 +61,6 @@ function compareScored(
 export function searchPrograms(
   programs: BountyProgram[],
   opts: SearchOptions,
-  trancoRanks: Record<string, number>,
 ): SearchOutcome {
   const tokens = tokenize(opts.q);
   if (!tokens.length) return { scored: [], tokens };
@@ -81,7 +77,7 @@ export function searchPrograms(
     const s = scoreProgram(pp, tokens, phrase, fields);
     if (s) scored.push(s);
   }
-  scored.sort((a, b) => compareScored(a, b, sort, trancoRanks));
+  scored.sort((a, b) => compareScored(a, b, sort));
   return { scored, tokens };
 }
 

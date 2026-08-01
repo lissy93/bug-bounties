@@ -9,6 +9,9 @@ export const PLATFORM_HOSTNAMES = new Set([
   "cobalt.io",
   "federacy.com",
   "immunefi.com",
+  "hackenproof.com",
+  "openbugbounty.org",
+  "zerocopter.com",
 ]);
 
 // Two-part TLDs where the registrable domain is the last 3 segments
@@ -17,6 +20,14 @@ const TWO_PART_TLDS = new Set([
   "org.uk",
   "ac.uk",
   "gov.uk",
+  "gov.au",
+  "gov.sg",
+  "gov.it",
+  "gov.np",
+  "gov.ua",
+  "co.id",
+  "or.id",
+  "org.pl",
   "co.jp",
   "or.jp",
   "ne.jp",

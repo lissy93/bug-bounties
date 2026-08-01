@@ -1,41 +1,9 @@
-import type { APIRoute } from "astro";
+import { ALL, OPTIONS, cacheFor, error, json as jsonResponse } from "@lib/api";
 import { checkRateLimit } from "./rate-limit";
 
-export const json = (
-  body: unknown,
-  status = 200,
-  headers?: Record<string, string>,
-) =>
-  new Response(JSON.stringify(body), {
-    status,
-    headers: {
-      "Content-Type": "application/json",
-      "Cache-Control":
-        status === 200 ? "public, max-age=86400, s-maxage=86400" : "no-store",
-      "Access-Control-Allow-Origin": "*",
-      ...headers,
-    },
-  });
+export { ALL, OPTIONS, error };
 
-export const error = (
-  status: number,
-  message: string,
-  headers?: Record<string, string>,
-) => json({ error: message, status }, status, headers);
-
-export const OPTIONS: APIRoute = () =>
-  new Response(null, {
-    status: 204,
-    headers: {
-      "Access-Control-Allow-Origin": "*",
-      "Access-Control-Allow-Methods": "GET, OPTIONS",
-      "Access-Control-Allow-Headers": "Content-Type",
-      "Access-Control-Max-Age": "86400",
-    },
-  });
-
-export const ALL: APIRoute = () =>
-  error(405, "Method not allowed", { Allow: "GET, OPTIONS" });
+export const json = (body: unknown) => jsonResponse(body, 200, cacheFor(86400));
 
 export function getClientIp(request: Request): string {
   return (

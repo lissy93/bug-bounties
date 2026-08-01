@@ -1,4 +1,5 @@
 import type { APIRoute } from "astro";
+import { json } from "@lib/api";
 import { loadAllPrograms } from "@lib/load-all-programs";
 
 export const GET: APIRoute = async () => {
@@ -12,13 +13,8 @@ export const GET: APIRoute = async () => {
     }),
   );
 
-  return new Response(
-    JSON.stringify({
-      meta: { total: programs.length, generated: new Date().toISOString() },
-      programs,
-    }),
-    {
-      headers: { "Content-Type": "application/json" },
-    },
-  );
+  return json({
+    meta: { total: programs.length, generated: new Date().toISOString() },
+    programs,
+  });
 };

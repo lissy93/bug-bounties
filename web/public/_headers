@@ -1,0 +1,2 @@
+/api/*
+  Access-Control-Allow-Origin: *
