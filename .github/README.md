@@ -1900,7 +1900,6 @@
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [Xilinx](https://hackerone.com/xilinx) 🏅
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [XION](https://immunefi.com/bug-bounty/xion/) 💰
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [XOXNO](https://immunefi.com/bug-bounty/xoxno/) 💰
-- <img src='https://icon.horse/icon/hackenproof.com' width='16'/> [XT](https://hackenproof.com/1inch/1inch-smart-contract) 💰 🎁
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Xterio](https://immunefi.com/bug-bounty/xterio/) 💰
 - <img src='https://icon.horse/icon/www.xvideos.com' width='16'/> [XVIDEOS](https://www.xvideos.com) 💰
 
