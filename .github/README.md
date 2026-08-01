@@ -350,6 +350,7 @@
 - <img src='https://icon.horse/icon/www.codacy.com' width='16'/> [Codacy](https://www.codacy.com) 💰 🎁
 - <img src='https://icon.horse/icon/codeclimate.com' width='16'/> [Code Climate](https://codeclimate.com/security) 🏅
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Code.org](https://bugcrowd.com/engagements/codeorg) 💰
+- <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [CodeAI](https://bugcrowd.com/engagements/codeorg) 💰
 - <img src='https://icon.horse/icon/www.codechef.com' width='16'/> [CodeChef](https://www.codechef.com/bug-bounty-program) 💰
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [codeclou GmbH](https://bugcrowd.com/engagements/codeclou) 💰
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [Codefi](https://hackerone.com/codefi_bbp) 💰
@@ -452,6 +453,7 @@
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Dell Technologies](https://bugcrowd.com/dell-com) 💰
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Dell Technologies Application Bug Bounty](https://bugcrowd.com/engagements/dell-com) 💰
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Dell Technologies' Products Bug Bounty P...](https://bugcrowd.com/engagements/dell-product) 💰
+- <img src='https://icon.horse/icon/eu.bugcrowd.net' width='16'/> [Demo-EU-admin-PublicMBB-1](https://eu.bugcrowd.net/engagements/eu-public-1) 💰
 - <img src='https://icon.horse/icon/www.dnb.nl' width='16'/> [DeNederlandscheBank](https://www.dnb.nl/en/responsible-disclosure/index.jsp) 💰
 - <img src='https://icon.horse/icon/www.denso-wave.com' width='16'/> [DENSO WAVE](https://www.denso-wave.com/en/psirt/) 🏅
 - <img src='https://icon.horse/icon/www.dentrix.com' width='16'/> [Dentrix](https://www.dentrix.com/support/data-security/bug-bounty-program) 💰 🏅
@@ -998,6 +1000,7 @@
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [MagpieXYZ](https://immunefi.com/bug-bounty/magpiexyz/) 💰
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Mailgun](https://bugcrowd.com/mailgun) 💰 🏅
 - <img src='https://icon.horse/icon/www.majidalfuttaim.com' width='16'/> [Majid Al Futtaim](https://www.majidalfuttaim.com/en/responsible-disclosure-policy) 💰
+- <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Majid Al Futtaim Customer Solutions](https://bugcrowd.com/engagements/majidalfuttaim-loyalty) 💰
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Majid Al Futtaim Entertainment](https://bugcrowd.com/engagements/vox) 💰
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Majid Al Futtaim Lifestyle](https://bugcrowd.com/engagements/maffashion) 💰
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Majid Al Futtaim Loyalty Program (Share ...](https://bugcrowd.com/engagements/majidalfuttaim-loyalty) 💰
@@ -1312,6 +1315,7 @@
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [Pornhub](https://hackerone.com/pornhub) 💰 🏅
 - <img src='https://icon.horse/icon/www.intigriti.com' width='16'/> [Port of Antwerp-Bruges](https://www.intigriti.com/programs/portofantwerp/portofantwerp/detail) 💰
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [PortSwigger Web Security](https://hackerone.com/portswigger) 💰 🏅 🎁
+- <img src='https://icon.horse/icon/www.intigriti.com' width='16'/> [Posti Bug Bounty](https://www.intigriti.com/programs/posti/postibugbounty/detail) 💰
 - <img src='https://icon.horse/icon/postmarkapp.com' width='16'/> [Postmark](https://postmarkapp.com/support/article/779-responsible-disclosure-policy) 🏅 🎁
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [Postmates](https://hackerone.com/postmates) 💰 🏅
 - <img src='https://icon.horse/icon/www.postnl.nl' width='16'/> [PostNL](https://www.postnl.nl/en/responsible-disclosure/) 🏅 🎁
@@ -1608,6 +1612,7 @@
 - <img src='https://icon.horse/icon/stripchat.com' width='16'/> [Stripchat](https://stripchat.com) 💰
 - <img src='https://icon.horse/icon/stripe.com' width='16'/> [Stripe](https://stripe.com/docs/security/stripe) 💰
 - <img src='https://icon.horse/icon/studo.com' width='16'/> [Studo](https://studo.com/at/security) 💰
+- <img src='https://icon.horse/icon/yeswehack.com' width='16'/> [Superbank - Public Bug Bounty Program](https://yeswehack.com/programs/superbank-public-bug-bounty-program) 💰
 - <img src='https://icon.horse/icon/superbet.ro' width='16'/> [Superbet](https://superbet.ro) 💰
 - <img src='https://icon.horse/icon/www.intigriti.com' width='16'/> [Superdrug](https://www.intigriti.com/programs/aswatson/superdrug/detail) 💰
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Superform (v1 SuperVaults)](https://immunefi.com/bug-bounty/superform/) 💰
