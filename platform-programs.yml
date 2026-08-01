@@ -957,6 +957,11 @@ companies:
   contact: https://immunefi.com/bug-bounty/aspida/
   rewards:
   - '*bounty'
+- company: Assa Abloy Americas
+  url: http://www.assaabloy.com
+  handle: assa_abloy_americas
+  contact: https://hackerone.com/assa_abloy_americas
+  rewards: []
 - company: Assuring Medical Apps
   url: https://digitalhealthcompliance.com/disclosure-en/
   contact: https://digitalhealthcompliance.com/contact-2/
@@ -2327,6 +2332,11 @@ companies:
   handle: challenge0626
   contact: https://www.intigriti.com/programs/intigriti/challenge0626/detail
   rewards: []
+- company: Challenge 0726
+  url: https://www.intigriti.com/programs/intigriti/challenge0726/detail
+  handle: challenge0726
+  contact: https://www.intigriti.com/programs/intigriti/challenge0726/detail
+  rewards: []
 - company: Chameleon
   url: https://www.trychameleon.com/security/disclosure
   contact: https://www.trychameleon.com/security/disclosure
@@ -2726,6 +2736,11 @@ companies:
   rewards:
   - '*recognition'
 - company: Code.org
+  url: https://bugcrowd.com/engagements/codeorg
+  contact: https://bugcrowd.com/engagements/codeorg
+  rewards:
+  - '*bounty'
+- company: CodeAI
   url: https://bugcrowd.com/engagements/codeorg
   contact: https://bugcrowd.com/engagements/codeorg
   rewards:
@@ -3520,6 +3535,11 @@ companies:
   url: https://www.deltatre.com/coordinated-vulnerability-disclosure
   contact: mailto:security@deltatre.com
   rewards: []
+- company: Demo-EU-admin-PublicMBB-1
+  url: https://eu.bugcrowd.net/engagements/eu-public-1
+  contact: https://eu.bugcrowd.net/engagements/eu-public-1
+  rewards:
+  - '*bounty'
 - company: Democracy Live
   url: https://democracylive.com/disclosure-policy/
   contact: mailto:security@democracylive.com
@@ -7821,6 +7841,11 @@ companies:
   contact: https://www.majidalfuttaim.com/en/responsible-disclosure-policy
   rewards:
   - '*bounty'
+- company: Majid Al Futtaim Customer Solutions
+  url: https://bugcrowd.com/engagements/majidalfuttaim-loyalty
+  contact: https://bugcrowd.com/engagements/majidalfuttaim-loyalty
+  rewards:
+  - '*bounty'
 - company: Majid Al Futtaim Entertainment
   url: https://bugcrowd.com/engagements/vox
   contact: https://bugcrowd.com/engagements/vox
@@ -9326,6 +9351,11 @@ companies:
   rewards:
   - '*bounty'
   - '*recognition'
+- company: Omnicell
+  url: http://omnicell.com
+  handle: omnicell
+  contact: https://hackerone.com/omnicell
+  rewards: []
 - company: Omnipod
   url: https://www.myomnipod.com/Coordinated-Disclosure-Process
   contact: https://www.myomnipod.com/Coordinated-Disclosure-Process
@@ -9646,6 +9676,11 @@ companies:
   contact: https://yeswehack.com/programs/otto-de-bug-bounty
   rewards:
   - '*bounty'
+- company: OURA Vulnerability Disclosure Program
+  url: https://www.intigriti.com/programs/ourahealthoy/ouravulnerabilitydisclosureprogram/detail
+  handle: ouravulnerabilitydisclosureprogram
+  contact: https://www.intigriti.com/programs/ourahealthoy/ouravulnerabilitydisclosureprogram/detail
+  rewards: []
 - company: OurFabriq
   url: https://www.ourfabriq.com/responsible-disclosure-policy
   contact: mailto:hello@ourfabriq.com
@@ -10375,6 +10410,12 @@ companies:
   url: https://www.prc.gov/vulnerability-disclosure-policy
   contact: mailto:itsecure@prc.gov
   rewards: []
+- company: Posti Bug Bounty
+  url: https://www.intigriti.com/programs/posti/postibugbounty/detail
+  handle: postibugbounty
+  contact: https://www.intigriti.com/programs/posti/postibugbounty/detail
+  rewards:
+  - '*bounty'
 - company: Postman
   url: https://www.postman.com/security/vulnerability-reporting/
   contact: mailto:security@postman.com
@@ -12633,6 +12674,11 @@ companies:
   handle: supabase
   contact: mailto:security@supabase.io
   rewards: []
+- company: Superbank - Public Bug Bounty Program
+  url: https://yeswehack.com/programs/superbank-public-bug-bounty-program
+  contact: https://yeswehack.com/programs/superbank-public-bug-bounty-program
+  rewards:
+  - '*bounty'
 - company: Superbet
   url: https://superbet.ro
   handle: superbet
