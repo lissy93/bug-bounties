@@ -24,7 +24,7 @@ export const GET: APIRoute = async ({ url, request }) => {
 
   let ctx;
   try {
-    ctx = resolveDomain(input);
+    ctx = await resolveDomain(input);
   } catch (err) {
     return error(400, err instanceof Error ? err.message : "Invalid input");
   }

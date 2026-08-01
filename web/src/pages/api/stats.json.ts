@@ -1,4 +1,5 @@
 import type { APIRoute } from "astro";
+import { json } from "@lib/api";
 import { loadAllPrograms } from "@lib/load-all-programs";
 
 export const GET: APIRoute = async () => {
@@ -22,24 +23,19 @@ export const GET: APIRoute = async () => {
     }
   }
 
-  return new Response(
-    JSON.stringify({
-      generated: new Date().toISOString(),
-      total_programs: programs.length,
-      with_bounties: rewards.bounty,
-      with_safe_harbor: withSafeHarbor,
-      with_managed: withManaged,
-      reward_types: rewards,
-      payout_range: {
-        min: maxPayout ? minPayout : 0,
-        max: maxPayout,
-        currency: "USD",
-      },
-      programs_with_kev: Object.keys(kevCounts).length,
-      programs_with_tranco: Object.keys(trancoRanks).length,
-    }),
-    {
-      headers: { "Content-Type": "application/json" },
+  return json({
+    generated: new Date().toISOString(),
+    total_programs: programs.length,
+    with_bounties: rewards.bounty,
+    with_safe_harbor: withSafeHarbor,
+    with_managed: withManaged,
+    reward_types: rewards,
+    payout_range: {
+      min: maxPayout ? minPayout : 0,
+      max: maxPayout,
+      currency: "USD",
     },
-  );
+    programs_with_kev: Object.keys(kevCounts).length,
+    programs_with_tranco: Object.keys(trancoRanks).length,
+  });
 };

@@ -49,7 +49,7 @@ export async function runFullAppLookup(
     const devSite = extractDeveloperWebsite(data);
     if (devSite && isUsableSite(devSite)) {
       try {
-        const domainCtx = resolveDomain(devSite);
+        const domainCtx = await resolveDomain(devSite);
         const webData = await runLookup(domainCtx, webTier1, webTier2, deep);
         data.results.push(...webData.results);
         data.errors.push(...webData.errors);

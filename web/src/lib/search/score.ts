@@ -1,4 +1,5 @@
 import type { BountyProgram } from "@app-types/Company";
+import { getRegistrableDomain, isPlatformHost, stripWww } from "@lib/domain";
 import { normalize, tokenize } from "./tokens";
 import { fuzzyThreshold, levenshtein } from "./levenshtein";
 
@@ -9,6 +10,7 @@ export type SearchField =
   | "domains"
   | "description"
   | "notes"
+  | "url"
   | "standards"
   | "scope";
 
@@ -19,6 +21,7 @@ const FIELD_WEIGHTS: Record<SearchField, number> = {
   domains: 0.7,
   description: 0.45,
   notes: 0.4,
+  url: 0.3,
   standards: 0.3,
   scope: 0.3,
 };
@@ -28,7 +31,7 @@ export const ALL_FIELDS: SearchField[] = Object.keys(
 ) as SearchField[];
 
 export function isSearchField(v: string): v is SearchField {
-  return v in FIELD_WEIGHTS;
+  return Object.hasOwn(FIELD_WEIGHTS, v);
 }
 
 interface FieldEntry {
@@ -50,11 +53,31 @@ function entries(values: (string | undefined | null)[]): FieldEntry[] {
     .map((v) => ({ raw: normalize(v), tokens: tokenize(v) }));
 }
 
+/* Kept separate from PLATFORM_HOSTNAMES, which also drives logo and
+   enrichment lookups that these programs still need */
+const SHARED_HOSTS = new Set(["zendesk.com", "responsibledisclosure.com"]);
+
+/* Program URL -> company label ("acme.co.uk/vdp" -> "acme"). Shared hosts
+   name the host, not the company, so they index nothing */
+function urlLabel(url: string): string | null {
+  let host: string;
+  try {
+    host = stripWww(new URL(url).hostname);
+  } catch {
+    return null;
+  }
+  if (isPlatformHost(host)) return null;
+  const base = getRegistrableDomain(host);
+  return SHARED_HOSTS.has(base) ? null : base.split(".")[0];
+}
+
 function prepareOne(p: BountyProgram): PreparedProgram {
   const fields: Partial<Record<SearchField, FieldEntry[]>> = {};
   fields.company = entries([p.company]);
   if (p.handle) fields.handle = entries([p.handle]);
   fields.slug = entries([p.slug]);
+  const label = urlLabel(p.url);
+  if (label) fields.url = entries([label]);
   if (p.domains?.length) fields.domains = entries(p.domains);
   if (p.description) fields.description = entries([p.description]);
   if (p.notes) fields.notes = entries([p.notes]);
@@ -118,7 +141,7 @@ export function scoreProgram(
     let bestField: SearchField | null = null;
     for (const field of fields) {
       const list = pp.fields[field];
-      if (!list) continue;
+      if (!Array.isArray(list)) continue;
       const w = FIELD_WEIGHTS[field];
       for (const entry of list) {
         const pts = scoreToken(tok, entry) * w;
