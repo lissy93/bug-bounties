@@ -1,24 +1,7 @@
 import { lookup } from "node:dns/promises";
 import { getRegistrableDomain, stripWww } from "@lib/domain";
+import { isPrivateAddress } from "./guarded-fetch";
 import type { ResolvedDomain } from "./types";
-
-const PRIVATE_RANGES = [
-  /^127\./,
-  /^10\./,
-  /^172\.(1[6-9]|2\d|3[01])\./,
-  /^192\.168\./,
-  /^169\.254\./,
-  /^100\.(6[4-9]|[7-9]\d|1[01]\d|12[0-7])\./,
-  /^0\./,
-  /^::1$/,
-  /^f[cd]/i,
-  /^fe80:/i,
-];
-
-function isPrivateAddress(addr: string): boolean {
-  const ip = addr.replace(/^::ffff:/i, "");
-  return PRIVATE_RANGES.some((r) => r.test(ip));
-}
 
 export async function resolveDomain(input: string): Promise<ResolvedDomain> {
   let raw = input.trim();

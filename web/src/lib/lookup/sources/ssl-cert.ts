@@ -1,4 +1,5 @@
 import tls from "node:tls";
+import { isPublicHost } from "@lib/lookup/guarded-fetch";
 import type {
   LookupSource,
   LookupResult,
@@ -6,7 +7,8 @@ import type {
   ContactInfo,
 } from "@lib/lookup/types";
 
-function getCert(domain: string): Promise<tls.PeerCertificate | null> {
+async function getCert(domain: string): Promise<tls.PeerCertificate | null> {
+  if (!(await isPublicHost(domain))) return null;
   return new Promise((resolve) => {
     const socket = tls.connect(
       443,

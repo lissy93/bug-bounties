@@ -4,6 +4,7 @@ import type {
   ContactInfo,
 } from "@lib/lookup/types";
 import { EMAIL_RE, URL_RE, UA } from "@lib/lookup/util";
+import { guardedFetch } from "@lib/lookup/guarded-fetch";
 
 const HEADER_KEYS = [
   "x-bug-bounty",
@@ -17,10 +18,9 @@ export const httpHeaders: LookupSource = {
   tier: 1,
   async execute(ctx: ResolvedDomain, signal: AbortSignal) {
     try {
-      const res = await fetch(`https://${ctx.domain}/`, {
+      const res = await guardedFetch(`https://${ctx.domain}/`, {
         method: "HEAD",
         signal,
-        redirect: "follow",
         headers: { "User-Agent": UA },
       });
       const contacts: ContactInfo[] = [];

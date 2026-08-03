@@ -1,6 +1,7 @@
 import pLimit from "p-limit";
 import type { BountyProgram, SecurityTxtData } from "@app-types/Company";
 import { resolvePrimaryDomain } from "./domain";
+import { guardedFetch } from "./lookup/guarded-fetch";
 import { log } from "./log";
 
 const TIMEOUT_MS = 5000;
@@ -14,12 +15,11 @@ export async function fetchWithTimeout(url: string): Promise<string | null> {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), TIMEOUT_MS);
   try {
-    const res = await fetch(url, {
+    const res = await guardedFetch(url, {
       signal: controller.signal,
       headers: {
         "User-Agent": "bug-bounties-directory/1.0 (security.txt checker)",
       },
-      redirect: "follow",
     });
     if (!res.ok) return null;
     const contentType = res.headers.get("content-type") || "";

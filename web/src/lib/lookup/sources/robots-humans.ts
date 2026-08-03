@@ -1,12 +1,16 @@
 import type { LookupSource, ResolvedDomain } from "@lib/lookup/types";
 import { emails, UA } from "@lib/lookup/util";
+import { guardedFetch } from "@lib/lookup/guarded-fetch";
 
 async function fetchPlain(
   url: string,
   signal: AbortSignal,
 ): Promise<string | null> {
   try {
-    const res = await fetch(url, { signal, headers: { "User-Agent": UA } });
+    const res = await guardedFetch(url, {
+      signal,
+      headers: { "User-Agent": UA },
+    });
     if (!res.ok || (res.headers.get("content-type") || "").includes("html"))
       return null;
     const text = await res.text();

@@ -4,6 +4,7 @@ import type {
   ContactInfo,
 } from "@lib/lookup/types";
 import { UA } from "@lib/lookup/util";
+import { guardedFetch } from "@lib/lookup/guarded-fetch";
 
 const PATHS = [
   ["/security", "Security page"],
@@ -22,10 +23,9 @@ const PATHS = [
 
 async function headOk(url: string, signal: AbortSignal): Promise<boolean> {
   try {
-    const res = await fetch(url, {
+    const res = await guardedFetch(url, {
       method: "HEAD",
       signal,
-      redirect: "follow",
       headers: { "User-Agent": UA },
     });
     if (!res.ok) return false;

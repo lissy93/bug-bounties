@@ -1,4 +1,5 @@
 import type { ContactInfo, LookupResult } from "./types";
+import { guardedFetch } from "./guarded-fetch";
 
 export const HOSTING_DOMAINS = new Set([
   "github.com",
@@ -97,7 +98,7 @@ export async function safeFetch(
   opts?: RequestInit,
 ): Promise<Response | null> {
   try {
-    const res = await fetch(url, {
+    const res = await guardedFetch(url, {
       signal,
       headers: { "User-Agent": UA },
       ...opts,

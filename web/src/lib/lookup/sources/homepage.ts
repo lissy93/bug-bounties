@@ -4,6 +4,7 @@ import type {
   ContactInfo,
 } from "@lib/lookup/types";
 import { EMAIL_RE, UA } from "@lib/lookup/util";
+import { guardedFetch } from "@lib/lookup/guarded-fetch";
 
 const JSON_LD_RE =
   /<script[^>]+type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi;
@@ -77,7 +78,7 @@ export const homepage: LookupSource = {
   tier: 2,
   async execute(ctx: ResolvedDomain, signal: AbortSignal) {
     try {
-      const res = await fetch(`https://${ctx.domain}/`, {
+      const res = await guardedFetch(`https://${ctx.domain}/`, {
         signal,
         headers: { "User-Agent": UA, Accept: "text/html" },
       });
