@@ -8,7 +8,6 @@ import {
   error,
   OPTIONS,
   ALL,
-  getClientIp,
   enforceRateLimit,
 } from "@lib/lookup/api-helpers";
 
@@ -18,7 +17,7 @@ export { OPTIONS, ALL };
 const VALID_REGISTRIES = new Set<PackageRegistry>(["npm", "pypi", "crates"]);
 
 export const GET: APIRoute = async ({ url, request }) => {
-  const limited = enforceRateLimit(getClientIp(request));
+  const limited = enforceRateLimit(request);
   if (limited) return limited;
 
   const name = url.searchParams.get("name");

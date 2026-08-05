@@ -1,4 +1,5 @@
 import type { APIRoute } from "astro";
+import { enforceRateLimit } from "@lib/lookup/api-helpers";
 
 export const prerender = false;
 
@@ -15,6 +16,9 @@ const json = (status: number, payload: unknown) =>
 // call gitgost.fly.dev directly because of CORS, so the form posts here
 // and we forward the request with the anonymous key header.
 export const POST: APIRoute = async ({ request }) => {
+  const limited = enforceRateLimit(request, "submit:");
+  if (limited) return limited;
+
   let payload: { title?: unknown; body?: unknown };
   try {
     payload = await request.json();
