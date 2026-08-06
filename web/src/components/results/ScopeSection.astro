@@ -121,10 +121,7 @@ const { platformData, scope, domains, outOfScope } = Astro.props;
       )}
     </ResultSection>
   ) : outOfScope && outOfScope.length > 0 ? (
-    <ResultSection>
-      <h2>
-        <Tooltip text={tips.outOfScope}>Out of Scope</Tooltip>
-      </h2>
+    <ResultSection heading="Out of Scope" tooltip={tips.outOfScope}>
       <p class="out-of-scope">{outOfScope.join(", ")}</p>
     </ResultSection>
   ) : null
