@@ -80,7 +80,7 @@ const jsonLd = homeSchema(
     border: none;
     border-top: 2px solid var(--border);
     margin: 1.6rem auto;
-    width: var(--content-width, 90%);
+    width: var(--content-width);
   }
   .entrypoint-cards {
     display: flex;
@@ -140,14 +140,20 @@ const jsonLd = homeSchema(
     line-height: 1.35;
     color: var(--muted);
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-items: anchor-center;
+    gap: 0.75rem;
+
     a {
-      overflow: hidden;
+      flex-shrink: 0;
+      color: var(--primary);
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
-  .endpoints code,
-  .endpoints a {
+  .endpoints code {
     grid-column: 1 / -1;
     font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
     font-size: 0.82rem;
@@ -158,10 +164,6 @@ const jsonLd = homeSchema(
     user-select: all;
     overflow-x: auto;
     white-space: nowrap;
-    text-decoration: none;
-  }
-  .endpoints a:hover {
-    color: var(--primary);
   }
   @media (max-width: 720px) {
     .entrypoint-cards {

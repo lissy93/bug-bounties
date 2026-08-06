@@ -75,7 +75,6 @@
   }
   input:focus,
   select:focus {
-    outline: none;
     border-color: var(--primary-muted);
   }
   select {

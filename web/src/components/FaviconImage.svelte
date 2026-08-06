@@ -96,13 +96,13 @@
 
 <style>
   .favicon {
-    border-radius: var(--curve, 4px);
+    border-radius: var(--curve);
     object-fit: contain;
   }
   .placeholder {
-    border-radius: var(--curve, 4px);
-    background: var(--primary-muted, #fdc50087);
-    color: var(--background, #0c121a);
+    border-radius: var(--curve);
+    background: var(--primary);
+    color: var(--background);
     display: inline-flex;
     align-items: center;
     justify-content: center;
