@@ -1,6 +1,7 @@
 ---
 import MarkdownLayout from "@layouts/MarkdownLayout.astro";
-import CoolStuffGrid from "@components/info/CoolStuff.astro";
+import LinkGrid from "@components/info/LinkGrid.astro";
+import { coolStuff } from "@content/links";
 
 const frontmatter = {
   title: "Cool Stuff",
@@ -29,7 +30,7 @@ const frontmatter = {
 
   <h2>The drawer</h2>
 
-  <CoolStuffGrid />
+  <LinkGrid items={coolStuff} />
 
   <h2>What each thing is good for</h2>
 

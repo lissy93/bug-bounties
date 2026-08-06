@@ -1,23 +1,17 @@
 ---
-export interface LinkGridItem {
-  title: string;
-  url: string;
-  description: string;
-  /** Optional secondary line shown between title and description. */
-  subtitle?: string;
-  /** Optional icon URL. When present, sits inline with the description. */
-  icon?: string;
-}
+import type { LinkItem } from "@content/links";
 
 interface Props {
-  items: LinkGridItem[];
+  items: LinkItem[];
+  /** If set, only the first N items will be rendered. */
+  limit?: number;
   /** Whether links should open in a new tab. Defaults to true. */
   external?: boolean;
   /** Fall back to the linked site's favicon for items without an icon. */
   autoIcon?: boolean;
 }
 
-const { items, external = true, autoIcon = false } = Astro.props;
+const { items, limit, external = true, autoIcon = false } = Astro.props;
 const linkAttrs = external
   ? { target: "_blank", rel: "noopener noreferrer" }
   : {};
@@ -33,7 +27,7 @@ const iconFor = ({ hostname, pathname }: URL) => {
     : faviconFor(hostname);
 };
 
-const cards = items.map((item) => ({
+const cards = (limit ? items.slice(0, limit) : items).map((item) => ({
   ...item,
   icon:
     item.icon ??
@@ -52,7 +46,10 @@ const cards = items.map((item) => ({
           {item.subtitle && <em>{item.subtitle}</em>}
           {item.icon ? (
             <div class="body">
-              <span class="icon" data-initial={item.title.charAt(0).toUpperCase()}>
+              <span
+                class="icon"
+                data-initial={item.title.charAt(0).toUpperCase()}
+              >
                 <img
                   src={item.icon}
                   alt=""

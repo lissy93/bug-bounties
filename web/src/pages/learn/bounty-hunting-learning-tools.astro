@@ -1,6 +1,7 @@
 ---
 import MarkdownLayout from "@layouts/MarkdownLayout.astro";
-import LearningResources from "@components/info/LearningResources.astro";
+import LinkGrid from "@components/info/LinkGrid.astro";
+import { learningResources } from "@content/links";
 
 const frontmatter = {
   title: "Bug Bounty Learning Tools",
@@ -25,7 +26,7 @@ const frontmatter = {
 
   <h2>The list</h2>
 
-  <LearningResources />
+  <LinkGrid items={learningResources} autoIcon />
 
   <h2>How to use this list without burning out</h2>
 
