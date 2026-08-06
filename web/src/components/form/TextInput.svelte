@@ -36,7 +36,6 @@
     color: var(--muted);
   }
   input:focus {
-    outline: none;
     border-color: var(--primary-muted);
   }
 </style>

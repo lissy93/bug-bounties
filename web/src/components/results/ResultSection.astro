@@ -1,16 +1,19 @@
 ---
+import Tooltip from "@components/Tooltip.svelte";
+
 interface Props {
   heading?: string;
+  tooltip?: string;
 }
 
-const { heading } = Astro.props;
+const { heading, tooltip } = Astro.props;
 ---
 
 <section class="section">
   {
     heading && (
       <h2>
-        {heading}
+        <Tooltip text={tooltip}>{heading}</Tooltip>
         <slot name="badge" />
       </h2>
     )

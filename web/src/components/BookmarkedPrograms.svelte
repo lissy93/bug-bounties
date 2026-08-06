@@ -30,12 +30,12 @@
 
 <style>
   .saved-section {
-    width: var(--content-width, 90%);
+    width: var(--content-width);
     margin: 2rem auto 3.5rem auto;
   }
   .saved-heading {
     font-size: 1.1rem;
-    color: var(--primary, #fdc500);
+    color: var(--primary);
     margin: 0 0 0.75rem;
     display: flex;
     align-items: center;

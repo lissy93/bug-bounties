@@ -345,7 +345,7 @@ function isActive(link: (typeof navLinks)[0]): boolean {
     white-space: nowrap;
 
     &:hover {
-      background: #ffffff10;
+      background: var(--background-hover);
       color: var(--primary);
     }
 
@@ -430,7 +430,7 @@ function isActive(link: (typeof navLinks)[0]): boolean {
       font-size: 1rem;
 
       &.active {
-        background: #ffffff08;
+        background: var(--background-lighter);
         border-bottom: none;
         border-left: 3px solid var(--primary);
       }

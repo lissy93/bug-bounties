@@ -45,13 +45,13 @@
 
 <style>
   .count {
-    width: var(--content-width, 90%);
+    width: var(--content-width);
     margin: 0 auto 0.75rem;
-    color: var(--muted, #ffffff60);
+    color: var(--muted);
     font-size: 0.9rem;
   }
   .program-list {
-    width: var(--content-width, 90%);
+    width: var(--content-width);
     margin: 0 auto;
   }
   .empty {
@@ -59,14 +59,14 @@
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
-    width: var(--content-width, 90%);
+    width: var(--content-width);
     max-width: 400px;
     margin: 2rem auto;
     padding: 2rem;
-    color: var(--muted, #ffffff60);
+    color: var(--muted);
     text-align: center;
     background: var(--background-lighter);
-    border-radius: var(--curve, 4px);
+    border-radius: var(--curve);
     box-shadow: var(--shadow);
   }
   .empty p {
@@ -86,7 +86,7 @@
     text-decoration: none;
     border: 1px solid var(--primary);
     padding: 0.4rem 1rem;
-    border-radius: var(--curve, 4px);
+    border-radius: var(--curve);
     transition: var(--transition);
   }
   .back-link:hover {

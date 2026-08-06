@@ -3,15 +3,15 @@ import Header from "@components/Header.astro";
 import DefaultLayout from "@layouts/DefaultLayout.astro";
 import WebOsintTools from "@components/info/WebOsintTools.astro";
 import GuidesList from "@components/info/GuidesList.astro";
-import LearningResources from "@components/info/LearningResources.astro";
-import SecurityResearchers from "@components/info/SecurityResearchers.astro";
-import CoolStuff from "@components/info/CoolStuff.astro";
+import LinkGrid from "@components/info/LinkGrid.astro";
+import {
+  learningResources,
+  securityResearchers,
+  coolStuff,
+} from "@content/links";
 import { learnSchema } from "@lib/json-ld";
 
-const OSINT_PREVIEW_LIMIT = 8;
-const LEARNING_PREVIEW_LIMIT = 8;
-const RESEARCHER_PREVIEW_LIMIT = 8;
-const COOL_STUFF_PREVIEW_LIMIT = 8;
+const PREVIEW_LIMIT = 8;
 
 const jsonLd = learnSchema();
 ---
@@ -62,7 +62,7 @@ const jsonLd = learnSchema();
         </div>
         <a class="view-all" href="/learn/web-osint-toolbox">View all tools →</a>
       </div>
-      <WebOsintTools limit={OSINT_PREVIEW_LIMIT} />
+      <WebOsintTools limit={PREVIEW_LIMIT} />
     </section>
 
     <section class="card" id="learning">
@@ -78,7 +78,7 @@ const jsonLd = learnSchema();
           View all resources →
         </a>
       </div>
-      <LearningResources limit={LEARNING_PREVIEW_LIMIT} />
+      <LinkGrid items={learningResources} limit={PREVIEW_LIMIT} autoIcon />
     </section>
 
     <section class="card" id="researchers">
@@ -94,7 +94,7 @@ const jsonLd = learnSchema();
           View all researchers →
         </a>
       </div>
-      <SecurityResearchers limit={RESEARCHER_PREVIEW_LIMIT} />
+      <LinkGrid items={securityResearchers} limit={PREVIEW_LIMIT} autoIcon />
     </section>
 
     <section class="card" id="guides">
@@ -121,7 +121,7 @@ const jsonLd = learnSchema();
         </div>
         <a class="view-all" href="/learn/cool-stuff">View all →</a>
       </div>
-      <CoolStuff limit={COOL_STUFF_PREVIEW_LIMIT} />
+      <LinkGrid items={coolStuff} limit={PREVIEW_LIMIT} />
     </section>
   </article>
 </DefaultLayout>

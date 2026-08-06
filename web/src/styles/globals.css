@@ -15,6 +15,26 @@ body {
   color: var(--background);
 }
 
+:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* Keep colour and opacity feedback, drop movement and looping indicators */
+@media (prefers-reduced-motion: reduce) {
+  html,
+  body {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition-property:
+      opacity, color, background-color, border-color, box-shadow, filter !important;
+  }
+}
+
 code {
   overflow-wrap: anywhere;
   word-break: break-word;

@@ -37,7 +37,6 @@
     padding-right: 2rem;
   }
   select:focus {
-    outline: none;
     border-color: var(--primary-muted);
   }
   option {

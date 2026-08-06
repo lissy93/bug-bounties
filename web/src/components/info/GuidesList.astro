@@ -1,8 +1,8 @@
 ---
-import LinkGrid, { type LinkGridItem } from "./LinkGrid.astro";
+import LinkGrid from "./LinkGrid.astro";
+import type { LinkItem } from "@content/links";
 
 interface Props {
-  /** If set, only the most recent N guides will be rendered. */
   limit?: number;
 }
 
@@ -16,18 +16,17 @@ type GuideModule = {
 const guideFiles = import.meta.glob<GuideModule>("../../pages/learn/*.md", {
   eager: true,
 });
-const allGuides = Object.values(guideFiles)
-  .map((mod) => ({
-    title: mod.frontmatter.title,
-    description: mod.frontmatter.description,
-    url: mod.url,
-    date: mod.frontmatter.date,
-  }))
-  .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
-
-const items: LinkGridItem[] = (
-  limit ? allGuides.slice(0, limit) : allGuides
-).map(({ title, description, url }) => ({ title, description, url }));
+const items: LinkItem[] = Object.values(guideFiles)
+  .sort(
+    (a, b) =>
+      new Date(b.frontmatter.date).getTime() -
+      new Date(a.frontmatter.date).getTime(),
+  )
+  .map(({ url, frontmatter }) => ({
+    title: frontmatter.title,
+    description: frontmatter.description,
+    url,
+  }));
 ---
 
-<LinkGrid items={items} external={false} />
+<LinkGrid items={items} limit={limit} external={false} />
