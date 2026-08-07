@@ -7,7 +7,12 @@ import { resolveForgeFromUrl } from "./resolve-forge-repo";
 import { resolveRepo } from "./resolve-repo";
 import { pkgTier1, pkgTier2, pkgSkipT2Only } from "./package-tiers";
 import { webTier1, webTier2 } from "./website-tiers";
-import type { ResolvedPackage, LookupResponse } from "./types";
+import type {
+  ResolvedPackage,
+  LookupResponse,
+  LookupResult,
+  SummaryStatus,
+} from "./types";
 
 const GITHUB_RE = /github\.com\/([^/\s]+)\/([^/\s#?.]+)/;
 
@@ -32,10 +37,37 @@ function isUsableHomepage(url: string): boolean {
   }
 }
 
+/* Better-known statuses win when the same check is merged twice */
+const STATUS_RANK: Record<SummaryStatus, number> = {
+  found: 4,
+  partial: 3,
+  missing: 2,
+  error: 1,
+  skipped: 0,
+};
+
+const resultKey = (r: LookupResult) =>
+  `${r.source}|${r.url ?? ""}|${JSON.stringify(r.contacts)}`;
+
+/* The repo and the homepage often resolve to the same site, so a plain concat
+   would repeat whole blocks of website checks */
 function mergeResponse(target: LookupResponse, source: LookupResponse): void {
-  target.results.push(...source.results);
+  const seen = new Set(target.results.map(resultKey));
+  for (const r of source.results) {
+    const key = resultKey(r);
+    if (seen.has(key)) continue;
+    seen.add(key);
+    target.results.push(r);
+  }
+
   target.errors.push(...source.errors);
-  target.summary.push(...source.summary);
+
+  for (const s of source.summary) {
+    const at = target.summary.findIndex((t) => t.item === s.item);
+    if (at < 0) target.summary.push(s);
+    else if (STATUS_RANK[s.status] > STATUS_RANK[target.summary[at].status])
+      target.summary[at] = s;
+  }
 }
 
 /** Extract repository and homepage URLs from source result metadata. */

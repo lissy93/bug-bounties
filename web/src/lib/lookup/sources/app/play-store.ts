@@ -24,9 +24,10 @@ export const playStore: AppLookupSource = {
     const contacts: ContactInfo[] = [];
     const metadata: Record<string, unknown> = {};
 
-    /* Developer name */
+    /* Developer name. The id in the href is a numeric account id for many
+       publishers, so read the text from the span inside the anchor */
     const devNameMatch = html.match(
-      /<a[^>]*href="\/store\/apps\/dev[^"]*"[^>]*>([^<]+)<\/a>/,
+      /href="\/store\/apps\/dev(?:eloper)?\?id=[^"]*"[^>]*>\s*<span[^>]*>([^<]+)/,
     );
     if (devNameMatch) metadata.developer = devNameMatch[1].trim();
 
@@ -52,23 +53,27 @@ export const playStore: AppLookupSource = {
       }
     }
 
-    /* Developer website */
-    const devWebsiteMatch = html.match(
-      /Developer[^]*?Visit\s+website[^]*?href="(https?:\/\/[^"]+)"/i,
-    );
-    if (devWebsiteMatch) {
-      const url = decodeGoogleRedirect(devWebsiteMatch[1]);
-      contacts.push({ type: "url", value: url, label: "Developer website" });
-      metadata.developerWebsite = url;
+    /* Google's own chrome links carry the same visible text, so anchor on the
+       aria-label the store only puts on the app's developer-contact links */
+    const devLink = (label: string): string | null => {
+      const m = html.match(
+        new RegExp(`href="(https?://[^"]+)"[^>]*aria-label="${label} `, "i"),
+      );
+      return m ? decodeGoogleRedirect(m[1]) : null;
+    };
+
+    const devWebsite = devLink("Website");
+    if (devWebsite) {
+      contacts.push({
+        type: "url",
+        value: devWebsite,
+        label: "Developer website",
+      });
+      metadata.developerWebsite = devWebsite;
     }
 
-    /* Privacy policy */
-    const privacyMatch = html.match(
-      /[Pp]rivacy\s+[Pp]olicy[^]*?href="(https?:\/\/[^"]+)"/,
-    );
-    if (privacyMatch) {
-      metadata.privacyPolicy = decodeGoogleRedirect(privacyMatch[1]);
-    }
+    const privacyPolicy = devLink("Privacy Policy");
+    if (privacyPolicy) metadata.privacyPolicy = privacyPolicy;
 
     return buildResult("play-store", 1, contacts, ctx.storeUrl, metadata);
   },

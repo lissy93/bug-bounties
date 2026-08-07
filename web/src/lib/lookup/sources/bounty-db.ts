@@ -35,7 +35,14 @@ function domainFromUrl(u: string): string | null {
   }
 }
 
-let index: Map<string, YamlProgram[]> | null = null;
+/* `primary` marks a program that owns the domain, as opposed to one that
+   merely lists a subdomain of it (an extension on addons.mozilla.org, say) */
+interface IndexEntry {
+  prog: YamlProgram;
+  primary: boolean;
+}
+
+let index: Map<string, IndexEntry[]> | null = null;
 let programs: YamlProgram[] | null = null;
 
 function load() {
@@ -48,20 +55,33 @@ function load() {
   programs = [...p, ...i].filter((e) => e.company && e.url);
   index = new Map();
   for (const prog of programs) {
-    const domains = new Set<string>();
+    const domains = new Map<string, boolean>();
+
+    /* Platform-hosted programs never name their own domain in the URL, so
+       let the company name vouch for it too */
+    const named = (registrable: string) => {
+      const label = registrable.split(".")[0];
+      return (
+        label.length >= 3 &&
+        normalizeName(prog.company).includes(normalizeName(label))
+      );
+    };
+
     const d = domainFromUrl(prog.url);
-    if (d && !HOSTING_DOMAINS.has(d)) domains.add(d);
+    if (d && !HOSTING_DOMAINS.has(d)) domains.set(d, true);
     for (const dn of prog.domains || []) {
       try {
-        const r = getRegistrableDomain(stripWww(dn.replace(/\*\./g, "")));
-        if (r.includes(".") && !HOSTING_DOMAINS.has(r)) domains.add(r);
+        const host = stripWww(dn.replace(/\*\./g, ""));
+        const r = getRegistrableDomain(host);
+        if (!r.includes(".") || HOSTING_DOMAINS.has(r)) continue;
+        domains.set(r, domains.get(r) || host === r || named(r));
       } catch {
         /* skip */
       }
     }
-    for (const domain of domains) {
+    for (const [domain, primary] of domains) {
       const arr = index.get(domain) || [];
-      arr.push(prog);
+      arr.push({ prog, primary });
       index.set(domain, arr);
     }
   }
@@ -73,9 +93,17 @@ export const bountyDb: LookupSource = {
   tier: 1,
   async execute(ctx: ResolvedDomain): Promise<LookupResult | null> {
     const { index, programs } = load();
-    let matches = index.get(ctx.baseDomain) || [];
+
+    /* Owners answer for the domain; fall back to subdomain-only listings so a
+       target whose program never names the apex is still found */
+    const owners = (entries: IndexEntry[] = []) => {
+      const primary = entries.filter((e) => e.primary);
+      return (primary.length ? primary : entries).map((e) => e.prog);
+    };
+
+    let matches = owners(index.get(ctx.baseDomain));
     if (!matches.length && ctx.domain !== ctx.baseDomain) {
-      matches = index.get(ctx.domain) || [];
+      matches = owners(index.get(ctx.domain));
     }
     if (!matches.length) {
       const hint = normalizeName(ctx.companyHint);

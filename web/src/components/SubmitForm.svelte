@@ -45,6 +45,11 @@
   let copied: "yaml" | "body" | "url" | null = null;
   let copyTimer: ReturnType<typeof setTimeout> | null = null;
 
+  // gitGost now rejects submissions without a Menta CAPTCHA token, and Menta
+  // only issues tokens to domains registered with it. Flip this back on once
+  // this domain is registered and the widget can supply `captcha_token`.
+  const GITGOST_ENABLED = false;
+
   // gitGost submission state
   let gitGostState: "idle" | "submitting" | "success" | "error" = "idle";
   let gitGostResult: GitGostSuccess | null = null;
@@ -272,9 +277,13 @@
 
   <h2>Submit your program</h2>
   <p class="submit-hint">
-    Pick the option that works best for you. All three end up in the same place:
+    Pick the option that works best for you. They all end up in the same place:
     a pull request adding {company || "your program"} to
     <code>independent-programs.yml</code>.
+    {#if !GITGOST_ENABLED}
+      Anonymous submission is unavailable for now, so use the GitHub issue or
+      the YAML instead.
+    {/if}
   </p>
 
   <div class="actions">
@@ -286,7 +295,12 @@
       type="button"
       class="secondary"
       on:click={submitViaGitGost}
-      disabled={gitGostState === "submitting" || gitGostState === "success"}
+      title={GITGOST_ENABLED
+        ? undefined
+        : "Anonymous submission is temporarily unavailable"}
+      disabled={!GITGOST_ENABLED ||
+        gitGostState === "submitting" ||
+        gitGostState === "success"}
     >
       {#if gitGostState === "submitting"}
         <Loader2 size={16} class="spin" />
