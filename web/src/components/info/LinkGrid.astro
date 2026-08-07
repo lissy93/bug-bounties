@@ -1,42 +1,64 @@
 ---
-export interface LinkGridItem {
-  title: string;
-  url: string;
-  description: string;
-  /** Optional secondary line shown between title and description. */
-  subtitle?: string;
-  /** Optional icon URL. When present, sits inline with the description. */
-  icon?: string;
-}
+import type { LinkItem } from "@content/links";
 
 interface Props {
-  items: LinkGridItem[];
+  items: LinkItem[];
+  /** If set, only the first N items will be rendered. */
+  limit?: number;
   /** Whether links should open in a new tab. Defaults to true. */
   external?: boolean;
+  /** Fall back to the linked site's favicon for items without an icon. */
+  autoIcon?: boolean;
 }
 
-const { items, external = true } = Astro.props;
+const { items, limit, external = true, autoIcon = false } = Astro.props;
 const linkAttrs = external
   ? { target: "_blank", rel: "noopener noreferrer" }
   : {};
+
+const faviconFor = (hostname: string) => `https://icon.horse/icon/${hostname}`;
+
+const iconFor = ({ hostname, pathname }: URL) => {
+  const channel =
+    /(^|\.)youtube\.com$/.test(hostname) &&
+    pathname.match(/^\/(?:@|c\/|user\/)([^/]+)/)?.[1];
+  return channel
+    ? `https://unavatar.io/youtube/${channel}?fallback=${encodeURIComponent(faviconFor(hostname))}`
+    : faviconFor(hostname);
+};
+
+const cards = (limit ? items.slice(0, limit) : items).map((item) => ({
+  ...item,
+  icon:
+    item.icon ??
+    (autoIcon && URL.canParse(item.url)
+      ? iconFor(new URL(item.url))
+      : undefined),
+}));
 ---
 
 <ul class="card-grid link-grid">
   {
-    items.map((item) => (
+    cards.map((item) => (
       <li>
         <a class="link-card" href={item.url} {...linkAttrs}>
           <strong>{item.title}</strong>
           {item.subtitle && <em>{item.subtitle}</em>}
           {item.icon ? (
             <div class="body">
-              <img
-                src={item.icon}
-                alt=""
-                loading="lazy"
-                width="40"
-                height="40"
-              />
+              <span
+                class="icon"
+                data-initial={item.title.charAt(0).toUpperCase()}
+              >
+                <img
+                  src={item.icon}
+                  alt=""
+                  loading="lazy"
+                  width="40"
+                  height="40"
+                  onerror="this.parentElement.classList.add('failed'); this.remove()"
+                />
+              </span>
               <span>{item.description}</span>
             </div>
           ) : (
@@ -92,10 +114,32 @@ const linkAttrs = external
       align-items: center;
       gap: 0.75rem;
       min-width: 0;
+    }
+
+    .icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      width: 40px;
+      height: 40px;
 
       img {
-        flex-shrink: 0;
+        width: 100%;
+        height: 100%;
         object-fit: contain;
+      }
+
+      &.failed {
+        background: var(--primary);
+        border-radius: var(--curve);
+        color: var(--background);
+        font-size: 1.1rem;
+        font-weight: bold;
+
+        &::before {
+          content: attr(data-initial);
+        }
       }
     }
   }

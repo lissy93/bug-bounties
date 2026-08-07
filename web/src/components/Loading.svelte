@@ -16,7 +16,7 @@
     align-items: center;
     gap: 1rem;
     padding: 3rem 1rem;
-    color: var(--muted, #ffffff60);
+    color: var(--muted);
     font-size: 1.2rem;
     background: var(--background-lighter);
     max-width: var(--content-width);
@@ -33,7 +33,7 @@
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background: var(--primary, #fdc500);
+    background: var(--primary);
     animation: pulse 1.2s ease-in-out infinite;
   }
   .dots span:nth-child(2) {

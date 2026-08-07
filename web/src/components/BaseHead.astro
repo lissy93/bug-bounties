@@ -28,6 +28,20 @@ const structuredData = jsonLd || defaultSchema(description);
 <meta name="description" content={description} />
 <link rel="canonical" href={canonicalUrl} />
 <link rel="alternate" hreflang="en" href={canonicalUrl} />
+<link
+  rel="preload"
+  href="/fonts/Wallpoet.ttf"
+  as="font"
+  type="font/ttf"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="/fonts/Roboto.ttf"
+  as="font"
+  type="font/ttf"
+  crossorigin
+/>
 <link rel="icon" type="image/png" href="/favicon.png" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -41,6 +55,7 @@ const structuredData = jsonLd || defaultSchema(description);
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 <meta property="og:image" content={ogImage} />
+<meta property="og:image:alt" content={title} />
 <meta property="og:site_name" content="Bug Bounties" />
 <meta property="og:locale" content="en_US" />
 

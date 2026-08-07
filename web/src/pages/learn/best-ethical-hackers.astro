@@ -1,8 +1,7 @@
 ---
 import MarkdownLayout from "@layouts/MarkdownLayout.astro";
-import SecurityResearchers from "@components/info/SecurityResearchers.astro";
-import Youtubers from "@components/info/Youtubers.astro";
-import Podcasts from "@components/info/Podcasts.astro";
+import LinkGrid from "@components/info/LinkGrid.astro";
+import { securityResearchers, youtubers, podcasts } from "@content/links";
 
 const frontmatter = {
   title: "Security Researchers Worth Following",
@@ -33,7 +32,7 @@ const frontmatter = {
 
   <h2>The list</h2>
 
-  <SecurityResearchers />
+  <LinkGrid items={securityResearchers} autoIcon />
 
   <h2>YouTubers</h2>
 
@@ -43,7 +42,7 @@ const frontmatter = {
     working hunters get asked "who do you actually watch".
   </p>
 
-  <Youtubers />
+  <LinkGrid items={youtubers} autoIcon />
 
   <h2>Podcasts</h2>
 
@@ -53,7 +52,7 @@ const frontmatter = {
     staying power and substance, no churn-and-burn AI-generated feeds.
   </p>
 
-  <Podcasts />
+  <LinkGrid items={podcasts} autoIcon />
 
   <h2>How to actually follow them</h2>
 

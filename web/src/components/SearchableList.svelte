@@ -304,7 +304,7 @@
     flex-direction: column;
     gap: 0.75rem;
     margin: 1rem auto;
-    width: var(--content-width, 90%);
+    width: var(--content-width);
   }
   .search-row {
     display: flex;
@@ -314,19 +314,16 @@
     flex: 1;
     padding: 0.5rem 0.75rem;
     font-size: 1rem;
-    border: 1px solid var(--primary-muted, #fdc50087);
-    border-radius: var(--curve, 4px);
+    border: 1px solid var(--primary-muted);
+    border-radius: var(--curve);
     color: var(--foreground);
     background: var(--background-lighter);
-  }
-  .search-row input:focus {
-    outline: 1px solid var(--primary);
   }
   .search-row select {
     padding: 0.5rem 0.75rem;
     font-size: 0.9rem;
-    border: 1px solid var(--primary-muted, #fdc50087);
-    border-radius: var(--curve, 4px);
+    border: 1px solid var(--primary-muted);
+    border-radius: var(--curve);
     color: var(--foreground);
     background: var(--background-lighter);
     cursor: pointer;
@@ -340,7 +337,7 @@
   .count {
     margin-left: auto;
     font-size: 0.85rem;
-    color: var(--muted, #ffffff60);
+    color: var(--muted);
   }
   .clear {
     padding: 0.25rem 0.6rem;
@@ -348,14 +345,14 @@
     background: var(--primary);
     color: var(--background);
     border: none;
-    border-radius: var(--curve, 4px);
+    border-radius: var(--curve);
     cursor: pointer;
   }
   .section-heading {
     font-size: 1.1rem;
     color: var(--primary);
     margin: 0 auto 0.75rem;
-    width: var(--content-width, 90%);
+    width: var(--content-width);
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -368,7 +365,7 @@
     border-radius: 999px;
   }
   .program-list {
-    width: var(--content-width, 90%);
+    width: var(--content-width);
     margin: 0 auto;
   }
   .nothing {
@@ -376,14 +373,14 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    max-width: var(--content-width, 90%);
+    max-width: var(--content-width);
     margin: 0 auto;
     color: var(--primary);
     font-size: 1.2rem;
     padding: 2rem 0;
     text-align: center;
-    border-radius: var(--curve, 4px);
-    box-shadow: var(--shadow, 2px 2px 1px #00000082);
+    border-radius: var(--curve);
+    box-shadow: var(--shadow);
     background: var(--background-lighter);
   }
   .sentinel {

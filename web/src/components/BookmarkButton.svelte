@@ -48,9 +48,9 @@
     justify-content: center;
     padding: 0.25rem;
     border: none;
-    border-radius: var(--curve, 4px);
+    border-radius: var(--curve);
     background: transparent;
-    color: var(--muted, #ffffff60);
+    color: var(--muted);
     cursor: pointer;
     opacity: 0;
     transition:
@@ -59,10 +59,10 @@
   }
   .bookmark-btn.bookmarked {
     opacity: 1;
-    color: var(--primary, #fdc500);
+    color: var(--primary);
   }
   .bookmark-btn:hover {
-    color: var(--primary, #fdc500);
+    color: var(--primary);
   }
   /* Card hover is the only other reveal, so touch and keyboard need these */
   .bookmark-btn:focus-visible {
