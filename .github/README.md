@@ -249,6 +249,7 @@
 - <img src='https://icon.horse/icon/www.boozt.com' width='16'/> [Boozt Fashion](https://www.boozt.com) 💰
 - <img src='https://icon.horse/icon/psirt.bosch.com' width='16'/> [Bosch](https://psirt.bosch.com/bosch-responsible-disclosure-policy/) 🏅
 - <img src='https://icon.horse/icon/global.bose.com' width='16'/> [Bose](https://global.bose.com/en_us/product_security_vulnerability_response.html) 💰
+- <img src='https://icon.horse/icon/www.box.com' width='16'/> [Box](https://www.box.com/about-us/security/) 💰
 - <img src='https://icon.horse/icon/www.intigriti.com' width='16'/> [Bpost](https://www.intigriti.com/programs/bpost/dummy/detail) 💰
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [BProtocol](https://immunefi.com/bug-bounty/bprotocol/) 💰
 - <img src='https://icon.horse/icon/www.braintreepayments.com' width='16'/> [Braintree](https://www.braintreepayments.com/developers/disclosure) 🏅
