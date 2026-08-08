@@ -666,7 +666,6 @@ companies:
   currency: EUR
   domains:
   - app.aikido.dev
-  - marketplace.visualstudio.com
 - company: 'Aikido Security: Zen by Aikido'
   url: https://www.intigriti.com/programs/aikido/aikidoruntime/detail
   handle: aikidoruntime
@@ -3052,8 +3051,22 @@ companies:
   rewards: []
 - company: Box
   url: https://www.box.com/about-us/security/
+  handle: box_private
   contact: mailto:security-reports@box.com
-  rewards: []
+  rewards:
+  - '*bounty'
+  managed: true
+  domains:
+  - account.box.com
+  - api.box.com
+  - app.box.com
+  - cloud.app.box.com
+  - dl.boxcloud.com
+  - m.box.com
+  - notes.services.box.com
+  - signrequest.com
+  - sr-staging-1.com
+  - upload.box.com
 - company: Bpost
   url: https://www.intigriti.com/programs/bpost/dummy/detail
   handle: dummy
@@ -4573,27 +4586,17 @@ companies:
   managed: true
   safe_harbor: full
   domains:
-  - api.coinbase.com
-  - api.custody.coinbase.com
+  - base.app
   - base.org
   - cbhq.net
   - chrome.google.com
-  - cloud.coinbase.com
   - coinbase-corp.com
   - coinbase.com
   - com.coinbase.android
-  - com.coinbase.wallite
   - com.vilcsak.bitcoin2
-  - commerce.coinbase.com
-  - custody.coinbase.com
   - github.com
-  - institutional.coinbase.com
-  - international.coinbase.com
-  - nft.coinbase.com
   - org.toshi
   - org.toshi.distribution
-  - prime.coinbase.com
-  - pro.coinbase.com
 - company: Coindcx
   url: https://yeswehack.com/programs/coindcx-bug-bounty-program#program-description
   contact: https://yeswehack.com/programs/coindcx-bug-bounty-program#program-description
@@ -5195,7 +5198,10 @@ companies:
   rewards:
   - '*bounty'
   - '*recognition'
+  managed: false
   safe_harbor: full
+  domains:
+  - github.com
 - company: Currencycloud
   url: https://www.currencycloud.com/legal/responsible-disclosure/
   contact: mailto:security@currencycloud.com
@@ -5247,6 +5253,7 @@ companies:
   - award.cybersecuritycoalition.be
   - blog.cybersecuritycoalition.be
   - cybersecuritycoalition.be
+  - surfenzonderzorgen.safeonweb.be
 - company: Cyber Sprint
   url: https://www.cybersprint.com/responsible-disclosure/
   contact: mailto:soc@cybersprint.com
@@ -5569,6 +5576,21 @@ companies:
   contact: https://yeswehack.com/programs/deezer-bug-bounty-program-2019
   rewards:
   - '*bounty'
+  max_payout: 2500.0
+  domains:
+  - account.deezer.com
+  - api.deezer.com
+  - apps.apple.com
+  - connect.deezer.com
+  - deezer.com
+  - payment.deezer.com
+  - pipe.deezer.com
+  - play.google.com
+  - upload.deezer.com
+  - wellbeing.deezer.com
+  - wellbeing.dzcdn.net
+  - ws.deezer.com
+  - zen.deezer.com
 - company: defcon.org
   url: https://www.defcon.org/html/links/dc-policy.html
   contact: mailto:info@defcon.org
@@ -7340,11 +7362,30 @@ companies:
   max_payout: 18000.0
   domains:
   - a.exodus.io
+  - api.passkeys.network
   - apps.apple.com
+  - ctr.a.exodus.io
+  - embedded.passkeys.foundation
   - exodus-movement.exodus
   - exodus.com
   - exodus.io
+  - fiat-p.a.exodus.io
+  - fiat-prod-fallback.a.exodus.io
+  - fiat.a.exodus.io
+  - github.com
+  - kyc.a.exodus.io
+  - login.exodus.com
+  - my.passkeys.network
+  - nexotrack-p.exodus.io
+  - nexotrack.exodus.io
+  - npmjs.com
+  - passkeys.foundation
+  - pay-admin.exodus.io
+  - pay.exodus.io
   - play.google.com
+  - relay.passkeys.foundation
+  - turing.exodus.io
+  - wallet.passkeys.foundation
 - company: Exoscale Bug Bounty
   url: https://www.intigriti.com/programs/exoscale/excoscalebugbounty/detail
   handle: excoscalebugbounty
@@ -8873,12 +8914,13 @@ companies:
   contact: https://yeswehack.com/programs/gojek-bug-bounty-program
   rewards:
   - '*bounty'
-  max_payout: 5000.0
+  max_payout: 3500.0
   domains:
   - api.gobiz.co.id
   - api.gojek.co.id
   - apps.apple.com
   - gobiz.co.id
+  - gocorp.gojek.com
   - gofood.co.id
   - gofoodmerchant.co.id
   - gojek.com
@@ -8957,7 +8999,7 @@ companies:
   contact: https://yeswehack.com/programs/goto-financial-public-bounty-program
   rewards:
   - '*bounty'
-  max_payout: 7000.0
+  max_payout: 5000.0
   domains:
   - api.midtrans.com
   - app.midtrans.com
@@ -8966,10 +9008,10 @@ companies:
   - findaya.com
   - gaming.gopayapi.com
   - go-pay.co.id
-  - gofin.io
   - gopayapi.com
   - gopaymerchant.midtrans.com
   - gtflabs.io
+  - mab.co.id
   - midtrans.com
   - mokapos.com
   - play.google.com
@@ -10288,7 +10330,7 @@ companies:
   - '*bounty'
   - '*recognition'
   managed: true
-  safe_harbor: partial
+  safe_harbor: full
   max_payout: 10000.0
   domains:
   - apis.indeed.com
@@ -10954,7 +10996,7 @@ companies:
   - '*bounty'
   - '*recognition'
   managed: true
-  safe_harbor: partial
+  safe_harbor: full
   max_payout: 4500.0
   domains:
   - answers.irobot.com
@@ -11547,6 +11589,7 @@ companies:
   contact: https://yeswehack.com/programs/keycloak-bug-bounty-program
   rewards:
   - '*bounty'
+  max_payout: 5000.0
 - company: KFC
   url: https://kfc.responsibledisclosure.com/hc/en-us
   contact: https://kfc.responsibledisclosure.com/hc/en-us/requests/new
@@ -15012,7 +15055,7 @@ companies:
   handle: oaknorth_bank
   contact: https://hackerone.com/oaknorth_bank
   rewards: []
-  managed: true
+  managed: false
   domains:
   - api.deposits.oaknorth.co.uk
   - apps.apple.com
@@ -15179,7 +15222,7 @@ companies:
   - '*bounty'
   - '*recognition'
   managed: true
-  safe_harbor: partial
+  safe_harbor: full
   max_payout: 75000.0
   domains:
   - app.scaleft.com
@@ -18630,6 +18673,38 @@ companies:
   - eshop.salt.ch
   - login.salt.ch
   - my.salt.ch
+- company: Salto Vulnerability Disclosure
+  url: https://www.intigriti.com/programs/saltosystems/saltovulnerabilitydisclosure/detail
+  handle: saltovulnerabilitydisclosure
+  contact: https://www.intigriti.com/programs/saltosystems/saltovulnerabilitydisclosure/detail
+  rewards: []
+  currency: EUR
+  domains:
+  - baeder-suite.de
+  - cognitec-systems.de
+  - cognitec.com
+  - danalock.com
+  - danalock.dk
+  - danalock.eu
+  - danalockapps.com
+  - danalockservices.com
+  - dejoris.de
+  - enviso.io
+  - enviso.shop
+  - gantner.be
+  - gantner.com
+  - gantnercloud.com
+  - gantnerindia.com
+  - guidemylock.dk
+  - my-clay.com
+  - mylock.dk
+  - poly-control.com
+  - poly-control.dk
+  - poly-lock.dk
+  - polycontrol.dk
+  - recreatex.be
+  - salto-orion.app
+  - saltoapis.com
 - company: Samsara
   url: https://www.samsara.com/security
   contact: https://www.samsara.com/security
@@ -18880,7 +18955,7 @@ companies:
   - '*bounty'
   - '*recognition'
   managed: true
-  safe_harbor: partial
+  safe_harbor: full
   max_payout: 10000.0
   domains:
   - aips-internal.com
@@ -18995,7 +19070,6 @@ companies:
   managed: true
   safe_harbor: partial
   domains:
-  - 6sense.com
   - api.6sense.com
   - chromewebstore.google.com
 - company: Sense of Security
@@ -19927,7 +20001,7 @@ companies:
   - '*bounty'
   - '*recognition'
   managed: true
-  safe_harbor: partial
+  safe_harbor: full
   max_payout: 18000.0
   domains:
   - square.com
@@ -20204,6 +20278,7 @@ companies:
   - '*bounty'
   - '*recognition'
   - '*swag'
+  managed: false
   max_payout: 250000.0
 - company: StellaSwap
   url: https://immunefi.com/bug-bounty/stellaswap/
@@ -20442,6 +20517,7 @@ companies:
   - codahosted.io
   - com.grammarly.android.keyboard
   - com.grammarly.keyboard
+  - com.superhuman.mail
   - gateway.superhuman.com
   - grammarly.com
   - grammarly.io
@@ -20965,7 +21041,7 @@ companies:
   contact: https://en.security.tencent.com/index.php/report/add
   rewards:
   - '*bounty'
-  max_payout: 6425.0
+  max_payout: 5000.0
   domains:
   - en.security.tencent.com
 - company: Tendermint
@@ -21536,6 +21612,10 @@ companies:
   contact: https://yeswehack.com/programs/toom-baumarkt-gmbh-bug-bounty-program
   rewards:
   - '*bounty'
+  max_payout: 3000.0
+  domains:
+  - api.toom.de
+  - toom.de
 - company: Top Coder
   url: https://hackerone.com/topcoder
   contact: https://hackerone.com/topcoder
@@ -21925,6 +22005,14 @@ companies:
   contact: https://www.intigriti.com/programs/truelayer/truelayer/detail
   rewards:
   - '*bounty'
+  currency: EUR
+  domains:
+  - sandbox.zimpler.net
+  - staging.zimpler.net
+  - truelayer-sandbox.com
+  - truelayer.com
+  - zimpler.com
+  - zimpler.net
 - company: TruFin
   url: https://immunefi.com/bug-bounty/trufin/
   contact: https://immunefi.com/bug-bounty/trufin/
