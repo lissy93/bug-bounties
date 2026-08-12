@@ -1057,6 +1057,14 @@ companies:
   pgp_key: https://mullvad.net/static/gpg/mullvadvpn-support-mail.asc
   description: Found a bug or vulnerability? Here's how you can securely report it directly to us. Use email for non-sensitive issues or general enquiries, or PGP-encrypted email for more sensitive vulnerabilities. While we (currently) have no bug bounty program, we greatly appreciate the goodwill of customers who take the time to share their finds with us. Mullvad VPN will not pursue legal actions against security researchers that reports bugs or vulnerabilities to us.
 
+- company: n8n
+  url: https://n8n.io/report-a-vulnerability/
+  contact: https://n8n.io/report-a-vulnerability/
+  program_type: vdp
+  status: active
+  preferred_languages: English
+  description: n8n runs a Vulnerability Disclosure Program as a formal channel for reporting security issues found in n8n. Every submission is reviewed, and n8n works with the reporter to understand the impact and keeps them updated throughout.
+
 - company: nelko.com
   url: https://nelko.com/pages/vulnerability-disclosure-policy
   rewards:
