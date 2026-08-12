@@ -1753,6 +1753,15 @@ companies:
   preferred_languages: English
   description: Get in touch with our security team at security@tailscale.com to disclose any security vulnerabilities. Upon discovering a vulnerability, we ask that you act in a way to protect our users' information - inform us as soon as possible, test against fake data and accounts rather than our users' information, and work with us to close the vulnerability before disclosing it to others. Tailscale does not have a bounty program.
 
+- company: Temporal
+  url: https://temporal.io/security/
+  contact: mailto:security@temporal.io
+  program_type: vdp
+  status: active
+  allows_disclosure: true
+  preferred_languages: English
+  description: Temporal openly accepts reports for its products, and agrees not to pursue legal action against researchers who test without harming Temporal Technologies or its customers, stay within the scope of the program, follow the laws of their location, and avoid public disclosure until a mutually agreed date. Temporal Technologies is a CNA and issues CVE identifiers for vulnerabilities in Temporal OSS.
+
 - company: Texas Instruments
   url: https://www.ti.com/technologies/security/report-product-security-vulnerabilities.html
   contact: mailto:psirt@ti.com
