@@ -11,6 +11,38 @@
 
 companies:
 
+- company: Airwallex
+  url: https://help.airwallex.com/hc/en-gb/articles/900004502526-Bug-Bounty-Program-Rules
+  contact: mailto:bugbounty@airwallex.com
+  rewards:
+  - '*bounty'
+  program_type: bounty
+  status: active
+  preferred_languages: English
+  description: Airwallex maintains a bug bounty program for Airwallex owned web properties. Any design or implementation issue that substantially affects the confidentiality or integrity of user data is likely to be in scope, limited to technical vulnerabilities in Airwallex owned or used web applications. Reward amounts are chosen at the discretion of the reward panel, and are awarded on a first-come, first-served basis.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - automated_scanning
+  out_of_scope:
+  - Disclosure of known public files or directories (e.g. robots.txt)
+  - Clickjacking and issues only exploitable through clickjacking
+  - CSRF on forms available to anonymous users, CSRF attacks requiring knowledge of the CSRF token, and logout CSRF
+  - Content spoofing
+  - Login or forgot password page brute force, and account lockout not enforced
+  - OPTIONS HTTP method enabled
+  - Username / email enumeration
+  - Missing HTTP security headers
+  - HTTP/DNS cache poisoning
+  - SSL/TLS issues such as BEAST, BREACH, renegotiation attacks, missing forward secrecy and weak cipher suites
+  - Self-XSS, and any XSS where local access is required
+  - Missing or incorrect SPF or DMARC records of any kind
+  - Source code disclosure vulnerabilities
+  - Information disclosure of non-confidential information
+  - Email bombing/flooding/rate limiting
+  domains:
+  - '*.airwallex.com'
+
 - company: atlan.com
   url: https://atlan.com/responsible-disclosure-program/
   contact: mailto:security@atlan.com
