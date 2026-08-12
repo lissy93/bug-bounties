@@ -1606,6 +1606,14 @@ companies:
     medium: 400
     low: 0
 
+- company: Tailscale
+  url: https://tailscale.com/security
+  contact: mailto:security@tailscale.com
+  program_type: vdp
+  status: active
+  preferred_languages: English
+  description: Get in touch with our security team at security@tailscale.com to disclose any security vulnerabilities. Upon discovering a vulnerability, we ask that you act in a way to protect our users' information - inform us as soon as possible, test against fake data and accounts rather than our users' information, and work with us to close the vulnerability before disclosing it to others. Tailscale does not have a bounty program.
+
 - company: Texas Instruments
   url: https://www.ti.com/technologies/security/report-product-security-vulnerabilities.html
   contact: mailto:psirt@ti.com
