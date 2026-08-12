@@ -57,6 +57,7 @@
 - <img src='https://icon.horse/icon/blog.airswap.io' width='16'/> [AirSwap](https://blog.airswap.io/airswap-bug-bounty-4d7ec41f3ea7) 💰
 - <img src='https://icon.horse/icon/airtable.com' width='16'/> [Airtable](https://airtable.com/security) 💰
 - <img src='https://icon.horse/icon/airvpn.org' width='16'/> [AirVPN](https://airvpn.org/security_policy/) 💰
+- <img src='https://icon.horse/icon/help.airwallex.com' width='16'/> [Airwallex](https://help.airwallex.com/hc/en-gb/articles/900004502526-Bug-Bounty-Program-Rules) 💰
 - <img src='https://icon.horse/icon/www.aven.com' width='16'/> [Aiven](https://www.aven.com/) 💰
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Aiven Managed Bug Bounty](https://bugcrowd.com/engagements/aiven-mbb-og) 💰
 - <img src='https://icon.horse/icon/yeswehack.com' width='16'/> [Alasco GmbH - Bug Bounty Program](https://yeswehack.com/programs/alasco-gmbh-bug-bounty-program) 💰
@@ -960,6 +961,7 @@
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Lightspeed Retail](https://bugcrowd.com/engagements/lightspeed-retail) 💰
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Lime](https://bugcrowd.com/lime) 💰 🏅
 - <img src='https://icon.horse/icon/bugbounty.linecorp.com' width='16'/> [LINE](https://bugbounty.linecorp.com/en/) 💰 🏅
+- <img src='https://icon.horse/icon/linear.app' width='16'/> [Linear](https://linear.app/security/vulnerability) 💰
 - <img src='https://icon.horse/icon/security.linkedin.com' width='16'/> [Linkedin](https://security.linkedin.com/vulnerabilty-disclosure) 💰
 - <img src='https://icon.horse/icon/www.belkin.com' width='16'/> [Linksys](https://www.belkin.com/us/security/) 🏅
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Linktree](https://bugcrowd.com/linktree-mbb-og) 💰
@@ -1794,6 +1796,7 @@
 </details>
 <details open><summary><h4>V</h4></summary>
 
+- <img src='https://icon.horse/icon/docs.val.town' width='16'/> [Val Town](https://docs.val.town/contact-us/security/) 💰
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [Valve](https://hackerone.com/valve) 💰 🏅 🎁
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [Valve Software](https://hackerone.com/valve) 💰
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [Vanilla](https://hackerone.com/vanilla) 💰 🏅
@@ -1886,6 +1889,7 @@
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [WOOFi](https://immunefi.com/bug-bounty/woofi/) 💰
 - <img src='https://icon.horse/icon/www.wordfence.com' width='16'/> [Wordfence](https://www.wordfence.com/security/) 💰
 - <img src='https://icon.horse/icon/wordpress.org' width='16'/> [Wordpress](https://wordpress.org/about/security/) 💰
+- <img src='https://icon.horse/icon/workos.com' width='16'/> [WorkOS](https://workos.com/security/responsible-disclosure) 💰
 - <img src='https://icon.horse/icon/workoutgen.app' width='16'/> [WorkoutGen](https://workoutgen.app/security/) 🏅
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Wormhole](https://immunefi.com/bug-bounty/wormhole/) 💰
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [WP Engine](https://bugcrowd.com/wpengine) 💰 🏅
