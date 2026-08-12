@@ -922,6 +922,53 @@ companies:
   - phishing
   - physical_access
 
+- company: Linear
+  url: https://linear.app/security/vulnerability
+  contact: mailto:security@linear.app
+  rewards:
+  - '*bounty'
+  program_type: bounty
+  status: active
+  safe_harbor: full
+  allows_disclosure: true
+  description: Linear offers financial compensation for valid vulnerabilities, with reward amounts informed by CVSS 4.0 base score (generally 4 or higher to qualify) alongside the affected component and real-world impact. Findings that cross trust boundaries are rewarded most, such as cross-workspace data access, authentication bypass, remote code execution, sync engine integrity, and API and MCP server authorization.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - physical_access
+  - automated_scanning
+  scope:
+  - target: linear.app
+    type: web
+  - target: client-api.linear.app
+    type: web
+  - target: sync.linear.app
+    type: web
+  - target: uploads.linear.app
+    type: web
+  - target: intake.linear.app
+    type: web
+  - target: api.linear.app
+    type: api
+  - target: mcp.linear.app
+    type: api
+  - target: Linear desktop applications (macOS, Windows)
+    type: desktop
+  - target: Linear-crafted integrations
+    type: other
+  out_of_scope:
+  - Theoretical attacks without proof of exploitability
+  - Man-in-the-middle attacks
+  - Clickjacking on pages with no sensitive actions
+  - High-privilege users (admins, owners) using a bug to sabotage or deface their own workspace
+  - Logic bugs that bypass limits on free accounts to reach paid plan features
+  - Missing best practices in HTTP headers, HTTP cookies, TLS versions and ciphersuites, and DNS configuration
+  - Defense-in-depth hardening items that are not vulnerabilities
+  - Permissive CORS configuration on the public API
+  - GraphQL introspection enabled on the public API
+  - Pre-auth login metadata exposed by the public API (auth methods, region, SSO URL)
+  - Open Dynamic Client Registration on the MCP server, which is open by design per the MCP spec
+
 - company: Mamentis
   url: https://mamentis.com/docs/resources/miscellaneous/submit-bug-request#security-issues
   contact: mailto:security@mamentis.com
