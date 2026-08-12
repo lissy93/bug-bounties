@@ -2102,6 +2102,15 @@ companies:
   currency: INR
   response_sla_days: 1
 
+- company: Zitadel
+  url: https://zitadel.com/vulnerability
+  contact: mailto:security@zitadel.com
+  program_type: vdp
+  status: active
+  preferred_languages: English, German
+  description: Zitadel asks that suspected security vulnerabilities are reported through its dedicated disclosure portal rather than publicly via GitHub issues, since public disclosure could put the Zitadel community at risk. Scope and expectations are set out in its official Vulnerability Disclosure Policy document.
+  testing_policy_url: https://trust.zitadel.com/resources?s=aw085mxrel3icmbmkphns3&name=zitadel-vulnerability-disclosure-policy
+
 - company: ZTE
   url: https://www.zte.com.cn/global/about/trust-center/ztepsirt.html
   contact: mailto:psirt@zte.com.cn
