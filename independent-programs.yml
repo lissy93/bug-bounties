@@ -445,6 +445,15 @@ companies:
   currency: USD
   hall_of_fame_url: https://crowdproof.id/security#acknowledgments
 
+- company: Cursor
+  url: https://cursor.com/security
+  contact: mailto:security-reports@cursor.com
+  program_type: vdp
+  status: active
+  preferred_languages: English
+  description: Cursor accepts potential vulnerabilities by email at security-reports@cursor.com. Reports are acknowledged within 5 business days and addressed as soon as Cursor is able, with critical incidents communicated by email to affected users.
+  response_sla_days: 5
+
 - company: DENSO WAVE
   url: https://www.denso-wave.com/en/psirt/
   contact: https://www.denso-wave.com/en/contact/psirt/
