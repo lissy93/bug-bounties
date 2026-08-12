@@ -926,6 +926,16 @@ companies:
     medium: 2000
     low: 1000
 
+- company: Mullvad VPN
+  url: https://mullvad.net/en/help/how-report-bug-or-vulnerability/
+  contact: mailto:support@mullvadvpn.net
+  program_type: vdp
+  status: active
+  safe_harbor: full
+  preferred_languages: English, Swedish
+  pgp_key: https://mullvad.net/static/gpg/mullvadvpn-support-mail.asc
+  description: Found a bug or vulnerability? Here's how you can securely report it directly to us. Use email for non-sensitive issues or general enquiries, or PGP-encrypted email for more sensitive vulnerabilities. While we (currently) have no bug bounty program, we greatly appreciate the goodwill of customers who take the time to share their finds with us. Mullvad VPN will not pursue legal actions against security researchers that reports bugs or vulnerabilities to us.
+
 - company: nelko.com
   url: https://nelko.com/pages/vulnerability-disclosure-policy
   rewards:
