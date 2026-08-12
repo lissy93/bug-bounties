@@ -333,6 +333,39 @@ companies:
     type: web
   hall_of_fame_url: https://security.web.cern.ch/home/en/kudos.shtml
 
+- company: Clerk
+  url: https://clerk.com/docs/guides/how-clerk-works/security/vulnerability-disclosure-policy
+  contact: mailto:security@clerk.dev
+  program_type: vdp
+  status: active
+  allows_disclosure: true
+  preferred_languages: English
+  description: Clerk asks researchers to avoid privacy violations and disruption to production systems, stay within the published scope, and keep findings confidential until Clerk has had 90 days to resolve the issue. In return, Clerk commits to not pursue or support legal action related to the research, and to confirm receipt of a report within 3 business days.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - physical_access
+  scope:
+  - target: https://dashboard.clerk.com
+    type: web
+  - target: https://accounts.clerk.com
+    type: web
+  - target: https://api.clerk.com
+    type: api
+  - target: https://clerk.clerk.com
+    type: web
+  - target: Production instances created on https://dashboard.clerk.com
+    type: web
+  out_of_scope:
+  - https://clerk.com
+  - Any services hosted by third party providers
+  - Findings in development or staging instances created on https://dashboard.clerk.com
+  - Findings from applications or systems not listed in the scope
+  - UI and UX bugs and spelling mistakes
+  response_sla_days: 3
+  disclosure_timeline_days: 90
+
 - company: coderpad.io
   url: https://coderpad.io/vulnerability-disclosure-policy/
   contact: mailto:bugbounty@coderpad.io
