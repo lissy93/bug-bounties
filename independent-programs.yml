@@ -1987,6 +1987,22 @@ companies:
   - '*.wikimint.com'
   reporting_url: https://www.wikimint.com/legal#security-hall-of-fame
 
+- company: WorkOS
+  url: https://workos.com/security/responsible-disclosure
+  contact: mailto:security@workos.com
+  rewards:
+  - '*bounty'
+  program_type: vdp
+  status: active
+  allows_disclosure: true
+  description: WorkOS asks researchers to email a clear description of the vulnerability with steps to reproduce, and provides a monetary reward for high and critical findings. Receipt is acknowledged within 2 business days, and researchers are asked to allow reasonable time for remediation before disclosing publicly or to third parties. WorkOS aims to resolve critical issues within one week of receipt.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - physical_access
+  response_sla_days: 2
+
 - company: WorkoutGen
   url: https://workoutgen.app/security/
   contact: mailto:security@workoutgen.app
