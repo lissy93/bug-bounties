@@ -1910,6 +1910,29 @@ companies:
   - esm.town
   - val.run
 
+- company: Vanta
+  url: https://www.vanta.com/disclosure
+  contact: mailto:security@vanta.com
+  program_type: vdp
+  status: active
+  safe_harbor: full
+  allows_disclosure: true
+  preferred_languages: English
+  description: Vanta asks for a reasonable amount of time to resolve an issue before it is disclosed publicly, and aims to resolve critical issues within ten business days. Good faith research in line with the policy is considered authorized, Vanta will not recommend or pursue legal action over it, and will make that authorization known should a third party take action.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - physical_access
+  scope:
+  - target: app.vanta.com
+    type: web
+  - target: Other subdomains and services associated with the Vanta App
+    type: web
+  out_of_scope:
+  - Vulnerabilities solely affecting the marketing website at www.vanta.com
+  - Reports that describe theoretical attack vectors without substantiated proof of exploitability
+
 - company: voibly.app
   url: https://voibly.app/security
   contact: mailto:support@voibly.app
