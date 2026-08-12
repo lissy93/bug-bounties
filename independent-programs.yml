@@ -11,6 +11,38 @@
 
 companies:
 
+- company: Airwallex
+  url: https://help.airwallex.com/hc/en-gb/articles/900004502526-Bug-Bounty-Program-Rules
+  contact: mailto:bugbounty@airwallex.com
+  rewards:
+  - '*bounty'
+  program_type: bounty
+  status: active
+  preferred_languages: English
+  description: Airwallex maintains a bug bounty program for Airwallex owned web properties. Any design or implementation issue that substantially affects the confidentiality or integrity of user data is likely to be in scope, limited to technical vulnerabilities in Airwallex owned or used web applications. Reward amounts are chosen at the discretion of the reward panel, and are awarded on a first-come, first-served basis.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - automated_scanning
+  out_of_scope:
+  - Disclosure of known public files or directories (e.g. robots.txt)
+  - Clickjacking and issues only exploitable through clickjacking
+  - CSRF on forms available to anonymous users, CSRF attacks requiring knowledge of the CSRF token, and logout CSRF
+  - Content spoofing
+  - Login or forgot password page brute force, and account lockout not enforced
+  - OPTIONS HTTP method enabled
+  - Username / email enumeration
+  - Missing HTTP security headers
+  - HTTP/DNS cache poisoning
+  - SSL/TLS issues such as BEAST, BREACH, renegotiation attacks, missing forward secrecy and weak cipher suites
+  - Self-XSS, and any XSS where local access is required
+  - Missing or incorrect SPF or DMARC records of any kind
+  - Source code disclosure vulnerabilities
+  - Information disclosure of non-confidential information
+  - Email bombing/flooding/rate limiting
+  domains:
+  - '*.airwallex.com'
+
 - company: atlan.com
   url: https://atlan.com/responsible-disclosure-program/
   contact: mailto:security@atlan.com
@@ -301,6 +333,39 @@ companies:
     type: web
   hall_of_fame_url: https://security.web.cern.ch/home/en/kudos.shtml
 
+- company: Clerk
+  url: https://clerk.com/docs/guides/how-clerk-works/security/vulnerability-disclosure-policy
+  contact: mailto:security@clerk.dev
+  program_type: vdp
+  status: active
+  allows_disclosure: true
+  preferred_languages: English
+  description: Clerk asks researchers to avoid privacy violations and disruption to production systems, stay within the published scope, and keep findings confidential until Clerk has had 90 days to resolve the issue. In return, Clerk commits to not pursue or support legal action related to the research, and to confirm receipt of a report within 3 business days.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - physical_access
+  scope:
+  - target: https://dashboard.clerk.com
+    type: web
+  - target: https://accounts.clerk.com
+    type: web
+  - target: https://api.clerk.com
+    type: api
+  - target: https://clerk.clerk.com
+    type: web
+  - target: Production instances created on https://dashboard.clerk.com
+    type: web
+  out_of_scope:
+  - https://clerk.com
+  - Any services hosted by third party providers
+  - Findings in development or staging instances created on https://dashboard.clerk.com
+  - Findings from applications or systems not listed in the scope
+  - UI and UX bugs and spelling mistakes
+  response_sla_days: 3
+  disclosure_timeline_days: 90
+
 - company: coderpad.io
   url: https://coderpad.io/vulnerability-disclosure-policy/
   contact: mailto:bugbounty@coderpad.io
@@ -379,6 +444,15 @@ companies:
   max_payout: 25000
   currency: USD
   hall_of_fame_url: https://crowdproof.id/security#acknowledgments
+
+- company: Cursor
+  url: https://cursor.com/security
+  contact: mailto:security-reports@cursor.com
+  program_type: vdp
+  status: active
+  preferred_languages: English
+  description: Cursor accepts potential vulnerabilities by email at security-reports@cursor.com. Reports are acknowledged within 5 business days and addressed as soon as Cursor is able, with critical incidents communicated by email to affected users.
+  response_sla_days: 5
 
 - company: DENSO WAVE
   url: https://www.denso-wave.com/en/psirt/
@@ -848,6 +922,53 @@ companies:
   - phishing
   - physical_access
 
+- company: Linear
+  url: https://linear.app/security/vulnerability
+  contact: mailto:security@linear.app
+  rewards:
+  - '*bounty'
+  program_type: bounty
+  status: active
+  safe_harbor: full
+  allows_disclosure: true
+  description: Linear offers financial compensation for valid vulnerabilities, with reward amounts informed by CVSS 4.0 base score (generally 4 or higher to qualify) alongside the affected component and real-world impact. Findings that cross trust boundaries are rewarded most, such as cross-workspace data access, authentication bypass, remote code execution, sync engine integrity, and API and MCP server authorization.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - physical_access
+  - automated_scanning
+  scope:
+  - target: linear.app
+    type: web
+  - target: client-api.linear.app
+    type: web
+  - target: sync.linear.app
+    type: web
+  - target: uploads.linear.app
+    type: web
+  - target: intake.linear.app
+    type: web
+  - target: api.linear.app
+    type: api
+  - target: mcp.linear.app
+    type: api
+  - target: Linear desktop applications (macOS, Windows)
+    type: desktop
+  - target: Linear-crafted integrations
+    type: other
+  out_of_scope:
+  - Theoretical attacks without proof of exploitability
+  - Man-in-the-middle attacks
+  - Clickjacking on pages with no sensitive actions
+  - High-privilege users (admins, owners) using a bug to sabotage or deface their own workspace
+  - Logic bugs that bypass limits on free accounts to reach paid plan features
+  - Missing best practices in HTTP headers, HTTP cookies, TLS versions and ciphersuites, and DNS configuration
+  - Defense-in-depth hardening items that are not vulnerabilities
+  - Permissive CORS configuration on the public API
+  - GraphQL introspection enabled on the public API
+  - Pre-auth login metadata exposed by the public API (auth methods, region, SSO URL)
+  - Open Dynamic Client Registration on the MCP server, which is open by design per the MCP spec
+
 - company: Mamentis
   url: https://mamentis.com/docs/resources/miscellaneous/submit-bug-request#security-issues
   contact: mailto:security@mamentis.com
@@ -935,6 +1056,14 @@ companies:
   preferred_languages: English, Swedish
   pgp_key: https://mullvad.net/static/gpg/mullvadvpn-support-mail.asc
   description: Found a bug or vulnerability? Here's how you can securely report it directly to us. Use email for non-sensitive issues or general enquiries, or PGP-encrypted email for more sensitive vulnerabilities. While we (currently) have no bug bounty program, we greatly appreciate the goodwill of customers who take the time to share their finds with us. Mullvad VPN will not pursue legal actions against security researchers that reports bugs or vulnerabilities to us.
+
+- company: n8n
+  url: https://n8n.io/report-a-vulnerability/
+  contact: https://n8n.io/report-a-vulnerability/
+  program_type: vdp
+  status: active
+  preferred_languages: English
+  description: n8n runs a Vulnerability Disclosure Program as a formal channel for reporting security issues found in n8n. Every submission is reviewed, and n8n works with the reporter to understand the impact and keeps them updated throughout.
 
 - company: nelko.com
   url: https://nelko.com/pages/vulnerability-disclosure-policy
@@ -1624,6 +1753,15 @@ companies:
   preferred_languages: English
   description: Get in touch with our security team at security@tailscale.com to disclose any security vulnerabilities. Upon discovering a vulnerability, we ask that you act in a way to protect our users' information - inform us as soon as possible, test against fake data and accounts rather than our users' information, and work with us to close the vulnerability before disclosing it to others. Tailscale does not have a bounty program.
 
+- company: Temporal
+  url: https://temporal.io/security/
+  contact: mailto:security@temporal.io
+  program_type: vdp
+  status: active
+  allows_disclosure: true
+  preferred_languages: English
+  description: Temporal openly accepts reports for its products, and agrees not to pursue legal action against researchers who test without harming Temporal Technologies or its customers, stay within the scope of the program, follow the laws of their location, and avoid public disclosure until a mutually agreed date. Temporal Technologies is a CNA and issues CVE identifiers for vulnerabilities in Temporal OSS.
+
 - company: Texas Instruments
   url: https://www.ti.com/technologies/security/report-product-security-vulnerabilities.html
   contact: mailto:psirt@ti.com
@@ -1739,6 +1877,62 @@ companies:
   testing_policy_url: https://tuturuuu.com/security/policy
   hall_of_fame_url: https://tuturuuu.com/security/bug-bounty
 
+- company: Val Town
+  url: https://docs.val.town/contact-us/security/
+  contact: mailto:security@val.town
+  rewards:
+  - '*bounty'
+  program_type: bounty
+  status: active
+  allows_disclosure: true
+  preferred_languages: English
+  description: Val Town offers bug bounties as compensation, depending on the severity of the exploit found. Bounties are awarded first-come, first-served, so only the first report of a given vulnerability is eligible. Val Town handles reports in strict confidence, and will not take legal action against researchers who act in accordance with the policy.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - physical_access
+  - automated_scanning
+  out_of_scope:
+  - Vulnerabilities on outdated or deprecated browsers, open source libraries, or infrastructure
+  - Missing security hardening headers
+  - Policies on the presence or absence of SPF/DMARC/DKIM/CAA/BIMI records
+  - Self-XSS or developer console code execution
+  - Login/logout CSRF
+  - Brute force login attempts
+  - Bugs on Vals themselves, which are user-controlled code and not part of the product surface
+  - Open OAuth Dynamic Client Registration (RFC 7591), which Val Town intentionally supports for MCP client onboarding
+  - Invitation codes not being bound to email addresses, which is a design choice
+  domains:
+  - val.town
+  - valtown.email
+  - api.val.town
+  - esm.town
+  - val.run
+
+- company: Vanta
+  url: https://www.vanta.com/disclosure
+  contact: mailto:security@vanta.com
+  program_type: vdp
+  status: active
+  safe_harbor: full
+  allows_disclosure: true
+  preferred_languages: English
+  description: Vanta asks for a reasonable amount of time to resolve an issue before it is disclosed publicly, and aims to resolve critical issues within ten business days. Good faith research in line with the policy is considered authorized, Vanta will not recommend or pursue legal action over it, and will make that authorization known should a third party take action.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - physical_access
+  scope:
+  - target: app.vanta.com
+    type: web
+  - target: Other subdomains and services associated with the Vanta App
+    type: web
+  out_of_scope:
+  - Vulnerabilities solely affecting the marketing website at www.vanta.com
+  - Reports that describe theoretical attack vectors without substantiated proof of exploitability
+
 - company: voibly.app
   url: https://voibly.app/security
   contact: mailto:support@voibly.app
@@ -1792,6 +1986,22 @@ companies:
   domains:
   - '*.wikimint.com'
   reporting_url: https://www.wikimint.com/legal#security-hall-of-fame
+
+- company: WorkOS
+  url: https://workos.com/security/responsible-disclosure
+  contact: mailto:security@workos.com
+  rewards:
+  - '*bounty'
+  program_type: vdp
+  status: active
+  allows_disclosure: true
+  description: WorkOS asks researchers to email a clear description of the vulnerability with steps to reproduce, and provides a monetary reward for high and critical findings. Receipt is acknowledged within 2 business days, and researchers are asked to allow reasonable time for remediation before disclosing publicly or to third parties. WorkOS aims to resolve critical issues within one week of receipt.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - physical_access
+  response_sla_days: 2
 
 - company: WorkoutGen
   url: https://workoutgen.app/security/
@@ -1891,6 +2101,15 @@ companies:
   min_payout: 1000
   currency: INR
   response_sla_days: 1
+
+- company: Zitadel
+  url: https://zitadel.com/vulnerability
+  contact: mailto:security@zitadel.com
+  program_type: vdp
+  status: active
+  preferred_languages: English, German
+  description: Zitadel asks that suspected security vulnerabilities are reported through its dedicated disclosure portal rather than publicly via GitHub issues, since public disclosure could put the Zitadel community at risk. Scope and expectations are set out in its official Vulnerability Disclosure Policy document.
+  testing_policy_url: https://trust.zitadel.com/resources?s=aw085mxrel3icmbmkphns3&name=zitadel-vulnerability-disclosure-policy
 
 - company: ZTE
   url: https://www.zte.com.cn/global/about/trust-center/ztepsirt.html
