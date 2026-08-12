@@ -1877,6 +1877,39 @@ companies:
   testing_policy_url: https://tuturuuu.com/security/policy
   hall_of_fame_url: https://tuturuuu.com/security/bug-bounty
 
+- company: Val Town
+  url: https://docs.val.town/contact-us/security/
+  contact: mailto:security@val.town
+  rewards:
+  - '*bounty'
+  program_type: bounty
+  status: active
+  allows_disclosure: true
+  preferred_languages: English
+  description: Val Town offers bug bounties as compensation, depending on the severity of the exploit found. Bounties are awarded first-come, first-served, so only the first report of a given vulnerability is eligible. Val Town handles reports in strict confidence, and will not take legal action against researchers who act in accordance with the policy.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - physical_access
+  - automated_scanning
+  out_of_scope:
+  - Vulnerabilities on outdated or deprecated browsers, open source libraries, or infrastructure
+  - Missing security hardening headers
+  - Policies on the presence or absence of SPF/DMARC/DKIM/CAA/BIMI records
+  - Self-XSS or developer console code execution
+  - Login/logout CSRF
+  - Brute force login attempts
+  - Bugs on Vals themselves, which are user-controlled code and not part of the product surface
+  - Open OAuth Dynamic Client Registration (RFC 7591), which Val Town intentionally supports for MCP client onboarding
+  - Invitation codes not being bound to email addresses, which is a design choice
+  domains:
+  - val.town
+  - valtown.email
+  - api.val.town
+  - esm.town
+  - val.run
+
 - company: voibly.app
   url: https://voibly.app/security
   contact: mailto:support@voibly.app
