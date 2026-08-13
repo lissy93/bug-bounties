@@ -1337,6 +1337,7 @@
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Programmer Hat Marketplace Bug Bounty Pr...](https://bugcrowd.com/engagements/programmer-hat-market) 💰
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [ProjectBalm](https://bugcrowd.com/engagements/projectbalm) 💰
 - <img src='https://icon.horse/icon/www.proofpoint.com' width='16'/> [Proofpoint](https://www.proofpoint.com/us/security) 🏅
+- <img src='https://icon.horse/icon/www.proon.ai' width='16'/> [ProoN](https://www.proon.ai/security) 🏅 🎁
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Prosus](https://bugcrowd.com/engagements/prosus-og) 💰
 - <img src='https://icon.horse/icon/proton.me' width='16'/> [Proton](https://proton.me/blog/responsible-vulnerability-disclosure) 💰
 - <img src='https://icon.horse/icon/protonvpn.com' width='16'/> [ProtonVPN](https://protonvpn.com/blog/bug-bounty-program/) 💰
