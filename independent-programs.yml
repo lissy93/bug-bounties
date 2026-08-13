@@ -1914,6 +1914,44 @@ companies:
   - target: TI product software and documentation
     type: other
 
+- company: Tiger Data
+  url: https://www.tigerdata.com/security/vulnerability-disclosure
+  contact: mailto:security@tigerdata.com
+  rewards:
+  - '*recognition'
+  program_type: vdp
+  status: active
+  safe_harbor: full
+  preferred_languages: English
+  pgp_key: https://www.tigerdata.com/.well-known/security-key.txt
+  description: Timescale, Inc., trading as Tiger Data, runs a disclosure-only programme with no monetary rewards, offering credit in security advisories and a place in a researcher hall of fame instead. Reports go to security@tigerdata.com, must be in English, must demonstrate clear security impact, and only the latest released versions of its products are considered. Research conducted in line with the policy is authorised, and Tiger Data commits to no civil action and no complaint to law enforcement.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - physical_access
+  - automated_scanning
+  out_of_scope:
+  - SSL/TLS best practices
+  - Lack of rate limiting on non-sensitive endpoints, and brute force
+  - Open ports that do not lead directly to a vulnerability
+  - Missing HTTP security headers
+  - Descriptive error messages such as stack traces
+  - Missing cookie flags on non-sensitive cookies
+  - Logout CSRF
+  - OPTIONS/TRACE HTTP methods enabled
+  - Internal IP disclosure
+  - Presence or absence of SPF/DMARC records
+  - Clickjacking with no practical security impact
+  - Autocomplete or save password functionality being available
+  - Login or forgot password brute force, and account lockout not enforced
+  - Self XSS
+  - Functional, UI and UX bugs, and spelling mistakes
+  - Vulnerabilities that require extensive social engineering
+  - Third-party applications or services
+  - Issues only affecting users of outdated or unpatched browsers and platforms
+  - Vulnerabilities already known to Tiger Data or publicly disclosed
+
 - company: TMG Security
   url: https://tmgsec.com/bug-bounty/
   contact: mailto:security@tmgsec.com
