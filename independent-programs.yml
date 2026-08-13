@@ -1383,6 +1383,19 @@ companies:
     medium: 200
     low: 100
 
+- company: ProoN
+  url: https://www.proon.ai/security
+  contact: mailto:security@proon.ai
+  rewards:
+  - '*recognition'
+  - '*swag'
+  program_type: vdp
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - physical_access
+
 - company: Prop Firm Match
   url: https://propfirmmatch.com/bug-bounty
   rewards:
