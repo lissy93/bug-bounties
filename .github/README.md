@@ -226,6 +226,7 @@
 - <img src='https://icon.horse/icon/yeswehack.com' width='16'/> [BlaBlaCar](https://yeswehack.com/programs/bug-bounty-program-blablacar) 💰
 - <img src='https://icon.horse/icon/help.blackboard.com' width='16'/> [Blackboard](https://help.blackboard.com/Product_Security) 🏅
 - <img src='https://icon.horse/icon/bladestorm.zendesk.com' width='16'/> [Blade Storm](https://bladestorm.zendesk.com/hc/en-us/articles/360010393497-Bug-Bounty-Program) 💰
+- <img src='https://icon.horse/icon/blazephoenix.xyz' width='16'/> [BlazePhoenix](https://blazephoenix.xyz/bounty) 💰
 - <img src='https://icon.horse/icon/blend.com' width='16'/> [Blend Labs](https://blend.com) 💰
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Block Open Source](https://bugcrowd.com/engagements/blockopensource) 💰
 - <img src='https://icon.horse/icon/blocksender.io' width='16'/> [Block Sender](https://blocksender.io/vulnerability-disclosure-policy/) 🏅
