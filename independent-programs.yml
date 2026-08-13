@@ -11,6 +11,67 @@
 
 companies:
 
+- company: Abhieo
+  url: https://www.abhieo.in/bug-bounty
+  contact: mailto:security@abhieo.in
+  rewards:
+  - '*bounty'
+  program_type: bounty
+  status: active
+  safe_harbor: full
+  allows_disclosure: false
+  preferred_languages: English
+  description: |-
+    Rules of Engagement
+    ✅ DO:
+    Use Your Own Accounts: Only test with accounts you own or have explicit permission to access
+    Report First: Submit vulnerabilities to us before public disclosure
+    Be Professional: Maintain professional and respectful communication
+    Provide Details: Include comprehensive reproduction steps, proof of concept, and impact assessment
+    Give Us Time: Allow reasonable time for investigation and fix (typically 90 days)
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - physical_access
+  - automated_scanning
+  out_of_scope:
+  - Third-party services and platforms (payment gateways, SMS providers, email services)
+  - Service Provider systems (mobile operators, DTH providers, billers)
+  - Social media profiles and pages
+  - Physical security of ABHIEO offices
+  - Employee email accounts (unless demonstrating a critical vulnerability)
+  - Staging/development/test environments (unless critical server-level vulnerabilities)
+  - Issues in archived or deprecated services
+  domains:
+  - www.abhieo.in (Main website)
+  - All subdomains (*.abhieo.in)
+  - Web application APIs
+  - Payment gateways integration
+  - RESTful APIs
+  - Authentication & Authorization APIs
+  - Transaction processing APIs
+  - User management APIs
+  - ABHIEO Android App (Google Play Store)
+  - ABHIEO iOS App (Apple App Store)
+  - All mobile app APIs and endpoints
+  - Payment processing workflows
+  - Wallet functionality
+  - Transaction verification systems
+  - Refund mechanisms
+  min_payout: 500
+  max_payout: 50000
+  currency: INR
+  payout_table:
+    critical: 50000
+    high: 20000
+    medium: 10000
+    low: 500
+  response_sla_days: 3
+  disclosure_timeline_days: 90
+  testing_policy_url: https://www.abhieo.in/bug-bounty
+  requires_account: true
+
 - company: Airwallex
   url: https://help.airwallex.com/hc/en-gb/articles/900004502526-Bug-Bounty-Program-Rules
   contact: mailto:bugbounty@airwallex.com
