@@ -1549,6 +1549,7 @@
 - <img src='https://icon.horse/icon/www.devolksbank.nl' width='16'/> [SNS Bank](https://www.devolksbank.nl/veiligheid.html) 💰
 - <img src='https://icon.horse/icon/snyk.io' width='16'/> [Snyk](https://snyk.io/docs/security) 💰 🏅
 - <img src='https://icon.horse/icon/www.intigriti.com' width='16'/> [Social Deal](https://www.intigriti.com/programs/socialdeal/socialdeal/detail) 💰
+- <img src='https://icon.horse/icon/socket.dev' width='16'/> [Socket](https://socket.dev/security/disclosure) 💰
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Socrata](https://bugcrowd.com/socrata) 💰 🏅
 - <img src='https://icon.horse/icon/yeswehack.com' width='16'/> [Sogexia](https://yeswehack.com/programs/sogexia) 💰
 - <img src='https://icon.horse/icon/www.solaredge.com' width='16'/> [SolarEdge](https://www.solaredge.com/us/cyber-security-policy) 💰 🏅
@@ -1693,6 +1694,7 @@
 - <img src='https://icon.horse/icon/www.ticketswap.com' width='16'/> [TicketSwap](https://www.ticketswap.com/content/responsible-disclosure) 🏅
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [TIDAL](https://bugcrowd.com/tidal-bugbounty) 💰
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [Tide](https://hackerone.com/tide) 💰
+- <img src='https://icon.horse/icon/www.tigerdata.com' width='16'/> [Tiger Data](https://www.tigerdata.com/security/vulnerability-disclosure) 🏅
 - <img src='https://icon.horse/icon/tiktok.com' width='16'/> [TikTok](http://tiktok.com) 💰
 - <img src='https://icon.horse/icon/www.gotinder.com' width='16'/> [Tinder](https://www.gotinder.com/security) 💰
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Tinyman](https://immunefi.com/bug-bounty/tinyman/) 💰
