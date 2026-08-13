@@ -246,6 +246,36 @@ companies:
     medium: 300
     low: 150
 
+- company: BlazePhoenix
+  url: https://blazephoenix.xyz/bounty
+  contact: mailto:contact@blazephoenix.xyz
+  rewards:
+  - '*bounty'
+  program_type: bounty
+  status: active
+  min_payout: 100000
+  max_payout: 6000000
+  currency: BZPX
+  safe_harbor: full
+  allows_disclosure: true
+  response_sla_days: 3
+  preferred_languages: English, Portuguese
+  hall_of_fame_url: https://blazephoenix.xyz/bounty
+  reporting_url: mailto:contact@blazephoenix.xyz
+  legal_terms_url: https://github.com/blazephoenixxyz-crypto/Blaze-Phoenix-Dex/blob/main/SECURITY.md
+  description: Smart-contract bug bounty across two on-chain protocols, an EVM DEX aggregator and a solvency-enforced staking engine, with 40,000,000 BZPX allocated in total. Rewards are paid in the project's own token, which is not liquid at the time of writing, so the programme commits to the quantity of tokens and the schedule rather than to a value; settlement of awards begins after October 2026, while reports are accepted, triaged and acknowledged from now. Severity is assessed by the project and argued in writing where it differs from the reporter's own rating.
+  scope:
+  - Solidity contracts of the DEX aggregator (Router, Solver, Hub, Quoter, Core)
+  - Solidity contracts of the staking engine (BlazePhoenixStaking, BlazePhoenixMathLib)
+  out_of_scope:
+  - Third-party AMM pools, tokens and bridges the protocol reads from
+  - RPC providers and front-ends
+  - Theoretical concerns without demonstrated impact
+  excluded_methods:
+  - dos
+  - social_engineering
+  standards:
+  - security.txt
 - company: BSI Germany
   url: https://www.bsi.bund.de/EN/IT-Sicherheitsvorfall/IT-Schwachstellen/it-schwachstellen_node.html
   contact: mailto:vulnerability@bsi.bund.de
