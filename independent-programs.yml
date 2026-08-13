@@ -1735,6 +1735,38 @@ companies:
   - '*.snapdeploy.dev'
   response_sla_days: 7
 
+- company: Socket
+  url: https://socket.dev/security/disclosure
+  contact: mailto:security@socket.dev
+  rewards:
+  - '*bounty'
+  program_type: bounty
+  status: active
+  safe_harbor: full
+  allows_disclosure: true
+  preferred_languages: English
+  description: Socket publishes a bounty schedule as a guide to expectations, roughly $50-100 for a minor issue with little risk, $500-1000 for a real problem that puts users at risk, and $1000+ for a really bad one. Reports go to security@socket.dev and are acknowledged within five business days, with critical issues aimed to be resolved within ten. Socket is generally happy to publicly disclose a report two weeks after shipping the release that contains the fix.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - physical_access
+  scope:
+  - target: socket.dev
+    type: web
+  - target: '*.socket.dev'
+    type: web
+  - target: socketusercontent.com
+    type: web
+  - target: '*.socketusercontent.com'
+    type: web
+  out_of_scope:
+  - CNAME subdomains such as feedback.socket.dev
+  - Spamming
+  min_payout: 50
+  currency: USD
+  response_sla_days: 5
+
 - company: Soldera
   url: https://www.soldera.org/terms/vdp
   contact: mailto:security@soldera.org
