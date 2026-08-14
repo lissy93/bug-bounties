@@ -61,6 +61,7 @@
 - <img src='https://icon.horse/icon/help.airwallex.com' width='16'/> [Airwallex](https://help.airwallex.com/hc/en-gb/articles/900004502526-Bug-Bounty-Program-Rules) 💰
 - <img src='https://icon.horse/icon/www.aven.com' width='16'/> [Aiven](https://www.aven.com/) 💰
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Aiven Managed Bug Bounty](https://bugcrowd.com/engagements/aiven-mbb-og) 💰
+- <img src='https://icon.horse/icon/www.alaan.com' width='16'/> [Alaan](https://www.alaan.com/responsible-disclosure-policy) 💰 🏅
 - <img src='https://icon.horse/icon/yeswehack.com' width='16'/> [Alasco GmbH - Bug Bounty Program](https://yeswehack.com/programs/alasco-gmbh-bug-bounty-program) 💰
 - <img src='https://icon.horse/icon/www.alaskaair.com' width='16'/> [Alaska Air](https://www.alaskaair.com/content/about-us/site-info/report-site-security-issues) 🏅
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Alchemix](https://immunefi.com/bug-bounty/alchemix/) 💰
