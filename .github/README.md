@@ -1264,6 +1264,7 @@
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Paribus](https://immunefi.com/bug-bounty/paribus/) 💰
 - <img src='https://icon.horse/icon/www.parity.io' width='16'/> [Parity](https://www.parity.io/bug-bounty/) 💰
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [Parrot Sec](https://hackerone.com/parrot_sec) 🏅
+- <img src='https://icon.horse/icon/www.passbolt.com' width='16'/> [Passbolt](https://www.passbolt.com/docs/contribute/security/vulnerability/) 🏅
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [Passit](https://hackerone.com/passit) 🏅
 - <img src='https://icon.horse/icon/www.pastecoin.com' width='16'/> [PasteCoin](https://www.pastecoin.com/bug_bounty) 💰 🏅
 - <img src='https://icon.horse/icon/patchstack.com' width='16'/> [patchstack.com](https://patchstack.com/vulnerability-disclosure-policy) 🏅
