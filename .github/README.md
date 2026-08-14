@@ -1835,6 +1835,7 @@
 - <img src='https://icon.horse/icon/www.visma.com' width='16'/> [Visma](https://www.visma.com/trust-centre/smb/security-and-privacy/operational/responsible-disclosure/) 💰 🏅
 - <img src='https://icon.horse/icon/app.intigriti.com' width='16'/> [Visma Public](https://app.intigriti.com/researcher/programs/visma/visma/detail) 💰
 - <img src='https://icon.horse/icon/vista.co' width='16'/> [Vista Entertainment Solutions](https://vista.co/responsible-disclosure-policy/) 🏅
+- <img src='https://icon.horse/icon/vivid.money' width='16'/> [Vivid](https://vivid.money/en-eu/bug-bounty/) 💰
 - <img src='https://icon.horse/icon/security.vivo.com.cn' width='16'/> [Vivo](https://security.vivo.com.cn/#/home) 💰
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [Vivy](https://hackerone.com/vivy) 🏅
 - <img src='https://icon.horse/icon/www.vodafone.om' width='16'/> [Vodafone Oman](http://www.vodafone.om) 💰
