@@ -1507,6 +1507,13 @@ companies:
   - phishing
   - physical_access
 
+- company: Pulumi
+  url: https://www.pulumi.com/security/
+  contact: mailto:security@pulumi.com
+  program_type: vdp
+  status: active
+  description: Pulumi asks security researchers to email reports of vulnerabilities in its platform or services to its security address, including a description of the vulnerability, the impacted software or service and its version, and proof-of-concept code or detailed steps to reproduce. Reports can be encrypted with the PGP key published on the same page. Public security notifications are posted in the Pulumi Community Slack.
+
 - company: Recap Innovations
   url: https://recap-innovations.com/security/
   contact: mailto:security@recap-innovations.com
