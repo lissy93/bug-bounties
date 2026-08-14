@@ -104,6 +104,36 @@ companies:
   domains:
   - '*.airwallex.com'
 
+- company: Alaan
+  url: https://www.alaan.com/responsible-disclosure-policy
+  contact: mailto:security@alaan.com
+  rewards:
+  - '*bounty'
+  - '*recognition'
+  program_type: hybrid
+  status: active
+  safe_harbor: full
+  allows_disclosure: false
+  description: |-
+    Please provide detailed reports with reproducible steps. If the report is not detailed enough to reproduce the issue, the issue will not be eligible for a reward.
+
+    Submit one vulnerability per report unless you need to chain vulnerabilities to provide impact.
+    Do not run any automated scans against Alaan targets.
+    When duplicates occur, we award only the first report received (provided it can be fully reproduced).
+    Ask the Alaan team before submitting vulnerabilities on unscoped subdomains
+    Only int
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - physical_access
+  - automated_scanning
+  domains:
+  - https://www.alaan.com/
+  - https://app.alaanpay.com/
+  - Android app - https://play.google.com/store/search?q=alaan&c=apps
+  - ios app - https://apps.apple.com/in/app/alaan/id1605833078
+
 - company: atlan.com
   url: https://atlan.com/responsible-disclosure-program/
   contact: mailto:security@atlan.com
