@@ -2109,6 +2109,32 @@ companies:
   - Vulnerabilities solely affecting the marketing website at www.vanta.com
   - Reports that describe theoretical attack vectors without substantiated proof of exploitability
 
+- company: Vivid
+  url: https://vivid.money/en-eu/bug-bounty/
+  contact: mailto:bugbounty@vivid.money
+  rewards:
+  - '*bounty'
+  program_type: bounty
+  status: active
+  safe_harbor: full
+  allows_disclosure: false
+  description: |-
+    When searching for vulnerabilities in Vivid Money applications and services, should be to follow the rules:
+    For testing should use only your own accounts.
+    You are allowed to use the credentials of other users for testing, provided that they have explicitly agreed to provide the credentials.
+    Vivid Money does not issue additional accesses and accounts (including test accounts) for testing.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - physical_access
+  - automated_scanning
+  domains:
+  - '*.vivid.money'
+  - 'Mobile Application iOS: https://apps.apple.com/de/app/id1504417378'
+  - 'Mobile Application Android: https://play.google.com/store/apps/details?id=vivid.money'
+  response_sla_days: 14
+
 - company: voibly.app
   url: https://voibly.app/security
   contact: mailto:support@voibly.app
