@@ -1276,6 +1276,47 @@ companies:
   payout_table:
     high: 1000
 
+- company: Passbolt
+  url: https://www.passbolt.com/docs/contribute/security/vulnerability/
+  contact: mailto:security@passbolt.com
+  rewards:
+  - '*recognition'
+  program_type: vdp
+  status: active
+  safe_harbor: partial
+  preferred_languages: English
+  pgp_key: https://keys.mailvelope.com/pks/lookup?op=get&search=security%40passbolt.com
+  description: Passbolt runs its own coordinated disclosure process covering the passbolt server, browser extension, styleguide, Windows app and mobile clients. There is no financial reward; valid reports are credited in the published vulnerability report and across Passbolt's social media. Reports are acknowledged within 48 hours, and Passbolt commits to taking no legal action over the research. Testing must be done against a self-hosted install rather than the public website.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - physical_access
+  scope:
+  - target: passbolt_api
+    type: web
+  - target: passbolt_pro_api
+    type: web
+  - target: passbolt_browser_extension
+    type: web
+  - target: passbolt_styleguide
+    type: web
+  - target: passbolt-windows
+    type: desktop
+  - target: mobile-passbolt-ios
+    type: mobile
+  - target: mobile-passbolt-android
+    type: mobile
+  out_of_scope:
+  - Passbolt network, online services, websites and related third-party services
+  - Vulnerabilities in third-party dependencies
+  - Vulnerabilities in development environments
+  - Vulnerabilities that require physical access
+  - Vulnerabilities that require social engineering
+  - Vulnerabilities that require unrealistic user interaction
+  - Vulnerabilities that are already known to us
+  - Vulnerabilities that are not reproducible
+  response_sla_days: 2
+
 - company: Pathé
   url: https://www.pathe.com/wp-content/uploads/2023/12/Pathe-Politique-CVD.1.2.EN_.pdf
   rewards:
