@@ -1581,7 +1581,7 @@
 - <img src='https://icon.horse/icon/www.spotify.com' width='16'/> [Spotify](https://www.spotify.com/us/bounty/) 💰 🏅
 - <img src='https://icon.horse/icon/www.spreaker.com' width='16'/> [Spreaker](https://www.spreaker.com/security) 💰
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Sprout Social](https://bugcrowd.com/sproutsocial) 🏅
-- <img src='https://icon.horse/icon/www.sqills.com' width='16'/> [Sqills](https://www.sqills.com/responsible-disclosure-policy/) 🏅
+- <img src='https://icon.horse/icon/www.sqills.com' width='16'/> [Sqills](https://www.sqills.com/responsible-disclosure-policy/) 💰 🏅
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Square](https://bugcrowd.com/square) 💰 🏅
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Square Open Source](https://bugcrowd.com/squareopensource) 💰 🏅
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [Squid Cache (IBB)](https://hackerone.com/ibb-squid-cache) 💰 🏅
