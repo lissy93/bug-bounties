@@ -1040,9 +1040,9 @@ companies:
   - amitinoura.com
   - apigw.dev.alshaya.com
   - apps.havelockone.com
+  - aura-mena-uat.alshaya.com
   - aura-mena.com
   - babelkwt.com
-  - bakimonarim.shaya.com.tr
 - company: Altera
   url: https://www.intigriti.com/programs/altera/altera/detail
   handle: altera
@@ -2492,6 +2492,9 @@ companies:
   contact: https://yeswehack.com/programs/bind-bug-bounty-program
   rewards:
   - '*bounty'
+  max_payout: 10000.0
+  domains:
+  - gitlab.isc.org
 - company: Binder
   url: https://binder.works/responsible-disclosure-program/
   contact: mailto:security@binder.works
@@ -4388,8 +4391,8 @@ companies:
   contact: https://www.intigriti.com/programs/cmcom/cmcom/detail
   rewards:
   - '*bounty'
-  max_payout: 3500.0
-  min_payout: 25.0
+  max_payout: 2625.0
+  min_payout: 5.0
   currency: EUR
   domains:
   - api.cm.com
@@ -7362,10 +7365,8 @@ companies:
   max_payout: 18000.0
   domains:
   - a.exodus.io
-  - api.passkeys.network
   - apps.apple.com
   - ctr.a.exodus.io
-  - embedded.passkeys.foundation
   - exodus-movement.exodus
   - exodus.com
   - exodus.io
@@ -7375,17 +7376,13 @@ companies:
   - github.com
   - kyc.a.exodus.io
   - login.exodus.com
-  - my.passkeys.network
   - nexotrack-p.exodus.io
   - nexotrack.exodus.io
   - npmjs.com
-  - passkeys.foundation
   - pay-admin.exodus.io
   - pay.exodus.io
   - play.google.com
-  - relay.passkeys.foundation
   - turing.exodus.io
-  - wallet.passkeys.foundation
 - company: Exoscale Bug Bounty
   url: https://www.intigriti.com/programs/exoscale/excoscalebugbounty/detail
   handle: excoscalebugbounty
@@ -10330,7 +10327,7 @@ companies:
   - '*bounty'
   - '*recognition'
   managed: true
-  safe_harbor: full
+  safe_harbor: partial
   max_payout: 10000.0
   domains:
   - apis.indeed.com
@@ -10996,7 +10993,7 @@ companies:
   - '*bounty'
   - '*recognition'
   managed: true
-  safe_harbor: full
+  safe_harbor: partial
   max_payout: 4500.0
   domains:
   - answers.irobot.com
@@ -13773,6 +13770,33 @@ companies:
   handle: mondelez
   contact: https://hackerone.com/mondelez
   rewards: []
+  managed: true
+  domains:
+  - admit-it-win.cadbury.co.uk
+  - admit-it.cadbury.co.uk
+  - admit-it.cadbury.ie
+  - aida-mdlz.com
+  - alpengold.me
+  - amikekszunkjatek.hu
+  - anniversariooro.orosaiwa.it
+  - atistirmalikdunyasi.com
+  - backtoschoolsnacks.com
+  - barni.org
+  - barniadventures.com
+  - base-mondelez-ag.fr
+  - bassettsvitamins.co.uk
+  - bee.harmony.info
+  - beldent.com.ar
+  - belvita.life
+  - belvitaoffer.com
+  - belvitasnacks.com
+  - bigwinwin.cadbury.co.uk
+  - bis.com.br
+  - bournvita.ng
+  - br.oreobts.com
+  - breathewithtomtom.com
+  - brumikobjavitel.sk
+  - brumikobjevitel.cz
 - company: Monero
   url: https://hackerone.com/monero
   handle: monero
@@ -15222,7 +15246,7 @@ companies:
   - '*bounty'
   - '*recognition'
   managed: true
-  safe_harbor: full
+  safe_harbor: partial
   max_payout: 75000.0
   domains:
   - app.scaleft.com
@@ -17161,6 +17185,33 @@ companies:
   - ir.bookingholdings.com
   - press.priceline.com
   - priceline.com
+- company: PRISM
+  url: https://www.prismlife.com/
+  handle: prism_vdp
+  contact: https://hackerone.com/prism_vdp
+  rewards: []
+  managed: true
+  domains:
+  - apps.apple.com
+  - belvilla.com
+  - checkin.life
+  - dancenter.dk
+  - g6hospitality.com
+  - innov8.work
+  - leisure-partners.net
+  - madecomfy.com.au
+  - motel6.com
+  - oyocircle.com
+  - oyoos.com
+  - oyorooms.com
+  - oyorooms.io
+  - oyotownhouse.com
+  - oyoworkspaces.com
+  - patron.oyorooms.com
+  - prismlife.com
+  - traum-ferienwohnungen.de
+  - weddingz.in
+  - workflobyoyo.com
 - company: Privacy and Civil Liberties Oversight Board
   url: https://www.pclob.gov/vulnerability-disclosure-policy
   contact: mailto:soc@pclob.gov
@@ -18955,7 +19006,7 @@ companies:
   - '*bounty'
   - '*recognition'
   managed: true
-  safe_harbor: full
+  safe_harbor: partial
   max_payout: 10000.0
   domains:
   - aips-internal.com
@@ -19863,9 +19914,14 @@ companies:
   rewards: []
 - company: Spacelift
   url: https://www.federacy.com/spacelift
+  handle: spaceliftvdp
   contact: https://www.federacy.com/spacelift
   rewards:
   - '*bounty'
+  currency: USD
+  domains:
+  - app.spacelift.dev
+  - spacelift.dev
 - company: Spacelift.io - Bug Bounty Program
   url: https://yeswehack.com/programs/spacelift-io-bug-bounty-program
   contact: https://yeswehack.com/programs/spacelift-io-bug-bounty-program
@@ -19987,9 +20043,16 @@ companies:
   safe_harbor: full
 - company: Sqills
   url: https://www.sqills.com/responsible-disclosure-policy/
+  handle: sqillscorporatewebsite
   contact: mailto:responsibledisclosure@sqills.com
   rewards:
+  - '*bounty'
   - '*recognition'
+  max_payout: 2500.0
+  currency: EUR
+  domains:
+  - sqills.com
+  - sqills.team
 - company: sqreen.io
   url: https://www.sqreen.com/security
   contact: mailto:security@sqreen.com
@@ -20001,7 +20064,7 @@ companies:
   - '*bounty'
   - '*recognition'
   managed: true
-  safe_harbor: full
+  safe_harbor: partial
   max_payout: 18000.0
   domains:
   - square.com
@@ -22211,7 +22274,7 @@ companies:
   - '*bounty'
   managed: true
   safe_harbor: full
-  max_payout: 3500.0
+  max_payout: 2500.0
   domains:
   - opendata-demo.test-socrata.com
   - opendata.test-socrata.com
@@ -22902,6 +22965,7 @@ companies:
   managed: true
   domains:
   - kasten.io
+  - securiti.ai
   - veeam.com
   - veeamgov.com
 - company: Velodrome Finance
@@ -23287,10 +23351,13 @@ companies:
   domains:
   - accountsettings.connect.identity.stagaws.visma.com
   - admin.stage.vismaonline.com
+  - ai-testing.maventa.com
   - aiassistant.stage.vismaonline.com
   - api.workbox.dk
   - app.workbox.dk
   - authz.workbox.dk
+  - autointerface.stag.visma.net
+  - ax-stage.maventa.com
   - com.visma.blue
   - connect.identity.stagaws.visma.com
   - eaccounting.stage.vismaonline.com
@@ -23300,6 +23367,7 @@ companies:
   - myservices.stage.vismaonline.com
   - oauth.developers.stagaws.visma.com
   - photoservice.stage.vismaonline.com
+  - testing.maventa.com
 - company: Visma Public
   url: https://app.intigriti.com/researcher/programs/visma/visma/detail
   contact: https://app.intigriti.com/researcher/programs/visma/visma/detail
