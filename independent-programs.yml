@@ -1613,6 +1613,41 @@ companies:
   response_sla_days: 3
   hall_of_fame_url: https://www.19pine.ai/security#acknowledgments
 
+- company: Pitch
+  url: https://pitch.com/security-disclosure-policy
+  contact: mailto:security@pitch.com
+  program_type: vdp
+  status: active
+  safe_harbor: partial
+  allows_disclosure: true
+  preferred_languages: English
+  description: Pitch does not run a bug bounty and considers any reward case by case. Reports are acknowledged usually within five working days, and Pitch asks researchers to tag test traffic with a Pentest header, stay under two requests per second and avoid aggressive scanners. Critical issues in its clients and open-source projects are committed to a 90-day fix.
+  excluded_methods:
+  - dos
+  - automated_scanning
+  scope:
+  - target: pitch.com
+    type: web
+  - target: pitch.io
+    type: web
+  - target: Pitch desktop applications
+    type: desktop
+  - target: Pitch mobile applications
+    type: mobile
+  - target: Official Pitch integrations
+    type: other
+  - target: pitch-io/cljest
+    type: other
+  - target: pitch-io/uix
+    type: other
+  out_of_scope:
+  - Volumetric vulnerabilities
+  - TLS configuration weaknesses
+  - Reports that services do not fully align with best practice, such as missing security headers
+  - Vulnerabilities or weaknesses in third-party services or sub-processors
+  response_sla_days: 5
+  disclosure_timeline_days: 90
+
 - company: pokee.ai
   url: https://pokee.ai/bug-bounty
   contact: mailto:support@pokee.ai
