@@ -1428,6 +1428,34 @@ companies:
   description: Oh Dear is a three-person uptime monitoring company that publishes its security practices with a short disclosure section at the end. It commits to responding within 24 hours, will not pursue legal action against researchers acting in good faith, and asks for reasonable time to fix an issue before it is disclosed publicly.
   response_sla_days: 1
 
+- company: Omnisend
+  url: https://www.omnisend.com/bug-bounty/
+  contact: mailto:security@omnisend.com
+  rewards:
+  - '*bounty'
+  program_type: bounty
+  status: active
+  description: Omnisend pays for the first reproducible report of a given issue across its web app, API, marketing site, app market and partner portal. Multiple findings caused by the same underlying issue are awarded one payout, reports without reproducible steps are not eligible, and WordPress plugin issues go to Patchstack instead.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  scope:
+  - target: app.omnisend.com
+    type: web
+  - target: omnisend.com
+    type: web
+  - target: api.omnisend.com
+    type: api
+  - target: appmarket.omnisend.com
+    type: web
+  - target: partners.omnisend.com
+    type: web
+  out_of_scope:
+  - Phishing
+  - Social engineering
+  - Any form of denial of service attack
+
 - company: Orange Cyberdefense
   url: https://www.orangecyberdefense.com/de/vulnerability-disclosure-policy
   contact: mailto:vulnerability@orangecyberdefense.com
