@@ -770,6 +770,21 @@ companies:
     low: 250
   disclosure_timeline_days: 90
 
+- company: Element
+  url: https://element.io/security/security-disclosure-policy
+  contact: mailto:security@element.io
+  rewards:
+  - '*recognition'
+  program_type: vdp
+  status: active
+  allows_disclosure: true
+  preferred_languages: English
+  pgp_key: https://element.io/.well-known/pgp-key.txt
+  description: Element follows responsible disclosure across its Matrix clients and Element Server Suite. It replies within five business days, aims to fix within 90 days and may propose 120 for harder cases, and credits reporters in its Security Hall of Fame. There is no bug bounty. An AGPL exception lets you patch your own instance during an agreed embargo of up to 120 days.
+  response_sla_days: 5
+  disclosure_timeline_days: 90
+  hall_of_fame_url: https://element.io/security/security-hall-of-fame
+
 - company: Fluxer
   url: https://fluxer.app/security
   contact: mailto:security@fluxer.app
