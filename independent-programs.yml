@@ -2477,6 +2477,36 @@ companies:
   url: https://www.volvocars.com/intl/l/legal/vulnerability-reporting/
   contact: mailto:responsible-disclosure@volvocars.com
 
+- company: VTEX
+  url: https://www.vtex.com/.well-known/security-disclosure-policy.txt
+  contact: mailto:security-report@vtex.com
+  rewards:
+  - '*recognition'
+  program_type: vdp
+  status: active
+  safe_harbor: partial
+  allows_disclosure: true
+  preferred_languages: English, Portuguese
+  pgp_key: https://www.vtex.com/pgp-key.txt
+  description: VTEX takes reports by email only, on platform infrastructure it owns rather than the individual merchant stores built on it. This is not a public bug bounty and no payment is guaranteed, though researchers may be publicly acknowledged. Acknowledgement targets run from two business days for critical down to ten for low severity.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - physical_access
+  - automated_scanning
+  out_of_scope:
+  - Individual merchant stores built on the VTEX platform
+  - Third-party integrations or services outside VTEX's control
+  - Missing security headers without demonstrated impact
+  - DNS or email configuration findings without demonstrated exploitation impact
+  - Self-XSS or issues requiring full control of the victim's browser or account
+  - Publicly accessible CMS maintenance endpoints without demonstrated resource exhaustion impact
+  - Absence of rate limiting without demonstrated exploitation impact
+  - Automated scanner output without manual validation and a proof of concept
+  - Theoretical vulnerabilities without proof of exploitability
+  disclosure_timeline_days: 90
+
 - company: whatruns.com
   url: https://www.whatruns.com/bug-bounty
   contact: mailto:hello@WhatRuns.com
