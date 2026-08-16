@@ -72,6 +72,58 @@ companies:
   testing_policy_url: https://www.abhieo.in/bug-bounty
   requires_account: true
 
+- company: Ably
+  url: https://ably.com/disclosure
+  contact: mailto:disclosure@ably.com
+  rewards:
+  - '*bounty'
+  - '*recognition'
+  program_type: bounty
+  status: active
+  safe_harbor: full
+  allows_disclosure: true
+  preferred_languages: English
+  description: Ably runs its own disclosure programme covering its website, ancillary *.ably.com sites and the production realtime and REST endpoints. Rewards start from a CVSS-informed severity assessment and can be paid to charity instead of the researcher. Only the first responsible disclosure of an issue is eligible, and reports generated solely by AI are not accepted.
+  excluded_methods:
+  - dos
+  - phishing
+  - physical_access
+  scope:
+  - target: ably.com
+    type: web
+  - target: '*.ably.com'
+    type: web
+  - target: main.realtime.ably.net
+    type: api
+  - target: '*.realtime.ably.net'
+    type: api
+  - target: realtime.ably.io
+    type: api
+  - target: rest.ably.io
+    type: api
+  - target: Ably service endpoints served from customer domains via CNAME
+    type: api
+  out_of_scope:
+  - Ably subdomains served by third parties, such as support.ably.com
+  - Domains and services that are not customer facing
+  - Third-party functionality surfaced on the website, such as interactive support chat
+  - Reports relating to ably-cli
+  - Username enumeration
+  - Missing rate limits that do not signify a security issue
+  - Security header configuration and missing headers
+  - TLS configuration and known protocol, ciphersuite or certificate weaknesses
+  - SPF, DKIM and DMARC configuration suggestions
+  - Known vulnerable libraries without a working proof of concept
+  min_payout: 150
+  max_payout: 5000
+  currency: USD
+  payout_table:
+    critical: 5000
+    high: 1500
+    medium: 500
+    low: 150
+  hall_of_fame_url: https://ably.com/acknowledgements
+
 - company: Airwallex
   url: https://help.airwallex.com/hc/en-gb/articles/900004502526-Bug-Bounty-Program-Rules
   contact: mailto:bugbounty@airwallex.com
