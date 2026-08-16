@@ -23,6 +23,7 @@
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [AAVE](https://immunefi.com/bug-bounty/aave/) 💰
 - <img src='https://icon.horse/icon/abercrombie.com' width='16'/> [Abercrombie & Fitch Management Co.](http://abercrombie.com) 💰
 - <img src='https://icon.horse/icon/www.abhieo.in' width='16'/> [Abhieo](https://www.abhieo.in/bug-bounty) 💰
+- <img src='https://icon.horse/icon/ably.com' width='16'/> [Ably](https://ably.com/disclosure) 💰 🏅
 - <img src='https://icon.horse/icon/www.abnamro.nl' width='16'/> [Abn Amro](https://www.abnamro.nl/en/personal/overabnamro/secure-banking/responsible-disclosure.html) 💰
 - <img src='https://icon.horse/icon/personal.rbs.co.uk' width='16'/> [ABNAMRO BANK](https://personal.rbs.co.uk/personal/fraud-and-security/responsible-disclosure.html) 🏅
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Acala](https://immunefi.com/bug-bounty/acala/) 💰
@@ -361,6 +362,7 @@
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [Codefi](https://hackerone.com/codefi_bbp) 💰
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [codefortynine](https://bugcrowd.com/engagements/codefortynine) 💰
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [Codeigniter](https://hackerone.com/codeigniter) 🏅
+- <img src='https://icon.horse/icon/www.coderabbit.ai' width='16'/> [CodeRabbit](https://www.coderabbit.ai/vulnerability-disclosure) 💰 🏅
 - <img src='https://icon.horse/icon/coderpad.io' width='16'/> [coderpad.io](https://coderpad.io/vulnerability-disclosure-policy/) 💰 🏅
 - <img src='https://icon.horse/icon/cofense.com' width='16'/> [Cofense](https://cofense.com/responsible-disclosure/) 🏅
 - <img src='https://icon.horse/icon/www.coffeeandbagels.com' width='16'/> [Coffee & Bagel Brands](https://www.coffeeandbagels.com/responsible-disclosure/) 🏅
@@ -541,6 +543,7 @@
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Electroneum Smart Chain (ETN-SC) — EVM-C...](https://bugcrowd.com/engagements/smartchain-mbb-og) 💰
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Electroneum Wallet: Gateway to the ETN C...](https://bugcrowd.com/engagements/myapp-mbb-og) 💰
 - <img src='https://icon.horse/icon/www.eff.org' width='16'/> [Electronic Frontier Foundation](https://www.eff.org/security) 🏅 🎁
+- <img src='https://icon.horse/icon/element.io' width='16'/> [Element](https://element.io/security/security-disclosure-policy) 🏅
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Elementor](https://bugcrowd.com/elementor) 💰
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Elementor: Bug Bounty Program](https://bugcrowd.com/engagements/elementor) 💰
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Elements](https://bugcrowd.com/engagements/elements) 💰
@@ -1114,6 +1117,7 @@
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [NCSC UK](https://hackerone.com/ncsc_uk) 🏅
 - <img src='https://icon.horse/icon/www.ncsc.nl' width='16'/> [NCSC-NL](https://www.ncsc.nl/security) 💰 🎁
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Nemetschek](https://bugcrowd.com/engagements/nemetschek) 💰
+- <img src='https://icon.horse/icon/neo4j.com' width='16'/> [Neo4j](https://neo4j.com/trust-center/responsible-disclosure/) 🏅
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [NEOGOV Public Assets](https://bugcrowd.com/engagements/neohrms) 💰
 - <img src='https://icon.horse/icon/neon.tech' width='16'/> [Neon](http://neon.tech) 💰
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Neophotonics](https://bugcrowd.com/neophotonics) 💰 🏅
@@ -1184,6 +1188,7 @@
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [Olx](https://hackerone.com/olx) 🏅
 - <img src='https://icon.horse/icon/medical.olympusamerica.com' width='16'/> [Olympus](https://medical.olympusamerica.com/customer-resources/product-security) 💰
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [Omise](https://hackerone.com/omise) 💰 🏅
+- <img src='https://icon.horse/icon/www.omnisend.com' width='16'/> [Omnisend](https://www.omnisend.com/bug-bounty/) 💰
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Omron](https://immunefi.com/bug-bounty/omron/) 💰
 - <img src='https://icon.horse/icon/on2it.net' width='16'/> [ON2IT](https://on2it.net/responsible-disclosure/) 💰
 - <img src='https://icon.horse/icon/www.ondeck.com' width='16'/> [Ondeck](https://www.ondeck.com/security-policy) 🏅
@@ -1791,6 +1796,7 @@
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Upwork](https://bugcrowd.com/upwork) 💰 🏅
 - <img src='https://icon.horse/icon/www.urbancompany.com' width='16'/> [Urban Company](https://www.urbancompany.com) 💰 🎁
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [Urban Dictionary](https://hackerone.com/urbandictionary) 🏅
+- <img src='https://icon.horse/icon/urlscan.io' width='16'/> [urlscan.io](https://urlscan.io/security/) 🏅
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [USAA](https://bugcrowd.com/usaa) 💰 🏅
 - <img src='https://icon.horse/icon/app.usabilityhub.com' width='16'/> [UsabilityHub](https://app.usabilityhub.com/security/responsible_disclosure) 💰
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [USDN](https://immunefi.com/bug-bounty/usdn/) 💰
@@ -1847,6 +1853,7 @@
 - <img src='https://icon.horse/icon/www.voys.nl' width='16'/> [Voys](https://www.voys.nl/security-responsible-disclosure/#rd) 🏅
 - <img src='https://icon.horse/icon/vpnarea.com' width='16'/> [VPNArea](https://vpnarea.com/front/home/bugbounty) 💰
 - <img src='https://icon.horse/icon/www.vrt.be' width='16'/> [VRT](https://www.vrt.be/en/responsible-disclosure-policy-english-version/) 💰
+- <img src='https://icon.horse/icon/www.vtex.com' width='16'/> [VTEX](https://www.vtex.com/.well-known/security-disclosure-policy.txt) 🏅
 - <img src='https://icon.horse/icon/www.intigriti.com' width='16'/> [VTM GO](https://www.intigriti.com/programs/dpgm/vtmgo/detail) 💰
 - <img src='https://icon.horse/icon/www.vultr.com' width='16'/> [Vultr](https://www.vultr.com/bug-bounty/) 💰
 - <img src='https://icon.horse/icon/help.vyond.com' width='16'/> [Vyond](https://help.vyond.com/hc/en-us/articles/360000497723-How-do-I-Report-a-Security-Vulnerability-) 🏅
