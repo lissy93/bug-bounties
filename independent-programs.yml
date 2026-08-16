@@ -541,6 +541,48 @@ companies:
   response_sla_days: 3
   disclosure_timeline_days: 90
 
+- company: CodeRabbit
+  url: https://www.coderabbit.ai/vulnerability-disclosure
+  contact: https://www.coderabbit.ai/vulnerability-disclosure/submit-vulnerability
+  rewards:
+  - '*bounty'
+  - '*recognition'
+  program_type: bounty
+  status: active
+  safe_harbor: full
+  allows_disclosure: false
+  preferred_languages: English
+  description: CodeRabbit covers all internet-facing systems on its own domains, scoring severity on a scale adapted from CVSS 3.0 and paying against it. Reports are acknowledged within three business days and researchers are credited by name on any public disclosure with their permission, but details may not be shared with anyone until CodeRabbit gives written approval.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - physical_access
+  out_of_scope:
+  - General security, email or SSL/TLS best practices without a working proof of concept
+  - Physical compromise or intrusion
+  - Rate limiting or brute-force issues on unauthenticated endpoints
+  - Compromises involving an insider
+  - Social engineering, including phishing attempts
+  - Reflected file downloads
+  - Account takeover, including brute-force attacks on accounts that are not yours
+  - Red-teaming and adversarial testing of the services
+  - Content issues with the CodeRabbit bot and its responses
+  - Denial-of-service attacks
+  - Clickjacking on pages with no sensitive actions
+  - Missing HttpOnly or Secure flags on cookies
+  - Dependency hijacking
+  - Widely publicised zero-days with no patch, or patched less than 30 days ago
+  min_payout: 100
+  max_payout: 20000
+  currency: USD
+  payout_table:
+    critical: 20000
+    high: 5000
+    medium: 1000
+    low: 500
+  response_sla_days: 3
+
 - company: coderpad.io
   url: https://coderpad.io/vulnerability-disclosure-policy/
   contact: mailto:bugbounty@coderpad.io
