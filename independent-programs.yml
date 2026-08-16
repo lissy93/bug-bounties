@@ -2355,6 +2355,28 @@ companies:
   testing_policy_url: https://tuturuuu.com/security/policy
   hall_of_fame_url: https://tuturuuu.com/security/bug-bounty
 
+- company: urlscan.io
+  url: https://urlscan.io/security/
+  contact: mailto:security@urlscan.io
+  rewards:
+  - '*recognition'
+  program_type: vdp
+  status: active
+  safe_harbor: full
+  allows_disclosure: true
+  preferred_languages: English, German
+  description: urlscan.io publishes a CISA-style disclosure policy covering web services on *.urlscan.io. Reports may be submitted anonymously and are acknowledged within three business days. Reporters expressly waive any claim to payment, but confirmed findings are listed on a public Hall of Fame, and reports affecting more than urlscan.io may be shared with CISA.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - physical_access
+  scope:
+  - target: '*.urlscan.io'
+    type: web
+  response_sla_days: 3
+  hall_of_fame_url: https://urlscan.io/security/#hof
+
 - company: Val Town
   url: https://docs.val.town/contact-us/security/
   contact: mailto:security@val.town
