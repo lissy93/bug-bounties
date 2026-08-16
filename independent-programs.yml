@@ -622,6 +622,14 @@ companies:
     medium: 100
     low: 50
 
+- company: Convex
+  url: https://www.convex.dev/security
+  contact: mailto:security@convex.dev
+  program_type: vdp
+  status: active
+  description: Convex asks that suspected security bugs are reported to its security address and commits to replying within 24 hours. Researchers are asked not to disclose publicly until Convex has had a chance to address the issue.
+  response_sla_days: 1
+
 - company: CrowdProof
   url: https://crowdproof.id/security
   contact: mailto:security@crowdproof.id
