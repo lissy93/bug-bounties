@@ -72,6 +72,58 @@ companies:
   testing_policy_url: https://www.abhieo.in/bug-bounty
   requires_account: true
 
+- company: Ably
+  url: https://ably.com/disclosure
+  contact: mailto:disclosure@ably.com
+  rewards:
+  - '*bounty'
+  - '*recognition'
+  program_type: bounty
+  status: active
+  safe_harbor: full
+  allows_disclosure: true
+  preferred_languages: English
+  description: Ably runs its own disclosure programme covering its website, ancillary *.ably.com sites and the production realtime and REST endpoints. Rewards start from a CVSS-informed severity assessment and can be paid to charity instead of the researcher. Only the first responsible disclosure of an issue is eligible, and reports generated solely by AI are not accepted.
+  excluded_methods:
+  - dos
+  - phishing
+  - physical_access
+  scope:
+  - target: ably.com
+    type: web
+  - target: '*.ably.com'
+    type: web
+  - target: main.realtime.ably.net
+    type: api
+  - target: '*.realtime.ably.net'
+    type: api
+  - target: realtime.ably.io
+    type: api
+  - target: rest.ably.io
+    type: api
+  - target: Ably service endpoints served from customer domains via CNAME
+    type: api
+  out_of_scope:
+  - Ably subdomains served by third parties, such as support.ably.com
+  - Domains and services that are not customer facing
+  - Third-party functionality surfaced on the website, such as interactive support chat
+  - Reports relating to ably-cli
+  - Username enumeration
+  - Missing rate limits that do not signify a security issue
+  - Security header configuration and missing headers
+  - TLS configuration and known protocol, ciphersuite or certificate weaknesses
+  - SPF, DKIM and DMARC configuration suggestions
+  - Known vulnerable libraries without a working proof of concept
+  min_payout: 150
+  max_payout: 5000
+  currency: USD
+  payout_table:
+    critical: 5000
+    high: 1500
+    medium: 500
+    low: 150
+  hall_of_fame_url: https://ably.com/acknowledgements
+
 - company: Airwallex
   url: https://help.airwallex.com/hc/en-gb/articles/900004502526-Bug-Bounty-Program-Rules
   contact: mailto:bugbounty@airwallex.com
@@ -489,6 +541,48 @@ companies:
   response_sla_days: 3
   disclosure_timeline_days: 90
 
+- company: CodeRabbit
+  url: https://www.coderabbit.ai/vulnerability-disclosure
+  contact: https://www.coderabbit.ai/vulnerability-disclosure/submit-vulnerability
+  rewards:
+  - '*bounty'
+  - '*recognition'
+  program_type: bounty
+  status: active
+  safe_harbor: full
+  allows_disclosure: false
+  preferred_languages: English
+  description: CodeRabbit covers all internet-facing systems on its own domains, scoring severity on a scale adapted from CVSS 3.0 and paying against it. Reports are acknowledged within three business days and researchers are credited by name on any public disclosure with their permission, but details may not be shared with anyone until CodeRabbit gives written approval.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - physical_access
+  out_of_scope:
+  - General security, email or SSL/TLS best practices without a working proof of concept
+  - Physical compromise or intrusion
+  - Rate limiting or brute-force issues on unauthenticated endpoints
+  - Compromises involving an insider
+  - Social engineering, including phishing attempts
+  - Reflected file downloads
+  - Account takeover, including brute-force attacks on accounts that are not yours
+  - Red-teaming and adversarial testing of the services
+  - Content issues with the CodeRabbit bot and its responses
+  - Denial-of-service attacks
+  - Clickjacking on pages with no sensitive actions
+  - Missing HttpOnly or Secure flags on cookies
+  - Dependency hijacking
+  - Widely publicised zero-days with no patch, or patched less than 30 days ago
+  min_payout: 100
+  max_payout: 20000
+  currency: USD
+  payout_table:
+    critical: 20000
+    high: 5000
+    medium: 1000
+    low: 500
+  response_sla_days: 3
+
 - company: coderpad.io
   url: https://coderpad.io/vulnerability-disclosure-policy/
   contact: mailto:bugbounty@coderpad.io
@@ -527,6 +621,14 @@ companies:
     high: 250
     medium: 100
     low: 50
+
+- company: Convex
+  url: https://www.convex.dev/security
+  contact: mailto:security@convex.dev
+  program_type: vdp
+  status: active
+  description: Convex asks that suspected security bugs are reported to its security address and commits to replying within 24 hours. Researchers are asked not to disclose publicly until Convex has had a chance to address the issue.
+  response_sla_days: 1
 
 - company: CrowdProof
   url: https://crowdproof.id/security
@@ -667,6 +769,21 @@ companies:
     medium: 5000
     low: 250
   disclosure_timeline_days: 90
+
+- company: Element
+  url: https://element.io/security/security-disclosure-policy
+  contact: mailto:security@element.io
+  rewards:
+  - '*recognition'
+  program_type: vdp
+  status: active
+  allows_disclosure: true
+  preferred_languages: English
+  pgp_key: https://element.io/.well-known/pgp-key.txt
+  description: Element follows responsible disclosure across its Matrix clients and Element Server Suite. It replies within five business days, aims to fix within 90 days and may propose 120 for harder cases, and credits reporters in its Security Hall of Fame. There is no bug bounty. An AGPL exception lets you patch your own instance during an agreed embargo of up to 120 days.
+  response_sla_days: 5
+  disclosure_timeline_days: 90
+  hall_of_fame_url: https://element.io/security/security-hall-of-fame
 
 - company: Fluxer
   url: https://fluxer.app/security
@@ -1209,6 +1326,39 @@ companies:
   response_sla_days: 3
   swag_details: At our sole discretion, Nelko may provide product rewards (such as printers or consumable gift sets) to researchers who report significant, verified vulnerabilities as a token of our appreciation.
 
+- company: Neo4j
+  url: https://neo4j.com/trust-center/responsible-disclosure/
+  contact: mailto:security@neo4j.com
+  rewards:
+  - '*recognition'
+  program_type: vdp
+  status: active
+  allows_disclosure: true
+  pgp_key: https://keys.openpgp.org/vks/v1/by-fingerprint/5B7D17782C3B3F228C8AFF54B69ACF2EA0297D6E
+  description: Neo4j is not running a bug bounty, so claims for compensation are not accepted, but findings are credited on a public list of acknowledgements. Neo4j is a CNA and will create and curate a CVE record where a finding warrants one, with a documented route for reporters to dispute its assessment.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - automated_scanning
+  out_of_scope:
+  - Issues needing physical access, pre-existing root privileges or MITM on the victim's device
+  - Account enumeration attacks
+  - Attacks targeting outdated or obscure browsers
+  - Insecure cookie settings or flags on non-sensitive cookies
+  - Weak SSL/TLS algorithms, protocols or cyphers
+  - CSRF with no security impact
+  - Best practices deviation, such as password complexity, expiration or re-use
+  - Clickjacking on pre-authenticated pages and missing anti-clickjacking headers
+  - Known vulnerable libraries without a novel and working proof of concept
+  - Reflected file download
+  - Content spoofing and text injection without being able to modify HTML or CSS
+  - Bypassing or missing rate limits with no platform impact
+  - Issues only affecting outdated, unpatched or non-default installations
+  - Credential stuffing and account takeover
+  - Self-XSS and issues exploitable only through self-XSS
+  - Lack of security-related headers
+
 - company: nuuvem.com
   url: https://www.nuuvem.com/us-en/security
   contact: mailto:security@nuuvem.com
@@ -1266,6 +1416,45 @@ companies:
     high: 10000
     medium: 2500
     low: 499
+
+- company: Oh Dear
+  url: https://ohdear.app/security
+  contact: mailto:security@ohdear.app
+  program_type: vdp
+  status: active
+  safe_harbor: partial
+  allows_disclosure: true
+  preferred_languages: English
+  description: Oh Dear is a three-person uptime monitoring company that publishes its security practices with a short disclosure section at the end. It commits to responding within 24 hours, will not pursue legal action against researchers acting in good faith, and asks for reasonable time to fix an issue before it is disclosed publicly.
+  response_sla_days: 1
+
+- company: Omnisend
+  url: https://www.omnisend.com/bug-bounty/
+  contact: mailto:security@omnisend.com
+  rewards:
+  - '*bounty'
+  program_type: bounty
+  status: active
+  description: Omnisend pays for the first reproducible report of a given issue across its web app, API, marketing site, app market and partner portal. Multiple findings caused by the same underlying issue are awarded one payout, reports without reproducible steps are not eligible, and WordPress plugin issues go to Patchstack instead.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  scope:
+  - target: app.omnisend.com
+    type: web
+  - target: omnisend.com
+    type: web
+  - target: api.omnisend.com
+    type: api
+  - target: appmarket.omnisend.com
+    type: web
+  - target: partners.omnisend.com
+    type: web
+  out_of_scope:
+  - Phishing
+  - Social engineering
+  - Any form of denial of service attack
 
 - company: Orange Cyberdefense
   url: https://www.orangecyberdefense.com/de/vulnerability-disclosure-policy
@@ -1423,6 +1612,41 @@ companies:
   - '*.19pine.ai'
   response_sla_days: 3
   hall_of_fame_url: https://www.19pine.ai/security#acknowledgments
+
+- company: Pitch
+  url: https://pitch.com/security-disclosure-policy
+  contact: mailto:security@pitch.com
+  program_type: vdp
+  status: active
+  safe_harbor: partial
+  allows_disclosure: true
+  preferred_languages: English
+  description: Pitch does not run a bug bounty and considers any reward case by case. Reports are acknowledged usually within five working days, and Pitch asks researchers to tag test traffic with a Pentest header, stay under two requests per second and avoid aggressive scanners. Critical issues in its clients and open-source projects are committed to a 90-day fix.
+  excluded_methods:
+  - dos
+  - automated_scanning
+  scope:
+  - target: pitch.com
+    type: web
+  - target: pitch.io
+    type: web
+  - target: Pitch desktop applications
+    type: desktop
+  - target: Pitch mobile applications
+    type: mobile
+  - target: Official Pitch integrations
+    type: other
+  - target: pitch-io/cljest
+    type: other
+  - target: pitch-io/uix
+    type: other
+  out_of_scope:
+  - Volumetric vulnerabilities
+  - TLS configuration weaknesses
+  - Reports that services do not fully align with best practice, such as missing security headers
+  - Vulnerabilities or weaknesses in third-party services or sub-processors
+  response_sla_days: 5
+  disclosure_timeline_days: 90
 
 - company: pokee.ai
   url: https://pokee.ai/bug-bounty
@@ -2131,6 +2355,28 @@ companies:
   testing_policy_url: https://tuturuuu.com/security/policy
   hall_of_fame_url: https://tuturuuu.com/security/bug-bounty
 
+- company: urlscan.io
+  url: https://urlscan.io/security/
+  contact: mailto:security@urlscan.io
+  rewards:
+  - '*recognition'
+  program_type: vdp
+  status: active
+  safe_harbor: full
+  allows_disclosure: true
+  preferred_languages: English, German
+  description: urlscan.io publishes a CISA-style disclosure policy covering web services on *.urlscan.io. Reports may be submitted anonymously and are acknowledged within three business days. Reporters expressly waive any claim to payment, but confirmed findings are listed on a public Hall of Fame, and reports affecting more than urlscan.io may be shared with CISA.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - physical_access
+  scope:
+  - target: '*.urlscan.io'
+    type: web
+  response_sla_days: 3
+  hall_of_fame_url: https://urlscan.io/security/#hof
+
 - company: Val Town
   url: https://docs.val.town/contact-us/security/
   contact: mailto:security@val.town
@@ -2230,6 +2476,36 @@ companies:
 - company: Volvo
   url: https://www.volvocars.com/intl/l/legal/vulnerability-reporting/
   contact: mailto:responsible-disclosure@volvocars.com
+
+- company: VTEX
+  url: https://www.vtex.com/.well-known/security-disclosure-policy.txt
+  contact: mailto:security-report@vtex.com
+  rewards:
+  - '*recognition'
+  program_type: vdp
+  status: active
+  safe_harbor: partial
+  allows_disclosure: true
+  preferred_languages: English, Portuguese
+  pgp_key: https://www.vtex.com/pgp-key.txt
+  description: VTEX takes reports by email only, on platform infrastructure it owns rather than the individual merchant stores built on it. This is not a public bug bounty and no payment is guaranteed, though researchers may be publicly acknowledged. Acknowledgement targets run from two business days for critical down to ten for low severity.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - physical_access
+  - automated_scanning
+  out_of_scope:
+  - Individual merchant stores built on the VTEX platform
+  - Third-party integrations or services outside VTEX's control
+  - Missing security headers without demonstrated impact
+  - DNS or email configuration findings without demonstrated exploitation impact
+  - Self-XSS or issues requiring full control of the victim's browser or account
+  - Publicly accessible CMS maintenance endpoints without demonstrated resource exhaustion impact
+  - Absence of rate limiting without demonstrated exploitation impact
+  - Automated scanner output without manual validation and a proof of concept
+  - Theoretical vulnerabilities without proof of exploitability
+  disclosure_timeline_days: 90
 
 - company: whatruns.com
   url: https://www.whatruns.com/bug-bounty
