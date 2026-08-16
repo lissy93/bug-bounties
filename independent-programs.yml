@@ -1417,6 +1417,17 @@ companies:
     medium: 2500
     low: 499
 
+- company: Oh Dear
+  url: https://ohdear.app/security
+  contact: mailto:security@ohdear.app
+  program_type: vdp
+  status: active
+  safe_harbor: partial
+  allows_disclosure: true
+  preferred_languages: English
+  description: Oh Dear is a three-person uptime monitoring company that publishes its security practices with a short disclosure section at the end. It commits to responding within 24 hours, will not pursue legal action against researchers acting in good faith, and asks for reasonable time to fix an issue before it is disclosed publicly.
+  response_sla_days: 1
+
 - company: Orange Cyberdefense
   url: https://www.orangecyberdefense.com/de/vulnerability-disclosure-policy
   contact: mailto:vulnerability@orangecyberdefense.com
