@@ -1326,6 +1326,39 @@ companies:
   response_sla_days: 3
   swag_details: At our sole discretion, Nelko may provide product rewards (such as printers or consumable gift sets) to researchers who report significant, verified vulnerabilities as a token of our appreciation.
 
+- company: Neo4j
+  url: https://neo4j.com/trust-center/responsible-disclosure/
+  contact: mailto:security@neo4j.com
+  rewards:
+  - '*recognition'
+  program_type: vdp
+  status: active
+  allows_disclosure: true
+  pgp_key: https://keys.openpgp.org/vks/v1/by-fingerprint/5B7D17782C3B3F228C8AFF54B69ACF2EA0297D6E
+  description: Neo4j is not running a bug bounty, so claims for compensation are not accepted, but findings are credited on a public list of acknowledgements. Neo4j is a CNA and will create and curate a CVE record where a finding warrants one, with a documented route for reporters to dispute its assessment.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - automated_scanning
+  out_of_scope:
+  - Issues needing physical access, pre-existing root privileges or MITM on the victim's device
+  - Account enumeration attacks
+  - Attacks targeting outdated or obscure browsers
+  - Insecure cookie settings or flags on non-sensitive cookies
+  - Weak SSL/TLS algorithms, protocols or cyphers
+  - CSRF with no security impact
+  - Best practices deviation, such as password complexity, expiration or re-use
+  - Clickjacking on pre-authenticated pages and missing anti-clickjacking headers
+  - Known vulnerable libraries without a novel and working proof of concept
+  - Reflected file download
+  - Content spoofing and text injection without being able to modify HTML or CSS
+  - Bypassing or missing rate limits with no platform impact
+  - Issues only affecting outdated, unpatched or non-default installations
+  - Credential stuffing and account takeover
+  - Self-XSS and issues exploitable only through self-XSS
+  - Lack of security-related headers
+
 - company: nuuvem.com
   url: https://www.nuuvem.com/us-en/security
   contact: mailto:security@nuuvem.com
