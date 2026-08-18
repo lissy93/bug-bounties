@@ -329,8 +329,8 @@
     cursor: pointer;
   }
   .search-row select option {
-    color: #111;
-    background: #fff;
+    color: var(--background);
+    background: var(--foreground);
   }
   .chip-row {
     display: flex;
