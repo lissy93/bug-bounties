@@ -328,6 +328,10 @@
     background: var(--background-lighter);
     cursor: pointer;
   }
+  .search-row select option {
+    color: #111;
+    background: #fff;
+  }
   .chip-row {
     display: flex;
     flex-wrap: wrap;
