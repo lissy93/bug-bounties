@@ -508,6 +508,16 @@ companies:
     type: web
   hall_of_fame_url: https://security.web.cern.ch/home/en/kudos.shtml
 
+- company: Checkly
+  url: https://www.checklyhq.com/security-response/
+  contact: mailto:security@checklyhq.com
+  rewards:
+  - '*recognition'
+  program_type: vdp
+  status: active
+  description: Checkly asks researchers to report any security flaw that might affect its products or its customers to its security address, and says it usually replies within 24 hours. It commits to acknowledging the report and keeping the reporter updated on its status, and will not disclose an issue until its own investigation is finished. Once the issue is resolved it posts a security update with thanks and credit for the discovery.
+  response_sla_days: 1
+
 - company: Clerk
   url: https://clerk.com/docs/guides/how-clerk-works/security/vulnerability-disclosure-policy
   contact: mailto:security@clerk.dev
