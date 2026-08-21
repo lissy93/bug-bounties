@@ -320,6 +320,7 @@
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Charm](https://immunefi.com/bug-bounty/charm/) 💰
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [Chaturbate](https://hackerone.com/chaturbate) 💰 🏅 🎁
 - <img src='https://icon.horse/icon/checkhq.com' width='16'/> [Check](https://checkhq.com/security) 💰
+- <img src='https://icon.horse/icon/www.checklyhq.com' width='16'/> [Checkly](https://www.checklyhq.com/security-response/) 🏅
 - <img src='https://icon.horse/icon/chia.net' width='16'/> [Chia Network](http://chia.net) 💰
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [Chime](https://hackerone.com/chime) 💰
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Chime Managed Bug Bounty Engagement](https://bugcrowd.com/engagements/chime) 💰
