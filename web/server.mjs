@@ -1,7 +1,20 @@
+import { existsSync } from 'node:fs';
 import { createServer } from 'node:http';
 import { fileURLToPath } from 'node:url';
 import sirv from 'sirv';
-import { handler as ssr } from './dist/server/entry.mjs';
+
+const clientDir = fileURLToPath(new URL('./dist/client/', import.meta.url));
+const serverEntry = new URL('./dist/server/entry.mjs', import.meta.url);
+
+if (!existsSync(serverEntry) || !existsSync(clientDir)) {
+	console.error(
+		'No build found in ./dist - run `npm run build` before `npm start`.\n' +
+			'(if DEPLOY_TARGET is set, it must be `node` for this server)',
+	);
+	process.exit(1);
+}
+
+const { handler: ssr } = await import(serverEntry);
 
 const host = process.env.HOST ?? '0.0.0.0';
 const port = Number(process.env.PORT ?? 8080);
@@ -13,7 +26,6 @@ const securityHeaders = {
 	'Permissions-Policy': 'camera=(), microphone=(), geolocation=()',
 };
 
-const clientDir = fileURLToPath(new URL('./dist/client/', import.meta.url));
 const serveStatic = sirv(clientDir, {
 	etag: true,
 	gzip: true,

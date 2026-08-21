@@ -2174,13 +2174,18 @@ Start by clone the repo with `git clone git@github.com:Lissy93/bug-bounties.git 
 #### Website
 1. `cd web` to navigate into the [`web/`](https://github.com/Lissy93/bug-bounties/tree/main/web) directory
 2. `npm i` to install web NPM dependencies
-3. `npm run dev` to start the development server
-4. `npm run build` to build the production site
+3. `npm run dev` to start the development server, on [localhost:4321](http://localhost:4321)
+4. `npm run build` to build the production site, into `web/dist/`
+5. `npm start` to serve that build, on [localhost:8080](http://localhost:8080) (override with `HOST` / `PORT`)
 
 #### Deployment
-- Option 1) Upload the content of `web/dist/` into any web server, static hosting provider or CDN
+The build target is picked up from the environment, so no config is needed for the common cases.
+Set `DEPLOY_TARGET` to `node`, `vercel`, `netlify` or `static` to choose it explicitly.
+
+- Option 1) Self-host on Node: `npm run build && npm start` (uses [`server.mjs`](https://github.com/Lissy93/bug-bounties/blob/main/web/server.mjs), which serves `dist/client/` and hands everything else to `dist/server/`)
 - Option 2) Import the project into Vercel or Netlify directly, where it will be automatically deployed
 - Option 3) For Docker, run `docker run -p 8080:8080 ghcr.io/lissy93/bug-bounties:latest`
+- Option 4) Build with `DEPLOY_TARGET=static` and upload `web/dist/` to any static host or CDN. Note that this drops the server-rendered routes (`/lookup/*` and `/api/programs/search.json`)
 
 ---
 

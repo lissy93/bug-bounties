@@ -18,7 +18,7 @@
   ],
   "scripts": {
     "dev": "astro dev",
-    "start": "astro dev",
+    "start": "node ./server.mjs",
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",

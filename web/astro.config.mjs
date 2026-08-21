@@ -8,7 +8,7 @@ const target = (
 	(process.env.NETLIFY ? 'netlify' : '') ||
 	(process.env.VERCEL ? 'vercel' : '') ||
 	(process.env.NODE_ADAPTER ? 'node' : '') ||
-	'vercel'
+	'node'
 ).toLowerCase();
 
 async function resolveAdapter() {
