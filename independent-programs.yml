@@ -1053,6 +1053,52 @@ companies:
   - TLS configuration weaknesses, such as weak cipher suite support or TLS 1.0 support
   response_sla_days: 5
 
+- company: Infisical
+  url: https://infisical.com/vulnerability-disclosure
+  contact: mailto:disclosure@infisical.com
+  rewards:
+  - '*recognition'
+  program_type: vdp
+  status: active
+  safe_harbor: full
+  allows_disclosure: true
+  preferred_languages: English
+  description: Infisical runs a self-managed disclosure program covering Infisical Cloud, its open-source repositories and default self-hosted deployments. Reports go by email and are acknowledged within 3 business days, with an initial assessment inside 7. There is no monetary reward; researchers get public credit in advisories and release notes. Testing is confined to your own organisation, and disclosure stays coordinated until a patched release ships.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - physical_access
+  scope:
+  - target: app.infisical.com
+    type: web
+  - target: eu.infisical.com
+    type: web
+  - target: portal.infisical.com
+    type: web
+  - target: infisical.com
+    type: web
+  - target: www.infisical.com
+    type: web
+  - target: github.com/Infisical/infisical
+    type: other
+  - target: github.com/Infisical/cli
+    type: other
+  - target: github.com/Infisical/agent-vault
+    type: other
+  - target: Self-hosted Infisical on a default or recommended configuration
+    type: other
+  out_of_scope:
+  - Any Infisical instance you do not own or operate, including customer self-hosted deployments and dedicated or single-tenant environments
+  - Hostnames not listed in scope, and subdomain enumeration or scanning of infisical.com
+  - Infisical's internal infrastructure and cloud control plane
+  - Third-party services and platforms
+  response_sla_days: 3
+  standards:
+  - ISO 29147
+  - ISO 30111
+  requires_account: true
+
 - company: Insight Health
   url: https://www.insighthealth.ai/security
   contact: mailto:security@insighthealth.ai
