@@ -358,6 +358,16 @@ companies:
   contact: mailto:security@accredible.com
   rewards:
   - '*bounty'
+- company: Accxia Marketplace Bug Bounty
+  url: https://bugcrowd.com/engagements/accxia-gmbh
+  contact: https://bugcrowd.com/engagements/accxia-gmbh
+  rewards:
+  - '*bounty'
+  managed: true
+  safe_harbor: full
+  max_payout: 1500.0
+  domains:
+  - marketplace.atlassian.com
 - company: Achmea
   url: https://www.achmea.nl/en/responsibledisclosure
   contact: https://www.achmea.nl/en/responsibledisclosure
@@ -522,6 +532,16 @@ companies:
   url: https://www.adp.com/about-adp/data-security.aspx
   contact: mailto:vulnerabilityreporting@ADP.com
   rewards: []
+- company: Aelbox Marketplace Bug Bounty
+  url: https://bugcrowd.com/engagements/aelbox
+  contact: https://bugcrowd.com/engagements/aelbox
+  rewards:
+  - '*bounty'
+  managed: true
+  safe_harbor: full
+  max_payout: 1500.0
+  domains:
+  - marketplace.atlassian.com
 - company: Aera
   url: https://immunefi.com/bug-bounty/aera/
   contact: https://immunefi.com/bug-bounty/aera/
@@ -786,7 +806,7 @@ companies:
   - aiven.io
   - api.aiven.io
   - console.aiven.io
-  - falcon-bug-bounty-flag-pgsql-dev-sandbox.aivencloud.com
+  - falcon-bug-bounty-flag-pgsql-dev-sandbox.e.aivencloud.com
   - github.com
   - regatta.aiven.io
 - company: Aktia
@@ -2068,6 +2088,7 @@ companies:
   - digital.welt.de
   - editorial.one
   - ein-herz-fuer-kinder.de
+  - emarketer.com
   - epaper.welt.de
   - fitbook.de
   - germany.politico.eu
@@ -2077,7 +2098,6 @@ companies:
   - meinkonto.bild.de
   - myhomebook.de
   - newsos.com
-  - petbook-magazine.com
 - company: Axel Springer SE Vulnerability Disclosure Program
   url: https://www.intigriti.com/programs/axelspringerse/axelspringersevulnerabilitydisclosureprogram/detail
   handle: axelspringersevulnerabilitydisclosureprogram
@@ -3191,6 +3211,16 @@ companies:
 - company: Broken Build Bug Bounty
   url: https://bugcrowd.com/engagements/brokenbuild
   contact: https://bugcrowd.com/engagements/brokenbuild
+  rewards:
+  - '*bounty'
+  managed: true
+  safe_harbor: full
+  max_payout: 1500.0
+  domains:
+  - marketplace.atlassian.com
+- company: BrowserStack Inc. Marketplace Managed Bug Bounty Engagement
+  url: https://bugcrowd.com/engagements/browserstack-market
+  contact: https://bugcrowd.com/engagements/browserstack-market
   rewards:
   - '*bounty'
   managed: true
@@ -5151,13 +5181,13 @@ companies:
   domains:
   - app.mona.co
   - co.mona.android
-  - com.defi.wallet
   - com.monaco.mobile
   - crypto.com
   - developer-api.crypto.com
   - developer-platform-api.crypto.com
   - developer.crypto.com
   - etherscan.io
+  - experiences.crypto.com
   - explorer.cronos.org
   - js.crypto.com
   - merchant.crypto.com
@@ -5165,6 +5195,7 @@ companies:
   - nadex.com
   - og.com
   - tax.crypto.com
+  - tickets.crypto.com
   - travel.crypto.com
   - web.crypto.com
 - company: Cryptobox
@@ -5945,6 +5976,16 @@ companies:
   contact: mailto:steeringcommittee@opmcm.gov.np
   rewards: []
   safe_harbor: full
+- company: DevSamurai
+  url: https://bugcrowd.com/engagements/devsamurai
+  contact: https://bugcrowd.com/engagements/devsamurai
+  rewards:
+  - '*bounty'
+  managed: true
+  safe_harbor: full
+  max_payout: 1500.0
+  domains:
+  - marketplace.atlassian.com
 - company: DeXe Protocol
   url: https://immunefi.com/bug-bounty/dexeprotocol/
   contact: https://immunefi.com/bug-bounty/dexeprotocol/
@@ -6481,6 +6522,21 @@ companies:
   max_payout: 1500.0
   domains:
   - marketplace.atlassian.com
+- company: Dutch Lottery VDP
+  url: https://www.intigriti.com/programs/nederlandseloterij/dutchlotteryvdp/detail
+  handle: dutchlotteryvdp
+  contact: https://www.intigriti.com/programs/nederlandseloterij/dutchlotteryvdp/detail
+  rewards: []
+  currency: EUR
+  domains:
+  - eurojackpot.nederlandseloterij.nl
+  - krasloten.nederlandseloterij.nl
+  - lotto.nederlandseloterij.nl
+  - luckyday.nederlandseloterij.nl
+  - miljoenenspel.nederlandseloterij.nl
+  - nederlandseloterij.nl
+  - staatsloterij.nederlandseloterij.nl
+  - toto.nl
 - company: Dutch Tax Office
   url: https://www.belastingdienst.nl/wps/wcm/connect/bldcontenten/standaard_functies/individuals/contact/data-leak-vulnerability-abuse-computer-systems/data-leak-vulnerability-abuse-computer-systems-report
   contact: https://www.belastingdienst.nl/wps/wcm/connect/bldcontenten/standaard_functies/individuals/contact/data-leak-vulnerability-abuse-computer-systems/data-leak-vulnerability-abuse-computer-systems-report
@@ -7282,6 +7338,38 @@ companies:
   url: https://www.ecb.europa.eu/services/responsible-disclosure/html/index.nl.html
   contact: https://www.ecb.europa.eu/services/responsible-disclosure/html/index.nl.html
   rewards: []
+- company: European Space Agency (ESA) VDP
+  url: https://www.intigriti.com/programs/europeanspaceagency/europeanspaceagencyvdp/detail
+  handle: europeanspaceagencyvdp
+  contact: https://www.intigriti.com/programs/europeanspaceagency/europeanspaceagencyvdp/detail
+  rewards: []
+  currency: EUR
+  domains:
+  - astronauts.esa.int
+  - avamposto42.esa.int
+  - blogs.esa.int
+  - bookdiscoveresalive-acc.esa.int
+  - bookdiscoveresalive.esa.int
+  - brand.esa.int
+  - careers.esa.int
+  - comms-exhibitionmodels.esa.int
+  - discover-acc.esa.int
+  - discover.esa.int
+  - dlmultimedia.esa.int
+  - download.esa.int
+  - eo4sd.esa.int
+  - esa.int
+  - esamultimedia.esa.int
+  - estracknow.esa.int
+  - github.com
+  - iptvdec.esoc.esa.int
+  - iptvenc.esoc.esa.int
+  - iptvenc2.esoc.esa.int
+  - m.esa.int
+  - multimedia-delivery.esa.int
+  - outpost42.esa.int
+  - rosetta-acc.esa.int
+  - rosetta.esa.int
 - company: Event Espresso
   url: https://eventespresso.com/report-a-security-vulnerability/
   contact: https://eventespresso.com/report-a-security-vulnerability/
@@ -10783,6 +10871,35 @@ companies:
   contact: https://www.intigriti.com/programs/intergamma/intergamma/detail
   rewards:
   - '*bounty'
+  max_payout: 5500.0
+  min_payout: 50.0
+  currency: EUR
+  domains:
+  - be.gamma.app.android
+  - gamma.be
+  - gamma.nl
+  - gammacademy.be
+  - gammalokaal.nl
+  - intergamma-test.nl
+  - intergamma.cloud
+  - intergamma.nl
+  - irmg.nl
+  - karwei-promotiepunt.nl
+  - karwei.nl
+  - karweioutletstore.nl
+  - kassa.gamma.be
+  - kassa.gamma.nl
+  - kassa.karwei.nl
+  - mijn.gamma.be
+  - mijn.gamma.nl
+  - mijn.karwei.nl
+  - nl.gamma.app.android
+  - nl.gamma.verf
+  - nl.karwei.app.android
+  - restintergamma.nl
+  - werkenbijgamma.be
+  - werkenbijgamma.nl
+  - werkenbijkarwei.nl
 - company: Interlay
   url: https://immunefi.com/bug-bounty/interlay/
   contact: https://immunefi.com/bug-bounty/interlay/
@@ -11510,8 +11627,8 @@ companies:
   - liveconnect.me
   - openmesh.com
   - pulseway.com
+  - qa.manage.saasalerts.com
   - rapidfiretools.com
-  - rocketcyber.com
 - company: Keeper Security
   url: https://bugcrowd.com/keepersecurity
   contact: https://bugcrowd.com/keepersecurity/report
@@ -11737,15 +11854,11 @@ companies:
   - '*bounty'
   managed: true
   domains:
-  - api.klarna.com
   - app.klarna.com
-  - js.klarna.com
   - klarna.com
   - klarna.net
   - klarnacdn.net
-  - portal.openbanking.playground.klarna.com
   - pricerunner.com
-  - xs2a.banking.playground.klarna.com
 - company: Klaviyo Managed Bug Bounty
   url: https://bugcrowd.com/engagements/klaviyo-og
   contact: https://bugcrowd.com/engagements/klaviyo-og
@@ -12025,6 +12138,7 @@ companies:
   - acintra.appslatam.com
   - airtalk.appslatam.com
   - amelia.appslatam.com
+  - andeslatam.tech
   - appslatam.com
   - autoemb.appslatam.com
   - beta.latampass.latam.com
@@ -12046,7 +12160,6 @@ companies:
   - partnercenter.intg.appslatam.com
   - partnerportal.intg.appslatam.com
   - passelivre.intg.appslatam.com
-  - passplay.intg.appslatam.com
 - company: Latent Patterns
   url: https://latentpatterns.com/security
   contact: mailto:security@latentpatterns.com
@@ -12209,6 +12322,7 @@ companies:
   min_payout: 25.0
   currency: EUR
   domains:
+  - actie.libelle.nl
   - libelle.nl
 - company: Liberapay
   url: https://hackerone.com/liberapay
@@ -12403,6 +12517,16 @@ companies:
   rewards:
   - '*bounty'
   max_payout: 1000000.0
+- company: Litew8 GmbH - Marketplace Bug Bounty
+  url: https://bugcrowd.com/engagements/litew8
+  contact: https://bugcrowd.com/engagements/litew8
+  rewards:
+  - '*bounty'
+  managed: true
+  safe_harbor: full
+  max_payout: 1500.0
+  domains:
+  - marketplace.atlassian.com
 - company: Liveclicker
   url: https://www.liveclicker.com/trust/report-a-vulnerability/
   contact: https://www.liveclicker.com/trust/report-a-vulnerability/
@@ -12700,6 +12824,16 @@ companies:
   - '*bounty'
   - '*recognition'
   safe_harbor: full
+- company: Magic Apps Marketplace Bug Bounty
+  url: https://bugcrowd.com/engagements/magic-apps
+  contact: https://bugcrowd.com/engagements/magic-apps
+  rewards:
+  - '*bounty'
+  managed: true
+  safe_harbor: full
+  max_payout: 1500.0
+  domains:
+  - marketplace.atlassian.com
 - company: Magic Eden
   url: http://magiceden.io
   handle: magic-eden
@@ -13017,6 +13151,16 @@ companies:
   url: https://documents.marketo.com/legal/notices/responsible-disclosure-policy.pdf
   contact: mailto:securityteam@marketo.com
   rewards: []
+- company: Marketplace Expert SL
+  url: https://bugcrowd.com/engagements/marketplaceexpert
+  contact: https://bugcrowd.com/engagements/marketplaceexpert
+  rewards:
+  - '*bounty'
+  managed: true
+  safe_harbor: full
+  max_payout: 1500.0
+  domains:
+  - marketplace.atlassian.com
 - company: Marktplaats
   url: https://www.marktplaats.nl/i/help/veilig-en-succesvol/responsible-disclosure-program.dot.html
   contact: https://app.zerocopter.com/en/rd/0d37aefa-0c1f-4d3e-a4c5-d4879460d595
@@ -13627,6 +13771,16 @@ companies:
   url: https://www.federacy.com/mobileaction
   contact: https://www.federacy.com/mobileaction
   rewards: []
+- company: MobilityStream Bug Bounty
+  url: https://bugcrowd.com/engagements/mobilitystream
+  contact: https://bugcrowd.com/engagements/mobilitystream
+  rewards:
+  - '*bounty'
+  managed: true
+  safe_harbor: full
+  max_payout: 1500.0
+  domains:
+  - marketplace.atlassian.com
 - company: MobiSystems Ltd
   url: https://hackerone.com/mobisystems_ltd
   contact: https://hackerone.com/mobisystems_ltd
@@ -13997,6 +14151,16 @@ companies:
   url: https://hackerone.com/mount-sinai-health
   contact: https://hackerone.com/mount-sinai-health
   rewards: []
+- company: Move Work Forward
+  url: https://bugcrowd.com/engagements/moveworkforward
+  contact: https://bugcrowd.com/engagements/moveworkforward
+  rewards:
+  - '*bounty'
+  managed: true
+  safe_harbor: full
+  max_payout: 1500.0
+  domains:
+  - marketplace.atlassian.com
 - company: MovieXchange
   url: https://moviexchange.com/responsible-disclosure-policy/
   contact: mailto:security@movieXchange.com
@@ -15079,7 +15243,7 @@ companies:
   handle: oaknorth_bank
   contact: https://hackerone.com/oaknorth_bank
   rewards: []
-  managed: false
+  managed: true
   domains:
   - api.deposits.oaknorth.co.uk
   - apps.apple.com
@@ -15435,6 +15599,16 @@ companies:
   - '*bounty'
   - '*recognition'
   safe_harbor: partial
+- company: Onward Software Solutions Inc. - Marketplace Bug Bounty Program
+  url: https://bugcrowd.com/engagements/onward-software-solutions-inc
+  contact: https://bugcrowd.com/engagements/onward-software-solutions-inc
+  rewards:
+  - '*bounty'
+  managed: true
+  safe_harbor: full
+  max_payout: 1500.0
+  domains:
+  - marketplace.atlassian.com
 - company: OOCRP
   url: https://www.occrp.org/en/responsible-disclosure
   contact: mailto:security@occrp.org
@@ -15873,6 +16047,17 @@ companies:
   rewards:
   - '*recognition'
   safe_harbor: partial
+- company: OST Consulting SRL Marketplace Managed Bug Bounty Engagement
+  url: https://bugcrowd.com/engagements/ost-consulting-market
+  contact: https://bugcrowd.com/engagements/ost-consulting-market
+  rewards:
+  - '*bounty'
+  managed: true
+  safe_harbor: full
+  max_payout: 1500.0
+  domains:
+  - atlassian.ost-consulting.be
+  - marketplace.atlassian.com
 - company: OTTO.DE Bug Bounty
   url: https://yeswehack.com/programs/otto-de-bug-bounty
   contact: https://yeswehack.com/programs/otto-de-bug-bounty
@@ -17625,6 +17810,16 @@ companies:
   url: https://hackerone.com/radancy
   contact: https://hackerone.com/radancy
   rewards: []
+- company: RadBee Ltd.
+  url: https://bugcrowd.com/engagements/radbee
+  contact: https://bugcrowd.com/engagements/radbee
+  rewards:
+  - '*bounty'
+  managed: true
+  safe_harbor: full
+  max_payout: 1500.0
+  domains:
+  - marketplace.atlassian.com
 - company: Radiometer
   url: https://www.radiometer.com/en/about-radiometer/legal/coordinated-vulnerability-disclosure
   contact: https://www.radiometer.com/en/about-radiometer/legal/coordinated-vulnerability-disclosure
@@ -17652,6 +17847,16 @@ companies:
   contact: https://bugcrowd.com/rakuten-vdp
   rewards: []
   safe_harbor: full
+- company: Raley Apps
+  url: https://bugcrowd.com/engagements/raleyapps
+  contact: https://bugcrowd.com/engagements/raleyapps
+  rewards:
+  - '*bounty'
+  managed: true
+  safe_harbor: full
+  max_payout: 1500.0
+  domains:
+  - marketplace.atlassian.com
 - company: Rally
   url: https://www.federacy.com/rally
   contact: https://www.federacy.com/rally
@@ -18233,6 +18438,16 @@ companies:
   - onlinestore.resmedchina.cn
   - patient.propellerhealth.biz
   - play.google.com
+- company: Resolution
+  url: https://bugcrowd.com/engagements/resolutionde
+  contact: https://bugcrowd.com/engagements/resolutionde
+  rewards:
+  - '*bounty'
+  managed: true
+  safe_harbor: full
+  max_payout: 1500.0
+  domains:
+  - marketplace.atlassian.com
 - company: Resolv
   url: https://immunefi.com/bug-bounty/resolv/
   contact: https://immunefi.com/bug-bounty/resolv/
@@ -18671,6 +18886,15 @@ companies:
   - mobile.s-pankki.fi
   - online.s-pankki.fi
   - s-pankki.fi
+- company: SaaSJet
+  url: https://bugcrowd.com/engagements/saasjet
+  contact: https://bugcrowd.com/engagements/saasjet
+  rewards:
+  - '*bounty'
+  managed: true
+  max_payout: 1500.0
+  domains:
+  - marketplace.atlassian.com
 - company: Safe Send Returns
   url: https://safesendreturns.zendesk.com/hc/en-us/articles/360049940054-Information-Security-Overview
   contact: mailto:support@cPaperless.com
@@ -19244,6 +19468,8 @@ companies:
   url: https://bugcrowd.com/engagements/shipwire
   contact: https://bugcrowd.com/engagements/shipwire
   rewards: []
+  managed: true
+  safe_harbor: partial
 - company: Shopclues
   url: https://www.shopclues.com/wall-of-fame.html
   contact: https://www.shopclues.com/wall-of-fame.html
@@ -19540,7 +19766,7 @@ companies:
   - '*bounty'
   managed: true
   safe_harbor: full
-  max_payout: 4500.0
+  max_payout: 5000.0
   domains:
   - skroutz.gr
 - company: Skuid
@@ -19795,11 +20021,26 @@ companies:
   currency: USD
   domains:
   - solarwinds.com
+- company: SolDevelo
+  url: https://bugcrowd.com/engagements/soldevelo
+  contact: https://bugcrowd.com/engagements/soldevelo
+  rewards:
+  - '*bounty'
+  managed: true
+  safe_harbor: full
+  max_payout: 1500.0
+  domains:
+  - marketplace.atlassian.com
 - company: Solidus
   url: https://hackerone.com/solidus
+  handle: solidus
   contact: https://hackerone.com/solidus
   rewards:
   - '*recognition'
+  - '*swag'
+  managed: false
+  domains:
+  - github.com
 - company: Soluble
   url: https://www.soluble.ai/vulnerability-disclosure-policy
   contact: https://www.soluble.ai/contact-us?hsCtaTracking=68ab9c98-7e4a-41b9-b021-d08c48714f8a%7C4d355d19-ed87-4f7a-800a-d2aef4052746
@@ -20359,6 +20600,16 @@ companies:
   max_payout: 3000.0
   domains:
   - marketplace.atlassian.com
+- company: StonikByte
+  url: https://bugcrowd.com/engagements/stonikbyte
+  contact: https://bugcrowd.com/engagements/stonikbyte
+  rewards:
+  - '*bounty'
+  managed: true
+  safe_harbor: full
+  max_payout: 1500.0
+  domains:
+  - marketplace.atlassian.com
 - company: Storebrand Responsible Disclosure
   url: https://www.intigriti.com/programs/spp-storebrand/storebrand-rd/detail
   handle: storebrand-rd
@@ -20573,7 +20824,6 @@ companies:
   - '*bounty'
   managed: true
   domains:
-  - app.grammarly.com
   - coda.grammarly.com
   - coda.io
   - codacontent.io
@@ -20581,6 +20831,7 @@ companies:
   - com.grammarly.android.keyboard
   - com.grammarly.keyboard
   - com.superhuman.mail
+  - docs.superhuman.com
   - gateway.superhuman.com
   - grammarly.com
   - grammarly.io
@@ -20725,6 +20976,16 @@ companies:
   - mark8.syfe.com
   - syfe.com
   - uat-bugbounty.nonprod.syfe.com
+- company: Sykora IT Marketplace Managed Bug Bounty Engagement
+  url: https://bugcrowd.com/engagements/sykora-it-market
+  contact: https://bugcrowd.com/engagements/opus-guard-market
+  rewards:
+  - '*bounty'
+  managed: true
+  safe_harbor: full
+  max_payout: 1500.0
+  domains:
+  - marketplace.atlassian.com
 - company: Sylaps
   url: https://www.federacy.com/sylaps
   contact: https://www.federacy.com/sylaps
@@ -21066,7 +21327,6 @@ companies:
   - stream.telenor.se
   - telenor.se
   - telenorinpli.se
-  - tv.telenor.se
   - vimla.io
   - vimla.se
   - vimla.work
@@ -21665,6 +21925,16 @@ companies:
   - worldcoin-distributors.com
   - worldcoin.dev
   - worldcoin.org
+- company: ToolsPlus
+  url: https://bugcrowd.com/engagements/toolsplus
+  contact: https://bugcrowd.com/engagements/toolsplus
+  rewards:
+  - '*bounty'
+  managed: true
+  safe_harbor: partial
+  max_payout: 1500.0
+  domains:
+  - marketplace.atlassian.com
 - company: toom Baumarkt GmbH - Bug Bounty Program (toom.de)
   url: https://yeswehack.com/programs/toom-baumarkt-gmbh-bug-bounty-program
   contact: https://yeswehack.com/programs/toom-baumarkt-gmbh-bug-bounty-program
@@ -21706,6 +21976,8 @@ companies:
   - '*recognition'
   - '*swag'
   managed: false
+  domains:
+  - gitlab.torproject.org
 - company: Torfs
   url: https://app.intigriti.com/programs/torfs/torfs/detail
   handle: torfs
@@ -21823,6 +22095,7 @@ companies:
   - amfamprotect.com
   - api.uat.ccid.neustar.biz
   - argo-qa-perf-west-idp-nlb.dev.ccid.neustar.biz
+  - authn-uat-canada.ccid.neustar.biz
   - authn-west-qa-perf.dev.ccid.neustar.biz
   - aws3.ezshield.ws
   - breachresponse.ca
@@ -21838,7 +22111,6 @@ companies:
   - classic.p1.neustar.biz
   - cmsdev.transunion.do
   - cmsdev.transunion.mx
-  - cmspvw.transunion.do
 - company: Traveloka
   url: https://www.traveloka.com/en-id/bugs
   contact: https://www.traveloka.com/en-id/bugs
@@ -23175,6 +23447,7 @@ companies:
   - vfsglobal.by
   - vfsglobalcustomerexperience.com
   - vfsvisaonline.com
+  - visaforkorea-sl.com
 - company: VHX
   url: https://hackerone.com/vhx
   contact: https://hackerone.com/vhx
@@ -23472,6 +23745,14 @@ companies:
   contact: https://hackerone.com/vodafone_oman
   rewards:
   - '*bounty'
+  managed: false
+  domains:
+  - apix.vodafone.om
+  - om.vodafone.mva
+  - vfo01.vodafone.om
+  - vfo02.vodafone.om
+  - vfo03.vodafone.om
+  - vodafone.om
 - company: Voi Scooters
   url: https://www.intigriti.com/programs/voi/voiscooters/detail
   handle: voiscooters
@@ -23766,6 +24047,10 @@ companies:
   domains:
   - github.com
   - hosted.weblate.org
+- company: weblate.org
+  url: https://docs.weblate.org/en/latest/contributing/issues.html#security
+  contact: https://hackerone.com/weblate
+  rewards: []
 - company: webmethod.nl
   url: https://www.webmethod.nl/juridisch/responsible-disclosure
   contact: mailto:security-external@webmethod.nl
@@ -24152,18 +24437,20 @@ companies:
   - '*swag'
   managed: true
   domains:
+  - accounts.x.ai
   - ai.x.grok
   - ai.x.grokapp
   - chat.x.com
   - com.atebits.tweetie2
   - com.twitter.android
-  - gnip.com
+  - console.x.ai
+  - console.x.com
   - grok.com
   - grokipedia.com
   - money.x.com
+  - pscp.tv
   - t.co
   - twimg.com
-  - twitter.biz
   - twitter.com
   - vine.co
   - x.ai
