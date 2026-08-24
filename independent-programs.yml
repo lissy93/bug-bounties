@@ -1799,6 +1799,27 @@ companies:
     medium: 500
     low: 100
 
+- company: Proxmox
+  url: https://pve.proxmox.com/wiki/Security_Reporting
+  contact: mailto:security@proxmox.com
+  program_type: vdp
+  status: active
+  preferred_languages: English, German
+  pgp_key: https://enterprise.proxmox.com/debian/security-report.gpg.pub
+  description: Proxmox Server Solutions asks for security bugs in Proxmox VE, Backup Server and Mail Gateway to be reported by email to security@proxmox.com, as plain text without attachments, and only against a supported point release. Exploit code is welcome and kept private, and a GPG key is published for confidential reports. Initial confirmation is normally sent within the next Austrian business day. There is no paid bug bounty, and past advisories are posted to the public forum.
+  scope:
+  - target: Proxmox VE
+    type: other
+  - target: Proxmox Backup Server
+    type: other
+  - target: Proxmox Mail Gateway
+    type: other
+  out_of_scope:
+  - Releases that are end-of-life or are not the latest supported point release
+  - Bugs in the underlying upstream software, which should go to the respective upstream project
+  - Deliberate email configuration choices such as missing DMARC
+  response_sla_days: 1
+
 - company: PubNub
   url: https://www.pubnub.com/bug-bounty-policy/
   contact: mailto:support@pubnub.com
