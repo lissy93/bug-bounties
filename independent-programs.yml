@@ -1036,6 +1036,23 @@ companies:
   - auth.iceline-hosting.com
   reporting_url: https://support.retraflow.io/iceline-hosting
 
+- company: incident.io
+  url: https://incident.io/legal/vulnerability-disclosure
+  contact: mailto:security@incident.io
+  program_type: vdp
+  status: active
+  description: This policy covers any incident.io site whose security.txt references it. Reports go to security@incident.io and should name the affected site, the vulnerability class and benign steps to reproduce. incident.io responds within 5 working days, aims to triage within 10, and asks researchers to chase no more than once every 14 days. There are no monetary rewards. Once a fix ships, incident.io welcomes requests to disclose the report, coordinated with them.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - physical_access
+  - automated_scanning
+  out_of_scope:
+  - Non-exploitable findings and best-practice issues such as missing security headers
+  - TLS configuration weaknesses, such as weak cipher suite support or TLS 1.0 support
+  response_sla_days: 5
+
 - company: Insight Health
   url: https://www.insighthealth.ai/security
   contact: mailto:security@insighthealth.ai
