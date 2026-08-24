@@ -1917,6 +1917,50 @@ companies:
     medium: 10000
     low: 2000
 
+- company: Rootly
+  url: https://rootly.com/legal/vulnerability-disclosure-policy
+  contact: mailto:security@rootly.com
+  rewards:
+  - '*recognition'
+  program_type: vdp
+  status: active
+  safe_harbor: full
+  allows_disclosure: false
+  preferred_languages: English
+  description: Rootly runs an unpaid disclosure programme covering rootly.com and its production subdomains, the web app, API, mobile apps, Slack and Teams apps and MCP server. Reports go to security@rootly.com, with a PGP key available on request. Real vulnerabilities are acknowledged within 5 business days and triaged within 10 with a named owner. Good-faith research gets safe harbour, in-scope reports are publicly credited once a fix ships, and details are to stay between you and Rootly.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - physical_access
+  - automated_scanning
+  scope:
+  - target: rootly.com and its production subdomains
+    type: web
+  - target: api.rootly.com
+    type: api
+  - target: mobile-api.rootly.com
+    type: api
+  - target: slack.rootly.com
+    type: web
+  - target: Rootly mobile apps (Android and iOS)
+    type: mobile
+  - target: Rootly Slack and Teams apps
+    type: other
+  - target: Rootly MCP server
+    type: other
+  out_of_scope:
+  - Third-party services Rootly integrates with, which should be reported to the vendor
+  - Staff social accounts and personal devices
+  - Findings that require already-compromised credentials, rooted devices or physical access
+  - Purely informational findings such as missing security headers, TLS cipher preferences, SPF/DMARC issues, version disclosure or clickjacking on unauthenticated pages, without demonstrated impact
+  domains:
+  - rootly.com
+  - api.rootly.com
+  - slack.rootly.com
+  - mobile-api.rootly.com
+  response_sla_days: 5
+
 - company: Schuberg Philis
   url: https://schubergphilis.com/security
   contact: mailto:abuse@schubergphilis.com
