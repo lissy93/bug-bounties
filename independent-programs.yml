@@ -884,6 +884,31 @@ companies:
     medium: 100
     low: 50
 
+- company: Frappe
+  url: https://frappe.io/security
+  contact: mailto:security@frappe.io
+  rewards:
+  - '*recognition'
+  program_type: vdp
+  status: active
+  preferred_languages: English
+  description: Report security vulnerabilities in ERPNext and Frappe Cloud by email to security@frappe.io. Include a description of the issue, supporting technical details and steps to reproduce, any disclosure plans, and whether you want public recognition. Only test accounts you own may be used, and accessing or modifying other users' data is prohibited. Frappe asks for 10-15 days to confirm and respond, and for blind XSS testing to use assets you control rather than third-party sites.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - physical_access
+  out_of_scope:
+  - build.erpnext.com
+  - gateway.erpnext.com
+  - erpnext.atlassian.net
+  - discuss.erpnext.com
+  - GitHub wikis
+  - Credential or info leak in test files
+  domains:
+  - '*.erpnext.com'
+  - '*.frappecloud.com'
+
 - company: FreeFires
   url: https://freefires.site
   rewards:
