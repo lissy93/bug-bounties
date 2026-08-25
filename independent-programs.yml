@@ -884,6 +884,31 @@ companies:
     medium: 100
     low: 50
 
+- company: Frappe
+  url: https://frappe.io/security
+  contact: mailto:security@frappe.io
+  rewards:
+  - '*recognition'
+  program_type: vdp
+  status: active
+  preferred_languages: English
+  description: Report security vulnerabilities in ERPNext and Frappe Cloud by email to security@frappe.io. Include a description of the issue, supporting technical details and steps to reproduce, any disclosure plans, and whether you want public recognition. Only test accounts you own may be used, and accessing or modifying other users' data is prohibited. Frappe asks for 10-15 days to confirm and respond, and for blind XSS testing to use assets you control rather than third-party sites.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - physical_access
+  out_of_scope:
+  - build.erpnext.com
+  - gateway.erpnext.com
+  - erpnext.atlassian.net
+  - discuss.erpnext.com
+  - GitHub wikis
+  - Credential or info leak in test files
+  domains:
+  - '*.erpnext.com'
+  - '*.frappecloud.com'
+
 - company: FreeFires
   url: https://freefires.site
   rewards:
@@ -1010,6 +1035,23 @@ companies:
   - status.iceline-hosting.com
   - auth.iceline-hosting.com
   reporting_url: https://support.retraflow.io/iceline-hosting
+
+- company: incident.io
+  url: https://incident.io/legal/vulnerability-disclosure
+  contact: mailto:security@incident.io
+  program_type: vdp
+  status: active
+  description: This policy covers any incident.io site whose security.txt references it. Reports go to security@incident.io and should name the affected site, the vulnerability class and benign steps to reproduce. incident.io responds within 5 working days, aims to triage within 10, and asks researchers to chase no more than once every 14 days. There are no monetary rewards. Once a fix ships, incident.io welcomes requests to disclose the report, coordinated with them.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - physical_access
+  - automated_scanning
+  out_of_scope:
+  - Non-exploitable findings and best-practice issues such as missing security headers
+  - TLS configuration weaknesses, such as weak cipher suite support or TLS 1.0 support
+  response_sla_days: 5
 
 - company: Insight Health
   url: https://www.insighthealth.ai/security
@@ -1757,6 +1799,27 @@ companies:
     medium: 500
     low: 100
 
+- company: Proxmox
+  url: https://pve.proxmox.com/wiki/Security_Reporting
+  contact: mailto:security@proxmox.com
+  program_type: vdp
+  status: active
+  preferred_languages: English, German
+  pgp_key: https://enterprise.proxmox.com/debian/security-report.gpg.pub
+  description: Proxmox Server Solutions asks for security bugs in Proxmox VE, Backup Server and Mail Gateway to be reported by email to security@proxmox.com, as plain text without attachments, and only against a supported point release. Exploit code is welcome and kept private, and a GPG key is published for confidential reports. Initial confirmation is normally sent within the next Austrian business day. There is no paid bug bounty, and past advisories are posted to the public forum.
+  scope:
+  - target: Proxmox VE
+    type: other
+  - target: Proxmox Backup Server
+    type: other
+  - target: Proxmox Mail Gateway
+    type: other
+  out_of_scope:
+  - Releases that are end-of-life or are not the latest supported point release
+  - Bugs in the underlying upstream software, which should go to the respective upstream project
+  - Deliberate email configuration choices such as missing DMARC
+  response_sla_days: 1
+
 - company: PubNub
   url: https://www.pubnub.com/bug-bounty-policy/
   contact: mailto:support@pubnub.com
@@ -1853,6 +1916,50 @@ companies:
     high: 15000
     medium: 10000
     low: 2000
+
+- company: Rootly
+  url: https://rootly.com/legal/vulnerability-disclosure-policy
+  contact: mailto:security@rootly.com
+  rewards:
+  - '*recognition'
+  program_type: vdp
+  status: active
+  safe_harbor: full
+  allows_disclosure: false
+  preferred_languages: English
+  description: Rootly runs an unpaid disclosure programme covering rootly.com and its production subdomains, the web app, API, mobile apps, Slack and Teams apps and MCP server. Reports go to security@rootly.com, with a PGP key available on request. Real vulnerabilities are acknowledged within 5 business days and triaged within 10 with a named owner. Good-faith research gets safe harbour, in-scope reports are publicly credited once a fix ships, and details are to stay between you and Rootly.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - physical_access
+  - automated_scanning
+  scope:
+  - target: rootly.com and its production subdomains
+    type: web
+  - target: api.rootly.com
+    type: api
+  - target: mobile-api.rootly.com
+    type: api
+  - target: slack.rootly.com
+    type: web
+  - target: Rootly mobile apps (Android and iOS)
+    type: mobile
+  - target: Rootly Slack and Teams apps
+    type: other
+  - target: Rootly MCP server
+    type: other
+  out_of_scope:
+  - Third-party services Rootly integrates with, which should be reported to the vendor
+  - Staff social accounts and personal devices
+  - Findings that require already-compromised credentials, rooted devices or physical access
+  - Purely informational findings such as missing security headers, TLS cipher preferences, SPF/DMARC issues, version disclosure or clickjacking on unauthenticated pages, without demonstrated impact
+  domains:
+  - rootly.com
+  - api.rootly.com
+  - slack.rootly.com
+  - mobile-api.rootly.com
+  response_sla_days: 5
 
 - company: Schuberg Philis
   url: https://schubergphilis.com/security
