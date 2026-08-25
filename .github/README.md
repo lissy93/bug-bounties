@@ -659,6 +659,7 @@
 - <img src='https://icon.horse/icon/foursquare.com' width='16'/> [Foursquare](https://foursquare.com/about/security) 🏅
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [FoxyCart](https://bugcrowd.com/foxycart) 💰
 - <img src='https://icon.horse/icon/yeswehack.com' width='16'/> [FranceConnect / FranceConnect+ - DINUM](https://yeswehack.com/programs/franceconnect-proconnect-public) 💰
+- <img src='https://icon.horse/icon/frappe.io' width='16'/> [Frappe](https://frappe.io/security) 🏅
 - <img src='https://icon.horse/icon/docs.frax.finance' width='16'/> [Frax Finance](https://docs.frax.finance/smart-contracts/miscellaneous) 💰
 - <img src='https://icon.horse/icon/free.law' width='16'/> [Free Law Project](https://free.law/vulnerability-disclosure-policy/) 🏅
 - <img src='https://icon.horse/icon/www.freelancer.com' width='16'/> [Freelancer](https://www.freelancer.com/about/security) 🏅
@@ -1459,6 +1460,7 @@
 - <img src='https://icon.horse/icon/rocket.chat' width='16'/> [Rocket.Chat](https://rocket.chat/docs/contributing/security/responsible-disclosure-policy/) 🏅 🎁
 - <img src='https://icon.horse/icon/rockset.com' width='16'/> [Rockset](https://rockset.com/legal/responsible-disclosure-policy/) 💰
 - <img src='https://icon.horse/icon/www.rockstargames.com' width='16'/> [Rockstar Games](http://www.rockstargames.com/) 💰
+- <img src='https://icon.horse/icon/rootly.com' width='16'/> [Rootly](https://rootly.com/legal/vulnerability-disclosure-policy) 🏅
 - <img src='https://icon.horse/icon/personal.rbs.co.uk' width='16'/> [Royal Bank of Scotland](https://personal.rbs.co.uk/personal/security-centre/responsible-disclosure.html) 🏅
 - <img src='https://icon.horse/icon/developers.rsk.co' width='16'/> [RSK](https://developers.rsk.co/contribute/bug-bounty-program/) 💰 🏅
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Rubic](https://immunefi.com/bug-bounty/rubic/) 💰
