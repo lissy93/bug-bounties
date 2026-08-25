@@ -826,6 +826,7 @@
 - <img src='https://icon.horse/icon/indrive.com' width='16'/> [inDrive](https://indrive.com/) 💰
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Infinex](https://immunefi.com/bug-bounty/infinex/) 💰
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Infinite Athlete](https://bugcrowd.com/engagements/tempusex-public-mbb-og) 💰
+- <img src='https://icon.horse/icon/infisical.com' width='16'/> [Infisical](https://infisical.com/vulnerability-disclosure) 🏅
 - <img src='https://icon.horse/icon/www.inflectra.com' width='16'/> [Inflectra](https://www.inflectra.com/company/responsible-disclosure.aspx) 🏅
 - <img src='https://icon.horse/icon/yeswehack.com' width='16'/> [Infomaniak](https://yeswehack.com/programs/infomaniak-bug-bounty-program) 💰
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [Informatica](https://hackerone.com/informatica) 🏅 🎁
