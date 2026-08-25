@@ -518,6 +518,64 @@ companies:
   description: Checkly asks researchers to report any security flaw that might affect its products or its customers to its security address, and says it usually replies within 24 hours. It commits to acknowledging the report and keeping the reporter updated on its status, and will not disclose an issue until its own investigation is finished. Once the issue is resolved it posts a security update with thanks and credit for the discovery.
   response_sla_days: 1
 
+- company: Checkmk
+  url: https://checkmk.com/vulnerability-disclosure-policy
+  contact: mailto:security@checkmk.com
+  rewards:
+  - '*recognition'
+  program_type: vdp
+  status: active
+  safe_harbor: partial
+  allows_disclosure: true
+  preferred_languages: English, German
+  pgp_key: https://checkmk.com/.well-known/pgp-key.txt
+  description: Checkmk's disclosure programme covers its monitoring codebase, appliance, Kubernetes cluster collector, Grafana datasource and websites. Reports go to security@checkmk.com in English or German with a description and proof of concept, and the security team replies within a few business days. Anonymous submissions are welcome and reporters can be credited by name. Checkmk aims to address reported issues within 90 days; there is no committed bounty, only a possible token of appreciation.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - physical_access
+  scope:
+  - target: Checkmk codebase
+    type: other
+  - target: Checkmk K8s cluster collector
+    type: other
+  - target: Checkmk Grafana datasource
+    type: other
+  - target: Checkmk appliance
+    type: hardware
+  - target: checkmk.com website and its subdomains
+    type: web
+  - target: tribe29.com website and its subdomains
+    type: web
+  out_of_scope:
+  - Self-XSS that cannot be exploited against other users
+  - (Distributed) Denial of service attacks against the in-scope domains, machines running Checkmk, or the Checkmk appliances
+  - Lack of HSTS enforcement for Checkmk web applications
+  - Missing cookie flags without a PoC on how this can be exploited
+  - Missing security headers without a PoC on how this can be exploited
+  - HTTP request smuggling without any proven business impact
+  - Blind SSRF without proven business impact (DNS pingback only is not sufficient)
+  - HTTP Host header manipulation without a proven business impact
+  - Disclosed and/or misconfigured API keys without proven business impact
+  - Verbose error and log messages that do not reveal personal data or secrets
+  - Clickjacking attacks with low or no impact
+  - Version disclosure without a PoC on how it can be exploited
+  - Open ports without a PoC on how it can be exploited
+  - Weak SSL configurations and SSL/TLS scan reports
+  - Arbitrary file upload without proof of the existence of the uploaded file
+  - Best practices violations (password complexity, expiration, re-use) with low or no impact
+  - Installation of malicious software on machines running Checkmk or on the Checkmk appliances
+  - Physical attacks against the Checkmk appliances
+  - Social engineering attacks against Checkmk employees, partners, or customers
+  - Anything related to email spoofing, SPF, DMARC or DKIM
+  - Email bombing
+  - Side-channel attacks
+  domains:
+  - checkmk.com
+  - tribe29.com
+  disclosure_timeline_days: 90
+
 - company: Clerk
   url: https://clerk.com/docs/guides/how-clerk-works/security/vulnerability-disclosure-policy
   contact: mailto:security@clerk.dev
