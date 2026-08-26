@@ -1331,6 +1331,23 @@ companies:
     high: 500
     medium: 150
 
+- company: Kirby CMS
+  url: https://getkirby.com/security
+  contact: mailto:security@getkirby.com
+  rewards:
+  - '*recognition'
+  program_type: vdp
+  status: active
+  preferred_languages: English
+  pgp_key: https://getkirby.com/pgp.asc
+  description: Kirby's security policy covers vulnerabilities in the Kirby CMS core and the Panel. Reports go to security@getkirby.com, optionally GPG encrypted, or through GitHub's private security advisory form on getkirby/kirby. The team replies as soon as it can and keeps the reporter informed through to a fix and announcement. Reporters are asked not to post publicly and not to request a CVE themselves - GitHub is the CNA for Kirby, and the team requests an ID for each confirmed issue.
+  scope:
+  - target: Kirby core
+    type: other
+  - target: Kirby Panel
+    type: other
+  reporting_url: https://github.com/getkirby/kirby/security/advisories/new
+
 - company: Lark
   url: https://www.larksuite.com/en_us/bugbounty
   rewards:
