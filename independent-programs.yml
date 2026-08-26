@@ -1094,6 +1094,31 @@ companies:
   - auth.iceline-hosting.com
   reporting_url: https://support.retraflow.io/iceline-hosting
 
+- company: Icinga
+  url: https://icinga.com/company/contact/security-issues/
+  contact: mailto:security@icinga.com
+  rewards:
+  - '*recognition'
+  program_type: vdp
+  status: active
+  safe_harbor: partial
+  allows_disclosure: true
+  preferred_languages: English, German
+  pgp_key: https://keys.openpgp.org/search?q=security%40icinga.com
+  description: Icinga GmbH runs a coordinated disclosure programme covering the software it publishes - Icinga 2, Icinga Web, Icinga DB, Icinga Director and the modules and agents it maintains - plus the web services under icinga.com. Report through GitHub private vulnerability reporting on the affected repository, or by email to security@icinga.com in English or German, optionally PGP encrypted. Handling follows ISO/IEC 29147 and 30111, and reporters are credited in the advisories.
+  scope:
+  - target: Icinga products and components published by Icinga GmbH, including Icinga 2, Icinga Web, Icinga DB, Icinga Director, and the modules and agents Icinga maintains
+    type: other
+  - target: Third-party or open-source components integrated into an Icinga product, where the vulnerability affects the product as Icinga ships it
+    type: other
+  - target: icinga.com and its subdomains
+    type: web
+  domains:
+  - icinga.com
+  standards:
+  - ISO 29147
+  - ISO 30111
+
 - company: incident.io
   url: https://incident.io/legal/vulnerability-disclosure
   contact: mailto:security@incident.io
@@ -1306,6 +1331,23 @@ companies:
     high: 500
     medium: 150
 
+- company: Kirby CMS
+  url: https://getkirby.com/security
+  contact: mailto:security@getkirby.com
+  rewards:
+  - '*recognition'
+  program_type: vdp
+  status: active
+  preferred_languages: English
+  pgp_key: https://getkirby.com/pgp.asc
+  description: Kirby's security policy covers vulnerabilities in the Kirby CMS core and the Panel. Reports go to security@getkirby.com, optionally GPG encrypted, or through GitHub's private security advisory form on getkirby/kirby. The team replies as soon as it can and keeps the reporter informed through to a fix and announcement. Reporters are asked not to post publicly and not to request a CVE themselves - GitHub is the CNA for Kirby, and the team requests an ID for each confirmed issue.
+  scope:
+  - target: Kirby core
+    type: other
+  - target: Kirby Panel
+    type: other
+  reporting_url: https://github.com/getkirby/kirby/security/advisories/new
+
 - company: Lark
   url: https://www.larksuite.com/en_us/bugbounty
   rewards:
@@ -1364,6 +1406,56 @@ companies:
   - GraphQL introspection enabled on the public API
   - Pre-auth login metadata exposed by the public API (auth methods, region, SSO URL)
   - Open Dynamic Client Registration on the MCP server, which is open by design per the MCP spec
+
+- company: LiveKit
+  url: https://livekit.com/security/policy
+  contact: mailto:security@livekit.io
+  rewards:
+  - '*recognition'
+  program_type: vdp
+  status: active
+  safe_harbor: full
+  allows_disclosure: true
+  preferred_languages: English
+  pgp_key: https://livekit.com/.well-known/pgp-publickey.txt
+  description: LiveKit's responsible disclosure policy covers any digital asset it owns or operates, from its websites and end-user apps to the LiveKit Cloud API services and the open-source server, Egress, SDKs and deployment tools. Reports go to security@livekit.io. LiveKit commits to a prompt response, progress updates and safe harbour for good-faith research, and asks for at least 90 days before public disclosure. Researchers are credited on a hall of fame page. No paid bounty is offered.
+  excluded_methods:
+  - dos
+  scope:
+  - target: www.livekit.com
+    type: web
+  - target: docs.livekit.io
+    type: web
+  - target: cloud.livekit.io
+    type: web
+  - target: meet.livekit.io
+    type: web
+  - target: example.livekit.io
+    type: web
+  - target: '*.livekit.cloud'
+    type: api
+  - target: '*.rtmp.livekit.cloud'
+    type: api
+  - target: '*.turn.livekit.cloud'
+    type: api
+  - target: LiveKit Server
+    type: other
+  - target: LiveKit Egress
+    type: other
+  - target: LiveKit SDKs
+    type: other
+  - target: LiveKit deployment tools
+    type: other
+  out_of_scope:
+  - Assets or other equipment not owned by parties participating in this policy
+  - livekit.com/blog
+  - status.livekit.io
+  domains:
+  - livekit.com
+  - livekit.io
+  - livekit.cloud
+  disclosure_timeline_days: 90
+  hall_of_fame_url: https://livekit.com/security/hall-of-fame
 
 - company: Mamentis
   url: https://mamentis.com/docs/resources/miscellaneous/submit-bug-request#security-issues
