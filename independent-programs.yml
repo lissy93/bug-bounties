@@ -1094,6 +1094,31 @@ companies:
   - auth.iceline-hosting.com
   reporting_url: https://support.retraflow.io/iceline-hosting
 
+- company: Icinga
+  url: https://icinga.com/company/contact/security-issues/
+  contact: mailto:security@icinga.com
+  rewards:
+  - '*recognition'
+  program_type: vdp
+  status: active
+  safe_harbor: partial
+  allows_disclosure: true
+  preferred_languages: English, German
+  pgp_key: https://keys.openpgp.org/search?q=security%40icinga.com
+  description: Icinga GmbH runs a coordinated disclosure programme covering the software it publishes - Icinga 2, Icinga Web, Icinga DB, Icinga Director and the modules and agents it maintains - plus the web services under icinga.com. Report through GitHub private vulnerability reporting on the affected repository, or by email to security@icinga.com in English or German, optionally PGP encrypted. Handling follows ISO/IEC 29147 and 30111, and reporters are credited in the advisories.
+  scope:
+  - target: Icinga products and components published by Icinga GmbH, including Icinga 2, Icinga Web, Icinga DB, Icinga Director, and the modules and agents Icinga maintains
+    type: other
+  - target: Third-party or open-source components integrated into an Icinga product, where the vulnerability affects the product as Icinga ships it
+    type: other
+  - target: icinga.com and its subdomains
+    type: web
+  domains:
+  - icinga.com
+  standards:
+  - ISO 29147
+  - ISO 30111
+
 - company: incident.io
   url: https://incident.io/legal/vulnerability-disclosure
   contact: mailto:security@incident.io
