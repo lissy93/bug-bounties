@@ -172,12 +172,6 @@ companies:
   max_payout: 1500.0
   domains:
   - marketplace.atlassian.com
-- company: 84codes
-  url: https://www.84codes.com/security
-  contact: mailto:security@84codes.com
-  rewards:
-  - '*bounty'
-  safe_harbor: partial
 - company: 88mphV3
   url: https://immunefi.com/bug-bounty/88mphv3/
   contact: https://immunefi.com/bug-bounty/88mphv3/

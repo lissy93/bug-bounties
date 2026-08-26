@@ -2021,7 +2021,6 @@
 - <img src='https://icon.horse/icon/en.outscale.com' width='16'/> [3DS OUTSCALE](https://en.outscale.com/reporting-vulnerabilities/) 💰
 - <img src='https://icon.horse/icon/www.4chan.org' width='16'/> [4chan](https://www.4chan.org/security) 🏅 🎁
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [55 Degrees](https://bugcrowd.com/engagements/fiftyfivedegrees) 💰
-- <img src='https://icon.horse/icon/www.84codes.com' width='16'/> [84codes](https://www.84codes.com/security) 💰
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [88mphV3](https://immunefi.com/bug-bounty/88mphv3/) 💰
 - <img src='https://icon.horse/icon/www.8x8.com' width='16'/> [8x8](https://www.8x8.com) 💰
 - <img src='https://icon.horse/icon/www.98point6.com' width='16'/> [98 Point 6](https://www.98point6.com/responsible-disclosure-policy/) 🏅
