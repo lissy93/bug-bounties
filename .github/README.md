@@ -803,6 +803,7 @@
 - <img src='https://icon.horse/icon/iceline-hosting.com' width='16'/> [Iceline Hosting](https://iceline-hosting.com/bug-bounty) 🏅 🎁
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Ichi](https://immunefi.com/bug-bounty/ichi/) 💰
 - <img src='https://icon.horse/icon/www.intigriti.com' width='16'/> [ICI PARIS XL](https://www.intigriti.com/programs/aswatson/iciparisxl/detail) 💰
+- <img src='https://icon.horse/icon/icinga.com' width='16'/> [Icinga](https://icinga.com/company/contact/security-issues/) 🏅
 - <img src='https://icon.horse/icon/support.iconfinder.com' width='16'/> [IconFinder](https://support.iconfinder.com/en/articles/18178-responsible-disclosure-of-security-vulnerabilities) 🏅
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [Iconloop](https://hackerone.com/iconloop_inc) 💰 🏅
 - <img src='https://icon.horse/icon/www.idena.io' width='16'/> [Idena](https://www.idena.io/contribute#contribute-3-1) 💰
@@ -926,6 +927,7 @@
 - <img src='https://icon.horse/icon/www.kindo.ai' width='16'/> [kindo.ai](https://www.kindo.ai/vulnerability-disclosure-program) 💰 🏅 🎁
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [Kindred Group](https://hackerone.com/kindred_group) 💰
 - <img src='https://icon.horse/icon/www.intigriti.com' width='16'/> [Kinepolis Group](https://www.intigriti.com/programs/kinepolis/website/detail) 💰
+- <img src='https://icon.horse/icon/getkirby.com' width='16'/> [Kirby CMS](https://getkirby.com/security) 🏅
 - <img src='https://icon.horse/icon/kissflow.com' width='16'/> [Kissflow](https://kissflow.com/responsible-disclosure/) 💰 🏅 🎁
 - <img src='https://icon.horse/icon/security.kiteworks.com' width='16'/> [Kiteworks](https://security.kiteworks.com) 💰
 - <img src='https://icon.horse/icon/www.kiwi.com' width='16'/> [Kiwi.com](https://www.kiwi.com/us/pages/security) 💰 🎁
@@ -984,6 +986,7 @@
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Lista DAO](https://immunefi.com/bug-bounty/listadao/) 💰
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Litew8 GmbH - Marketplace Bug Bounty](https://bugcrowd.com/engagements/litew8) 💰
 - <img src='https://icon.horse/icon/www.liveclicker.com' width='16'/> [Liveclicker](https://www.liveclicker.com/trust/report-a-vulnerability/) 💰
+- <img src='https://icon.horse/icon/livekit.com' width='16'/> [LiveKit](https://livekit.com/security/policy) 🏅
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Livepeer](https://immunefi.com/bug-bounty/livepeer/) 💰
 - <img src='https://icon.horse/icon/bugbounty.livesport.eu' width='16'/> [Livesport](https://bugbounty.livesport.eu/docs/Vulnerability%20Disclosure%20Policy.pdf) 💰
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [Livestream](https://hackerone.com/livestream) 💰 🏅
