@@ -2524,6 +2524,27 @@ companies:
     medium: 400
     low: 0
 
+- company: Swile
+  url: https://swile.co/security/disclosure-policy.txt
+  contact: mailto:security@swile.co
+  rewards:
+  - '*recognition'
+  program_type: vdp
+  status: active
+  safe_harbor: full
+  allows_disclosure: true
+  preferred_languages: English, French
+  pgp_key: https://swile.co/security/gpg.key
+  description: Swile asks researchers to e-mail findings to security@swile.co, encrypted with its PGP key, and not to download more data than needed to demonstrate the vulnerability or to reveal the problem to others before it is resolved. Swile replies within three business days with an evaluation and an expected resolution date, will not take legal action against reporters who follow the rules, and credits the discoverer on its hall of fame unless they ask otherwise. No bounty program.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - physical_access
+  out_of_scope:
+  - Third-party applications
+  response_sla_days: 3
+  hall_of_fame_url: https://swile.co/security/hall-of-fame.txt
+
 - company: Tailscale
   url: https://tailscale.com/security
   contact: mailto:security@tailscale.com
@@ -2955,6 +2976,14 @@ companies:
   - cloud.yellow.ai
   response_sla_days: 3
   reporting_url: https://yellow.ai/vulnerability-disclosure-program/ [Embedded Hackerone Submission Form]
+
+- company: Yubico
+  url: https://www.yubico.com/support/issue-rating-system/
+  contact: mailto:security@yubico.com
+  program_type: vdp
+  status: active
+  pgp_key: https://www.yubico.com/.well-known/Yubico-Security-Team-Public.asc
+  description: Yubico takes vulnerability reports at security@yubico.com, and publishes a PGP key reporters can use to encrypt them. Yubico asks reporters to follow responsible reporting practices and allow time to evaluate and respond before the issue is discussed publicly. The page sets out the four severity ratings Yubico assigns to security issues - Minor, Moderate, High and Critical - rated by CVSS score or qualitative conditions, and links the security advisories Yubico publishes. No bounty program.
 
 - company: Zaakpay
   url: https://zaakpay.com/bug-bounty
