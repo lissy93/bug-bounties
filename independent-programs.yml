@@ -838,6 +838,32 @@ companies:
     low: 250
   disclosure_timeline_days: 90
 
+- company: Dremio
+  url: https://www.dremio.com/platform/security/responsible-disclosure-limitations/
+  contact: mailto:security@dremio.com
+  program_type: vdp
+  status: active
+  description: Dremio does not run a formal bug bounty program, but welcomes vulnerability submissions and says it acts to resolve reported security issues in a very timely manner. Reports go to security@dremio.com. The policy page lists the finding types Dremio treats as out of scope.
+  out_of_scope:
+  - Low severity clickjacking vulnerabilities
+  - Missing SPF/DKIM/DMARC policies
+  - Display of Organization IDs during login flow
+  - User enumeration and brute forcing
+  - Automated scan reports without an exploitable proof of concept
+  - Content spoofing vulnerabilities
+  - Denial of service (DoS)
+  - Issues present only in older versions of browsers or plugins
+  - Low impact CSRF issues, including but not limited to login and logout CSRF
+  - Missing rate limiting protections, unless corresponding to an authentication flow
+  - Missing security headers and cookie flags that cannot be exploited by themselves, for example Strict-Transport-Security and HTTPOnly
+  - Social engineering and phishing attacks
+  - Spam e-mail from missing rate limiting protections
+  - SSL vulnerabilities related to configuration, version or weak ciphers, without a working exploit
+  - Use of a vulnerable third party library or code snippet without an exploitable scenario
+  - Vulnerabilities exploitable only on unsupported and outdated browsers, frameworks and platforms
+  - Weak password
+  - Any other submission assessed to be of low or no risk or impact
+
 - company: Element
   url: https://element.io/security/security-disclosure-policy
   contact: mailto:security@element.io
