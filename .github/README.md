@@ -1664,6 +1664,7 @@
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [Sweatco](https://hackerone.com/sweatco_ltd) 🏅
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Swell](https://immunefi.com/bug-bounty/swell/) 💰
 - <img src='https://icon.horse/icon/www.swiggy.com' width='16'/> [Swiggy](https://www.swiggy.com/bug-bounty) 💰
+- <img src='https://icon.horse/icon/swile.co' width='16'/> [Swile](https://swile.co/security/disclosure-policy.txt) 🏅
 - <img src='https://icon.horse/icon/yeswehack.com' width='16'/> [Swiss Post](https://yeswehack.com/programs/swiss-post) 💰
 - <img src='https://icon.horse/icon/yeswehack.com' width='16'/> [Swiss Post - E-Voting](https://yeswehack.com/programs/swiss-post-evoting) 💰
 - <img src='https://icon.horse/icon/www.swisscom.ch' width='16'/> [Swisscom](https://www.swisscom.ch/en/about/company/portrait/network/security/bug-bounty.html) 💰
