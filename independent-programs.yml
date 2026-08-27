@@ -2977,6 +2977,14 @@ companies:
   response_sla_days: 3
   reporting_url: https://yellow.ai/vulnerability-disclosure-program/ [Embedded Hackerone Submission Form]
 
+- company: Yubico
+  url: https://www.yubico.com/support/issue-rating-system/
+  contact: mailto:security@yubico.com
+  program_type: vdp
+  status: active
+  pgp_key: https://www.yubico.com/.well-known/Yubico-Security-Team-Public.asc
+  description: Yubico takes vulnerability reports at security@yubico.com, and publishes a PGP key reporters can use to encrypt them. Yubico asks reporters to follow responsible reporting practices and allow time to evaluate and respond before the issue is discussed publicly. The page sets out the four severity ratings Yubico assigns to security issues - Minor, Moderate, High and Critical - rated by CVSS score or qualitative conditions, and links the security advisories Yubico publishes. No bounty program.
+
 - company: Zaakpay
   url: https://zaakpay.com/bug-bounty
   contact: mailto:vdp@zaakpay.com
