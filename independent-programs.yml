@@ -186,6 +186,15 @@ companies:
   - Android app - https://play.google.com/store/search?q=alaan&c=apps
   - ios app - https://apps.apple.com/in/app/alaan/id1605833078
 
+- company: AlmaLinux
+  url: https://almalinux.org/p/vulnerability-disclosure-policy/
+  contact: mailto:security@almalinux.org
+  program_type: vdp
+  status: active
+  preferred_languages: English
+  pgp_key: https://almalinux.org/files/security-pgp-key.txt
+  description: AlmaLinux OS asks researchers to report security flaws in the distribution and its related projects, giving the project and version, detailed steps to reproduce, a plaintext proof of concept and any suggested remediation. Issues needing coordinated disclosure go to the security address, OS issues that do not need it go to the project bug tracker, and anything else to the relevant GitHub repository. Maintainers aim to confirm a report within two to three days.
+
 - company: atlan.com
   url: https://atlan.com/responsible-disclosure-program/
   contact: mailto:security@atlan.com
@@ -400,6 +409,15 @@ companies:
   - social_engineering
   standards:
   - security.txt
+
+- company: Blender
+  url: https://developer.blender.org/docs/handbook/bug_reports/vulnerability_reports/
+  contact: mailto:security@blender.org
+  program_type: vdp
+  status: active
+  preferred_languages: English, Dutch
+  description: Blender's security team takes vulnerability reports by email and responds to every report within 14 days. Medium and high severity issues are patched within 60 days of becoming publicly known and critical ones shortly after they are reported, with updates shipped for both current and long term support releases. The team also tracks CVEs in the third-party libraries Blender ships. There is no bug bounty or compensation for security reports.
+  response_sla_days: 14
 
 - company: boldcommerce.com
   url: https://boldcommerce.com/bug-bounty
@@ -1497,6 +1515,24 @@ companies:
   - phishing
   - physical_access
   response_sla_days: 1
+
+- company: Matrix.org Foundation
+  url: https://matrix.org/security-disclosure-policy/
+  contact: mailto:security@matrix.org
+  rewards:
+  - '*recognition'
+  program_type: vdp
+  status: active
+  allows_disclosure: true
+  preferred_languages: English
+  pgp_key: https://matrix.org/.well-known/pgp-key.txt
+  description: The Matrix.org Foundation follows coordinated vulnerability disclosure for security issues in Matrix. Reports go to its security address, optionally PGP encrypted, and the team replies within five business days. It aims to fix within 90 days, or around 120 for especially complex issues, and may hold technical details for up to 30 days after a fix is public. Reporters may disclose once the issue is addressed, and are credited in the Security Hall of Fame. It does not ordinarily pay bounties.
+  out_of_scope:
+  - Issues relating to SPF or DMARC
+  - Reverse tabnabbing
+  response_sla_days: 5
+  disclosure_timeline_days: 90
+  hall_of_fame_url: https://matrix.org/hall-of-fame
 
 - company: mintlify.com
   url: https://www.mintlify.com/security/responsible-disclosure
