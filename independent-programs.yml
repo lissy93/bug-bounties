@@ -186,6 +186,15 @@ companies:
   - Android app - https://play.google.com/store/search?q=alaan&c=apps
   - ios app - https://apps.apple.com/in/app/alaan/id1605833078
 
+- company: AlmaLinux
+  url: https://almalinux.org/p/vulnerability-disclosure-policy/
+  contact: mailto:security@almalinux.org
+  program_type: vdp
+  status: active
+  preferred_languages: English
+  pgp_key: https://almalinux.org/files/security-pgp-key.txt
+  description: AlmaLinux OS asks researchers to report security flaws in the distribution and its related projects, giving the project and version, detailed steps to reproduce, a plaintext proof of concept and any suggested remediation. Issues needing coordinated disclosure go to the security address, OS issues that do not need it go to the project bug tracker, and anything else to the relevant GitHub repository. Maintainers aim to confirm a report within two to three days.
+
 - company: atlan.com
   url: https://atlan.com/responsible-disclosure-program/
   contact: mailto:security@atlan.com
