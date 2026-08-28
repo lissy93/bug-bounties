@@ -1516,6 +1516,24 @@ companies:
   - physical_access
   response_sla_days: 1
 
+- company: Matrix.org Foundation
+  url: https://matrix.org/security-disclosure-policy/
+  contact: mailto:security@matrix.org
+  rewards:
+  - '*recognition'
+  program_type: vdp
+  status: active
+  allows_disclosure: true
+  preferred_languages: English
+  pgp_key: https://matrix.org/.well-known/pgp-key.txt
+  description: The Matrix.org Foundation follows coordinated vulnerability disclosure for security issues in Matrix. Reports go to its security address, optionally PGP encrypted, and the team replies within five business days. It aims to fix within 90 days, or around 120 for especially complex issues, and may hold technical details for up to 30 days after a fix is public. Reporters may disclose once the issue is addressed, and are credited in the Security Hall of Fame. It does not ordinarily pay bounties.
+  out_of_scope:
+  - Issues relating to SPF or DMARC
+  - Reverse tabnabbing
+  response_sla_days: 5
+  disclosure_timeline_days: 90
+  hall_of_fame_url: https://matrix.org/hall-of-fame
+
 - company: mintlify.com
   url: https://www.mintlify.com/security/responsible-disclosure
   contact: mailto:security@mintlify.com
