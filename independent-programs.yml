@@ -410,6 +410,15 @@ companies:
   standards:
   - security.txt
 
+- company: Blender
+  url: https://developer.blender.org/docs/handbook/bug_reports/vulnerability_reports/
+  contact: mailto:security@blender.org
+  program_type: vdp
+  status: active
+  preferred_languages: English, Dutch
+  description: Blender's security team takes vulnerability reports by email and responds to every report within 14 days. Medium and high severity issues are patched within 60 days of becoming publicly known and critical ones shortly after they are reported, with updates shipped for both current and long term support releases. The team also tracks CVEs in the third-party libraries Blender ships. There is no bug bounty or compensation for security reports.
+  response_sla_days: 14
+
 - company: boldcommerce.com
   url: https://boldcommerce.com/bug-bounty
   contact: mailto:bugbounty@boldcommerce.com
