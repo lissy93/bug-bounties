@@ -1050,6 +1050,7 @@
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Mastercard Public Bug Bounty](https://bugcrowd.com/engagements/mastercard) 💰
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [MATLAB Online - Ongoing Bug Bounty Engag...](https://bugcrowd.com/engagements/matlab-online) 💰
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [Matomo](https://hackerone.com/matomo) 💰 🏅 🎁
+- <img src='https://icon.horse/icon/matrix.org' width='16'/> [Matrix.org Foundation](https://matrix.org/security-disclosure-policy/) 🏅
 - <img src='https://icon.horse/icon/about.mattermost.com' width='16'/> [Mattermost](https://about.mattermost.com/report-security-issue/) 💰 🏅
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Mattermost Public Bug Bounty Engagement](https://bugcrowd.com/engagements/mattermost-mbb-public) 💰
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [Maximum](https://hackerone.com/maximum) 💰 🏅
