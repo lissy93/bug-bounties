@@ -265,6 +265,7 @@
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Braze Public BB](https://bugcrowd.com/engagements/braze-bb) 💰
 - <img src='https://icon.horse/icon/braze.com' width='16'/> [Braze, Inc.](http://braze.com) 💰
 - <img src='https://icon.horse/icon/www.briskinfosec.com' width='16'/> [Brisk Infosec](https://www.briskinfosec.com/responsibledisclosure) 🏅
+- <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [BrizoIT](https://bugcrowd.com/engagements/brizoit) 💰
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Broken Build Bug Bounty](https://bugcrowd.com/engagements/brokenbuild) 💰
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [BrowserStack Inc. Marketplace Managed Bu...](https://bugcrowd.com/engagements/browserstack-market) 💰
 - <img src='https://icon.horse/icon/www.bsi.bund.de' width='16'/> [BSI Germany](https://www.bsi.bund.de/EN/IT-Sicherheitsvorfall/IT-Schwachstellen/it-schwachstellen_node.html) 🏅
@@ -295,6 +296,7 @@
 <details open><summary><h4>C</h4></summary>
 
 - <img src='https://icon.horse/icon/www.csint.pro' width='16'/> [C-SINT](https://www.csint.pro/bug_bounty) 💰
+- <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Caelor Group](https://bugcrowd.com/engagements/caelor-group-market) 💰
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Caffeine](https://bugcrowd.com/caffeine) 💰
 - <img src='https://icon.horse/icon/www.campaignmonitor.com' width='16'/> [Campaign Monitor](https://www.campaignmonitor.com/trust/report-a-vulnerability/) 💰
 - <img src='https://icon.horse/icon/www.canva.com' width='16'/> [Canva](https://www.canva.com/security/bug-bounty/) 💰
@@ -624,6 +626,7 @@
 - <img src='https://icon.horse/icon/security.filecoin.io' width='16'/> [Filecoin](https://security.filecoin.io/bug-bounty/) 💰
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [Files.com](https://hackerone.com/files) 💰 🏅 🎁
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [FileZilla](https://hackerone.com/filezilla_h1c) 💰 🏅
+- <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [FindOut InfoVis AB - Marketplace Bug Bou...](https://bugcrowd.com/engagements/FindOut-infovis) 💰
 - <img src='https://icon.horse/icon/www.intigriti.com' width='16'/> [Fing Bug Bounty Program](https://www.intigriti.com/programs/lansweeper/fing/detail) 💰
 - <img src='https://icon.horse/icon/firebase.google.com' width='16'/> [Firebase](https://firebase.google.com/support/contact/) 🎁
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Fireblocks MPC Managed Bug Bounty Engage...](https://bugcrowd.com/engagements/fireblocks-mbb-og2) 💰
@@ -1067,6 +1070,7 @@
 - <img src='https://icon.horse/icon/yeswehack.com' width='16'/> [Memento - Public Bug Bounty Program](https://yeswehack.com/programs/memento-bug-bounty-program) 💰
 - <img src='https://icon.horse/icon/www.mercadolibre.com' width='16'/> [MercadoLibre](https://www.mercadolibre.com) 💰
 - <img src='https://icon.horse/icon/mergify.com' width='16'/> [Mergify](http://mergify.com) 💰 🎁
+- <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [META-INF](https://bugcrowd.com/engagements/metainfkft) 💰
 - <img src='https://icon.horse/icon/metamask.io' width='16'/> [MetaMask](https://metamask.io/) 💰 🎁
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [MetaStreet](https://immunefi.com/bug-bounty/metastreet/) 💰
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [mETH Protocol](https://immunefi.com/bug-bounty/mETH/) 💰
@@ -1128,6 +1132,7 @@
 - <img src='https://icon.horse/icon/www.ncsc.nl' width='16'/> [National Cyber Security Center (Netherla...](https://www.ncsc.nl/security) 💰 🎁
 - <img src='https://icon.horse/icon/nov.responsibledisclosure.com' width='16'/> [National Oilwell Varco](https://nov.responsibledisclosure.com/hc/en-us) 🏅
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Navan](https://bugcrowd.com/engagements/navan) 💰
+- <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Navarambh](https://bugcrowd.com/engagements/navarambh) 💰
 - <img src='https://icon.horse/icon/bugbounty.whale.naver.com' width='16'/> [Naver Whale](https://bugbounty.whale.naver.com/) 💰 🏅
 - <img src='https://icon.horse/icon/www.nba.com' width='16'/> [NBA Public Bug Bounty](https://www.nba.com) 💰
 - <img src='https://icon.horse/icon/nbxsupport.zendesk.com' width='16'/> [NBX](https://nbxsupport.zendesk.com/hc/en-us/articles/360044264592-NBX-Responsible-Disclosure-Policy) 💰
