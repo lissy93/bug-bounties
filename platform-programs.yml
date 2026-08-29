@@ -1681,7 +1681,6 @@ companies:
   - apps.apple.com
   - bittings.medeco.com
   - ca-roa.medeco.com
-  - centriosappstore.com
   - controlid.com.br
   - eacconfig.assaabloy.com
   - goconcourse.com
@@ -2656,7 +2655,7 @@ companies:
   - '*bounty'
   managed: true
   safe_harbor: partial
-  max_payout: 4375.0
+  max_payout: 4500.0
   domains:
   - app.aurory.io
 - company: Bitsoffreedom
@@ -3192,7 +3191,7 @@ companies:
   handle: british_airways_vdp
   contact: https://hackerone.com/british_airways_vdp
   rewards: []
-  managed: true
+  managed: false
   domains:
   - ba.com
   - britishairways.com
@@ -3208,6 +3207,15 @@ companies:
   contact: https://www.britishgasevolve.co.uk/responsible-disclosure
   rewards: []
   safe_harbor: partial
+- company: BrizoIT
+  url: https://bugcrowd.com/engagements/brizoit
+  contact: https://bugcrowd.com/engagements/brizoit
+  rewards:
+  - '*bounty'
+  managed: true
+  max_payout: 1500.0
+  domains:
+  - marketplace.atlassian.com
 - company: Broken Build Bug Bounty
   url: https://bugcrowd.com/engagements/brokenbuild
   contact: https://bugcrowd.com/engagements/brokenbuild
@@ -3457,6 +3465,16 @@ companies:
   - buhlergroup.io
   - buhlertest.ch
   - pk-buhler.ch
+- company: Caelor Group
+  url: https://bugcrowd.com/engagements/caelor-group-market
+  contact: https://bugcrowd.com/engagements/caelor-group-market
+  rewards:
+  - '*bounty'
+  managed: true
+  safe_harbor: full
+  max_payout: 1500.0
+  domains:
+  - marketplace.atlassian.com
 - company: Caffeine
   url: https://bugcrowd.com/caffeine
   contact: https://bugcrowd.com/caffeine
@@ -3867,6 +3885,14 @@ companies:
   currency: EUR
   domains:
   - challenge-0726.intigriti.io
+- company: Challenge 0826
+  url: https://www.intigriti.com/programs/intigriti/challenge0826/detail
+  handle: challenge0826
+  contact: https://www.intigriti.com/programs/intigriti/challenge0826/detail
+  rewards: []
+  currency: EUR
+  domains:
+  - challenge-0826.challenges.intigriti.io
 - company: Chameleon
   url: https://www.trychameleon.com/security/disclosure
   contact: https://www.trychameleon.com/security/disclosure
@@ -6178,7 +6204,7 @@ companies:
   rewards:
   - '*bounty'
   - '*recognition'
-  managed: true
+  managed: false
   domains:
   - github.com
   - try.discourse.org
@@ -6332,6 +6358,7 @@ companies:
   - '*bounty'
   - '*recognition'
   - '*swag'
+  max_payout: 5000.0
 - company: Dozuki
   url: https://help.dozuki.com/Info/Responsible_Disclosure
   contact: mailto:security@ifixit.com
@@ -7160,6 +7187,38 @@ companies:
   contact: https://hackerone.com/eslint
   rewards:
   - '*recognition'
+- company: Essity
+  url: http://essity.com
+  handle: essity
+  contact: https://hackerone.com/essity
+  rewards: []
+  managed: false
+  domains:
+  - 360.familiainstitucional.com
+  - actimove.co.uk
+  - actimove.com
+  - actimove.com.au
+  - actimove.dk
+  - actimove.es
+  - actimove.gr
+  - actimove.hr
+  - actimove.hu
+  - actimove.it
+  - actimove.no
+  - actimove.pl
+  - actimove.si
+  - actimove.us
+  - api.essity.com
+  - api.vision.torkglobal.com
+  - app-eu.workfrontfusion.com
+  - apps.apple.com
+  - babybrandcenter.essity.com
+  - bodyform.co.uk
+  - brand.tena.com
+  - brandzone.essity.com
+  - ccevaluation.tena.com
+  - cinder.app.essity.com
+  - colhogar.com
 - company: Esteé  Lauder
   url: http://elcompanies.com
   handle: estee-lauder
@@ -7345,9 +7404,11 @@ companies:
   rewards: []
   currency: EUR
   domains:
+  - activities.esa.int
   - astronauts.esa.int
   - avamposto42.esa.int
   - blogs.esa.int
+  - bluedocs.esa.int
   - bookdiscoveresalive-acc.esa.int
   - bookdiscoveresalive.esa.int
   - brand.esa.int
@@ -7356,20 +7417,18 @@ companies:
   - discover-acc.esa.int
   - discover.esa.int
   - dlmultimedia.esa.int
+  - doing-business.sso.esa.int
   - download.esa.int
+  - dst.esa.int
   - eo4sd.esa.int
+  - eris.esa.int
+  - esa-p.sso.esa.int
   - esa.int
   - esamultimedia.esa.int
-  - estracknow.esa.int
-  - github.com
-  - iptvdec.esoc.esa.int
-  - iptvenc.esoc.esa.int
-  - iptvenc2.esoc.esa.int
-  - m.esa.int
-  - multimedia-delivery.esa.int
-  - outpost42.esa.int
-  - rosetta-acc.esa.int
-  - rosetta.esa.int
+  - esastar-ecm.sso.esa.int
+  - esastar-emr.sso.esa.int
+  - esastar-esamatch-ext.sso.esa.int
+  - esastar-publication-ext.sso.esa.int
 - company: Event Espresso
   url: https://eventespresso.com/report-a-security-vulnerability/
   contact: https://eventespresso.com/report-a-security-vulnerability/
@@ -7993,6 +8052,16 @@ companies:
   contact: mailto:security@finder.com
   rewards: []
   safe_harbor: full
+- company: FindOut InfoVis AB - Marketplace Bug Bounty Program
+  url: https://bugcrowd.com/engagements/FindOut-infovis
+  contact: https://bugcrowd.com/engagements/FindOut-infovis
+  rewards:
+  - '*bounty'
+  managed: true
+  safe_harbor: full
+  max_payout: 1500.0
+  domains:
+  - marketplace.atlassian.com
 - company: Fing Bug Bounty Program
   url: https://www.intigriti.com/programs/lansweeper/fing/detail
   handle: fing
@@ -10086,11 +10155,11 @@ companies:
   - hyatt.com
   - hyattconnect.com
   - hyattinclusivecollection.com
-  - jira.hyattdev.com
   - login.www.vaxvacationaccess.com
   - meetings.hyatt.com
   - mobileapp.hyatt.com
   - new.www.vaxvacationaccess.com
+  - newsroom.images.hyatt.com
 - company: Hydration
   url: https://immunefi.com/bug-bounty/hydration/
   contact: https://immunefi.com/bug-bounty/hydration/
@@ -10415,7 +10484,7 @@ companies:
   - '*bounty'
   - '*recognition'
   managed: true
-  safe_harbor: partial
+  safe_harbor: full
   max_payout: 10000.0
   domains:
   - apis.indeed.com
@@ -11110,7 +11179,7 @@ companies:
   - '*bounty'
   - '*recognition'
   managed: true
-  safe_harbor: partial
+  safe_harbor: full
   max_payout: 4500.0
   domains:
   - answers.irobot.com
@@ -13583,6 +13652,16 @@ companies:
   contact: mailto:responsibledisclosure@merkleinc.com
   rewards: []
   safe_harbor: partial
+- company: META-INF
+  url: https://bugcrowd.com/engagements/metainfkft
+  contact: https://bugcrowd.com/engagements/metainfkft
+  rewards:
+  - '*bounty'
+  managed: true
+  safe_harbor: full
+  max_payout: 1500.0
+  domains:
+  - marketplace.atlassian.com
 - company: MetaMask
   url: https://metamask.io/
   handle: metamask
@@ -14082,6 +14161,7 @@ companies:
   - github.com
   - hypermint.com
   - iframe.moonx-dev.com
+  - iron.xyz
   - moonpay.com
   - moonpaycloud.com
   - play.google.com
@@ -14497,6 +14577,16 @@ companies:
   max_payout: 4500.0
   domains:
   - app.navan.com
+- company: Navarambh
+  url: https://bugcrowd.com/engagements/navarambh
+  contact: https://bugcrowd.com/engagements/navarambh
+  rewards:
+  - '*bounty'
+  managed: true
+  safe_harbor: full
+  max_payout: 1500.0
+  domains:
+  - marketplace.atlassian.com
 - company: Navcoin
   url: https://navcoin.org/en/responsible-disclosure
   contact: mailto:disclosure@navcoin.org
@@ -15410,7 +15500,7 @@ companies:
   - '*bounty'
   - '*recognition'
   managed: true
-  safe_harbor: partial
+  safe_harbor: full
   max_payout: 75000.0
   domains:
   - app.scaleft.com
@@ -19230,7 +19320,7 @@ companies:
   - '*bounty'
   - '*recognition'
   managed: true
-  safe_harbor: partial
+  safe_harbor: full
   max_payout: 10000.0
   domains:
   - aips-internal.com
@@ -20305,7 +20395,7 @@ companies:
   - '*bounty'
   - '*recognition'
   managed: true
-  safe_harbor: partial
+  safe_harbor: full
   max_payout: 18000.0
   domains:
   - square.com
@@ -22123,10 +22213,12 @@ companies:
   rewards: []
   managed: true
   domains:
-  - api.signin-connexion.canada.ca
-  - app.signin-connexion.canada.ca
+  - api.login-connexion.canada.ca
+  - api.migration.login-connexion.canada.ca
+  - app.login-connexion.canada.ca
+  - app.migration.login-connexion.canada.ca
   - articles.alpha.canada.ca
-  - auth.signin-connexion.canada.ca
+  - auth.cdssandbox.xyz
   - cds-snc.ca
   - delivrance-verification.alpha.canada.ca
   - design-system.alpha.canada.ca
@@ -23182,6 +23274,12 @@ companies:
   contact: https://hackerone.com/valve
   rewards:
   - '*bounty'
+- company: Vanguard
+  url: http://vanguard.com
+  handle: vanguard
+  contact: https://hackerone.com/vanguard
+  rewards: []
+  managed: true
 - company: Vanilla
   url: https://hackerone.com/vanilla
   contact: https://hackerone.com/vanilla
@@ -24393,15 +24491,11 @@ companies:
   - bettersearchreplace.com
   - deliciousbrains.com
   - getflywheel.com
-  - localwp.com
-  - makeshift.film
   - my.wpengine.com
   - nitropack.io
-  - payments.wpengine.com
+  - spressforumstg.wpengine.com
   - studiopress.blog
   - studiopress.com
-  - torquemag.io
-  - velocitize.com
   - wpengine.com
   - wpengine.io
   - wpesvc.net
