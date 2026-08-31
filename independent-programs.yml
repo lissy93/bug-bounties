@@ -1669,6 +1669,15 @@ companies:
   - Self-XSS and issues exploitable only through self-XSS
   - Lack of security-related headers
 
+- company: NetBSD
+  url: https://www.netbsd.org/support/security/
+  contact: mailto:security-alert@NetBSD.org
+  program_type: vdp
+  status: active
+  preferred_languages: English, German, French, Japanese
+  pgp_key: https://cdn.NetBSD.org/pub/NetBSD/security/PGP/security-officer@netbsd.org.asc
+  description: Security issues in NetBSD are handled by the project's Security Team, Security Alert Team and Security Officer, who investigate, document and patch newly reported problems. Reports go to the Security Alert Team by email, with sensitive information encrypted using the Security Officer's PGP key. Fixed problems are written up as an advisory pointing at the fix and announced on the project mailing lists, though the team may delay one so that several related issues can be covered together.
+
 - company: nuuvem.com
   url: https://www.nuuvem.com/us-en/security
   contact: mailto:security@nuuvem.com
