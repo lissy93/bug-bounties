@@ -1033,6 +1033,16 @@ companies:
   max_payout: 500
   currency: USD
 
+- company: GNOME
+  url: https://security.gnome.org/
+  contact: https://security.gnome.org/
+  program_type: vdp
+  status: active
+  preferred_languages: English
+  description: GNOME asks for all security bugs in its projects to be reported through the form on its security page, which reaches a small security team, and submissions are generally acknowledged within two business days. The maintainer of the affected project handles the fix and coordinates the release. Reports stay confidential until the fix is committed to git or 90 days have passed, whichever comes first, and GNOME says it does not generally use embargoes.
+  response_sla_days: 2
+  disclosure_timeline_days: 90
+
 - company: Go Deed Inc
   url: https://www.joindeed.com/security
   contact: mailto:security@joindeed.com
@@ -1304,6 +1314,14 @@ companies:
   - Instant Gaming News Android application
   reporting_url: https://www.instant-gaming.com/en/support/
   response_sla_days: 3
+
+- company: KDE
+  url: https://kde.org/info/security/
+  contact: mailto:security@kde.org
+  program_type: vdp
+  status: active
+  preferred_languages: English
+  description: KDE takes security reports about software it produces at its security address, and reports about software it uses but does not produce, such as GitLab and Bugzilla, at its sysadmin address. Reports are handled under the KDE Security Policy, and PGP keys for individual security team members are published for anything exceptionally sensitive. Existing bug reports can be flagged for security tracking through the same channel. KDE states that it does not run a bug bounty program.
 
 - company: keragon.com
   url: https://www.keragon.com/security/vulnerability-disclosure-program
@@ -2759,6 +2777,35 @@ companies:
   response_sla_days: 1
   testing_policy_url: https://tuturuuu.com/security/policy
   hall_of_fame_url: https://tuturuuu.com/security/bug-bounty
+
+- company: Unraid
+  url: https://unraid.net/policies
+  contact: mailto:security@unraid.net
+  rewards:
+  - '*bounty'
+  - '*recognition'
+  program_type: hybrid
+  status: active
+  preferred_languages: English
+  pgp_key: https://keys.openpgp.org/vks/v1/by-fingerprint/5461B0B9C1CCFB6E53A6760FC5D4DCC26C348C7B
+  description: Unraid asks researchers to report vulnerabilities in Unraid OS, the Unraid website, its APIs and its GitHub repositories by email, with a description, reproduction steps, logs or proof-of-concept code and any known impact. Critical issues are acknowledged within two business days and moderate ones within three to five. Valid reports may be acknowledged publicly, and monetary compensation is offered at Unraid's discretion based on severity, impact and report quality.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  out_of_scope:
+  - Social engineering or phishing
+  - Denial of service (DoS/DDoS) or rate limiting concerns
+  - Vulnerabilities in deprecated or unsupported Unraid versions
+  - Spam, moderation, or abuse not involving a security exploit
+  domains:
+  - Unraid OS vulnerabilities
+  - Plugin API or integration flaws
+  - Unraid.net account and authentication issues
+  - Web application bugs (e.g. XSS, CSRF, authentication bypass)
+  - Backend service misconfigurations
+  - Official Unraid-maintained GitHub repositories
+  hall_of_fame_url: https://product.unraid.net/b/cve-reports
 
 - company: urlscan.io
   url: https://urlscan.io/security/
