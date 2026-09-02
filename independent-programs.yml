@@ -2778,6 +2778,35 @@ companies:
   testing_policy_url: https://tuturuuu.com/security/policy
   hall_of_fame_url: https://tuturuuu.com/security/bug-bounty
 
+- company: Unraid
+  url: https://unraid.net/policies
+  contact: mailto:security@unraid.net
+  rewards:
+  - '*bounty'
+  - '*recognition'
+  program_type: hybrid
+  status: active
+  preferred_languages: English
+  pgp_key: https://keys.openpgp.org/vks/v1/by-fingerprint/5461B0B9C1CCFB6E53A6760FC5D4DCC26C348C7B
+  description: Unraid asks researchers to report vulnerabilities in Unraid OS, the Unraid website, its APIs and its GitHub repositories by email, with a description, reproduction steps, logs or proof-of-concept code and any known impact. Critical issues are acknowledged within two business days and moderate ones within three to five. Valid reports may be acknowledged publicly, and monetary compensation is offered at Unraid's discretion based on severity, impact and report quality.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  out_of_scope:
+  - Social engineering or phishing
+  - Denial of service (DoS/DDoS) or rate limiting concerns
+  - Vulnerabilities in deprecated or unsupported Unraid versions
+  - Spam, moderation, or abuse not involving a security exploit
+  domains:
+  - Unraid OS vulnerabilities
+  - Plugin API or integration flaws
+  - Unraid.net account and authentication issues
+  - Web application bugs (e.g. XSS, CSRF, authentication bypass)
+  - Backend service misconfigurations
+  - Official Unraid-maintained GitHub repositories
+  hall_of_fame_url: https://product.unraid.net/b/cve-reports
+
 - company: urlscan.io
   url: https://urlscan.io/security/
   contact: mailto:security@urlscan.io
