@@ -1033,6 +1033,16 @@ companies:
   max_payout: 500
   currency: USD
 
+- company: GNOME
+  url: https://security.gnome.org/
+  contact: https://security.gnome.org/
+  program_type: vdp
+  status: active
+  preferred_languages: English
+  description: GNOME asks for all security bugs in its projects to be reported through the form on its security page, which reaches a small security team, and submissions are generally acknowledged within two business days. The maintainer of the affected project handles the fix and coordinates the release. Reports stay confidential until the fix is committed to git or 90 days have passed, whichever comes first, and GNOME says it does not generally use embargoes.
+  response_sla_days: 2
+  disclosure_timeline_days: 90
+
 - company: Go Deed Inc
   url: https://www.joindeed.com/security
   contact: mailto:security@joindeed.com
