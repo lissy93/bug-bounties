@@ -1821,6 +1821,7 @@
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Unity Technologies](https://bugcrowd.com/engagements/unity) 💰
 - <img src='https://icon.horse/icon/www.utwente.nl' width='16'/> [University of Twente](https://www.utwente.nl/en/cyber-safety/responsible/) 🏅
 - <img src='https://icon.horse/icon/www.york.ac.uk' width='16'/> [University of York](https://www.york.ac.uk/it-services/security/vulnerability-disclosure/) 🏅
+- <img src='https://icon.horse/icon/unraid.net' width='16'/> [Unraid](https://unraid.net/policies) 💰 🏅
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Unstoppable Wallet](https://immunefi.com/bug-bounty/unstoppablewallet/) 💰
 - <img src='https://icon.horse/icon/www.federacy.com' width='16'/> [Upfort](https://www.federacy.com/upfort) 💰
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [Upgrade](https://hackerone.com/upgrade) 🏅
