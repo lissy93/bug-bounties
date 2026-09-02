@@ -1315,6 +1315,14 @@ companies:
   reporting_url: https://www.instant-gaming.com/en/support/
   response_sla_days: 3
 
+- company: KDE
+  url: https://kde.org/info/security/
+  contact: mailto:security@kde.org
+  program_type: vdp
+  status: active
+  preferred_languages: English
+  description: KDE takes security reports about software it produces at its security address, and reports about software it uses but does not produce, such as GitLab and Bugzilla, at its sysadmin address. Reports are handled under the KDE Security Policy, and PGP keys for individual security team members are published for anything exceptionally sensitive. Existing bug reports can be flagged for security tracking through the same channel. KDE states that it does not run a bug bounty program.
+
 - company: keragon.com
   url: https://www.keragon.com/security/vulnerability-disclosure-program
   rewards:
