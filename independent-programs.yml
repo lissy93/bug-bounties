@@ -1011,6 +1011,21 @@ companies:
   - '*.erpnext.com'
   - '*.frappecloud.com'
 
+- company: FreeBSD
+  url: https://www.freebsd.org/security/reporting/
+  contact: mailto:secteam@FreeBSD.org
+  rewards:
+  - '*recognition'
+  program_type: vdp
+  status: active
+  pgp_key: https://www.freebsd.org/security/so_public_key.asc
+  description: Security issues in the FreeBSD operating system go to the Security Team by email, or PGP-encrypted to the Security Officer Team where a higher level of confidentiality is needed. Issues in the Ports Collection go to the Ports Security Team instead. A report should cover the vulnerability, affected versions, any workaround, a proof of concept and how the reporter wants crediting. The Security Officer favours full disclosure after a delay long enough to analyse, correct and test the problem.
+  scope:
+  - target: FreeBSD operating system
+    type: other
+  - target: FreeBSD Ports Collection
+    type: other
+
 - company: FreeFires
   url: https://freefires.site
   rewards:
@@ -2014,6 +2029,24 @@ companies:
     critical: 500
     medium: 200
     low: 100
+
+- company: PostgreSQL
+  url: https://www.postgresql.org/support/security/
+  contact: mailto:security@postgresql.org
+  rewards:
+  - '*recognition'
+  program_type: vdp
+  status: active
+  description: The PostgreSQL Global Development Group counts an issue as a vulnerability when it lets a user reach privileges or data they have no permission to use, or run arbitrary code through a PostgreSQL process. Reports go to security@postgresql.org and cover PostgreSQL itself plus the installers linked from the download page; other ecosystem projects have their own addresses. The project is a CVE Numbering Authority and credits reporters in the release notes. It offers no bug bounty.
+  scope:
+  - target: PostgreSQL
+    type: other
+  - target: PostgreSQL installers linked from the download page
+    type: other
+  out_of_scope:
+  - Actions taken by a PostgreSQL superuser
+  - Denial of service from an authenticated, valid SQL statement
+  - Lack of DMARC on postgresql.org mailing lists
 
 - company: ProoN
   url: https://www.proon.ai/security
