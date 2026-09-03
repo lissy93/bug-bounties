@@ -666,6 +666,7 @@
 - <img src='https://icon.horse/icon/frappe.io' width='16'/> [Frappe](https://frappe.io/security) 🏅
 - <img src='https://icon.horse/icon/docs.frax.finance' width='16'/> [Frax Finance](https://docs.frax.finance/smart-contracts/miscellaneous) 💰
 - <img src='https://icon.horse/icon/free.law' width='16'/> [Free Law Project](https://free.law/vulnerability-disclosure-policy/) 🏅
+- <img src='https://icon.horse/icon/www.freebsd.org' width='16'/> [FreeBSD](https://www.freebsd.org/security/reporting/) 🏅
 - <img src='https://icon.horse/icon/www.freelancer.com' width='16'/> [Freelancer](https://www.freelancer.com/about/security) 🏅
 - <img src='https://icon.horse/icon/www.freshbooks.com' width='16'/> [Freshbooks](https://www.freshbooks.com/policies/responsible-disclosure) 🏅
 - <img src='https://icon.horse/icon/www.freshworks.com' width='16'/> [Freshworks](https://www.freshworks.com/security/responsible-disclosure/) 💰 🏅
@@ -1351,6 +1352,7 @@
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [Pornhub](https://hackerone.com/pornhub) 💰 🏅
 - <img src='https://icon.horse/icon/www.intigriti.com' width='16'/> [Port of Antwerp-Bruges](https://www.intigriti.com/programs/portofantwerp/portofantwerp/detail) 💰
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [PortSwigger Web Security](https://hackerone.com/portswigger) 💰 🏅 🎁
+- <img src='https://icon.horse/icon/www.postgresql.org' width='16'/> [PostgreSQL](https://www.postgresql.org/support/security/) 🏅
 - <img src='https://icon.horse/icon/www.intigriti.com' width='16'/> [Posti Bug Bounty](https://www.intigriti.com/programs/posti/postibugbounty/detail) 💰
 - <img src='https://icon.horse/icon/postmarkapp.com' width='16'/> [Postmark](https://postmarkapp.com/support/article/779-responsible-disclosure-policy) 🏅 🎁
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [Postmates](https://hackerone.com/postmates) 💰 🏅
