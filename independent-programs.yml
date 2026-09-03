@@ -1011,6 +1011,21 @@ companies:
   - '*.erpnext.com'
   - '*.frappecloud.com'
 
+- company: FreeBSD
+  url: https://www.freebsd.org/security/reporting/
+  contact: mailto:secteam@FreeBSD.org
+  rewards:
+  - '*recognition'
+  program_type: vdp
+  status: active
+  pgp_key: https://www.freebsd.org/security/so_public_key.asc
+  description: Security issues in the FreeBSD operating system go to the Security Team by email, or PGP-encrypted to the Security Officer Team where a higher level of confidentiality is needed. Issues in the Ports Collection go to the Ports Security Team instead. A report should cover the vulnerability, affected versions, any workaround, a proof of concept and how the reporter wants crediting. The Security Officer favours full disclosure after a delay long enough to analyse, correct and test the problem.
+  scope:
+  - target: FreeBSD operating system
+    type: other
+  - target: FreeBSD Ports Collection
+    type: other
+
 - company: FreeFires
   url: https://freefires.site
   rewards:
