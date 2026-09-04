@@ -1792,6 +1792,36 @@ companies:
   pgp_key: https://cdn.NetBSD.org/pub/NetBSD/security/PGP/security-officer@netbsd.org.asc
   description: Security issues in NetBSD are handled by the project's Security Team, Security Alert Team and Security Officer, who investigate, document and patch newly reported problems. Reports go to the Security Alert Team by email, with sensitive information encrypted using the Security Officer's PGP key. Fixed problems are written up as an advisory pointing at the fix and announced on the project mailing lists, though the team may delay one so that several related issues can be covered together.
 
+- company: Netcompany
+  url: https://netcompany.com/responsible-disclosure/
+  contact: mailto:responsible-disclosure@netcompany.com
+  program_type: vdp
+  status: active
+  safe_harbor: full
+  allows_disclosure: false
+  preferred_languages: English, Danish
+  description: Netcompany takes reports on all of its services, applications and websites, including third-party plugins and libraries used in them, and sites set up to imitate Netcompany assets. It aims to reply within 15 business days and treats research under the policy as authorised, but runs no bounty and no hall of fame, and asks that findings are not passed to third parties without approval. Report email has to go over forced TLS 1.2 or as an encrypted archive.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - physical_access
+  scope:
+  - target: All Netcompany services, applications and websites
+    type: web
+  - target: Non-public Netcompany data, including personal, financial and proprietary information
+    type: other
+  - target: Sites imitating Netcompany assets
+    type: web
+  out_of_scope:
+  - Non-sensitive cookies
+  - HTTP response header configuration, unless tied to an in-scope issue
+  - SPF, DKIM and DMARC setup
+  - Issues requiring a jailbroken mobile device, unless they enable a server-side compromise
+  - Social engineering attacks against Netcompany
+  - Findings from automated scans, unless proven to be a real vulnerability
+  response_sla_days: 15
+
 - company: nuuvem.com
   url: https://www.nuuvem.com/us-en/security
   contact: mailto:security@nuuvem.com
