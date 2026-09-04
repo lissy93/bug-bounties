@@ -2821,6 +2821,33 @@ companies:
   - Issues only affecting users of outdated or unpatched browsers and platforms
   - Vulnerabilities already known to Tiger Data or publicly disclosed
 
+- company: Tiqets
+  url: https://www.tiqets.com/en/responsible-disclosure/
+  contact: mailto:responsible-disclosure@tiqets.com
+  program_type: vdp
+  status: active
+  safe_harbor: partial
+  allows_disclosure: true
+  preferred_languages: English
+  description: Tiqets takes reports on externally accessible systems and services under tiqets.com and its subdomains, but not the third-party SaaS it uses. There is no bounty, and reports asking for one without disclosing the issue are not processed. Researchers may publish, provided Tiqets gets a month's notice first, and naming Tiqets in the write-up needs their approval.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - automated_scanning
+  out_of_scope:
+  - Any service that results in interaction with customer support agents
+  - Third-party SaaS services used by Tiqets
+  - Open HTTP redirections
+  - Missing HTTP security headers and cookie flags on insensitive cookies
+  - Rate limit deficiencies and brute-force attacks
+  - Vulnerabilities in third-party services
+  - Issues requiring direct physical access to the victim's device
+  domains:
+  - tiqets.com
+  - '*.tiqets.com'
+  disclosure_timeline_days: 30
+
 - company: TMG Security
   url: https://tmgsec.com/bug-bounty/
   contact: mailto:security@tmgsec.com
