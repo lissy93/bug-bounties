@@ -124,6 +124,45 @@ companies:
     low: 150
   hall_of_fame_url: https://ably.com/acknowledgements
 
+- company: AFAS Software
+  url: https://www.afas.nl/portal-bedrijfspagina/responsible-disclosure
+  contact: mailto:security@afas.nl
+  program_type: vdp
+  status: active
+  safe_harbor: partial
+  preferred_languages: Dutch, English
+  pgp_key: https://www.afas.nl/publickey.txt
+  description: AFAS Software takes reports on a named list of corporate and AFAS Online domains, and treats anything not on that list as out of scope. Customers may also test the accept and test endpoints provisioned for them, and are asked to keep research off production because AFAS Online resources are shared. First response comes within 72 hours on working days, and AFAS says it will thank reporters in a fitting way rather than naming a reward.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - physical_access
+  out_of_scope:
+  - Any asset not named in the scope list
+  - Other customers' endpoints
+  domains:
+  - www.afas.nl
+  - www.afas.be
+  - www.afas.com
+  - help.afas.nl
+  - afas.help
+  - klant.afas.nl
+  - connect.afas.nl
+  - refinery.afaslink.nl
+  - www.afaslink.nl
+  - idp.afasonline.com
+  - login.afasonline.com
+  - portal.afasonline.com
+  - sts.afasonline.com
+  - '*.insiteaccept.afas.online'
+  - '*.insitetest.afas.online'
+  - '*.soapaccept.afas.online'
+  - '*.soaptest.afas.online'
+  - '*.restaccept.afas.online'
+  - '*.resttest.afas.online'
+  response_sla_days: 3
+
 - company: Airwallex
   url: https://help.airwallex.com/hc/en-gb/articles/900004502526-Bug-Bounty-Program-Rules
   contact: mailto:bugbounty@airwallex.com
