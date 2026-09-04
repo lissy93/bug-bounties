@@ -1687,6 +1687,48 @@ companies:
   preferred_languages: English
   description: n8n runs a Vulnerability Disclosure Program as a formal channel for reporting security issues found in n8n. Every submission is reviewed, and n8n works with the reporter to understand the impact and keeps them updated throughout.
 
+- company: Nedap
+  url: https://www.nedap.com/en/coordinated-vulnerability-disclosure-policy
+  contact: mailto:cvd@nedap.com
+  rewards:
+  - '*recognition'
+  program_type: vdp
+  status: active
+  safe_harbor: full
+  allows_disclosure: true
+  preferred_languages: English, Dutch
+  pgp_key: https://www.nedap.com/.well-known/pgp-key.txt
+  description: Nedap N.V. and its subsidiaries take reports on Nedap products, portals, managed infrastructure and domains worldwide. Reports are acknowledged within five working days, scored with CVSS and worked to a default 90 day resolution target. There is no formal bounty, but Nedap will credit a reporter in a security advisory on request, and prefers to coordinate public disclosure with them.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - physical_access
+  scope:
+  - target: All Nedap products (hardware, software, firmware, SaaS)
+    type: other
+  - target: Online platforms and portals operated by Nedap
+    type: web
+  - target: Nedap-managed infrastructure and cloud environments
+    type: cloud
+  - target: Domains owned and operated by Nedap
+    type: web
+  out_of_scope:
+  - Unvalidated automated scanner output, such as version headers
+  - Missing HTTP security headers without practical exploitability
+  - Older TLS configurations without practical exploitability
+  - Rate limiting suggestions without proof of abuse
+  - Theoretical vulnerabilities without practical impact
+  - Clickjacking on non-sensitive pages
+  - Third-party systems not managed by Nedap
+  response_sla_days: 5
+  reporting_url: https://app.zerocopter.com/en/cvd/f5ab53e6-c693-4f8d-adf1-0f1dff8790d7
+  standards:
+  - ISO 27001
+  - Dutch NCSC guidelines
+  - EU NIS2 Directive
+  - EU Cyber Resilience Act
+
 - company: nelko.com
   url: https://nelko.com/pages/vulnerability-disclosure-policy
   rewards:
