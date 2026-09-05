@@ -1139,6 +1139,7 @@
 - <img src='https://icon.horse/icon/nbxsupport.zendesk.com' width='16'/> [NBX](https://nbxsupport.zendesk.com/hc/en-us/articles/360044264592-NBX-Responsible-Disclosure-Policy) 💰
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [NCSC UK](https://hackerone.com/ncsc_uk) 🏅
 - <img src='https://icon.horse/icon/www.ncsc.nl' width='16'/> [NCSC-NL](https://www.ncsc.nl/security) 💰 🎁
+- <img src='https://icon.horse/icon/www.nedap.com' width='16'/> [Nedap](https://www.nedap.com/en/coordinated-vulnerability-disclosure-policy) 🏅
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Nemetschek](https://bugcrowd.com/engagements/nemetschek) 💰
 - <img src='https://icon.horse/icon/neo4j.com' width='16'/> [Neo4j](https://neo4j.com/trust-center/responsible-disclosure/) 🏅
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [NEOGOV Public Assets](https://bugcrowd.com/engagements/neohrms) 💰
