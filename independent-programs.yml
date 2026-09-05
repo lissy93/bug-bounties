@@ -124,6 +124,45 @@ companies:
     low: 150
   hall_of_fame_url: https://ably.com/acknowledgements
 
+- company: AFAS Software
+  url: https://www.afas.nl/portal-bedrijfspagina/responsible-disclosure
+  contact: mailto:security@afas.nl
+  program_type: vdp
+  status: active
+  safe_harbor: partial
+  preferred_languages: Dutch, English
+  pgp_key: https://www.afas.nl/publickey.txt
+  description: AFAS Software takes reports on a named list of corporate and AFAS Online domains, and treats anything not on that list as out of scope. Customers may also test the accept and test endpoints provisioned for them, and are asked to keep research off production because AFAS Online resources are shared. First response comes within 72 hours on working days, and AFAS says it will thank reporters in a fitting way rather than naming a reward.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - physical_access
+  out_of_scope:
+  - Any asset not named in the scope list
+  - Other customers' endpoints
+  domains:
+  - www.afas.nl
+  - www.afas.be
+  - www.afas.com
+  - help.afas.nl
+  - afas.help
+  - klant.afas.nl
+  - connect.afas.nl
+  - refinery.afaslink.nl
+  - www.afaslink.nl
+  - idp.afasonline.com
+  - login.afasonline.com
+  - portal.afasonline.com
+  - sts.afasonline.com
+  - '*.insiteaccept.afas.online'
+  - '*.insitetest.afas.online'
+  - '*.soapaccept.afas.online'
+  - '*.soaptest.afas.online'
+  - '*.restaccept.afas.online'
+  - '*.resttest.afas.online'
+  response_sla_days: 3
+
 - company: Airwallex
   url: https://help.airwallex.com/hc/en-gb/articles/900004502526-Bug-Bounty-Program-Rules
   contact: mailto:bugbounty@airwallex.com
@@ -1648,6 +1687,48 @@ companies:
   preferred_languages: English
   description: n8n runs a Vulnerability Disclosure Program as a formal channel for reporting security issues found in n8n. Every submission is reviewed, and n8n works with the reporter to understand the impact and keeps them updated throughout.
 
+- company: Nedap
+  url: https://www.nedap.com/en/coordinated-vulnerability-disclosure-policy
+  contact: mailto:cvd@nedap.com
+  rewards:
+  - '*recognition'
+  program_type: vdp
+  status: active
+  safe_harbor: full
+  allows_disclosure: true
+  preferred_languages: English, Dutch
+  pgp_key: https://www.nedap.com/.well-known/pgp-key.txt
+  description: Nedap N.V. and its subsidiaries take reports on Nedap products, portals, managed infrastructure and domains worldwide. Reports are acknowledged within five working days, scored with CVSS and worked to a default 90 day resolution target. There is no formal bounty, but Nedap will credit a reporter in a security advisory on request, and prefers to coordinate public disclosure with them.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - physical_access
+  scope:
+  - target: All Nedap products (hardware, software, firmware, SaaS)
+    type: other
+  - target: Online platforms and portals operated by Nedap
+    type: web
+  - target: Nedap-managed infrastructure and cloud environments
+    type: cloud
+  - target: Domains owned and operated by Nedap
+    type: web
+  out_of_scope:
+  - Unvalidated automated scanner output, such as version headers
+  - Missing HTTP security headers without practical exploitability
+  - Older TLS configurations without practical exploitability
+  - Rate limiting suggestions without proof of abuse
+  - Theoretical vulnerabilities without practical impact
+  - Clickjacking on non-sensitive pages
+  - Third-party systems not managed by Nedap
+  response_sla_days: 5
+  reporting_url: https://app.zerocopter.com/en/cvd/f5ab53e6-c693-4f8d-adf1-0f1dff8790d7
+  standards:
+  - ISO 27001
+  - Dutch NCSC guidelines
+  - EU NIS2 Directive
+  - EU Cyber Resilience Act
+
 - company: nelko.com
   url: https://nelko.com/pages/vulnerability-disclosure-policy
   rewards:
@@ -1710,6 +1791,36 @@ companies:
   preferred_languages: English, German, French, Japanese
   pgp_key: https://cdn.NetBSD.org/pub/NetBSD/security/PGP/security-officer@netbsd.org.asc
   description: Security issues in NetBSD are handled by the project's Security Team, Security Alert Team and Security Officer, who investigate, document and patch newly reported problems. Reports go to the Security Alert Team by email, with sensitive information encrypted using the Security Officer's PGP key. Fixed problems are written up as an advisory pointing at the fix and announced on the project mailing lists, though the team may delay one so that several related issues can be covered together.
+
+- company: Netcompany
+  url: https://netcompany.com/responsible-disclosure/
+  contact: mailto:responsible-disclosure@netcompany.com
+  program_type: vdp
+  status: active
+  safe_harbor: full
+  allows_disclosure: false
+  preferred_languages: English, Danish
+  description: Netcompany takes reports on all of its services, applications and websites, including third-party plugins and libraries used in them, and sites set up to imitate Netcompany assets. It aims to reply within 15 business days and treats research under the policy as authorised, but runs no bounty and no hall of fame, and asks that findings are not passed to third parties without approval. Report email has to go over forced TLS 1.2 or as an encrypted archive.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - physical_access
+  scope:
+  - target: All Netcompany services, applications and websites
+    type: web
+  - target: Non-public Netcompany data, including personal, financial and proprietary information
+    type: other
+  - target: Sites imitating Netcompany assets
+    type: web
+  out_of_scope:
+  - Non-sensitive cookies
+  - HTTP response header configuration, unless tied to an in-scope issue
+  - SPF, DKIM and DMARC setup
+  - Issues requiring a jailbroken mobile device, unless they enable a server-side compromise
+  - Social engineering attacks against Netcompany
+  - Findings from automated scans, unless proven to be a real vulnerability
+  response_sla_days: 15
 
 - company: nuuvem.com
   url: https://www.nuuvem.com/us-en/security
@@ -2709,6 +2820,33 @@ companies:
   - Third-party applications or services
   - Issues only affecting users of outdated or unpatched browsers and platforms
   - Vulnerabilities already known to Tiger Data or publicly disclosed
+
+- company: Tiqets
+  url: https://www.tiqets.com/en/responsible-disclosure/
+  contact: mailto:responsible-disclosure@tiqets.com
+  program_type: vdp
+  status: active
+  safe_harbor: partial
+  allows_disclosure: true
+  preferred_languages: English
+  description: Tiqets takes reports on externally accessible systems and services under tiqets.com and its subdomains, but not the third-party SaaS it uses. There is no bounty, and reports asking for one without disclosing the issue are not processed. Researchers may publish, provided Tiqets gets a month's notice first, and naming Tiqets in the write-up needs their approval.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - automated_scanning
+  out_of_scope:
+  - Any service that results in interaction with customer support agents
+  - Third-party SaaS services used by Tiqets
+  - Open HTTP redirections
+  - Missing HTTP security headers and cookie flags on insensitive cookies
+  - Rate limit deficiencies and brute-force attacks
+  - Vulnerabilities in third-party services
+  - Issues requiring direct physical access to the victim's device
+  domains:
+  - tiqets.com
+  - '*.tiqets.com'
+  disclosure_timeline_days: 30
 
 - company: TMG Security
   url: https://tmgsec.com/bug-bounty/
