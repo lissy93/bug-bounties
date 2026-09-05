@@ -149,7 +149,6 @@ companies:
   - directlink.eu-west-2.outscale.com
   - eim.eu-west-2.outscale.com
   - fcu.eu-west-2.outscale.com
-  - icu.eu-west-2.outscale.com
   - lbu.eu-west-2.outscale.com
   - osu.eu-west-2.outscale.com
 - company: 3GPP
@@ -196,6 +195,7 @@ companies:
   - 8x8.cloud
   - 8x8.co.uk
   - 8x8.com
+  - 8x8.engineering
   - 8x8.id
   - 8x8.my.site.com
   - 8x8.studio
@@ -215,8 +215,7 @@ companies:
   - ai.8x8.vc
   - api.8x8.com
   - apps.8x8.com
-  - call-control.ie
-  - callroute.com
+  - bridge.8x8.com
 - company: 8x8 Bounty
   url: https://hackerone.com/8x8-bounty
   contact: https://hackerone.com/8x8-bounty
@@ -524,6 +523,35 @@ companies:
   - lightroom.adobe.com
   - magento.com
   - net.s2stagehance.com
+- company: Adobe Public
+  url: https://www.intigriti.com/programs/adobe/adobepublic/detail
+  handle: adobepublic
+  contact: https://www.intigriti.com/programs/adobe/adobepublic/detail
+  rewards:
+  - '*bounty'
+  max_payout: 15000.0
+  min_payout: 75.0
+  currency: USD
+  domains:
+  - account.adobe.com
+  - account.magento.com
+  - acrobat.adobe.com
+  - adobeid-na1.services.adobe.com
+  - auth.services.adobe.com
+  - commercemarketplace.adobe.com
+  - federatedid-na1.services.adobe.com
+  - firefly.adobe.com
+  - fonts.adobe.com
+  - ims-na1.adobelogin.com
+  - learningmanagerstage4.adobe.com
+  - lightroom.adobe.com
+  - magento.com
+  - net.s2stagehance.com
+  - new.express.adobe.com
+  - photoshop.adobe.com
+  - portfolio.ccpsx.com
+  - repo.magento.com
+  - stock.adobe.com
 - company: Adore Me Vulnerability Disclosure Program
   url: https://bugcrowd.com/adoreme-vdp
   contact: https://bugcrowd.com/adoreme-vdp
@@ -809,6 +837,15 @@ companies:
   - falcon-bug-bounty-flag-pgsql-dev-sandbox.e.aivencloud.com
   - github.com
   - regatta.aiven.io
+- company: Akeles Marketplace Bug Bounty
+  url: https://bugcrowd.com/engagements/akeles
+  contact: https://bugcrowd.com/engagements/akeles
+  rewards:
+  - '*bounty'
+  managed: true
+  max_payout: 1500.0
+  domains:
+  - marketplace.atlassian.com
 - company: Aktia
   url: https://hackerone.com/aktia
   contact: https://hackerone.com/aktia
@@ -877,7 +914,6 @@ companies:
   domains:
   - ad.nl
   - myaccount.ad.nl
-  - webwinkel.ad.nl
 - company: Algolia
   url: https://www.algolia.com/security
   contact: https://hackerone.com/algolia/reports/new
@@ -1458,6 +1494,16 @@ companies:
   url: https://www.aptible.com/legal/responsible-disclosure/
   contact: mailto:security@aptible.com
   rewards: []
+- company: APTIS
+  url: https://bugcrowd.com/engagements/epicsumup
+  contact: https://bugcrowd.com/engagements/epicsumup
+  rewards:
+  - '*bounty'
+  managed: true
+  safe_harbor: full
+  max_payout: 1500.0
+  domains:
+  - marketplace.atlassian.com
 - company: Aqua Security
   url: https://www.aquasec.com/trust/security/responsible-disclosure-program/
   contact: mailto:psirt@aquasec.com
@@ -4495,6 +4541,7 @@ companies:
   managed: false
   domains:
   - api.thecoalition.com
+  - app.wirespeed.co
   - coalitioninc.com
   - platform.thecoalition.com
 - company: Cobalt
@@ -5565,7 +5612,6 @@ companies:
   domains:
   - demorgen.be
   - myaccount.demorgen.be
-  - shop.demorgen.be
 - company: De Rechtspraak
   url: https://www.rechtspraak.nl/English/Contact/Pages/Contact-point-vulnerabilities-responsible-disclosure.aspx
   contact: https://www.rechtspraak.nl/English/Contact/Pages/Contact-point-vulnerabilities-responsible-disclosure.aspx
@@ -5587,9 +5633,7 @@ companies:
   currency: EUR
   domains:
   - myaccount.volkskrant.nl
-  - shop.volkskrant.nl
   - volkskrant.nl
-  - webwinkel.volkskrant.nl
 - company: Debian Security Tracker
   url: https://www.debian.org/Bugs/
   contact: https://www.debian.org/Bugs/
@@ -8839,6 +8883,8 @@ companies:
   - com.getyourguide.android
   - com.getyourguide.mobile.getyourguide
   - getyourguide.com
+  - integrator-portal-api.getyourguide.com
+  - integrator.getyourguide.com
   - partner-public.getyourguide.com
   - partner.getyourguide.com
   - supplier-api.getyourguide.com
@@ -10484,7 +10530,7 @@ companies:
   - '*bounty'
   - '*recognition'
   managed: true
-  safe_harbor: full
+  safe_harbor: partial
   max_payout: 10000.0
   domains:
   - apis.indeed.com
@@ -10534,7 +10580,6 @@ companies:
   - careers.indrive.com
   - cargo.indrive.com
   - cas-cf.euce1.indriverapp.com
-  - coaching.supernovas.indrive.com
   - couriers.indrive.com
   - debug.clairvoyance.indrive.tech
   - delivery-webview.indrive.com
@@ -10551,6 +10596,7 @@ companies:
   - landing.ryadom.kz
   - media.indrive.com
   - messenger.eu-east-1.indriverapp.com
+  - movie.indrive.com
 - company: Infinex
   url: https://immunefi.com/bug-bounty/infinex/
   contact: https://immunefi.com/bug-bounty/infinex/
@@ -11179,7 +11225,7 @@ companies:
   - '*bounty'
   - '*recognition'
   managed: true
-  safe_harbor: full
+  safe_harbor: partial
   max_payout: 4500.0
   domains:
   - answers.irobot.com
@@ -11903,18 +11949,31 @@ companies:
   rewards: []
   managed: true
   domains:
+  - acrtosnorthstar.com
   - advisortimetracker.kkr.com
+  - amarokcapital.com
+  - amarokpartners.com
+  - arctosanalytics.com
+  - arctoscredit.com
+  - arctosgp.com
+  - arctosinfra.com
+  - arctospartners.com
+  - arctospe.com
+  - arctosportspartners.com
+  - arctosportspartners.net
+  - arctosprivateequity.com
+  - arctosre.com
+  - arctossport.com
+  - arctossports.com
+  - arctossportscapital.com
+  - arctossportsgroup.com
+  - arctossportspartners.com
+  - dev-arctospartners.com
+  - fsgii.com
   - fskkradvisor.com
-  - kinfra.com
-  - kkr.cloud
-  - kkr.com
-  - kkresg.com
-  - kkrfunds.com
-  - kkrpec.com
-  - kkrreit.com
-  - ksam.com
-  - portal.kkr.com
-  - processaccess.kkr.com
+  - gadifference.com
+  - gafg.com
+  - gafgannuity.com
 - company: Klarna
   url: https://www.klarna.com/responsible-disclosure/
   handle: klarna
@@ -12175,7 +12234,6 @@ companies:
   - fb.lansweeper.com
   - lansweeper.com
   - login.lansweeper.com
-  - lsagentrelay.lansweeper.com
 - company: Larksuite
   url: https://hackerone.com/lark_technologies
   contact: https://hackerone.com/lark_technologies
@@ -12209,6 +12267,7 @@ companies:
   - amelia.appslatam.com
   - andeslatam.tech
   - appslatam.com
+  - artifactoryrepo1.appslatam.com
   - autoemb.appslatam.com
   - beta.latampass.latam.com
   - chat.latamairlines.com
@@ -12228,7 +12287,6 @@ companies:
   - nimbus2.appslatam.com
   - partnercenter.intg.appslatam.com
   - partnerportal.intg.appslatam.com
-  - passelivre.intg.appslatam.com
 - company: Latent Patterns
   url: https://latentpatterns.com/security
   contact: mailto:security@latentpatterns.com
@@ -13672,7 +13730,6 @@ companies:
   managed: true
   domains:
   - api-wallet.web3auth.io
-  - api.cx.metamask.io
   - io.metamask
   - io.metamask.metamask
   - metamask.github.io
@@ -15479,6 +15536,16 @@ companies:
   rewards:
   - '*bounty'
   - '*recognition'
+- company: Okapya
+  url: https://bugcrowd.com/engagements/okapya
+  contact: https://bugcrowd.com/engagements/okapya
+  rewards:
+  - '*bounty'
+  managed: true
+  safe_harbor: full
+  max_payout: 1500.0
+  domains:
+  - marketplace.atlassian.com
 - company: OkCupid
   url: https://www.okcupid.com/security
   contact: mailto:security@okcupid.com
@@ -15491,6 +15558,7 @@ companies:
   - '*bounty'
   managed: true
   domains:
+  - github.com
   - oklink.com
   - okx.com
 - company: Okta
@@ -15500,7 +15568,7 @@ companies:
   - '*bounty'
   - '*recognition'
   managed: true
-  safe_harbor: full
+  safe_harbor: partial
   max_payout: 75000.0
   domains:
   - app.scaleft.com
@@ -19320,7 +19388,7 @@ companies:
   - '*bounty'
   - '*recognition'
   managed: true
-  safe_harbor: full
+  safe_harbor: partial
   max_payout: 10000.0
   domains:
   - aips-internal.com
@@ -19411,6 +19479,38 @@ companies:
   - seoab.io
   - seoquake.com
   - workflows.semrush.com
+- company: Semtech
+  url: https://www.semtech.com
+  handle: semtech
+  contact: https://hackerone.com/semtech
+  rewards: []
+  managed: true
+  domains:
+  - airvantage.net
+  - autodiscover.semtech.com
+  - br.learn.semtech.com
+  - chat.semtech.com
+  - collaborate.semtech.com
+  - csm.semtech.com
+  - customercommunity.sierrawireless.com
+  - forum.sierrawireless.com
+  - gitlab.semtech.com
+  - go.semtech.com
+  - help.semtech.com
+  - investors.semtech.com
+  - jira.semtech.com
+  - learn.semtech.com
+  - loracloud.com
+  - m2mconnectivity.com.au
+  - m2mone.co.nz
+  - m2mone.com.au
+  - partners.sierrawireless.com
+  - partnertraining.semtech.com
+  - qa.airvantage.io
+  - saml.semtech.com
+  - semtech.com
+  - semtech.my.site.com
+  - shop.semtech.com
 - company: Sendbird
   url: https://bugcrowd.com/engagements/sendbird-mbb
   contact: https://bugcrowd.com/engagements/sendbird-mbb
@@ -19548,6 +19648,16 @@ companies:
   contact: mailto:security@shiftcrypto.ch
   rewards:
   - '*recognition'
+- company: Shinetech Software Inc Marketplace Managed Bug Bounty Engagement
+  url: https://bugcrowd.com/engagements/shinetech-software-market
+  contact: https://bugcrowd.com/engagements/shinetech-software-market
+  rewards:
+  - '*bounty'
+  managed: true
+  safe_harbor: full
+  max_payout: 1500.0
+  domains:
+  - marketplace.atlassian.com
 - company: Shipt
   url: https://hackerone.com/shipt
   contact: https://hackerone.com/shipt
@@ -20395,7 +20505,7 @@ companies:
   - '*bounty'
   - '*recognition'
   managed: true
-  safe_harbor: full
+  safe_harbor: partial
   max_payout: 18000.0
   domains:
   - square.com
@@ -21030,7 +21140,6 @@ companies:
   - account.post.ch
   - apps.apple.com
   - billingonline.post.ch
-  - itunes.apple.com
   - play.google.com
   - service.post.ch
   - shop.post.ch
@@ -21146,6 +21255,7 @@ companies:
   safe_harbor: full
   max_payout: 133700.0
   domains:
+  - account.business.t-mobile.com
   - account.t-mobile.com
   - api.t-mobile.com
   - api.vistarmedia.com
@@ -21166,7 +21276,6 @@ companies:
   - demo.adstruc.com
   - devedge.t-mobile.com
   - development.wmaudience.com
-  - digits.t-mobile.com
   - docker-staging.adstruc.com
   - docsite.vistarmedia.com
   - imply-pivot.blis.com
@@ -22213,6 +22322,7 @@ companies:
   rewards: []
   managed: true
   domains:
+  - api.forms-formulaires.alpha.canada.ca
   - api.login-connexion.canada.ca
   - api.migration.login-connexion.canada.ca
   - app.login-connexion.canada.ca
@@ -22230,6 +22340,7 @@ companies:
   - notification.canada.ca
   - numerique.canada.ca
   - talent.canada.ca
+  - validate-email.cdssandbox.xyz
 - company: Treebal
   url: https://yeswehack.com/programs/treebal-the-eco-responsible-messaging
   contact: https://yeswehack.com/programs/treebal-the-eco-responsible-messaging
@@ -22312,7 +22423,6 @@ companies:
   - '*bounty'
   managed: true
   domains:
-  - app.blueskytravelvietnam.com
   - budgetair.com
   - cheaptickets.nl
   - com.trip.android
@@ -22459,7 +22569,6 @@ companies:
   - developer.truist.com
   - dias.bank.truist.com
   - dias.oneview.truist.com
-  - investments.truist.com
   - lending.digitalcommerce.truist.com
   - new.digitalcommerce.truist.com
   - oneview.truist.com
@@ -24101,6 +24210,7 @@ companies:
   managed: true
   domains:
   - com.wealthsimple
+  - com.wealthsimple.predict
   - com.wealthsimple.wealthsimple
   - simpletax.ca
   - wealthsimple.com
@@ -24435,8 +24545,6 @@ companies:
   domains:
   - api.wordpress.org
   - doaction.org
-  - irclogs.wordpress.org
-  - lists.wordpress.org
   - mercantile.wordpress.org
   - planet.wordpress.org
   - wordcamp.org
@@ -24491,11 +24599,15 @@ companies:
   - bettersearchreplace.com
   - deliciousbrains.com
   - getflywheel.com
+  - localwp.com
+  - makeshift.film
   - my.wpengine.com
   - nitropack.io
-  - spressforumstg.wpengine.com
+  - payments.wpengine.com
   - studiopress.blog
   - studiopress.com
+  - torquemag.io
+  - velocitize.com
   - wpengine.com
   - wpengine.io
   - wpesvc.net
@@ -24505,7 +24617,7 @@ companies:
   rewards:
   - '*bounty'
   managed: true
-  max_payout: 2000.0
+  max_payout: 5000.0
   domains:
   - api.wyzecam.com
   - auth.wyze.com
@@ -24632,6 +24744,16 @@ companies:
   url: https://xmr.to/security
   contact: mailto:security@xmr.to
   rewards: []
+- company: Xopero Software S.A. Marketplace Managed Bug Bounty Engagement
+  url: https://bugcrowd.com/engagements/xopero-software-marketplace
+  contact: https://bugcrowd.com/engagements/xopero-software-marketplace
+  rewards:
+  - '*bounty'
+  managed: true
+  safe_harbor: full
+  max_payout: 1500.0
+  domains:
+  - marketplace.atlassian.com
 - company: XOXNO
   url: https://immunefi.com/bug-bounty/xoxno/
   contact: https://immunefi.com/bug-bounty/xoxno/
@@ -24841,6 +24963,9 @@ companies:
   rewards:
   - '*bounty'
   - '*swag'
+  managed: true
+  domains:
+  - zabbix.com
 - company: Zabka Group Vulnerability Disclosure Program
   url: https://www.intigriti.com/programs/zabkapolska/zabkagroup-vdp/detail
   handle: zabkagroup-vdp
