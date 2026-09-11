@@ -830,6 +830,7 @@
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [iFood: Bug Bounty Program](https://bugcrowd.com/ifood-og) 💰
 - <img src='https://icon.horse/icon/www.royalihc.com' width='16'/> [IHC](https://www.royalihc.com/en/responsible-disclosure-policy) 🏅
 - <img src='https://icon.horse/icon/www.ikea.com' width='16'/> [Ikea](https://www.ikea.com/ms/en_ES/responsible-disclosure/responsible_disclosure.html) 💰
+- <img src='https://icon.horse/icon/www.ilionx.com' width='16'/> [ilionx](https://www.ilionx.com/en/contact/report-vulnerability-cvd/) 💰
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [Imgur](https://hackerone.com/imgur) 💰 🏅 🎁
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Immunefi](https://immunefi.com/bug-bounty/immunefi/) 💰
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Immutable Bug Bounty](https://bugcrowd.com/immutable-og) 💰
@@ -2021,6 +2022,7 @@
 - <img src='https://icon.horse/icon/www.zendesk.de' width='16'/> [Zendesk](https://www.zendesk.de/company/policies-procedures/responsible-disclosure-policy/) 💰 🏅
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Zenlink](https://immunefi.com/bug-bounty/zenlink/) 💰
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [Zenly](https://hackerone.com/zenly) 💰
+- <img src='https://icon.horse/icon/zenya-software.com' width='16'/> [Zenya](https://zenya-software.com/coordinated-vulnerability-disclosure/) 💰
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Zerion](https://immunefi.com/bug-bounty/zerion/) 💰
 - <img src='https://icon.horse/icon/www.zerobounce.net' width='16'/> [ZeroBounce](https://www.zerobounce.net) 💰
 - <img src='https://icon.horse/icon/www.zerocopter.com' width='16'/> [Zerocopter](https://www.zerocopter.com/en/responsible-disclosure) 💰
