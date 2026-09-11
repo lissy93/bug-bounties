@@ -661,6 +661,25 @@ companies:
     high: 500
     low: 100
 
+- company: Cegeka
+  url: https://www.cegeka.com/.well-known/responsibledisclosurepolicy.txt
+  contact: mailto:responsibledisclosure@cegeka.com
+  program_type: vdp
+  status: active
+  safe_harbor: partial
+  allows_disclosure: false
+  preferred_languages: English
+  description: Cegeka NV and its affiliates run a responsible disclosure policy written against articles 62/1 and 62/2 of the Belgian law of 7 April 2019. Reports go to responsibledisclosure@cegeka.com, and Cegeka sets up a secure channel before any sensitive detail is shared. Testing has to stay proportionate and stop once the problem is demonstrated. Cegeka will not bring legal claims against researchers who comply, but keeps the right to seek injunctive relief, and findings stay confidential.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  scope:
+  - target: www.cegeka.com
+    type: web
+  out_of_scope:
+  - IT systems that rely on third parties, unless those third parties have expressly agreed to this policy in advance
+
 - company: Centric
   url: https://centric.eu/nl/over-centric/trust-center/responsible-disclosure-policy/
   contact: mailto:security.disclosures@centric.eu
@@ -1672,6 +1691,26 @@ companies:
   - Assets owned by IDnow customers
   response_sla_days: 2
 
+- company: Idox Group
+  url: https://www.idoxgroup.com/.well-known/Idox-Group-Vulnerability-Disclosure-Policy.pdf
+  contact: https://forms.office.com/e/y2Tn7cubST
+  program_type: vdp
+  status: active
+  safe_harbor: partial
+  allows_disclosure: true
+  preferred_languages: English
+  description: Idox Group publishes its vulnerability disclosure policy as a PDF under .well-known. Reports go through a Microsoft Forms link and should give the site, IP or page affected, the vulnerability class and benign steps to reproduce. Idox responds within 5 working days, aims to triage within 10, and asks researchers to chase no more than once every 14 days. There are no monetary rewards. Once a fix ships, Idox welcomes requests to disclose the report, coordinated with them.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - physical_access
+  - automated_scanning
+  out_of_scope:
+  - Non-exploitable findings and best-practice issues such as missing security headers
+  - TLS configuration weaknesses, such as weak cipher suite support or TLS 1.0 support
+  response_sla_days: 5
+
 - company: Idura
   url: https://idura.eu/legal/vulnerability-disclosure-policy
   contact: mailto:cvd@idura.eu
@@ -1698,6 +1737,27 @@ companies:
   - Self-XSS, clickjacking, missing security headers and information disclosure with no demonstrated security impact
   - Known CVEs, outdated libraries and subdomain takeover without a demonstrated proof of concept
   - Vulnerabilities publicly disclosed within the last 30 days
+
+- company: ilionx
+  url: https://www.ilionx.com/en/contact/report-vulnerability-cvd/
+  contact: mailto:cert@ilionx.com
+  rewards:
+  - '*bounty'
+  program_type: hybrid
+  status: active
+  safe_harbor: partial
+  preferred_languages: Dutch, English
+  description: ilionx runs its own coordinated vulnerability disclosure scheme over the systems, network, products and services watched by its in-house Security Operations Centre. Reports go through a CVD form on the policy page or to cert@ilionx.com, and ilionx replies within three days with an assessment and an estimated resolution time. Anything it was not already aware of earns a reward, sized on the scope of the vulnerability and the quality of the report.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - physical_access
+  scope:
+  - target: ilionx systems, network, products and services
+    type: other
+  out_of_scope:
+  - Third-party applications
+  response_sla_days: 3
 
 - company: incident.io
   url: https://incident.io/legal/vulnerability-disclosure
@@ -4321,6 +4381,36 @@ companies:
   min_payout: 1000
   currency: INR
   response_sla_days: 1
+
+- company: Zenya
+  url: https://zenya-software.com/coordinated-vulnerability-disclosure/
+  contact: https://forms.zenya.work/psbr6j9omo/1325
+  rewards:
+  - '*bounty'
+  program_type: hybrid
+  status: active
+  description: Zenya, formerly Infoland, takes coordinated vulnerability disclosure reports through its own form. It wants directly exploitable issues rather than minor ones, acknowledges within 5 business days, gives an estimated timeline, and says when the fix has landed and whether the details can be published. A reward is offered on the severity of the problem and the quality of the report, as long as the issue is serious and not already known.
+  excluded_methods:
+  - dos
+  - social_engineering
+  out_of_scope:
+  - Fingerprinting and version listings on operating systems, services or ports
+  - Registered public IP addresses
+  - Incomplete or missing SPF, DKIM or DMARC records
+  - Outdated versions without a proof of concept or working exploit
+  - Email addresses found in a third-party data breach
+  - Cosmetic issues, such as something rendering badly in one browser
+  - Public files or directories that contain no confidential information
+  - Missing security headers, options and flags
+  - URL redirection to a valid web page
+  - TLS misconfiguration without a proof of concept
+  - HTTP 404 and other non-200 pages, including content spoofing and text injection in them
+  - Clickjacking, and vulnerabilities only exploitable through clickjacking
+  - Resource exhaustion and denial of service
+  - Findings that cannot be reproduced, or exploits not validated with a second tool or method
+  - Rate limiting with no apparent impact
+  - Services running at third-party providers
+  response_sla_days: 5
 
 - company: Zitadel
   url: https://zitadel.com/vulnerability
