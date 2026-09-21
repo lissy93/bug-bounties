@@ -14,6 +14,7 @@ jobs:
       lib: ${{ steps.filter.outputs.lib }}
       web: ${{ steps.filter.outputs.web }}
       mcp: ${{ steps.filter.outputs.mcp }}
+      mcp_publish: ${{ steps.filter.outputs.mcp_publish }}
       docker: ${{ steps.filter.outputs.docker }}
       data: ${{ steps.filter.outputs.data }}
     steps:
@@ -30,6 +31,10 @@ jobs:
             mcp:
               - 'mcp/**'
               - 'web/src/pages/api/**'
+            mcp_publish:
+              - 'mcp/src/**'
+              - 'mcp/package.json'
+              - 'mcp/README.md'
             docker:
               - 'web/**'
               - '.github/workflows/docker.yml'
@@ -121,6 +126,7 @@ jobs:
       typecheck: ${{ steps.report.outputs.typecheck }}
       format: ${{ steps.report.outputs.format }}
       smoke: ${{ steps.report.outputs.smoke }}
+      version: ${{ steps.report.outputs.version }}
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-node@v5
@@ -130,6 +136,18 @@ jobs:
           cache-dependency-path: |
             web/package-lock.json
             mcp/package-lock.json
+      - id: version
+        if: needs.detect-changes.outputs.mcp_publish == 'true'
+        continue-on-error: true
+        working-directory: mcp
+        run: |
+          LOCAL=$(node -p "require('./package.json').version")
+          PUBLISHED=$(npm view bug-bounties-mcp version 2>/dev/null || echo none)
+          if [ "$LOCAL" = "$PUBLISHED" ]; then
+            echo "::error file=mcp/package.json::Version $LOCAL is already on npm. Bump it, or these changes will not be published."
+            exit 1
+          fi
+          echo "will publish $LOCAL (npm has $PUBLISHED)"
       - name: Install mcp deps
         working-directory: mcp
         run: npm ci
@@ -175,14 +193,16 @@ jobs:
           t='${{ steps.typecheck.outcome }}'
           f='${{ steps.format.outcome }}'
           s='${{ steps.smoke.outcome }}'
+          v='${{ steps.version.outcome }}'
           {
             echo "lint=$l"
             echo "typecheck=$t"
             echo "format=$f"
             echo "smoke=$s"
+            echo "version=$v"
           } >> "$GITHUB_OUTPUT"
-          for r in "$l" "$t" "$f" "$s"; do
-            [ "$r" = success ] || exit 1
+          for r in "$l" "$t" "$f" "$s" "$v"; do
+            case "$r" in success | skipped) ;; *) exit 1 ;; esac
           done
 
   docker:
@@ -254,6 +274,7 @@ jobs:
           MCP_TYPECHECK: ${{ needs.mcp.outputs.typecheck }}
           MCP_FORMAT: ${{ needs.mcp.outputs.format }}
           MCP_SMOKE: ${{ needs.mcp.outputs.smoke }}
+          MCP_VERSION: ${{ needs.mcp.outputs.version }}
           DOCKER_RESULT: ${{ needs.docker.result }}
           DOCKER_BUILD: ${{ needs.docker.outputs.build }}
           DATA_RESULT: ${{ needs.data.result }}
@@ -292,6 +313,7 @@ jobs:
           render MCP    'Type check' "$MCP_TYPECHECK"  "$MCP_RESULT"
           render MCP    Format       "$MCP_FORMAT"     "$MCP_RESULT"
           render MCP    Smoke        "$MCP_SMOKE"      "$MCP_RESULT"
+          render MCP    Version      "$MCP_VERSION"    "$MCP_RESULT"
           render Docker Build        "$DOCKER_BUILD"   "$DOCKER_RESULT"
           render Data   Validate     "$DATA_VALIDATE"  "$DATA_RESULT"
 

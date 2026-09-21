@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import { StreamableHTTPServerTransport } from "@modelcontextprotocol/sdk/server/streamableHttp.js";
-import { createServer, DEFAULT_API_URL, VERSION } from "./server.js";
+import { createServer, DEFAULT_API_URL } from "./server.js";
+import { VERSION } from "./version.js";
 import {
   createServer as createHttpServer,
   type IncomingMessage,

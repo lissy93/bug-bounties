@@ -1,6 +1,6 @@
 {
   "name": "bug-bounties-mcp",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "MCP server for the bug-bounties database (search programs, look up security contacts).",
   "author": "Alicia Sykes",
   "license": "MIT",

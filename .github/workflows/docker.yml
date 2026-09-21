@@ -5,9 +5,14 @@ on:
     branches: [main]
     paths:
       - 'web/**'
+      - 'platform-programs.yml'
+      - 'independent-programs.yml'
       - '.github/workflows/docker.yml'
     tags:
       - 'v*'
+  workflow_run:
+    workflows: ["📡 Populate Bounties"]
+    types: [completed]
   workflow_dispatch:
     inputs:
       dry_run:
@@ -16,9 +21,14 @@ on:
         type: boolean
         default: false
 
+concurrency:
+  group: docker-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     permissions:
       contents: read
       packages: write

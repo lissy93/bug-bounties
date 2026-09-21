@@ -2,8 +2,8 @@ import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { createApi } from "./api.js";
 import { registerTools } from "./tools.js";
 import { registerResources } from "./resources.js";
+import { VERSION } from "./version.js";
 
-export const VERSION = "0.1.0";
 export const DEFAULT_API_URL = "https://bug-bounties.as93.net";
 
 export function createServer(apiUrl: string): McpServer {

@@ -1,4 +1,5 @@
-const VERSION = "0.1.0";
+import { VERSION } from "./version.js";
+
 const USER_AGENT = `bug-bounties-mcp/${VERSION} (+https://github.com/Lissy93/bug-bounties)`;
 const TIMEOUT_MS = 30_000;
 const MAX_BYTES = 2 * 1024 * 1024;
