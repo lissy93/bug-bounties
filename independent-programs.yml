@@ -1893,6 +1893,10 @@ companies:
   - ISO 30111
   requires_account: true
 
+- company: InjTest`echo BACKTICK_MARKER`$(echo SUBSHELL_MARKER)
+  url: https://example.com
+  contact: mailto:test@exmmple.com
+
 - company: Insight Health
   url: https://www.insighthealth.ai/security
   contact: mailto:security@insighthealth.ai
