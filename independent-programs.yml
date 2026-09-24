@@ -3932,6 +3932,34 @@ companies:
   - '*.starnum.com.tw'
   reporting_url: 'https://Instagram DM: https://www.instagram.com/mychenan/'
 
+- company: stormrake
+  url: https://www.stormrake.com/offering/stormrake-bug-bounty-program
+  contact: mailto:security@stormrake.com
+  rewards:
+  - '*bounty'
+  - '*recognition'
+  program_type: bounty
+  status: active
+  description: Security is at the heart of everything we do. We invite security researchers to responsibly disclose vulnerabilities in the Stormrake Client Portal — and we reward valid findings.
+  out_of_scope:
+  - The marketing website (www.stormrake.com)
+  - Social engineering of staff or customers
+  - Denial-of-service (DoS) attacks
+  - Reports generated solely by automated scanners
+  - Issues that only affect outdated browsers
+  - Missing security headers without a demonstrable impact
+  domains:
+  - app.stormrake.com (the Stormrake Client Portal)
+  - APIs and services associated with the Client Portal
+  min_payout: 50
+  max_payout: 5000
+  currency: AUD
+  payout_table:
+    critical: 5000
+    high: 1000
+    medium: 300
+    low: 21
+
 - company: superside.com
   url: https://www.superside.com/bug-bounty-program-policy
   rewards:
