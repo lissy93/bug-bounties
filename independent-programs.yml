@@ -1393,6 +1393,56 @@ companies:
   - target: FlixBus mobile applications
     type: mobile
 
+- company: Flock Safety
+  url: https://www.flocksafety.com/legal/vulnerability-disclosure-policy
+  contact: mailto:vulnerability.reporting@flocksafety.com
+  rewards:
+  - '*recognition'
+  program_type: vdp
+  status: active
+  safe_harbor: full
+  allows_disclosure: true
+  preferred_languages: English
+  pgp_key: https://flocksafety.com/.well-known/pgp.txt
+  description: Vulnerability disclosure program covering all Flock products and services, including hardware devices, embedded software and firmware, mobile and web applications, and cloud services. No paid bounty, but valid reports are credited in the advisory and CVE record if the researcher wants. Testing live customer or agency deployments and accessing law enforcement or personal data is not allowed. Reports need a reproducible proof of concept, and summaries of scanner or AI output get closed.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - physical_access
+  scope:
+  - target: Flock hardware devices, embedded software and firmware
+    type: hardware
+  - target: Flock mobile applications
+    type: mobile
+  - target: Flock web applications
+    type: web
+  - target: Flock cloud services
+    type: cloud
+  out_of_scope:
+  - store.flocksafety.com and other Flock-branded services run by third parties
+  - Live customer or agency deployments
+  - Law enforcement, investigative, personal or customer data
+  - Findings with no demonstrated security impact
+  - Known-vulnerable third-party libraries without a working proof of concept
+  - Software version disclosure, banners, descriptive errors and stack traces
+  - Content spoofing or text injection without an attack vector
+  - CSV injection without a demonstrated vulnerability
+  - Open redirects without additional security impact
+  - Clickjacking and tabnabbing on pages with no sensitive actions
+  - CSRF on unauthenticated forms or forms with no sensitive action
+  - Missing or suboptimal SSL, TLS or HSTS configuration, including missing CAA records
+  - Missing or incomplete Content Security Policy
+  - Missing HttpOnly or Secure cookie flags
+  - Missing or misconfigured SPF, DKIM or DMARC records
+  - Rate limiting or brute force on non-authentication endpoints
+  - DNS misconfigurations and subdomain takeovers without proof of an actual takeover
+  - Takeover of generic domain verification records
+  - Issues that only affect browsers more than two stable versions behind
+  - Third-party component vulnerabilities publicly disclosed and patched within the last 7 days
+  response_sla_days: 5
+  disclosure_timeline_days: 120
+
 - company: Fluxer
   url: https://fluxer.app/security
   contact: mailto:security@fluxer.app
