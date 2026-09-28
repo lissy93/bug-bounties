@@ -3287,6 +3287,40 @@ companies:
   response_sla_days: 3
   hall_of_fame_url: https://www.polestar.com/global/vulnerability-disclosure/
 
+- company: Port of Amsterdam
+  url: https://www.portofamsterdam.com/nl/coordinated-vulnerability-disclosure-statement
+  contact: mailto:infosec@portofamsterdam.com
+  rewards:
+  - '*recognition'
+  program_type: vdp
+  status: active
+  safe_harbor: full
+  allows_disclosure: true
+  description: Port of Amsterdam takes vulnerability reports by email under a disclosure statement based on the NCSC responsible disclosure guideline. Reports can be made anonymously or under a pseudonym. Reporters mustn't place backdoors, copy, change or delete data, or exploit an issue beyond confirming it. The port aims to reply within five days with an assessment and an expected fix date, takes no legal action against those who follow the rules, and names the reporter as the discoverer if they want.
+  excluded_methods:
+  - brute_force
+  - social_engineering
+  - phishing
+  - physical_access
+  - dos
+  out_of_scope:
+  - User enumeration that doesn't enable account takeover, credential stuffing, password reset abuse or personal data disclosure
+  - Clickjacking on pages without authenticated functionality or sensitive user actions
+  - CSRF on non-authenticated or non-state-changing endpoints
+  - Self-XSS that needs user interaction such as console execution or browser configuration changes
+  - XSS affecting only unsupported or end-of-life browsers
+  - Content spoofing or text injection without XSS, phishing risk or data exposure
+  - Missing rate limiting, unless it enables account takeover or abuse
+  - Automated scanner output without a proof of concept and impact analysis
+  - Missing flags on cookies that don't hold session identifiers or sensitive data
+  - Missing security headers without demonstrated exploitability
+  - Version disclosure without a known exploitable vulnerability
+  - Directory listing of non-sensitive public content
+  - SSL/TLS best-practice issues without practical exploitability
+  - Vulnerabilities in third-party services
+  - Theoretical issues without a reproducible proof of concept
+  response_sla_days: 5
+
 - company: Port of Rotterdam
   url: https://www.portofrotterdam.com/en/responsible-disclosure
   contact: https://www.portofrotterdam.com/en/form/standard-contact?nid=1446
