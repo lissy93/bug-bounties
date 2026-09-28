@@ -2744,6 +2744,25 @@ companies:
   pgp_key: https://www.nexthink.com/security-team.pub
   description: Responsible disclosure policy for the digital employee experience vendor. Reports go to responsible-disclosure@nexthink.com, which they aim to acknowledge in under 72 hours and handle confidentially, and Nexthink will not pursue legal action over research that follows the guidelines. Details may not be shared with third parties without their consent, and there is no paid bug bounty.
 
+- company: North Sea Port
+  url: https://www.northseaport.com/responsible-disclosure
+  contact: mailto:security@northseaport.com
+  rewards:
+  - '*recognition'
+  program_type: vdp
+  status: active
+  safe_harbor: full
+  allows_disclosure: true
+  preferred_languages: English, Dutch
+  description: North Sea Port takes vulnerability reports by email under a responsible disclosure policy. Reporters shouldn't exploit an issue beyond what's needed to show it, or share it with others until it's fixed. The port aims to reply within seven days with an assessment and an expected fix date, keeps reporters updated, takes no legal action against those who follow the rules, names the reporter as the discoverer if they want, and asks to be involved in any publication once the issue is fixed.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - physical_access
+  out_of_scope:
+  - Third-party applications
+  response_sla_days: 7
+
 - company: NS
   url: https://ocp.ns.nl/caas/v1/media/stable/24134/data/statement-responsible-disclosure-engels.pdf
   contact: mailto:responsible.disclosure@ns.nl
