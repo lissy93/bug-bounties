@@ -279,6 +279,32 @@ companies:
   preferred_languages: English
   description: Arcjet does not run a bug bounty, but encourages Coordinated Vulnerability Disclosure through its security address. External vulnerability reports are logged and assigned to the individual responsible for that component, then assessed and fixed by a patch or update within 10 working days. A critical vulnerability, such as one being actively exploited, is mitigated or patched as quickly as possible; all other updates are reviewed and applied within 20 working days.
 
+- company: Arup
+  url: https://vulnerability.cyber.arup.com/Vulnerability-Disclosure-Policy.pdf
+  contact: mailto:vulnerability@arup.com
+  program_type: vdp
+  status: active
+  safe_harbor: partial
+  allows_disclosure: true
+  preferred_languages: English
+  pgp_key: https://vulnerability.cyber.arup.com/Vulnerability-arup-public-key.txt
+  description: Arup takes vulnerability reports by email on the internet-facing systems and services it owns or operates. There's no bug bounty and reports aren't paid. A report needs a reproducible proof of concept, an explanation of the risk and impact, and evidence the issue is in scope, and scanner output on its own isn't accepted. Arup aims to acknowledge within five business days and update within 20, and doesn't intend to take action against researchers who act in good faith and follow the statement.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - physical_access
+  - automated_scanning
+  - brute_force
+  scope:
+  - target: Publicly accessible, internet-facing systems and services owned or operated by Arup
+    type: other
+  out_of_scope:
+  - Client systems
+  - Third-party platforms not controlled by Arup
+  - Reports that rely only on automated scanner output
+  response_sla_days: 5
+
 - company: atlan.com
   url: https://atlan.com/responsible-disclosure-program/
   contact: mailto:security@atlan.com
