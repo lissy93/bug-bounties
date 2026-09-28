@@ -3256,6 +3256,37 @@ companies:
     medium: 200
     low: 100
 
+- company: Polestar
+  url: https://www.polestar.com/global/vulnerability-disclosure/
+  contact: mailto:vdp@polestar.com
+  rewards:
+  - '*recognition'
+  program_type: vdp
+  status: active
+  preferred_languages: English
+  description: Polestar's disclosure programme covers every domain and subdomain under polestar.com and all Polestar-branded vehicles, including infotainment, telematics, connected services and the apps and APIs behind them. Infrastructure findings go to vdp@polestar.com and vehicle findings to psirt@polestar.com. Researchers first to find an issue go in a hall of fame. Findings are confidential and can only be published after the fix, with Polestar's written consent and without naming Polestar.
+  excluded_methods:
+  - social_engineering
+  - dos
+  scope:
+  - target: '*.polestar.com'
+    type: web
+  - target: All Polestar-branded vehicles, including infotainment, telematics and connectivity services
+    type: hardware
+  - target: Mobile applications interacting with vehicles
+    type: mobile
+  - target: Backend APIs supporting vehicle services
+    type: api
+  out_of_scope:
+  - Third-party websites on domains registered to Polestar but hosted by a third party
+  - Security issues or best practices that can't be exploited with real impact
+  - Email spoofing
+  - Missing HTTP security headers without a proof of concept exploit
+  - Libraries with known vulnerabilities, without evidence of further exploitation
+  - Insecure SSL/TLS ciphers or weak signature algorithms without a working exploit
+  response_sla_days: 3
+  hall_of_fame_url: https://www.polestar.com/global/vulnerability-disclosure/
+
 - company: Port of Rotterdam
   url: https://www.portofrotterdam.com/en/responsible-disclosure
   contact: https://www.portofrotterdam.com/en/form/standard-contact?nid=1446
