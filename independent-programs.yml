@@ -1130,6 +1130,24 @@ companies:
   description: Cursor accepts potential vulnerabilities by email at security-reports@cursor.com. Reports are acknowledged within 5 business days and addressed as soon as Cursor is able, with critical incidents communicated by email to affected users.
   response_sla_days: 5
 
+- company: CZ
+  url: https://www.cz.nl/over-cz/beveiligingsprobleem-melden
+  contact: mailto:disclosure@cz.nl
+  rewards:
+  - '*recognition'
+  program_type: vdp
+  status: active
+  safe_harbor: full
+  allows_disclosure: true
+  preferred_languages: Dutch, English
+  pgp_key: https://www.cz.nl/over-cz/beveiligingsprobleem-melden
+  description: CZ takes vulnerability reports by email under a responsible disclosure policy based on the Dutch NCSC guidelines, and publishes a PGP key on the same page for encrypting them. The first reply comes within two working days, with an assessment and expected fix date within ten. Reports can be anonymous or under a pseudonym, CZ names the finder when it reports on the issue if they want that, and it won't take legal action against reporters who act in good faith and follow the rules.
+  excluded_methods:
+  - automated_scanning
+  response_sla_days: 2
+  standards:
+  - Dutch NCSC guidelines
+
 - company: Darktrace
   url: https://www.darktrace.com/legal/vulnerability-disclosure-policy
   contact: mailto:vulnerability-disclosure@darktrace.com
