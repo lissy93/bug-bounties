@@ -4790,6 +4790,61 @@ companies:
   - esm.town
   - val.run
 
+- company: Van Lanschot Kempen
+  url: https://www.vanlanschotkempen.com/en-nl/security/responsible-disclosure-policy
+  contact: mailto:responsibledisclosure@vanlanschotkempen.com
+  rewards:
+  - '*bounty'
+  program_type: bounty
+  status: active
+  safe_harbor: partial
+  preferred_languages: Dutch, English
+  description: Van Lanschot Kempen takes vulnerability reports by email for eight listed domains and their subdomains. A team of security experts gives a first response within two working days and asks that the issue stays confidential while it's fixed. Any report that gets resolved or leads to a change in its services qualifies for a reward, paid to the first reporter at the bank's discretion. Reports can be anonymous and must be in Dutch or English, and reports written by AI tools aren't accepted.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - automated_scanning
+  scope:
+  - target: '*.evivanlanschot.nl'
+    type: web
+  - target: '*.merciervanlanschot.be'
+    type: web
+  - target: '*.vanlanschot.be'
+    type: web
+  - target: '*.vanlanschot.com'
+    type: web
+  - target: '*.vanlanschot.nl'
+    type: web
+  - target: '*.vanlanschotkempen.com'
+    type: web
+  - target: '*.vanlanschotkempen.nl'
+    type: web
+  - target: '*.vlkdigital.com'
+    type: web
+  out_of_scope:
+  - Reports without clear evidence of possible exploitation
+  - Reports generated or written by AI tools
+  - SPF, DKIM and DMARC records
+  - Fingerprinting and version banner disclosure
+  - Publicly accessible files with non-sensitive information, such as robots.txt
+  - Browser autocomplete or save password functionality
+  - CSRF on static pages and logout
+  - Brute force against forgot password pages
+  - HTTP to HTTPS redirection, and HTTP OPTIONS enabled
+  - Host header injection
+  - Missing HTTP security headers
+  - Missing or unrecognised HTML charset
+  - Missing Secure or HttpOnly flags on non-sensitive cookies
+  - Clickjacking
+  - User enumeration on sites that don't process online payments
+  - Possibly outdated third-party software without proof it is vulnerable
+  - Unsafe SSL/TLS protocols and other TLS misconfigurations
+  - Generic issues in software or protocols outside Van Lanschot Kempen's control
+  - Distributed denial of service
+  - Spam and social engineering
+  - Port scans and other routine scans
+  response_sla_days: 2
+
 - company: Vanta
   url: https://www.vanta.com/disclosure
   contact: mailto:security@vanta.com
