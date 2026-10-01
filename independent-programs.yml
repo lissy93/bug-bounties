@@ -2245,6 +2245,39 @@ companies:
   - Informational disclosure of non-sensitive data
   - Self-XSS with a user-defined payload
 
+- company: Juicebox
+  url: https://juicebox.ai/responsible-disclosure
+  contact: mailto:security@juicebox.work
+  rewards:
+  - '*bounty'
+  program_type: bounty
+  status: active
+  allows_disclosure: true
+  preferred_languages: English
+  description: Juicebox (PeopleGPT) takes vulnerability reports by email for juicebox.ai and chat.juicebox.work. Rewards depend on severity and impact, and not every report qualifies for payment. Critical issues with a CVSS score of 4 or higher that its team hadn't already found are the most likely to. Testing is limited to your own account, or another account with explicit permission.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - physical_access
+  - automated_scanning
+  scope:
+  - target: juicebox.ai
+    type: web
+  - target: chat.juicebox.work
+    type: web
+  out_of_scope:
+  - Automated scanning tools
+  - Social engineering attacks
+  - Brute force attacks
+  - DDoS attacks
+  - Clickjacking on pages without sensitive actions
+  - Theoretical vulnerabilities without demonstrable exploitability
+  - Attacks requiring physical access to a device
+  - Denial of service attacks
+  domains:
+  - juicebox.ai
+  - chat.juicebox.work
+
 - company: Kahoot!
   url: https://kahoot.com/disclosure-policy.txt
   contact: mailto:security@kahoot.com
