@@ -2906,6 +2906,25 @@ companies:
   standards:
   - Dutch NCSC guidelines
 
+- company: Nordnet
+  url: https://www.nordnet.se/security-disclosure
+  contact: mailto:security@nordnet.se
+  rewards:
+  - '*recognition'
+  program_type: vdp
+  status: active
+  safe_harbor: full
+  allows_disclosure: true
+  preferred_languages: English, Swedish
+  pgp_key: https://keys.openpgp.org/vks/v1/by-fingerprint/BF1F52796C852E645B2F35124D3DBD211E9192F5
+  description: Nordnet takes vulnerability reports by email first, and sets up a secure channel after that if one is needed. It asks for the chance to fix an issue before it's made public, and that the vulnerability isn't used to change or remove data or for material gain. Reporters who act in good faith within those rules won't face legal action. Nordnet confirms receipt, keeps the reporter updated and credits them as the discoverer in anything it publishes about the issue, unless they'd rather not be named.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - physical_access
+  hall_of_fame_url: https://www.nordnet.se/security-disclosure/hall-of-fame
+
 - company: North Sea Port
   url: https://www.northseaport.com/responsible-disclosure
   contact: mailto:security@northseaport.com
