@@ -1429,6 +1429,32 @@ companies:
   response_sla_days: 5
   hall_of_fame_url: https://fintual.com/hall-of-fame.txt
 
+- company: flatexDEGIRO
+  url: https://flatexdegiro.com/English/vulnerability-disclosure/default.aspx
+  contact: mailto:vulnerability@flatexdegiro.com
+  program_type: vdp
+  status: active
+  safe_harbor: full
+  allows_disclosure: true
+  preferred_languages: German, English
+  description: flatexDEGIRO takes vulnerability reports by email for the public systems, apps and services of flatexDEGIRO SE and flatexDEGIRO Bank SE, including the flatex Germany, flatex Austria, DEGIRO and ViTrade brands. Reports are acknowledged within 72 hours, with a first assessment within 7 days and critical issues fixed within 30 days where possible. Severity is scored with CVSS, S/MIME is available for encrypted mail and reports can be anonymous. There's no bug bounty or other reward.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - physical_access
+  scope:
+  - target: flatex Germany
+    type: other
+  - target: flatex Austria
+    type: other
+  - target: DEGIRO
+    type: other
+  - target: ViTrade
+    type: other
+  out_of_scope:
+  - Third-party services, systems and applications not operated by flatexDEGIRO SE or flatexDEGIRO Bank SE
+  response_sla_days: 3
+
 - company: FlixBus
   url: https://global.flixbus.com/responsible-disclosure
   contact: mailto:responsible-disclosure@flixbus.com
