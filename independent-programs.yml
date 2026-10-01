@@ -1455,6 +1455,36 @@ companies:
   - Third-party services, systems and applications not operated by flatexDEGIRO SE or flatexDEGIRO Bank SE
   response_sla_days: 3
 
+- company: Flatpay
+  url: https://flatpay.com/responsible-disclosure
+  contact: mailto:security@flatpay.com
+  program_type: vdp
+  status: active
+  safe_harbor: full
+  preferred_languages: English
+  description: Flatpay takes vulnerability reports by email, covering any Flatpay domain or subdomain that publishes a security.txt file. Good-faith research under the policy counts as authorised and Flatpay won't pursue legal action over it. Reports can be anonymous and are acknowledged within 3 business days, with a PGP key supplied if more detail is needed. There's no paid bug bounty, but reporters of qualifying vulnerabilities are offered a Flatpay reward.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - physical_access
+  scope:
+  - target: Flatpay domains and subdomains that publish a security.txt file
+    type: web
+  out_of_scope:
+  - Services hosted by third-party providers
+  - Physical testing such as office access
+  - Social engineering such as phishing or vishing
+  - Applications or systems not listed as in scope
+  - UI/UX bugs and spelling mistakes
+  - Network-level DoS/DDoS, and other tests that impair access to or damage a system or data
+  - TLS configuration weaknesses
+  - Volumetric vulnerabilities
+  - Non-exploitable findings such as missing security headers or SPF/DMARC configuration
+  domains:
+  - flatpay.com
+  response_sla_days: 3
+
 - company: FlixBus
   url: https://global.flixbus.com/responsible-disclosure
   contact: mailto:responsible-disclosure@flixbus.com
