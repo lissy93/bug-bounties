@@ -393,7 +393,6 @@ companies:
   max_payout: 4000.0
   domains:
   - acorns.com
-  - gohenry.com
   - graphql.acorns.com
   - pixpay.fr
 - company: Acorns LLC
@@ -702,6 +701,16 @@ companies:
   rewards:
   - '*bounty'
   - '*swag'
+- company: AI | Apps+ Marketplace Bug Bounty Program
+  url: https://bugcrowd.com/engagements/apps-plus2
+  contact: https://bugcrowd.com/engagements/apps-plus2
+  rewards:
+  - '*bounty'
+  managed: true
+  safe_harbor: full
+  max_payout: 1500.0
+  domains:
+  - marketplace.atlassian.com
 - company: AIG
   url: https://www.aig.com
   handle: aig
@@ -2949,6 +2958,16 @@ companies:
   rewards:
   - '*bounty'
   - '*recognition'
+- company: Bloompeak's Bug Bounty
+  url: https://bugcrowd.com/engagements/bloompeak
+  contact: https://bugcrowd.com/engagements/bloompeak
+  rewards:
+  - '*bounty'
+  managed: true
+  safe_harbor: full
+  max_payout: 1500.0
+  domains:
+  - marketplace.atlassian.com
 - company: bloomscape.com
   url: https://bloomscape.com/.well-known/security-policy.html
   contact: mailto:security-alerts@bloomscape.com
@@ -4789,9 +4808,17 @@ companies:
   - org.toshi.distribution
 - company: Coindcx
   url: https://yeswehack.com/programs/coindcx-bug-bounty-program#program-description
+  handle: coindcx_vdp
   contact: https://yeswehack.com/programs/coindcx-bug-bounty-program#program-description
   rewards:
   - '*bounty'
+  managed: false
+  domains:
+  - api.coindcx.com
+  - apps.apple.com
+  - bitoasis.net
+  - coindcx.com
+  - play.google.com
 - company: Coindcx - Bug Bounty Program
   url: https://yeswehack.com/programs/coindcx-bug-bounty-program
   handle: coindcx_vdp
@@ -5276,7 +5303,7 @@ companies:
   contact: https://hackerone.com/creditkarma
   rewards:
   - '*bounty'
-  managed: true
+  managed: false
   safe_harbor: partial
   domains:
   - accounts.creditkarma.com
@@ -5319,8 +5346,6 @@ companies:
   - flowsecurity.app
   - humio.com
   - hybrid-analysis.com
-  - onum-labs.com
-  - onum.com
   - play.google.com
   - preempt.com
   - preemptsecurity.com
@@ -5594,7 +5619,7 @@ companies:
   domains:
   - apps.apple.com
   - m.dana.id
-  - mgs.dana.id
+  - mgs-gw.dana.id
   - play.google.com
 - company: Danske Bank
   url: https://danskebank.com/responsible-disclosure
@@ -7399,18 +7424,18 @@ companies:
   - app-eu.workfrontfusion.com
   - app.essity.com
   - apps.apple.com
-  - babybrandcenter.essity.com
   - bodyform.co.uk
   - brand.tena.com
   - brandzone.essity.com
   - ccevaluation.tena.com
   - cinder.app.essity.com
+  - colhogar.com
 - company: Esteé  Lauder
   url: http://elcompanies.com
   handle: estee-lauder
   contact: https://hackerone.com/estee-lauder
   rewards: []
-  managed: true
+  managed: false
   domains:
   - ac.elcompanies.cn
   - acm.elcompanies.cn
@@ -8417,7 +8442,7 @@ companies:
   rewards:
   - '*bounty'
   - '*recognition'
-  managed: false
+  managed: true
   domains:
   - com.yahoo.mobile.client.android.flickr
   - flickr.com
@@ -10733,31 +10758,31 @@ companies:
   - '*bounty'
   managed: false
   domains:
-  - ab-platform-api.eu-east-1.indriverapp.com
+  - ab-api-gw-cf.global.aws.indriverapp.com
+  - ab-api-gw-scf.global.aws.indriverapp.com
   - alternativa.film
+  - api-gw-scf.sa.apse1.aws.indriverapp.com
   - api.ryadom.kz
+  - arsentomsky.indrive.com
+  - ath-cf.euce1.indriverapp.com
+  - ath-gw-cf.euce1.indriverapp.com
+  - ath-gw-scf.euce1.indriverapp.com
   - auroratechaward.com
-  - blog.indrive.com
-  - careers.indrive.com
-  - cargo.indrive.com
-  - cas-cf.euce1.indriverapp.com
-  - couriers.indrive.com
-  - debug.clairvoyance.indrive.tech
-  - delivery-webview.indrive.com
-  - external.indrive.dev
-  - file-storage-front.eu-east-1.indriverapp.com
-  - indrive.com
-  - indriver.com
-  - indriver.io
-  - indriverapp.com
-  - ingest.clairvoyance.indrive.tech
-  - intercity.indrive.com
-  - invisionu.education
-  - job.ryadom.kz
-  - landing.ryadom.kz
-  - media.indrive.com
-  - messenger.eu-east-1.indriverapp.com
-  - movie.indrive.com
+  - av.indrive.com
+  - baf-gw-cf.africa.afso1.aws.indriverapp.com
+  - baf-gw-scf.sa.apse1.aws.indriverapp.com
+  - balance-api-front.eu-east-1.indriverapp.com
+  - balance-api.eu-east-1.indriverapp.com
+  - bc-cf.latam-co.saea1.aws.indriverapp.com
+  - bc-gw-cf.latam-pe.saea1.aws.indriverapp.com
+  - bdu-cf.euce1.indriverapp.com
+  - bdu-gw-cf.euce1.indriverapp.com
+  - bdu-gw-scf.euce1.indriverapp.com
+  - bf-cf.latam-co.saea1.aws.indriverapp.com
+  - bf-gw-cf.latam-pe.saea1.aws.indriverapp.com
+  - bid-cf.africa.afso1.aws.indriverapp.com
+  - bid-gw-cf.africa.afso1.aws.indriverapp.com
+  - bid-gw-scf.sa.apse1.aws.indriverapp.com
 - company: Infinex
   url: https://immunefi.com/bug-bounty/infinex/
   contact: https://immunefi.com/bug-bounty/infinex/
@@ -11171,9 +11196,9 @@ companies:
   - nl.gamma.verf
   - nl.karwei.app.android
   - restintergamma.nl
+  - werkenbij.intergamma.nl
   - werkenbijgamma.be
   - werkenbijgamma.nl
-  - werkenbijkarwei.nl
 - company: Interlay
   url: https://immunefi.com/bug-bounty/interlay/
   contact: https://immunefi.com/bug-bounty/interlay/
@@ -11691,10 +11716,8 @@ companies:
   safe_harbor: full
   max_payout: 2500.0
   domains:
-  - apps.apple.com
   - jora.com
   - jora.xyz
-  - play.google.com
 - company: Joyus
   url: https://joyus.zendesk.com/hc/en-us/articles/115005402923-Responsible-Disclosure-of-Security-Vulnerabilities-
   contact: https://joyus.zendesk.com/hc/en-us/requests/new
@@ -12652,7 +12675,6 @@ companies:
   min_payout: 25.0
   currency: EUR
   domains:
-  - actie.libelle.nl
   - libelle.nl
 - company: Liberapay
   url: https://hackerone.com/liberapay
@@ -13573,7 +13595,7 @@ companies:
   handle: mars
   contact: https://hackerone.com/mars
   rewards: []
-  managed: true
+  managed: false
   domains:
   - banfield.com
   - banfield.us
@@ -13651,6 +13673,38 @@ companies:
   - pioneer.truata.com
   - priceless.com
   - src.mastercard.com
+- company: Mateco VDP
+  url: https://www.intigriti.com/programs/mateco/matecovdp/detail
+  handle: matecovdp
+  contact: https://www.intigriti.com/programs/mateco/matecovdp/detail
+  rewards: []
+  currency: EUR
+  domains:
+  - ad-smartour.qplanning.qone.mateco.eu
+  - admin.mymateco.de
+  - api.qr.qone.mateco.eu
+  - app.service.qone.mateco.eu
+  - apps.qone.mateco.eu
+  - bubblicious.service.qone.mateco.eu
+  - calculator.rental-pricing.qone.mateco.eu
+  - components.rental-pricing.qone.mateco.eu
+  - configurator.service.qone.mateco.eu
+  - datashaper.mateco-tools.qone.mateco.eu
+  - datashaperapi.mateco-tools.qone.mateco.eu
+  - dobby.masq.qone.mateco.eu
+  - doctorb.qone.mateco.eu
+  - dsb.qone.mateco.eu
+  - dynamics.dsa.qone.mateco.eu
+  - event-gateway.qplanning.qone.mateco.eu
+  - fe-maprics.tools.svc.cluster.local
+  - holidays.qone.mateco.eu
+  - labelq.qone.mateco.eu
+  - machine-picture.service.qone.mateco.eu
+  - machine.service.qone.mateco.eu
+  - maprics.myassetplanner.qone.mateco.eu
+  - mateco-used-equipment.com
+  - mateco.uqp.qone.mateco.eu
+  - matecoused.com
 - company: Mathworks
   url: https://www.mathworks.com/company/aboutus/policies_statements/vulnerability-disclosure-policy.html
   contact: mailto:security@mathworks.com
@@ -13829,6 +13883,16 @@ companies:
   rewards:
   - '*recognition'
   safe_harbor: partial
+- company: Meetical
+  url: https://bugcrowd.com/engagements/meetical
+  contact: https://bugcrowd.com/engagements/meetical
+  rewards:
+  - '*bounty'
+  managed: true
+  safe_harbor: full
+  max_payout: 1500.0
+  domains:
+  - marketplace.atlassian.com
 - company: Mega.co.nz
   url: https://mega.co.nz/#blog_6
   contact: mailto:bugs@mega.co.nz
@@ -14397,6 +14461,7 @@ companies:
   safe_harbor: partial
   domains:
   - mongodb.com
+  - voyageai.com
 - company: Monolith
   url: https://hackerone.com/monolith
   contact: https://hackerone.com/monolith
@@ -15640,6 +15705,14 @@ companies:
   url: https://www.nxp.com/support/support/report-product-security-vulnerabilities:PSIRT
   contact: mailto:psirt@nxp.com
   rewards: []
+- company: NxtPort VDP
+  url: https://www.intigriti.com/programs/portofantwerp/nxtportvdp/detail
+  handle: nxtportvdp
+  contact: https://www.intigriti.com/programs/portofantwerp/nxtportvdp/detail
+  rewards: []
+  currency: EUR
+  domains:
+  - nxtport.com
 - company: Nykaa
   url: https://www.nykaa.com/responsible-disclosure
   contact: mailto:it-security@nykaa.com
@@ -15888,6 +15961,15 @@ companies:
   rewards:
   - '*bounty'
   max_payout: 3333333.0
+- company: Omarchy
+  url: http://omarchy.org
+  handle: omarchy
+  contact: https://hackerone.com/omarchy
+  rewards:
+  - '*bounty'
+  managed: false
+  domains:
+  - github.com
 - company: Omise
   url: https://hackerone.com/omise
   contact: https://hackerone.com/omise
@@ -17166,6 +17248,7 @@ companies:
   - business.phonepe.com
   - developer.indusappstore.com
   - indusappstore.com
+  - phonepe.com
   - play.google.com
   - share.market
   - support.phonepe.com
@@ -19098,7 +19181,6 @@ companies:
   domains:
   - basecamp.rivian.com
   - business.rivian.com
-  - com.rivian.android.consumer
   - rivian.com
 - company: RMIT University Vulnerability Disclosure Program
   url: https://bugcrowd.com/rmit-university-vdp-pro
@@ -21507,7 +21589,6 @@ companies:
   - '*bounty'
   managed: true
   domains:
-  - alfred-uat-31.nonprod.syfe.com
   - alfred.syfe.com
   - api-uat-bugbounty.nonprod.syfe.com
   - api.syfe.com
@@ -21895,6 +21976,7 @@ companies:
   domains:
   - ads.temu.com
   - com.einnovation.temu
+  - partner.temu.com
   - seller.temu.com
   - temu.com
 - company: Tenable
@@ -24199,6 +24281,18 @@ companies:
   contact: https://www.intigriti.com/programs/vinted/vinted-bugbountyprogram/detail
   rewards:
   - '*bounty'
+- company: Vinted Bug Bounty
+  url: https://bugcrowd.com/engagements/vinted-uab-mbb
+  contact: https://bugcrowd.com/engagements/vinted-uab-mbb
+  rewards:
+  - '*bounty'
+  managed: true
+  safe_harbor: full
+  max_payout: 4000.0
+  domains:
+  - vinted.com
+  - vinted.net
+  - vintedgo.com
 - company: Vipps AS
   url: https://www.vipps.no/sikkerhet/responsible-disclosure-policy/
   contact: mailto:responsible-disclosure@vipps.no
@@ -24555,6 +24649,22 @@ companies:
   rewards:
   - '*bounty'
   safe_harbor: full
+- company: Walt.io
+  url: https://walt.io/
+  handle: walt_io
+  contact: https://hackerone.com/walt_io
+  rewards:
+  - '*bounty'
+  managed: true
+  domains:
+  - p2p.walletbot.me
+  - pay.wallet.tg
+  - t.me
+  - wallet.tg
+  - walletbot.me
+  - wallettg.com
+  - wallettg.net
+  - walt.io
 - company: Wamba
   url: https://corp.wamba.com/en/developer/security/#form
   contact: https://corp.wamba.com/en/developer/security/#form
