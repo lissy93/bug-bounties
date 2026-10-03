@@ -4737,6 +4737,14 @@ companies:
   - https://insights.tribepad.com
   response_sla_days: 2
 
+- company: TrueProxies
+  url: https://trueproxies.com/security/
+  contact: mailto:hello@trueproxies.com
+  program_type: vdp
+  status: active
+  domains:
+  - trueproxies.com
+
 - company: Tuturuuu
   url: https://tuturuuu.com/security
   contact: mailto:security@tuturuuu.com
