@@ -53,6 +53,7 @@
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Agilis LT Bug Bounty](https://bugcrowd.com/engagements/agilislt) 💰
 - <img src='https://icon.horse/icon/www.agoda.com' width='16'/> [Agoda Public](https://www.agoda.com/) 💰
 - <img src='https://icon.horse/icon/www.aholddelhaize.com' width='16'/> [Ahold Delhaize](https://www.aholddelhaize.com/en/security/) 💰 🎁
+- <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [AI | Apps+ Marketplace Bug Bounty Progra...](https://bugcrowd.com/engagements/apps-plus2) 💰
 - <img src='https://icon.horse/icon/www.intigriti.com' width='16'/> [Aikido Security: Bug Bounty Program](https://www.intigriti.com/programs/aikido/aikido/detail) 💰
 - <img src='https://icon.horse/icon/www.intigriti.com' width='16'/> [Aikido Security: Zen by Aikido](https://www.intigriti.com/programs/aikido/aikidoruntime/detail) 💰
 - <img src='https://icon.horse/icon/aion.network' width='16'/> [Aion](https://aion.network/terms-bounty/) 💰
@@ -246,6 +247,7 @@
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [BlockPI Network](https://immunefi.com/bug-bounty/blockpinetwork/) 💰
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Blofin Crypto Managed Bug Bounty Engagem...](https://bugcrowd.com/engagements/blofin-crypto-mbb-og) 💰
 - <img src='https://icon.horse/icon/www.google.com' width='16'/> [Blogger](https://www.google.com/about/appsecurity/reward-program/) 💰 🏅
+- <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Bloompeak's Bug Bounty](https://bugcrowd.com/engagements/bloompeak) 💰
 - <img src='https://icon.horse/icon/bluecanvas.io' width='16'/> [Blue Canvas](https://bluecanvas.io/report-vulnerability) 🏅
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Blue Jeans Network](https://bugcrowd.com/bluejeans) 💰
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Bluehost](https://bugcrowd.com/endurance-bluehost) 🏅
@@ -1103,6 +1105,7 @@
 - <img src='https://icon.horse/icon/help.medium.com' width='16'/> [Medium](https://help.medium.com/hc/en-us/articles/213481308-Bug-Bounty-Disclosure-Program) 💰 🏅
 - <img src='https://icon.horse/icon/meesho.com' width='16'/> [Meesho](https://meesho.com) 💰
 - <img src='https://icon.horse/icon/meetfabric.com' width='16'/> [Meet Fabric](https://meetfabric.com/legal/security-policy) 🏅
+- <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Meetical](https://bugcrowd.com/engagements/meetical) 💰
 - <img src='https://icon.horse/icon/mega.co.nz' width='16'/> [Mega.co.nz](https://mega.co.nz/#blog_6) 💰
 - <img src='https://icon.horse/icon/security.meituan.com' width='16'/> [Meituan](https://security.meituan.com/) 💰
 - <img src='https://icon.horse/icon/yeswehack.com' width='16'/> [Memento - Public Bug Bounty Program](https://yeswehack.com/programs/memento-bug-bounty-program) 💰
@@ -1254,6 +1257,7 @@
 - <img src='https://icon.horse/icon/www.olark.com' width='16'/> [Olark](https://www.olark.com/customer/portal/articles/1237352) 💰 🏅 🎁
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [Olx](https://hackerone.com/olx) 🏅
 - <img src='https://icon.horse/icon/medical.olympusamerica.com' width='16'/> [Olympus](https://medical.olympusamerica.com/customer-resources/product-security) 💰
+- <img src='https://icon.horse/icon/omarchy.org' width='16'/> [Omarchy](http://omarchy.org) 💰
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [Omise](https://hackerone.com/omise) 💰 🏅
 - <img src='https://icon.horse/icon/www.omnisend.com' width='16'/> [Omnisend](https://www.omnisend.com/bug-bounty/) 💰
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Omron](https://immunefi.com/bug-bounty/omron/) 💰
@@ -1945,6 +1949,7 @@
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [Vimeo](https://hackerone.com/vimeo) 💰 🏅
 - <img src='https://icon.horse/icon/yeswehack.com' width='16'/> [VINCI SA - Public program](https://yeswehack.com/programs/vincisa-public-program) 💰
 - <img src='https://icon.horse/icon/www.intigriti.com' width='16'/> [Vinted - Bug Bounty Program](https://www.intigriti.com/programs/vinted/vinted-bugbountyprogram/detail) 💰
+- <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Vinted Bug Bounty](https://bugcrowd.com/engagements/vinted-uab-mbb) 💰
 - <img src='https://icon.horse/icon/www.virtru.com' width='16'/> [Virtru](https://www.virtru.com/responsible-disclosure/) 🏅
 - <img src='https://icon.horse/icon/www.visma.com' width='16'/> [Visma](https://www.visma.com/trust-centre/smb/security-and-privacy/operational/responsible-disclosure/) 💰 🏅
 - <img src='https://icon.horse/icon/app.intigriti.com' width='16'/> [Visma Public](https://app.intigriti.com/researcher/programs/visma/visma/detail) 💰
@@ -1977,6 +1982,7 @@
 - <img src='https://icon.horse/icon/wallet.tg' width='16'/> [Wallet on Telegram](https://wallet.tg/) 💰
 - <img src='https://icon.horse/icon/walletconnect.com' width='16'/> [WalletConnect](https://walletconnect.com/.well-known/security.txt) 💰
 - <img src='https://icon.horse/icon/corporate.walmart.com' width='16'/> [Walmart](https://corporate.walmart.com/privacy-security) 💰
+- <img src='https://icon.horse/icon/walt.io' width='16'/> [Walt.io](https://walt.io/) 💰
 - <img src='https://icon.horse/icon/corp.wamba.com' width='16'/> [Wamba](https://corp.wamba.com/en/developer/security/#form) 💰
 - <img src='https://icon.horse/icon/www.intigriti.com' width='16'/> [Water-Link](https://www.intigriti.com/programs/waterlink/water-link/detail) 💰
 - <img src='https://icon.horse/icon/www.intigriti.com' width='16'/> [Watsons](https://www.intigriti.com/programs/aswatson/watsons/detail) 💰
