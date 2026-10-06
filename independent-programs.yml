@@ -1393,6 +1393,15 @@ companies:
   response_sla_days: 3
   reporting_url: https://vdp.employmenthero.com
 
+- company: Epic Systems
+  url: https://www.epic.com/epic/page/reporting-potential-security-vulnerability/
+  contact: mailto:securitycontact@epic.com
+  program_type: vdp
+  status: active
+  preferred_languages: English
+  pgp_key: https://www.epic.com/.well-known/pgpkey.txt
+  description: Epic Systems takes vulnerability reports from security researchers, penetration testing companies and anyone else by email or phone, and publishes a PGP key for sending the details securely. Epic community members are asked to report through their Epic technical services representative, and patients to the healthcare organization where they receive care. Epic says it does not offer compensation for reporting vulnerabilities.
+
 - company: Fintual
   url: https://fintual.com/security-policy.txt
   contact: mailto:security@fintual.com
