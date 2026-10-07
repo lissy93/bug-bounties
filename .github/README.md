@@ -1448,6 +1448,7 @@
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Q Blockchain](https://immunefi.com/bug-bounty/qblockchain/) 💰
 - <img src='https://icon.horse/icon/www.qiwi.ru' width='16'/> [Qiwi](https://www.qiwi.ru/page/hack.action) 💰
 - <img src='https://icon.horse/icon/cr.yp.to' width='16'/> [Qmail](https://cr.yp.to/qmail/guarantee.html) 💰
+- <img src='https://icon.horse/icon/www.qnap.com' width='16'/> [QNAP](https://www.qnap.com/en/security-bounty-program) 💰 🏅
 - <img src='https://icon.horse/icon/qtrade.io' width='16'/> [Qtrade](https://qtrade.io/bug_bounty) 💰
 - <img src='https://icon.horse/icon/www.qualcomm.com' width='16'/> [Qualcomm](https://www.qualcomm.com/connect/contact/security/product-security) 💰 🏅
 - <img src='https://icon.horse/icon/support.quadency.com' width='16'/> [Quandency](https://support.quadency.com/en/articles/2869964-bug-bounty-program) 💰
