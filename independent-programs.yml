@@ -3730,6 +3730,69 @@ companies:
   status: active
   description: Pulumi asks security researchers to email reports of vulnerabilities in its platform or services to its security address, including a description of the vulnerability, the impacted software or service and its version, and proof-of-concept code or detailed steps to reproduce. Reports can be encrypted with the PGP key published on the same page. Public security notifications are posted in the Pulumi Community Slack.
 
+- company: QNAP
+  url: https://www.qnap.com/en/security-bounty-program
+  contact: mailto:security@qnap.com
+  rewards:
+  - '*bounty'
+  - '*recognition'
+  program_type: bounty
+  status: active
+  safe_harbor: partial
+  preferred_languages: English, Traditional Chinese
+  pgp_key: https://www.qnap.com/.well-known/pgp-key.txt
+  description: QNAP pays bounties of up to US$20,000 for vulnerabilities in its QTS, QuTS hero and QuTScloud operating systems, up to US$10,000 in its official applications, and up to US$5,000 in six named cloud service domains. Reports go to QNAP PSIRT by PGP-encrypted email, and OS and app findings must be verified on a real QNAP device. Third-party apps, open-source components and betas are out of scope, and low-severity findings with no demonstrable harm get a public acknowledgment instead of a bounty.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - physical_access
+  scope:
+  - target: QTS 5.2.0 and later
+    type: other
+  - target: QuTS hero h5.2.0 and later
+    type: other
+  - target: QuTScloud c5.1.0 and later
+    type: other
+  - target: Official QNAP applications
+    type: other
+  - target: www.myqnapcloud.com
+    type: web
+  - target: organization.qnap.com
+    type: web
+  - target: amizcloud.qnap.com
+    type: web
+  - target: license.qnap.com
+    type: web
+  - target: account.qnap.com
+    type: web
+  - target: quwan.qnap.com
+    type: web
+  out_of_scope:
+  - Beta versions
+  - Applications maintained by third parties
+  - Applications from third-party app repositories
+  - Vulnerabilities introduced by third-party libraries
+  - Vulnerabilities in open-source software
+  - End-of-life applications
+  - Low-severity issues in end-of-life products
+  - User-registered myqnapcloud.com subdomains
+  - Issues that only affect outdated browsers
+  - Most brute-force attacks
+  - Scan reports without a demonstrated impact
+  - Theoretical issues without actual execution results
+  domains:
+  - www.myqnapcloud.com
+  - organization.qnap.com
+  - amizcloud.qnap.com
+  - license.qnap.com
+  - account.qnap.com
+  - quwan.qnap.com
+  max_payout: 20000
+  currency: USD
+  legal_terms_url: https://www.qnap.com/go/legal/qnap-security-bounty-program-terms-and-conditions
+  hall_of_fame_url: https://www.qnap.com/en/security-bounty-program#acknowledgement
+
 - company: Ravelin
   url: https://ravelin.com/responsible-disclosure-policy
   contact: mailto:vulnerability.disclosure@ravelin.com
