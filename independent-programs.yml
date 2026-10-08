@@ -4556,6 +4556,25 @@ companies:
     medium: 300
     low: 21
 
+- company: STRATO
+  url: https://www.strato.de/sicherheit/#content-area-5
+  contact: mailto:security@strato.de
+  program_type: vdp
+  status: active
+  safe_harbor: partial
+  preferred_languages: English
+  pgp_key: https://keys.openpgp.org/search?q=security%40strato.de
+  description: The German web host runs a responsible disclosure process on its own site, with no bug bounty. Anything affecting the confidentiality, integrity or availability of STRATO products and services, and so customer data, is in scope. Reports go to security@strato.de, optionally GPG-encrypted, and get a case ID, usually within one working day. STRATO won't seek prosecution of anyone reporting in good faith under the policy. DoS, TLS configuration details and best-practice reports are out of scope.
+  excluded_methods:
+  - dos
+  scope:
+  - target: STRATO products and services
+    type: other
+  out_of_scope:
+  - TLS configuration specifics, such as no TLSv1.3 support or a particular cipher suite
+  - Reports that a service does not fully follow best practice, such as missing security headers or suboptimal SPF and DMARC settings
+  response_sla_days: 1
+
 - company: superside.com
   url: https://www.superside.com/bug-bounty-program-policy
   rewards:
