@@ -84,6 +84,7 @@
 - <img src='https://icon.horse/icon/www.aliter.com' width='16'/> [Aliter Technologies](https://www.aliter.com/vulnerability-disclosure-policy/) 🏅
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [Allegro](https://hackerone.com/allegro) 💰
 - <img src='https://icon.horse/icon/www.alliander.com' width='16'/> [Alliander](https://www.alliander.com/en/coordinated-vulnerability-disclosure) 🎁
+- <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Almarise Marketplace Managed Bug Bounty ...](https://bugcrowd.com/engagements/almarise-market) 💰
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Alpen Labs](https://immunefi.com/bug-bounty/alpen-labs/) 💰
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Alpha Venture DAO](https://immunefi.com/bug-bounty/AlphaVentureDAO/) 💰
 - <img src='https://icon.horse/icon/alscotoday.com' width='16'/> [ALSCO](https://alscotoday.com/go/bug) 💰 🏅 🎁
@@ -169,6 +170,7 @@
 - <img src='https://icon.horse/icon/www.avalara.com' width='16'/> [Avalara](https://www.avalara.com/us/en/legal/responsible-disclosure.html) 🏅
 - <img src='https://icon.horse/icon/www.avast.com' width='16'/> [Avast!](https://www.avast.com/bug-bounty) 💰
 - <img src='https://icon.horse/icon/www.avira.com' width='16'/> [Avira](https://www.avira.com/en/support-vulnerability) 💰 🏅
+- <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Avisi Marketplace Bug Bounty Program](https://bugcrowd.com/engagements/avisi) 💰
 - <img src='https://icon.horse/icon/www.avrotros.nl' width='16'/> [AVROTROS](https://www.avrotros.nl/privacy/responsible-disclosure/) 🎁
 - <img src='https://icon.horse/icon/www.intigriti.com' width='16'/> [Axel Springer National Media & Tech](https://www.intigriti.com/programs/axelspringerse/nmt/detail) 💰
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Axelar Network](https://immunefi.com/bug-bounty/axelarnetwork/) 💰
@@ -442,6 +444,7 @@
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [Curve](https://hackerone.com/curve) 💰
 - <img src='https://icon.horse/icon/custellence.com' width='16'/> [Custellence](https://custellence.com/responsible-disclosure.html) 💰
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [Cuvva](https://hackerone.com/cuvva) 🏅
+- <img src='https://icon.horse/icon/www.cvent.com' width='16'/> [Cvent](https://www.cvent.com/en/event-management-software/vulnerability-disclosure-program) 💰
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [CyberGhost](https://bugcrowd.com/cyberghost) 💰
 - <img src='https://icon.horse/icon/yeswehack.com' width='16'/> [CyberGhost - Bug Bounty Program](https://yeswehack.com/programs/cyberghost-bug-bounty-program) 💰
 - <img src='https://icon.horse/icon/yeswehack.com' width='16'/> [Cybermalveillance.gouv.fr  - sensibiliza...](https://yeswehack.com/programs/cybermalveillance-gouv-fr-sensibilization-prevention-and-support-in-terms-of-cybersecurity) 💰
@@ -475,6 +478,7 @@
 - <img src='https://icon.horse/icon/www.intigriti.com' width='16'/> [De Volkskrant](https://www.intigriti.com/programs/dpgm/devolkskrant/detail) 💰
 - <img src='https://icon.horse/icon/debricked.com' width='16'/> [Debricked](https://debricked.com/report-a-vulnerability/) 💰 🏅
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [deBridge](https://immunefi.com/bug-bounty/debridge/) 💰
+- <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Decadis AG](https://bugcrowd.com/engagements/decadisag) 💰
 - <img src='https://icon.horse/icon/yeswehack.com' width='16'/> [DECATHLON](https://yeswehack.com/programs/decathlon) 💰
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Decentraland](https://immunefi.com/bug-bounty/decentraland/) 💰
 - <img src='https://icon.horse/icon/bounty.decred.org' width='16'/> [Decred](https://bounty.decred.org/) 💰 🏅
@@ -614,6 +618,7 @@
 - <img src='https://icon.horse/icon/www.eventbrite.com' width='16'/> [Eventbrite](https://www.eventbrite.com/security/) 🏅
 - <img src='https://icon.horse/icon/evernote.com' width='16'/> [Evernote](https://evernote.com/security/report-issue) 💰 🏅
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Exactly](https://immunefi.com/bug-bounty/exactly/) 💰
+- <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Excentia Bug Bounty](https://bugcrowd.com/engagements/excentia) 💰
 - <img src='https://icon.horse/icon/www.exness.com' width='16'/> [Exness](https://www.exness.com) 💰 🎁
 - <img src='https://icon.horse/icon/www.exodus.com' width='16'/> [Exodus](https://www.exodus.com) 💰
 - <img src='https://icon.horse/icon/www.intigriti.com' width='16'/> [Exoscale Bug Bounty](https://www.intigriti.com/programs/exoscale/excoscalebugbounty/detail) 💰
