@@ -132,7 +132,7 @@ companies:
   contact: https://hackerone.com/3cx
   rewards:
   - '*bounty'
-  managed: true
+  managed: false
   domains:
   - activate.3cx.com
   - apps.apple.com
@@ -571,6 +571,38 @@ companies:
   url: https://www.adp.com/about-adp/data-security.aspx
   contact: mailto:vulnerabilityreporting@ADP.com
   rewards: []
+- company: Aegean Airlines Vulnerability Disclosure
+  url: http://aegeanair.com
+  handle: aegean_airlines_vdp
+  contact: https://hackerone.com/aegean_airlines_vdp
+  rewards: []
+  managed: true
+  domains:
+  - a3cmgcmpoint2.aegeanair.com
+  - active.aegeanair.com
+  - admin.olympicair.com
+  - aegappsrv.aegeanair.com
+  - aegeanair.com
+  - agent.travelpackages.aegeanair.com
+  - agents.aegeanair.com
+  - airportmaps.aegeanair.com
+  - alphabankbonusconversionuat.aegeanair.com
+  - alphabankbonusconversionws.aegeanair.com
+  - alphabankbonusredemption.aegeanair.com
+  - alphabankbonusredemptionel.aegeanair.com
+  - alphabankbonusredemptioneluat.aegeanair.com
+  - alphabankbonusredemptionen.aegeanair.com
+  - alphabankbonusredemptionenuat.aegeanair.com
+  - alphabankbonusredemptionuat.aegeanair.com
+  - alphabankonlinebonusconversionel.aegeanair.com
+  - alphabankonlinebonusconversioneluat.aegeanair.com
+  - alphabankonlinebonusconversionen.aegeanair.com
+  - alphabankonlinebonusconversionenuat.aegeanair.com
+  - api-des.aegeanair.com
+  - api-des.olympicair.com
+  - api.aegeanair.com
+  - apiuat.aegeanair.com
+  - aqda3.aegeanair.com
 - company: Aelbox Marketplace Bug Bounty
   url: https://bugcrowd.com/engagements/aelbox
   contact: https://bugcrowd.com/engagements/aelbox
@@ -1063,6 +1095,16 @@ companies:
   url: https://hackerone.com/allegro?view_policy=true
   contact: https://hackerone.com/allegro/reports/new
   rewards: []
+- company: Almarise Marketplace Managed Bug Bounty Engagement
+  url: https://bugcrowd.com/engagements/almarise-market
+  contact: https://bugcrowd.com/engagements/almarise-market
+  rewards:
+  - '*bounty'
+  managed: true
+  safe_harbor: partial
+  max_payout: 1500.0
+  domains:
+  - marketplace.atlassian.com
 - company: Alohi
   url: https://www.alohi.com
   handle: alohi
@@ -1997,6 +2039,7 @@ companies:
   - play.fga.dev
   - samltool.io
   - webauthn.me
+  - webtask.run
 - company: Authress
   url: https://authress.io/app/#/disclosure
   contact: https://authress.io/app/#/disclosure
@@ -2143,6 +2186,16 @@ companies:
   rewards:
   - '*bounty'
   - '*recognition'
+- company: Avisi Marketplace Bug Bounty Program
+  url: https://bugcrowd.com/engagements/avisi
+  contact: https://bugcrowd.com/engagements/avisi
+  rewards:
+  - '*bounty'
+  managed: true
+  safe_harbor: full
+  max_payout: 1500.0
+  domains:
+  - marketplace.atlassian.com
 - company: Avito
   url: https://hackerone.com/avito
   contact: ''
@@ -2182,7 +2235,6 @@ companies:
   - digital.welt.de
   - editorial.one
   - ein-herz-fuer-kinder.de
-  - emarketer.com
   - epaper.welt.de
   - fitbook.de
   - germany.politico.eu
@@ -2192,6 +2244,7 @@ companies:
   - meinkonto.bild.de
   - myhomebook.de
   - newsos.com
+  - petbook-magazine.com
 - company: Axel Springer SE Vulnerability Disclosure Program
   url: https://www.intigriti.com/programs/axelspringerse/axelspringersevulnerabilitydisclosureprogram/detail
   handle: axelspringersevulnerabilitydisclosureprogram
@@ -5468,7 +5521,17 @@ companies:
 - company: Cvent
   url: https://www.cvent.com/en/event-management-software/vulnerability-disclosure-program
   contact: https://www.cvent.com/en/event-management-software/report-security-vulnerability
-  rewards: []
+  rewards:
+  - '*bounty'
+  managed: true
+  max_payout: 3000.0
+  domains:
+  - app.cvent.com
+  - apps.apple.com
+  - cvent.com
+  - events.app.cvent.com
+  - play.google.com
+  - web.cvent.com
 - company: CVS Health VDP
   url: https://www.cvshealth.com/vulnerability-disclosure-program
   contact: https://www.cvshealth.com/vulnerability-disclosure-program
@@ -5786,6 +5849,15 @@ companies:
   rewards:
   - '*bounty'
   max_payout: 200000.0
+- company: Decadis AG
+  url: https://bugcrowd.com/engagements/decadisag
+  contact: https://bugcrowd.com/engagements/decadisag
+  rewards:
+  - '*bounty'
+  managed: true
+  max_payout: 1500.0
+  domains:
+  - marketplace.atlassian.com
 - company: DECATHLON
   url: https://yeswehack.com/programs/decathlon
   contact: https://yeswehack.com/programs/decathlon
@@ -7216,6 +7288,7 @@ companies:
   - com.enjin.mobile.wallet
   - enjinusercontent.com
   - nft.io
+  - platform.enjin.io
 - company: enjin.io
   url: https://enj.in/security
   contact: https://enj.in/security
@@ -7621,7 +7694,10 @@ companies:
   - bookdiscoveresalive.esa.int
   - brand.esa.int
   - careers.esa.int
+  - chs.cosmos.esa.int
   - comms-exhibitionmodels.esa.int
+  - cosmos.esa.int
+  - datalabs.esa.int
   - discover-acc.esa.int
   - discover.esa.int
   - dlmultimedia.esa.int
@@ -7634,9 +7710,6 @@ companies:
   - esa.int
   - esamultimedia.esa.int
   - esastar-ecm.sso.esa.int
-  - esastar-emr.sso.esa.int
-  - esastar-esamatch-ext.sso.esa.int
-  - esastar-publication-ext.sso.esa.int
 - company: Event Espresso
   url: https://eventespresso.com/report-a-security-vulnerability/
   contact: https://eventespresso.com/report-a-security-vulnerability/
@@ -7694,6 +7767,16 @@ companies:
   rewards:
   - '*bounty'
   max_payout: 50000.0
+- company: Excentia Bug Bounty
+  url: https://bugcrowd.com/engagements/excentia
+  contact: https://bugcrowd.com/engagements/excentia
+  rewards:
+  - '*bounty'
+  managed: true
+  safe_harbor: full
+  max_payout: 1500.0
+  domains:
+  - marketplace.atlassian.com
 - company: Exness
   url: https://www.exness.com
   handle: exness
@@ -8295,6 +8378,32 @@ companies:
   contact: https://hackerone.com/finnair_vdp
   rewards: []
   managed: true
+  domains:
+  - -dev.finnair.com
+  - -preprod.finnair.com
+  - api-dev.finnair.com
+  - api-preprod.finnair.com
+  - api.finnair.com
+  - aurinkomatkat.fi
+  - auth.finnair.com
+  - cargo.finnair.com
+  - cloud.finnair.com
+  - cms.finnair.com
+  - com.finnair
+  - customercare.finnair.com
+  - dev.app.finnair.com
+  - easy.finnair.com
+  - fast.finnair.com
+  - finnair.com
+  - finnairflightacademy.com
+  - finnairshop.com
+  - partners.finnair.fi
+  - pay.finnair.com
+  - paywithpoints.finnair.com
+  - preauth.finnair.com
+  - preprod.app.finnair.com
+  - privacy.finnair.com
+  - prod.app.finnair.com
 - company: finnie.org
   url: https://www.finnie.org/vuln/
   contact: mailto:ryan@finnie.org
@@ -8370,6 +8479,7 @@ companies:
   - 1889.onlinebank.com
   - 1889.originate.fiservapps.com
   - 1edcu-admin.originate.fiservapps.com
+  - 1edcu-dc.cert.fec-dc.fiservapps.com
   - 1edcu-dn.financial-net.com
   - 1edcu.originate.fiservapps.com
   - 1firstbank-admin.originate.fiservapps.com
@@ -8385,7 +8495,6 @@ companies:
   - 1stchoicecu-dc.cert.fec-dc.fiservapps.com
   - 1stchoicecu-dn.financial-net.com
   - 1stcooperative-dc.cert.fec-dc.fiservapps.com
-  - 1stcooperative-dn.financial-net.com
 - company: Fitbit
   url: https://bugcrowd.com/fitbit
   contact: https://bugcrowd.com/fitbit/report
@@ -9893,15 +10002,22 @@ companies:
   domains:
   - account.api.here.com
   - account.here.com
-  - com.here.app.maps
+  - data.api.platform.here.com
   - here.com
   - hereapi.com
-  - jaguar.here.com
-  - landrover.here.com
+  - listing.here.com
+  - mapcreator.here.com
+  - metrics.platform.here.com
   - mobilitygraph.hereapi.com
+  - platform.here.com
+  - registry.service.api.platform.here.com
   - router.hereapi.com
   - scbe.api.here.com
+  - search.hereapi.com
   - subp-router.hereapi.com
+  - transit.hereapi.com
+  - vector.hereapi.com
+  - xyz.api.here.com
 - company: Hermes Parcelnet
   url: https://www.myhermes.co.uk/responsible-disclosure-policy
   contact: mailto:infosec@hermes-europe.co.uk
@@ -10374,7 +10490,6 @@ companies:
   - blueskytours.globalbookingsolutions.com
   - book.applevacations.com
   - book.beachbound.com
-  - book.booktandl.com
   - book.cheapcaribbean.com
   - booking.applevacations.com
   - booking.beachbound.com
@@ -10392,6 +10507,7 @@ companies:
   - mobileapp.hyatt.com
   - new.www.vaxvacationaccess.com
   - newsroom.images.hyatt.com
+  - plannerrequest.hyatt.com
 - company: Hydration
   url: https://immunefi.com/bug-bounty/hydration/
   contact: https://immunefi.com/bug-bounty/hydration/
@@ -10716,7 +10832,7 @@ companies:
   - '*bounty'
   - '*recognition'
   managed: true
-  safe_harbor: full
+  safe_harbor: partial
   max_payout: 10000.0
   domains:
   - apis.indeed.com
@@ -11409,7 +11525,7 @@ companies:
   - '*bounty'
   - '*recognition'
   managed: true
-  safe_harbor: full
+  safe_harbor: partial
   max_payout: 4500.0
   domains:
   - answers.irobot.com
@@ -13566,7 +13682,6 @@ companies:
   managed: true
   domains:
   - activities.marriott.com
-  - all-inclusive.marriott.com
   - apcgateway.marriott.com
   - apigatewayc.marriott.com
   - apigwc.marriott.com
@@ -13590,12 +13705,13 @@ companies:
   - efast.marriott.com
   - eidhelp.marriott.com
   - esupplier.marriott.com
+  - gateway-apc.marriott.com
 - company: Mars
   url: http://mars.com
   handle: mars
   contact: https://hackerone.com/mars
   rewards: []
-  managed: false
+  managed: true
   domains:
   - banfield.com
   - banfield.us
@@ -15901,7 +16017,7 @@ companies:
   - '*bounty'
   - '*recognition'
   managed: true
-  safe_harbor: full
+  safe_harbor: partial
   max_payout: 75000.0
   domains:
   - app.scaleft.com
@@ -19498,7 +19614,6 @@ companies:
   rewards: []
   currency: EUR
   domains:
-  - baeder-suite.de
   - cognitec-systems.de
   - cognitec.com
   - danalock.com
@@ -19506,7 +19621,6 @@ companies:
   - danalock.eu
   - danalockapps.com
   - danalockservices.com
-  - dejoris.de
   - enviso.io
   - enviso.shop
   - gantner.be
@@ -19523,6 +19637,8 @@ companies:
   - recreatex.be
   - salto-orion.app
   - saltoapis.com
+  - saltohomesolution.com
+  - saltoks.com
 - company: Samsara
   url: https://www.samsara.com/security
   contact: https://www.samsara.com/security
@@ -19799,7 +19915,7 @@ companies:
   - '*bounty'
   - '*recognition'
   managed: true
-  safe_harbor: full
+  safe_harbor: partial
   max_payout: 10000.0
   domains:
   - aips-internal.com
@@ -20926,7 +21042,7 @@ companies:
   - '*bounty'
   - '*recognition'
   managed: true
-  safe_harbor: full
+  safe_harbor: partial
   max_payout: 18000.0
   domains:
   - square.com
@@ -21363,6 +21479,17 @@ companies:
   handle: supabase
   contact: mailto:security@supabase.io
   rewards: []
+  managed: false
+  domains:
+  - api.supabase.com
+  - database.dev
+  - github.com
+  - mcp.supabase.com
+  - multiplayer.dev
+  - supabase.com
+  - supabase.help
+  - supabase.link
+  - supabase.store
 - company: Superbank - Public Bug Bounty Program
   url: https://yeswehack.com/programs/superbank-public-bug-bounty-program
   contact: https://yeswehack.com/programs/superbank-public-bug-bounty-program
@@ -21558,7 +21685,7 @@ companies:
   contact: https://yeswehack.com/programs/swiss-post
   rewards:
   - '*bounty'
-  max_payout: 10000.0
+  max_payout: 5000.0
   domains:
   - account.post.ch
   - apps.apple.com
@@ -21764,7 +21891,9 @@ companies:
   managed: true
   domains:
   - 1040.com
+  - drakesoftware.com
   - securefilepro.com
+  - taxact.com
   - taxwell.com
   - taxwell.org
 - company: TCL Security Response Center
@@ -22977,14 +23106,17 @@ companies:
   min_payout: 75.0
   currency: EUR
   domains:
-  - onboarding-api.truelayer.com
-  - sftp.reports.truelayer.com
-  - shop-pay-app-api.truelayer.com
-  - shopify-admin.truelayer.com
-  - truelayer.cloud
+  - checkout-playground.zimpler.com
+  - devdocs.zimpler.com
+  - identify.zimpler.com
+  - okta-oauth2.zimpler.com
+  - sandbox.zimpler.net
+  - staging.zimpler.net
+  - swish-playground.zimpler.com
+  - truelayer-sandbox.com
   - truelayer.com
-  - truelayer.io
-  - users-api.truelayer.com
+  - zimpler-merchant.zimpler.com
+  - zimpler.net
 - company: TruFin
   url: https://immunefi.com/bug-bounty/trufin/
   contact: https://immunefi.com/bug-bounty/trufin/
@@ -24053,6 +24185,12 @@ companies:
   - namestudioforsocial.com
   - verisign.com
   - youcouldbe.com
+- company: Verisk VDP
+  url: http://verisk.com
+  handle: verisk_vdp
+  contact: https://hackerone.com/verisk_vdp
+  rewards: []
+  managed: true
 - company: Verizon
   url: https://www.verizon.com/info/reportsecurityvulnerability/
   contact: ''
@@ -24185,7 +24323,6 @@ companies:
   - partners.viator.com
   - selector.viator.com
   - supplier.viator.com
-  - toursgds.com
   - travelagents.viator.com
   - viator.com
   - viatorinc.com
@@ -25588,7 +25725,8 @@ companies:
   max_payout: 2000.0
   domains:
   - cam.notebleue.pro
-  - odoo14.notebleue.pro
+  - git.notebleue.pro
+  - odoo.zecible.pro
   - registre.notebleue.pro
   - svn.notebleue.pro
   - todo.notebleue.pro
@@ -25601,8 +25739,10 @@ companies:
   - ywh.fichiers.zecible.fr
   - ywh.mydata.zecible.fr
   - ywh.routage.zecible.fr
+  - ywh.static.zcb.fr
   - ywh.static.zecible.fr
   - ywh.update.zecible.fr
+  - ywh.verify.zecible.fr
   - ywh.zcb.fr
 - company: ZEIT
   url: https://hackerone.com/zeit
