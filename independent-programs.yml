@@ -3973,6 +3973,16 @@ companies:
   legal_terms_url: https://www.qnap.com/go/legal/qnap-security-bounty-program-terms-and-conditions
   hall_of_fame_url: https://www.qnap.com/en/security-bounty-program#acknowledgement
 
+- company: Qualitify
+  url: https://qualitify.net/
+  contact: mailto:support@qualitify.net
+  rewards:
+  - '*recognition'
+  program_type: vdp
+  status: active
+  safe_harbor: partial
+  allows_disclosure: true
+
 - company: Ravelin
   url: https://ravelin.com/responsible-disclosure-policy
   contact: mailto:vulnerability.disclosure@ravelin.com
@@ -4372,7 +4382,7 @@ companies:
     type: web
   - target: 77.75.72.0/20
     type: network
-  - target: '2a02:0598::/32'
+  - target: 2a02:0598::/32
     type: network
   out_of_scope:
   - Services hosted by third parties
