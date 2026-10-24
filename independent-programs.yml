@@ -1457,6 +1457,37 @@ companies:
     low: 250
   disclosure_timeline_days: 90
 
+- company: Doomsday Network
+  url: https://github.com/doomsday-network/bounty-guard
+  contact: https://github.com/doomsday-network/bounty-guard/issues
+  rewards:
+  - '*bounty'
+  - '*recognition'
+  program_type: bounty
+  status: active
+  safe_harbor: full
+  allows_disclosure: true
+  preferred_languages: English
+  description: Open-source Layer-1 Proof-of-Work blockchain (DOOM), Base Mainnet ERC-20 bridge (wDOOM), and BountyGuard MCP security firewall. Rewards researchers with on-chain escrowed bounties for protocol vulnerabilities, bridge reserve audits, and verified Web3/GitHub honeypot reports.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - physical_access
+  scope:
+  - target: doomsday.network
+    type: api
+  - target: github.com/doomsday-network/doomsday
+    type: other
+  - target: github.com/doomsday-network/bounty-guard
+    type: other
+  out_of_scope:
+  - Denial of service or automated rate-limit flooding against public faucet endpoints
+  min_payout: 250
+  max_payout: 3000
+  currency: wDOOM
+  response_sla_days: 1
+
 - company: Dragos
   url: https://www.dragos.com/reporting-security-issues-to-dragos/
   contact: mailto:psirt@dragos.com
