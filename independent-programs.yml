@@ -608,7 +608,7 @@ companies:
   preferred_languages: English, Portuguese
   hall_of_fame_url: https://blazephoenix.xyz/bounty
   legal_terms_url: https://github.com/blazephoenixxyz-crypto/Blaze-Phoenix-Dex/blob/main/SECURITY.md
-  description: Covers an EVM DEX aggregator, a staking engine, and the public API, MCP server, SDK and website. Reports accepted 25 September to 7 November 2026 (23:59 UTC). Rewards are paid in the project's own token, not yet liquid, so the programme commits to a token quantity and schedule rather than a value; settlement begins after October 2026. Duplicates reported before a fix is published split one award equally. Severity is set by the project, with written reasoning where it differs from the reporter's.
+  description: Covers an EVM DEX aggregator, a staking engine, and the public API, MCP server, SDK and website. Reports accepted 25 September to 15 December 2026 (23:59 UTC). Rewards are paid in the project's own token after the 15 December 2026 launch, as a committed quantity and schedule rather than a value. Duplicates reported before a fix is published split one award equally.
   scope:
   - target: Solidity contracts of the DEX aggregator (Router, Solver, Hub, Quoter, Core)
     type: other
