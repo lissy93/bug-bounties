@@ -78,9 +78,12 @@ companies:
   domains:
   - 1w.cash
   - 1w.run
+  - 1win-partners.com
   - 1win.com
+  - 1win.io
   - 1wintoken.com
   - 1wtoken.com
+  - forum.1win.io
   - solscan.io
 - company: 20 Minuten
   url: https://bugcrowd.com/engagements/twentyminuten
@@ -1998,7 +2001,7 @@ companies:
   contact: https://hackerone.com/audible
   rewards:
   - '*bounty'
-  managed: true
+  managed: false
   domains:
   - com.audible.application
   - tax.audible.com
@@ -3245,7 +3248,9 @@ companies:
   managed: true
   safe_harbor: partial
   domains:
+  - bose.io
   - bose.xx
+  - btu.bose.com
   - support.bose.xx
 - company: Boston Scientific
   url: https://www.bostonscientific.com/en-US/customer-service/product-security/responsible-disclosure.html
@@ -3414,6 +3419,14 @@ companies:
   max_payout: 1500.0
   domains:
   - marketplace.atlassian.com
+- company: BRP Challenge
+  url: https://www.intigriti.com/programs/intigriti/challengebrp/detail
+  handle: challengebrp
+  contact: https://www.intigriti.com/programs/intigriti/challengebrp/detail
+  rewards: []
+  currency: EUR
+  domains:
+  - challenge-brp.challenges.intigriti.io
 - company: BtcTurk
   url: https://www.btcturk.com/odul-avciligi
   contact: https://www.btcturk.com/odul-avciligi
@@ -4605,6 +4618,7 @@ companies:
   - dash.cloudflare.com
   - github.com
   - one.dash.cloudflare.com
+  - php-rce.cloudflare.app
   - teams.cloudflare.com
 - company: Cloudinary
   url: https://bugcrowd.com/cloudinary
@@ -5752,6 +5766,7 @@ companies:
   - accounts.cloud.databricks.com
   - databricks.com
   - dbc-9a3f8ed1-7608.cloud.databricks.com
+  - github.com
   - login.databricks.com
   - ui-assets.cloud.databricks.com
 - company: DataCamp
@@ -6808,7 +6823,7 @@ companies:
   contact: https://www.intigriti.com/programs/dstny/dstnybugbounty/detail
   rewards:
   - '*bounty'
-  max_payout: 1100.0
+  max_payout: 1500.0
   currency: EUR
   domains:
   - docs.google.com
@@ -7076,7 +7091,7 @@ companies:
   contact: https://bugcrowd.com/eero/report
   rewards:
   - '*bounty'
-  managed: true
+  managed: false
   safe_harbor: partial
   domains:
   - com.eero.android
@@ -7845,6 +7860,7 @@ companies:
   max_payout: 18000.0
   domains:
   - a.exodus.io
+  - agents.exodus.com
   - apps.apple.com
   - ctr.a.exodus.io
   - exodus-movement.exodus
@@ -8209,6 +8225,7 @@ companies:
   rewards: []
   managed: true
   domains:
+  - 2627.quellidellacolazione.it
   - 5cc1659edaa8.hosting.myjino.ru
   - accendilefesteestatheedamici.estathe.it
   - admin.loteria.ferrerorocher.pl
@@ -8226,14 +8243,13 @@ companies:
   - baltic.ferrerorocher.com
   - baltic.kinder.com
   - baltic.nutella.com
+  - beta.nutellakochapieczywo.nutella.com
   - beta.nutellaxmas.4ourclient.com
   - beta.tictac.4ourclient.com
   - blask.ferrerorocher.pl
   - butterfinger.com
   - caraffa2024.ferreropromo.it
   - clubferreropro.com
-  - cms-aygt-fr-2025.ferrerorocherpromo.com
-  - cms-aygt-it-2025.ferrerorocherpromo.com
 - company: Fertitta Entertainment
   url: https://www.fertittaentertainmentinc.com/
   handle: fertitta_entertainment
@@ -10043,6 +10059,11 @@ companies:
   - api.ar.magic-mirror.cn
   - api.mini.magic-mirror.cn
   - auth.eshop-henkel-adhesives.cn
+  - barnangen.dk
+  - barnangen.fi
+  - barnangen.no
+  - barnangen.nu
+  - barnangen.se
   - base-qa.henkel-consumer-brands.cn
   - base.henkel-consumer-brands.cn
   - bloo.com
@@ -10051,11 +10072,6 @@ companies:
   - chatbotdatacon.wechat-henkel-adhesives.cn
   - cimsec.at
   - clubedocabelopro.com.br
-  - colorsmith.ie
-  - colorsmithco.ca
-  - combatbugs.com
-  - concorsi.loctite-consumer.it
-  - console.ar.magic-mirror.cn
 - company: Here Technologies
   url: https://www.intigriti.com/programs/heretechnologies/heretechnologies/detail
   handle: heretechnologies
@@ -10112,8 +10128,11 @@ companies:
   rewards: []
   managed: true
   domains:
+  - dollar.com
   - hertz.com
   - hertz.io
+  - oromobility.com
+  - thrifty.com
 - company: hesaplama.net
   url: https://gizlilik-ilkeleri.hesaplama.net/
   contact: https://iletisim.hesaplama.net/
@@ -11593,23 +11612,8 @@ companies:
   safe_harbor: full
   max_payout: 4500.0
   domains:
-  - answers.irobot.com
   - apps.apple.com
   - aspen-ecommerce-prod.iot.irobotapi.com
-  - homesupport.irobot.com
-  - investor.irobot.com
-  - irobot.at
-  - irobot.be
-  - irobot.ca
-  - irobot.co.uk
-  - irobot.com
-  - irobot.de
-  - irobot.es
-  - irobot.fr
-  - irobot.ie
-  - irobot.nl
-  - irobot.pt
-  - media.irobot.com
   - play.google.com
   - zuora-ecommerce-prod.iot.irobotapi.com
 - company: IronCore Labs
@@ -13554,10 +13558,10 @@ companies:
   - api-prod.thatconceptstore.com
   - cb2.ae
   - crateandbarrel.me
-  - fashion4less.me
   - lapi.yellowblocks.me
   - lego.me
   - lululemon.me
+  - pacsun.me
   - psychobunny.me
   - shiseido.me
   - thatconceptstore.com
@@ -13858,7 +13862,6 @@ companies:
   domains:
   - consumer.finicityreports.com
   - developer.mastercard.com
-  - donate.mastercard.com
   - finicity.com
   - masterpassteststore.com
   - performancemarketing.mastercard.com
@@ -14551,7 +14554,7 @@ companies:
   handle: mondelez
   contact: https://hackerone.com/mondelez
   rewards: []
-  managed: true
+  managed: false
   domains:
   - 7days-promo.com
   - 7days-promo.ro
@@ -20708,10 +20711,18 @@ companies:
   - '*bounty'
 - company: Smartsheet
   url: https://hackerone.com/smartsheet
+  handle: smartsheet_vdp
   contact: https://hackerone.com/smartsheet
   rewards:
   - '*bounty'
   - '*recognition'
+  managed: true
+  domains:
+  - api.smartsheet.com
+  - app.smartsheet.com
+  - com.smartsheet.android
+  - com.smartsheet.smartsheet
+  - smartsheet.com
 - company: SmartThings
   url: https://bugcrowd.com/smartthings
   contact: https://bugcrowd.com/smartthings/report
@@ -22317,6 +22328,18 @@ companies:
   rewards:
   - '*bounty'
   max_payout: 250000.0
+- company: Thales Cyber Security Products Bug Bounty
+  url: https://bugcrowd.com/engagements/imperva-mbb
+  contact: https://bugcrowd.com/engagements/imperva-mbb
+  rewards:
+  - '*bounty'
+  managed: true
+  safe_harbor: full
+  max_payout: 2500.0
+  domains:
+  - cpl.thalesgroup.com
+  - imperva.com
+  - supportportal.thalesgroup.com
 - company: The Atlantic
   url: https://www.theatlantic.com/responsible-disclosure-policy/
   contact: mailto:security@theatlantic.com
@@ -24934,12 +24957,9 @@ companies:
   min_payout: 50.0
   currency: EUR
   domains:
-  - desktop.water-link.be
-  - mijnwater-link.be
-  - pit.water-link.be
+  - aww.be
   - water-link-jaarverslag.be
   - water-link.be
-  - waterstoring.be
 - company: Watsons
   url: https://www.intigriti.com/programs/aswatson/watsons/detail
   handle: watsons
@@ -25384,15 +25404,11 @@ companies:
   - bettersearchreplace.com
   - deliciousbrains.com
   - getflywheel.com
-  - localwp.com
-  - makeshift.film
   - my.wpengine.com
   - nitropack.io
-  - payments.wpengine.com
+  - spressforumstg.wpengine.com
   - studiopress.blog
   - studiopress.com
-  - torquemag.io
-  - velocitize.com
   - wpengine.com
   - wpengine.io
   - wpesvc.net
@@ -25545,6 +25561,23 @@ companies:
   rewards:
   - '*bounty'
   max_payout: 50000.0
+- company: XP Inc Vulnerability Disclosure
+  url: https://www.xpi.com.br/
+  handle: xp_inc_vdp
+  contact: https://hackerone.com/xp_inc_vdp
+  rewards: []
+  managed: true
+  domains:
+  - apps.apple.com
+  - clear.com.br
+  - expertxp.com.br
+  - infomoney.com.br
+  - modalmais.com.br
+  - play.google.com
+  - rico.com.vc
+  - xpeducacao.com.br
+  - xpempresas.com.br
+  - xpi.com.br
 - company: XT
   url: https://hackenproof.com/xt
   contact: ''
