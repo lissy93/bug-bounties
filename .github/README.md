@@ -1807,6 +1807,7 @@
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Tetu](https://immunefi.com/bug-bounty/tetu/) 💰
 - <img src='https://icon.horse/icon/www.ti.com' width='16'/> [Texas Instruments](https://www.ti.com/technologies/security/report-product-security-vulnerabilities.html) 🏅
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Thala Protocol](https://immunefi.com/bug-bounty/thala-protocol/) 💰
+- <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Thales Cyber Security Products Bug Bount...](https://bugcrowd.com/engagements/imperva-mbb) 💰
 - <img src='https://icon.horse/icon/thebrowser.company' width='16'/> [The Browser Company of NYC](http://thebrowser.company) 💰
 - <img src='https://icon.horse/icon/www.thehaguesecuritydelta.com' width='16'/> [The Dutch Security Cluster](https://www.thehaguesecuritydelta.com/responsible-disclosure) 🏅
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [The Hut Group: Public Managed Bug Bounty...](https://bugcrowd.com/engagements/hutgroup-public) 💰
