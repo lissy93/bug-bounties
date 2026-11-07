@@ -304,6 +304,7 @@
 - <img src='https://icon.horse/icon/bykea.com' width='16'/> [Bykea](https://bykea.com) 💰
 - <img src='https://icon.horse/icon/www.bynder.com' width='16'/> [Bynder](https://www.bynder.com/en/legal/responsible-disclosure-policy/) 🏅
 - <img src='https://icon.horse/icon/security.bytedance.com' width='16'/> [Bytedance](https://security.bytedance.com/media/score-standard/Vulnerability_Rewards_Program.pdf) 💰
+- <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Bytera Marketplace Managed Bug Bounty En...](https://bugcrowd.com/engagements/bytera-market) 💰
 
 </details>
 <details open><summary><h4>C</h4></summary>
