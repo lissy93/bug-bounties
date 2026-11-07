@@ -1354,9 +1354,7 @@ companies:
   - '*swag'
   managed: true
   domains:
-  - anduril.au
   - anduril.com
-  - anduril.com.au
   - anduril.dev
   - andurildev.au
   - andurildev.com
@@ -2870,7 +2868,6 @@ companies:
   - addons.opera.com
   - api.bitwarden.com
   - bitwarden.com
-  - chrome.google.com
   - com.8bit.bitwarden
   - com.bitwarden.authenticator
   - com.x8bit.bitwarden
@@ -3348,6 +3345,7 @@ companies:
   domains:
   - bug-bounty-api.k8s.tools-001.d-use-1.braze-dev.com
   - bug-bounty-dashboard.k8s.tools-001.d-use-1.braze-dev.com
+  - bug-bounty-mcp.k8s.tools-001.d-use-1.braze-dev.com
   - bug-bounty-rest.k8s.tools-001.d-use-1.braze-dev.com
 - company: Brightspeed
   url: http://brightspeed.com
@@ -3607,6 +3605,7 @@ companies:
   - bybit.tr
   - byreal.io
   - play.google.com
+  - testnet.bybit.com
   - testnet.bybit.eu
 - company: Bykea
   url: https://bykea.com
@@ -3637,6 +3636,16 @@ companies:
   contact: https://security.bytedance.com/en/submit/
   rewards:
   - '*bounty'
+- company: Bytera Marketplace Managed Bug Bounty Engagement
+  url: https://bugcrowd.com/engagements/bytera-market
+  contact: https://bugcrowd.com/engagements/bytera-market
+  rewards:
+  - '*bounty'
+  managed: true
+  safe_harbor: full
+  max_payout: 1500.0
+  domains:
+  - marketplace.atlassian.com
 - company: Bühler Group VDP
   url: https://www.intigriti.com/programs/buhlergroup/buhlergroupvdp/detail
   handle: buhlergroupvdp
@@ -5230,7 +5239,7 @@ companies:
   handle: costco
   contact: https://hackerone.com/costco
   rewards: []
-  managed: true
+  managed: false
   domains:
   - com.costco.app.android
   - com.costco.costco
@@ -5402,7 +5411,7 @@ companies:
   contact: https://hackerone.com/creditkarma
   rewards:
   - '*bounty'
-  managed: false
+  managed: true
   safe_harbor: partial
   domains:
   - accounts.creditkarma.com
@@ -8575,7 +8584,6 @@ companies:
   - dbtlabs.com
   - fivetran.com
   - getdbt.com
-  - it-fivetran.com
 - company: Flamingo Finance
   url: https://immunefi.com/bug-bounty/flamingofinance/
   contact: https://immunefi.com/bug-bounty/flamingofinance/
@@ -8615,7 +8623,7 @@ companies:
   rewards:
   - '*bounty'
   - '*recognition'
-  managed: true
+  managed: false
   domains:
   - com.yahoo.mobile.client.android.flickr
   - flickr.com
@@ -9900,33 +9908,33 @@ companies:
   contact: https://yeswehack.com/programs/harman-international-web-applications
   rewards:
   - '*bounty'
-  max_payout: 4000.0
+  max_payout: 2000.0
   domains:
-  - account.roon.app
-  - bostonacoustics.com
-  - bowerswilkins.com
-  - classeaudio.com
+  - akg.com
+  - be.harmanaudio.com
+  - be.jbl.com
+  - ch.harmanaudio.com
+  - ch.jbl.com
+  - de.harmanaudio.com
   - de.jbl.com
-  - definitivetechnology.com
-  - denon.com
-  - gotdrops.cloud
-  - gotdrops.com
+  - dk.harmanaudio.com
+  - dk.jbl.com
+  - es.harmankardon.com
+  - fi.harmanaudio.com
+  - fi.harmankardon.com
+  - fi.jbl.com
+  - fr.jbl.com
+  - harmanaudio.at
   - harmanaudio.com
-  - harmankardon.com
-  - in.jbl.com
-  - jbl.com
-  - jbl.com.br
-  - jbl.nl
-  - jbl.ru
-  - marantz.com
-  - polkaudio.com
-  - roon.app
-  - roondrops.com
-  - roonessentials.com
-  - roonessentials.net
-  - roonlabs.com
-  - roonlabs.net
-  - support.jbl.com
+  - harmanaudio.com.au
+  - harmanaudio.com.br
+  - harmanaudio.com.mx
+  - harmanaudio.fr
+  - harmanaudio.in
+  - harmanaudio.nl
+  - harmankardon.at
+  - harmankardon.be
+  - harmankardon.ch
 - company: Harman International Lifestyle Products & Services
   url: https://yeswehack.com/programs/harman-international-public-bug-bounty
   contact: https://yeswehack.com/programs/harman-international-public-bug-bounty
@@ -10384,6 +10392,7 @@ companies:
   safe_harbor: full
   domains:
   - agents.hostinger.com
+  - ai-builder.hostinger.com
   - builder.hostinger.com
   - cpanel.hostinger.com
   - ecommerce.hostinger.com
@@ -10410,30 +10419,30 @@ companies:
   managed: true
   domains:
   - abritel.fr
-  - apps.apple.com
   - bookabach.co.nz
   - carrentals.com
   - cheaptickets.com
-  - com.carrentals
-  - com.cheaptickets
-  - com.ebookers
-  - com.expedia.bookings
   - com.expediapartnercentral
-  - com.hcom.android
-  - com.homeaway.android
-  - com.hotwire.hotels
-  - com.orbitz
-  - com.travelocity.android
-  - com.vrbo.android
-  - com.wotif.android
+  - cruiseshipcenters.com
   - ean.com
   - ebookers.com
   - ebookers.fi
   - expedia-aarp.com
-  - expedia.biz
   - expedia.com
   - expediagroup.com
   - expediapartnercentral.com
+  - expediapartnersolutions.com
+  - fewo-direkt.de
+  - flights.com
+  - homeaway.com
+  - hotels.com
+  - hotwire.com
+  - hotwirepartnercentral.com
+  - lastminute.co.nz
+  - lastminute.com.au
+  - mrjet.se
+  - orbitz.com
+  - stayz.com.au
 - company: Hotmart (VDP)
   url: http://hotmart.com
   handle: hotmartvdp
@@ -11928,12 +11937,11 @@ companies:
   - '*swag'
   managed: true
   domains:
-  - bigcommerce-adapter.judge.me
   - cache.judge.me
+  - emails.judge.me
   - insights.judgeme.dev
   - judge.me
   - shop.judge.me
-  - woocommerce-adapter.judge.me
 - company: Jumbo Privacy
   url: https://bugcrowd.com/jumboprivacy
   contact: https://bugcrowd.com/jumboprivacy/report
@@ -16364,11 +16372,10 @@ companies:
   - '*bounty'
   managed: true
   safe_harbor: partial
-  max_payout: 6500.0
+  max_payout: 30000.0
   domains:
   - api.openai.com
   - openai.com
-  - openai.org
 - company: OpenBSD
   url: https://www.openbsd.org/security.html
   contact: mailto:deraadt@openbsd.org
@@ -17204,7 +17211,7 @@ companies:
   handle: paystack-vdp
   contact: https://hackerone.com/paystack-vdp
   rewards: []
-  managed: true
+  managed: false
   domains:
   - api.paystack.co
   - checkout.paystack.com
@@ -19066,6 +19073,7 @@ companies:
   - ablink.info.remitly.com
   - access-sandbox.remitly.com
   - access.remitly.com
+  - api.remitly.com
   - api.remitly.io
   - app.rewire.to
   - app3.rewire.to
@@ -19087,7 +19095,6 @@ companies:
   - login.remitly.com
   - media.remitly.io
   - metrics.int.remitly.com
-  - news.remitly.com
 - company: Render
   url: http://render.com
   handle: render
@@ -21546,6 +21553,7 @@ companies:
   - app.taxjar.com
   - bridge.xyz
   - com.stripe.android.dashboard
+  - files.stripe.com
   - js.stripe.com
   - lemonsqueezy.com
   - link.co
@@ -21555,6 +21563,7 @@ companies:
   - reckoproduction.com
   - reckostaging.com
   - stripe.com
+  - stripe.dev
   - stripe.partners
 - company: Stripo Inc
   url: https://stripo.email
