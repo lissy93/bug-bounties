@@ -2957,6 +2957,35 @@ companies:
   preferred_languages: English
   description: n8n runs a Vulnerability Disclosure Program as a formal channel for reporting security issues found in n8n. Every submission is reviewed, and n8n works with the reporter to understand the impact and keeps them updated throughout.
 
+- company: Neat
+  url: https://support.neat.no/article/security-vulnerability-reporting-policy-at-neat/
+  contact: mailto:security@neat.no
+  program_type: vdp
+  status: active
+  safe_harbor: full
+  allows_disclosure: true
+  preferred_languages: English
+  description: Neat's vulnerability reporting policy covers its hardware devices (the Bar, Board, Pad, Frame and Center ranges) and the Neat Pulse cloud management platform. Reports go to security@neat.no, or through a support ticket in Neat Pulse. There's no money for findings. Neat acknowledges within 2 working days, aims to triage within 10, and targets a fix and coordinated disclosure within 90 days of triage, with a CVE where the issue qualifies.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - physical_access
+  scope:
+  - target: Neat hardware devices (Bar, Board, Pad, Frame and Center ranges)
+    type: hardware
+  - target: Neat Pulse
+    type: cloud
+  out_of_scope:
+  - Third-party platforms Neat integrates with, such as Zoom, Microsoft Teams and Google Meet
+  - The corporate and marketing website, unless the issue directly affects customer data or product functionality
+  - Spam and volumetric testing against Neat infrastructure
+  - Testing that accesses, modifies or discloses another customer's data
+  response_sla_days: 2
+  disclosure_timeline_days: 90
+  standards:
+  - ISO 29147
+  - ISO 30111
+
 - company: Nedap
   url: https://www.nedap.com/en/coordinated-vulnerability-disclosure-policy
   contact: mailto:cvd@nedap.com
