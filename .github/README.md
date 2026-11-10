@@ -1501,6 +1501,7 @@
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Rec Room Video Games](https://bugcrowd.com/engagements/recroom-og) 💰
 - <img src='https://icon.horse/icon/recap-innovations.com' width='16'/> [Recap Innovations](https://recap-innovations.com/security/) 🏅
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [Recargapay](https://hackerone.com/recargapay) 💰 🏅
+- <img src='https://icon.horse/icon/storage.googleapis.com' width='16'/> [ReclameAQUI](https://storage.googleapis.com/whitehat-policy/reclameaqui-whitehat-policy.pdf) 💰
 - <img src='https://icon.horse/icon/www.recordedfuture.com' width='16'/> [Recorded Future](https://www.recordedfuture.com/security/) 💰 🏅 🎁
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Recorded Future Public Managed Bug Bount...](https://bugcrowd.com/engagements/recorded-future-mbb-og) 💰
 - <img src='https://icon.horse/icon/code.reddit.com' width='16'/> [Reddit](https://code.reddit.com/wiki/help/whitehat) 💰 🏅
@@ -1953,6 +1954,7 @@
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Vectors Bug Bounty](https://bugcrowd.com/engagements/vectors-marketplace) 💰
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Velodrome Finance](https://immunefi.com/bug-bounty/velodromefinance/) 💰
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Velvet Capital](https://immunefi.com/bug-bounty/velvetcapital/) 💰
+- <img src='https://icon.horse/icon/vend.com' width='16'/> [Vend.com](https://vend.com/responsible-disclosure-policy.txt) 🏅
 - <img src='https://icon.horse/icon/www.intigriti.com' width='16'/> [Venly](https://www.intigriti.com/programs/arkane/arkanenetwork/detail) 💰
 - <img src='https://icon.horse/icon/www.veracode.com' width='16'/> [Veracode](https://www.veracode.com/legal-privacy/responsible-disclosure-policy) 🏅
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [Vercel](https://hackerone.com/vercel) 💰
