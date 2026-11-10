@@ -5735,6 +5735,51 @@ companies:
   - Vulnerabilities solely affecting the marketing website at www.vanta.com
   - Reports that describe theoretical attack vectors without substantiated proof of exploitability
 
+- company: Vend.com
+  url: https://vend.com/responsible-disclosure-policy.txt
+  contact: mailto:responsible-disclosure@vend.com
+  rewards:
+  - '*recognition'
+  program_type: vdp
+  status: active
+  safe_harbor: full
+  preferred_languages: English
+  description: Vend.com's responsible disclosure policy covers any service on its domains (vend.com, finn.no, dba.dk, bilbasen.dk, blocket.se, tori.fi and oikotie.fi), but not services hosted by third parties. Reports go to responsible-disclosure@vend.com. No money or swag, but the first to report a unique issue that leads to a fix gets a Hall of Fame spot. Only use test accounts you own, and stop and report as soon as you hit personal data.
+  excluded_methods:
+  - dos
+  scope:
+  - target: '*.vend.com'
+    type: web
+  - target: '*.finn.no'
+    type: web
+  - target: '*dba.dk'
+    type: web
+  - target: '*.bilbasen.dk'
+    type: web
+  - target: '*.blocket.se'
+    type: web
+  - target: '*tori.fi'
+    type: web
+  - target: '*.oikotie.fi'
+    type: web
+  out_of_scope:
+  - Services hosted by third parties
+  - Clickjacking on pages with no sensitive actions
+  - CSRF on unauthenticated forms or forms with no sensitive actions
+  - Attacks requiring MITM or physical access to a user's device
+  - Known vulnerable libraries without a working proof of concept
+  - CSV injection without a demonstrated vulnerability
+  - Missing best practices in SSL/TLS, Content Security Policy or email (SPF/DKIM/DMARC) setup
+  - Content spoofing and text injection without a demonstrated attack vector
+  - Rate limiting or brute force on non-authentication endpoints
+  - Missing HttpOnly or Secure flags on cookies
+  - Issues only affecting outdated browsers
+  - Version disclosure, banner identification and descriptive error messages
+  - Tabnabbing
+  - Open redirects without additional demonstrated impact
+  - Issues requiring unlikely user interaction
+  hall_of_fame_url: https://vend.com/security-hall-of-fame.txt
+
 - company: Vivid
   url: https://vivid.money/en-eu/bug-bounty/
   contact: mailto:bugbounty@vivid.money
