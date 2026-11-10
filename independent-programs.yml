@@ -4248,6 +4248,38 @@ companies:
   response_sla_days: 2
   hall_of_fame_url: https://recap-innovations.com/security/
 
+- company: ReclameAQUI
+  url: https://storage.googleapis.com/whitehat-policy/reclameaqui-whitehat-policy.pdf
+  contact: mailto:infra@reclameaqui.com.br
+  rewards:
+  - '*bounty'
+  program_type: bounty
+  status: active
+  safe_harbor: full
+  allows_disclosure: true
+  preferred_languages: English, Portuguese
+  description: ReclameAQUI's White Hat Policy pays bounties at its discretion for security bugs in the ReclameAQUI website, mobile site and Android and iOS apps, with a $50 minimum when it does pay. Reports go to infra@reclameaqui.com.br, and only the first reporter of a duplicate gets paid. ReclameAQUI won't start a lawsuit or law enforcement investigation over reports that follow the policy, which asks for reasonable time to fix before anything goes public.
+  excluded_methods:
+  - dos
+  - social_engineering
+  scope:
+  - target: ReclameAQUI website
+    type: web
+  - target: ReclameAQUI mobile site
+    type: web
+  - target: ReclameAQUI Android app
+    type: mobile
+  - target: ReclameAQUI iOS app
+    type: mobile
+  out_of_scope:
+  - Services not owned by ReclameAQUI, such as WordPress
+  - Third-party apps or websites that integrate with ReclameAQUI
+  - Spam or social engineering
+  - Content injection, unless it shows a significant risk
+  - Running scripts on sandboxed domains
+  - Sending messages to anyone on ReclameAQUI
+  min_payout: 50
+
 - company: Redvilla
   url: https://redvilla.tech/bug-bounty/
   contact: mailto:info@redvilla.tech
