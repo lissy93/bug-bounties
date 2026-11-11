@@ -518,6 +518,31 @@ companies:
   currency: USD
   disclosure_timeline_days: 90
 
+- company: beyondmemory
+  url: https://beyondmemory.io/security
+  contact: mailto:info@beyondmemory.io
+  rewards:
+  - '*bounty'
+  - '*recognition'
+  program_type: bounty
+  status: active
+  safe_harbor: full
+  description: |-
+    BeyondMemory takes the security of our platform and our users seriously. We welcome and value the work of independent security researchers, and we run a coordinated vulnerability disclosure program, with discretionary rewards, for our public marketing website.
+
+    This program is intentionally narrow. Please read the In Scope and Out of Scope sections carefully before you begin testing.
+  domains:
+  - https://beyondmemory.io
+  - https://www.beyondmemory.io
+  min_payout: 250
+  max_payout: 5000
+  currency: USD
+  payout_table:
+    critical: 5000
+    high: 2000
+    medium: 749
+    low: 250
+
 - company: Billie
   url: https://billie.io/coordinated-vulnerability-disclosure-policy
   contact: mailto:disclosure@billie.io
