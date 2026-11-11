@@ -518,6 +518,37 @@ companies:
   currency: USD
   disclosure_timeline_days: 90
 
+- company: betterteam
+  url: https://www.betterteam.com/bug-bounty
+  contact: mailto:security@betterteam.com
+  rewards:
+  - '*bounty'
+  - '*recognition'
+  program_type: bounty
+  status: active
+  description: 'Betterteam is a hiring tool used by about 5,000 small businesses, and our customers trust us with their applicants'' data. If you find a security problem in our site or app, tell us: we will look into it, thank you, and pay a reward for eligible reports under the rules below. This page runs the program; the Bug Bounty Program Terms are the agreement and include several sections of this page. The program opened on 22 October 2026.'
+  domains:
+  - "Host\tWhat it is"
+  - "www.betterteam.com\tOur website."
+  - "dashboard.betterteam.com\tThe Betterteam web app (job posting, applicant tracking, billing) and its API, including the file links it serves."
+  - "files.betterteam.com\tOur file host: the resume, attachment and other file links the dashboard gives you, and their access controls."
+  - "app.betterteam.com\tOur old app: redirects to the dashboard, job feeds and the old API."
+  - "careers.betterteam.com\tOur own hiring site: its jobs are real, and real people apply to them. You may view its job pages and application form, but never send the form: applying there is a ban (see Disqualification)."
+  - "betterteambugbounty.betterteam.com\tOur test career site for this program, with test jobs you may apply to. It is the only place where you may send applications: up to 10 in total across all its jobs, counting all your accounts and anyone testing with you, and counting attempts that fail. More than 10 needs our written approval of a test plan (see the rules below)."
+  - "Your own trial's career site\tThe career site of a trial account you created (yourcompany.betterteam.com). Its jobs stay unpublished; never apply to them (see Disqualification)."
+  - "Our Google Cloud Storage buckets\tstorage.googleapis.com, reached through links our app gives you, such as your own logo or file links: access controls on our buckets, such as listing, reading or writing objects that are not yours, and links that should expire but don't. Stop at the first proof: one listing response or one object name is enough. Never open, download or change another customer's or applicant's file. Bugs in Google's platform itself go to Google."
+  - "s.betterteam.com\tOur public static file host (a Google Cloud Storage bucket served through Cloudflare): the files it serves and the bucket's access controls, under the same limits as the bucket row above."
+  - "i.betterteam.com and *.i.betterteam.com\tOur measurement hosts, on Fastly and our own servers, including their DNS server. No load testing or flooding, including DNS queries."
+  - "srp.betterteam.com and srp-api.betterteam.com\tProxies that forward to Segment, our analytics vendor. Only our proxy setup is in scope, such as forwarding to hosts it should not, or passing on cookies or headers it should drop. Segment's own service is not."
+  min_payout: 150
+  max_payout: 2000
+  currency: USD
+  payout_table:
+    critical: 2000
+    high: 800
+    medium: 400
+    low: 150
+
 - company: beyondmemory
   url: https://beyondmemory.io/security
   contact: mailto:info@beyondmemory.io

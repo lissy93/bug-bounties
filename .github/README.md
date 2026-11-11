@@ -208,6 +208,7 @@
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Berachain](https://immunefi.com/bug-bounty/berachain/) 💰
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Beradrome](https://immunefi.com/bug-bounty/beradrome/) 💰
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Better](https://bugcrowd.com/better) 💰
+- <img src='https://icon.horse/icon/www.betterteam.com' width='16'/> [betterteam](https://www.betterteam.com/bug-bounty) 💰 🏅
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [BiFi](https://immunefi.com/bug-bounty/bifi/) 💰
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Bifrost](https://immunefi.com/bug-bounty/bifrostfinance/) 💰
 - <img src='https://icon.horse/icon/yeswehack.com' width='16'/> [BigBlueButton Bug Bounty Program](https://yeswehack.com/programs/bigbluebutton-bug-bounty-program) 💰
