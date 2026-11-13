@@ -2920,6 +2920,41 @@ companies:
   - Vulnerabilities which apply to Mintlify's hosted documentation and customers' documentation. Do not attempt to reproduce or exploit these vulnerabilities on customer documentation without express permission and communication from the customer and Mintlify teams.
   requires_account: true
 
+- company: Mishmar
+  url: https://mishmar.io/security
+  contact: mailto:security@mishmar.io
+  rewards:
+  - '*recognition'
+  program_type: vdp
+  status: active
+  safe_harbor: partial
+  allows_disclosure: true
+  disclosure_timeline_days: 90
+  response_sla_days: 1
+  requires_account: true
+  preferred_languages: English
+  description: |-
+    Mishmar checks every order a trading bot or AI agent proposes against its owner's limits and co-signs it with half of a split exchange key. Test on the testnet console with your own accounts. Most wanted: an order signed that shouldn't have been, a key share that leaks, acting as someone else, a ledger that lies. Until 13 Dec 2026 the Break the limits contest pays up to $500: https://mishmar.io/contest
+  scope:
+  - target: mishmar.io
+    type: web
+  - target: app.testnet.mishmar.io (the testnet console and its API)
+    type: web
+  - target: Mishmar's signer service, reached through the testnet
+    type: api
+  - target: Open-source signer, CLI and SDKs (github.com/mishmar-io/mishmar)
+    type: other
+  out_of_scope:
+  - app.mishmar.io (real money; test on testnet instead)
+  - Hyperliquid, Binance and the providers Mishmar runs on
+  - Other people's accounts, keys or data
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - physical_access
+  - automated_scanning
+
 - company: Mitsubishi Electric
   url: https://www.mitsubishielectric.com/en/psirt/disclosurepolicy/index.html
   contact: https://www.mitsubishielectric.com/psirt/contact/index.html
