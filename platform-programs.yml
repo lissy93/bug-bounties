@@ -162,7 +162,7 @@ companies:
   - eim.eu-west-2.outscale.com
   - fcu.eu-west-2.outscale.com
   - lbu.eu-west-2.outscale.com
-  - osu.eu-west-2.outscale.com
+  - oos.eu-west-2.outscale.com
 - company: 3GPP
   url: https://www.3gpp.org/coordinated-vulnerability-disclosure-cvd
   contact: https://www.3gpp.org/coordinated-vulnerability-disclosure-cvd-submission
@@ -480,10 +480,6 @@ companies:
   - adevinta.com
   - automobile.it
   - coches.net
-  - datavenues.com
-  - fotocasa.es
-  - fotocasa.pro
-  - habitaclia.com
   - infojobs.it
   - infojobs.net
   - jobmarketinsights.com
@@ -1190,7 +1186,7 @@ companies:
   contact: https://www.intigriti.com/programs/altera/altera/detail
   rewards:
   - '*bounty'
-  max_payout: 30000.0
+  max_payout: 4000.0
   min_payout: 500.0
   currency: USD
 - company: Altervista
@@ -1221,7 +1217,7 @@ companies:
   rewards:
   - '*bounty'
   - '*swag'
-  managed: true
+  managed: false
   domains: &id001
   - amazon.ae
   - amazon.ca
@@ -1255,7 +1251,7 @@ companies:
   rewards:
   - '*bounty'
   - '*swag'
-  managed: true
+  managed: false
   domains: *id001
 - company: AMD
   url: https://www.amd.com/en/corporate/product-security-incident-response-team
@@ -1364,10 +1360,19 @@ companies:
   rewards: []
 - company: Ankr
   url: https://immunefi.com/bug-bounty/ankr/
+  handle: anker
   contact: https://immunefi.com/bug-bounty/ankr/
   rewards:
   - '*bounty'
+  managed: true
   max_payout: 500000.0
+  domains:
+  - com.anker.ankermake
+  - com.anker.charging
+  - com.oceanwing.battery.cam
+  - com.oceanwing.fdmprint
+  - com.security.batterycam
+  - us.eufy.com
 - company: Anomali
   url: https://www.anomali.com/security
   contact: mailto:security@anomali.com
@@ -2288,7 +2293,7 @@ companies:
   - '*bounty'
   managed: true
   safe_harbor: full
-  max_payout: 40000.0
+  max_payout: 20000.0
 - company: Axon
   url: https://www.axon.com/penetration-testing--vulnerability-disclosure
   contact: mailto:infosec@axon.com
@@ -2778,6 +2783,10 @@ companies:
   rewards:
   - '*bounty'
   - '*swag'
+  managed: true
+  domains:
+  - bitmex.com
+  - testnet.bitmex.com
 - company: BitOasis - Bug Bounty Program
   url: https://yeswehack.com/programs/bitoasis-bug-bounty-program
   contact: https://yeswehack.com/programs/bitoasis-bug-bounty-program
@@ -2801,6 +2810,7 @@ companies:
   - api.bitpanda.com
   - bitpanda.com
   - blog.bitpanda.com
+  - login.bitpanda.com
   - socket.bitpanda.com
   - web.bitpanda.com
 - company: Bitpay
@@ -3230,6 +3240,24 @@ companies:
   contact: mailto:infosecurity@borealisgroup.com
   rewards: []
   safe_harbor: full
+- company: BorgWarner Vulnerability Disclosure Program
+  url: https://www.intigriti.com/programs/borgwarner/borgwarnervdp/detail
+  handle: borgwarnervdp
+  contact: https://www.intigriti.com/programs/borgwarner/borgwarnervdp/detail
+  rewards: []
+  currency: USD
+  domains:
+  - borgwarner.com
+  - borgwarner.dev
+  - borgwarner.it
+  - borgwarnerbenefits.com
+  - borgwarnerchina.com
+  - bwauto.com
+  - cascadiamotion.com
+  - morsetec.com
+  - rhombusenergysolutions.com
+  - sevcon.com
+  - turbodriven.com
 - company: Bosch
   url: https://psirt.bosch.com/bosch-responsible-disclosure-policy/
   contact: https://psirt.bosch.com/report-a-vulnerability/
@@ -3711,8 +3739,10 @@ companies:
   rewards: []
   currency: EUR
   domains:
+  - aws.canadapost-postescanada.ca
   - azcpggpc.ca
   - canadapost-postescanada.ca
+  - canadapost.ca
   - com.canadapost.android
   - infopost.ca
   - postescanada-canadapost.ca
@@ -4627,7 +4657,6 @@ companies:
   - dash.cloudflare.com
   - github.com
   - one.dash.cloudflare.com
-  - php-rce.cloudflare.app
   - teams.cloudflare.com
 - company: Cloudinary
   url: https://bugcrowd.com/cloudinary
@@ -6557,6 +6586,16 @@ companies:
   url: https://octo.dc.gov/sites/default/files/dc/sites/octo/publication/attachments/Responsible%20Disclosure%20Policy%20.pdf
   contact: mailto:responsibledisclosure@dc.gov
   rewards: []
+- company: Divvy Homes
+  url: http://divvyhomes.com
+  handle: divvy-homes
+  contact: https://hackerone.com/divvy-homes
+  rewards:
+  - '*swag'
+  managed: false
+  domains:
+  - com.divvyapp.io
+  - divvyhomes.com
 - company: Django
   url: https://hackerone.com/django
   handle: django
@@ -6782,7 +6821,7 @@ companies:
   - '*bounty'
   - '*recognition'
   safe_harbor: partial
-  max_payout: 15000.0
+  max_payout: 10000.0
   min_payout: 100.0
   currency: USD
   domains:
@@ -7566,9 +7605,9 @@ companies:
   - bodyform.co.uk
   - brand.tena.com
   - brandzone.essity.com
+  - campus.hm.essity.com
   - ccevaluation.tena.com
   - cinder.app.essity.com
-  - colhogar.com
 - company: Esteé  Lauder
   url: http://elcompanies.com
   handle: estee-lauder
@@ -7843,6 +7882,11 @@ companies:
   max_payout: 1500.0
   domains:
   - marketplace.atlassian.com
+- company: Exception Security
+  url: https://exceptionsecurity.com/disclose/?p=exception-security
+  contact: mailto:security@exceptionsecurity.com
+  rewards: []
+  safe_harbor: partial
 - company: Exness
   url: https://www.exness.com
   handle: exness
@@ -8623,7 +8667,7 @@ companies:
   rewards:
   - '*bounty'
   - '*recognition'
-  managed: false
+  managed: true
   domains:
   - com.yahoo.mobile.client.android.flickr
   - flickr.com
@@ -8748,6 +8792,38 @@ companies:
   contact: mailto:security@fluxiom.com
   rewards:
   - '*recognition'
+- company: Flywire Vulnerability Disclose Program
+  url: https://www.intigriti.com/programs/flywire/flywirevulnerabilitydiscloseprogram/detail
+  handle: flywirevulnerabilitydiscloseprogram
+  contact: https://www.intigriti.com/programs/flywire/flywirevulnerabilitydiscloseprogram/detail
+  rewards: []
+  currency: USD
+  domains:
+  - chrtpy.com
+  - cohort.link
+  - cohortarrivals.com
+  - cohortflow.com
+  - cohortgo.com
+  - cohortgoapp.com
+  - cohortpay.com
+  - flywire.com
+  - flywire.io
+  - flywire.tech
+  - invoiced.com
+  - myonplanhealth.com
+  - myonplanu.com
+  - onplanhealth.com
+  - onplanu.com
+  - oshc.info
+  - oshcaustralia.com
+  - oshcaustralia.com.au
+  - ovhcinsurance.com
+  - ovhcinsurance.com.au
+  - peertransfer.com
+  - simplee.com
+  - simpleepay.com
+  - studylink.com
+  - studylink.com.au
 - company: FOIL
   url: https://immunefi.com/bug-bounty/foil/
   contact: https://immunefi.com/bug-bounty/foil/
@@ -10272,6 +10348,7 @@ companies:
   domains:
   - com.hilton.android.hhonors
   - hilton.com
+  - hilton.com.cn
   - hilton.io
   - hiltonbusinessonline.com
   - hiltonlocalbiz.com
@@ -12939,6 +13016,25 @@ companies:
   - app.uma.money
   - github.com
   - link.uma.me
+- company: Lightspark Public Bug Bounty
+  url: https://www.intigriti.com/programs/lightspark/lightsparkpublicbugbounty/detail
+  handle: lightsparkpublicbugbounty
+  contact: https://www.intigriti.com/programs/lightspark/lightsparkpublicbugbounty/detail
+  rewards:
+  - '*bounty'
+  max_payout: 5000.0
+  currency: USD
+  domains:
+  - 9b10d44d-1499-4a2f-86bc-fda178acdfdc.striga.com
+  - api.lightspark.com
+  - app.lightspark.com
+  - app.uma.money
+  - github.com
+  - hooks.striga.com
+  - link.uma.me
+  - sandbox.striga.com
+  - tfr-sandbox.striga.com
+  - vault.striga.eu
 - company: Lightspeed Hospitality
   url: https://bugcrowd.com/engagements/lightspeed-hospitality
   contact: https://bugcrowd.com/engagements/lightspeed-hospitality
@@ -14017,6 +14113,11 @@ companies:
   contact: https://mckinsey.responsibledisclosure.com/hc/en-us/requests/new
   rewards:
   - '*recognition'
+- company: MCPBay
+  url: https://mcpbay.pro/vulnerability-disclosure.html
+  contact: mailto:support@mcpbay.pro
+  rewards: []
+  safe_harbor: full
 - company: Mediamarktsaturn
   url: https://hackerone.com/mediamarktsaturn
   contact: https://vdp.mediamarktsaturn.com/p/Submission-Form
@@ -15692,6 +15793,11 @@ companies:
   managed: false
   domains:
   - github.com
+- company: Noctula Risk Intelligence
+  url: https://www.noctula.org/en/security/disclosure
+  contact: mailto:security@noctula.org
+  rewards: []
+  safe_harbor: full
 - company: Node.js
   url: https://hackerone.com/nodejs
   contact: ''
@@ -15974,8 +16080,20 @@ companies:
   max_payout: 100000.0
 - company: Oasis Protocol Foundation
   url: https://hackerone.com/oasis_protocol_foundation
+  handle: oasisprotocol
   contact: https://hackerone.com/oasis_protocol_foundation
-  rewards: []
+  rewards:
+  - '*bounty'
+  - '*swag'
+  managed: false
+  domains:
+  - emerald.oasis.dev
+  - github.com
+  - grpc.oasis.dev
+  - rosetta.oasis.dev
+  - sapphire.oasis.io
+  - status.oasis.io
+  - wallet.oasis.io
 - company: Observu
   url: https://observu.com/security.php
   contact: mailto:info@observu.com
@@ -20250,7 +20368,7 @@ companies:
   contact: https://hackerone.com/sheer_bbp
   rewards:
   - '*bounty'
-  managed: true
+  managed: false
   domains:
   - my.sheer.com
   - sheer.com
@@ -20328,10 +20446,11 @@ companies:
   - admin.shopify.com
   - arrive-server.shopifycloud.com
   - github.com
-  - linkpop.com
+  - help.shop.app
   - partners.shopify.com
   - pci.shopifyinc.com
   - shop.app
+  - shop.com
   - shopify.com
   - shopify.io
   - shopify.plus
@@ -20339,6 +20458,7 @@ companies:
   - shopifycs.com
   - shopifyinbox.com
   - shopifykloud.com
+  - shopifysvc.com
   - your-store.myshopify.com
 - company: SHOPLAZZA
   url: https://hackerone.com/shoplazza
@@ -21602,9 +21722,19 @@ companies:
   url: https://support.sugarcrm.com/Resources/Security/Bug_Bounty_Program/
   contact: mailto:secure@sugarcrm.com
   rewards: []
+- company: SUHUL LLC
+  url: https://suhul.us/en/vulnerability-disclosure
+  contact: mailto:support@suhul.us
+  rewards: []
+  safe_harbor: full
 - company: Summa
   url: https://www.summa.eu/nl/responsible-disclosure
   contact: mailto:security@summa.eu
+  rewards: []
+  safe_harbor: full
+- company: SunLicense
+  url: https://docs.sunlicense.com/legal/vulnerability-disclosure
+  contact: mailto:hello@sundevs.net
   rewards: []
   safe_harbor: full
 - company: Supabase
@@ -21644,15 +21774,13 @@ companies:
   managed: true
   domains:
   - happening.dev
-  - luckydays.ca
-  - luckydays.com
+  - maxbet.ro
   - napoleoncasino.be
   - napoleondice.be
   - napoleongames.be
   - napoleonsports.be
   - ro.superbet.games
   - ro.superbet.sport
-  - spinaway.com
   - super.xyz
   - superbet.bet.br
   - superbet.com
@@ -22060,7 +22188,6 @@ companies:
   - tdbfg.com
   - tdcanadatrust.com
   - tdcommercialbanking.com
-  - tdfitloan.com
   - tdinsurance.com
   - tdpartnershipprograms.com
   - tdprimeservices.com
@@ -23673,9 +23800,12 @@ companies:
   managed: true
   domains:
   - accountshomolog.acesso.io
+  - api.humantoken.unico.app
   - backend-sdk.uat.private.unico.run
   - blog.unico.io
-  - devcenter.unico.io
+  - dashboard.unico.app
+  - developer.unico.io
+  - humantoken.unico.app
   - idcash-uat.unico.io
   - identityhomolog.acesso.io
   - idpay-uat.unico.io
@@ -24139,6 +24269,11 @@ companies:
   url: https://www.vanmoof.com/en/responsible-disclosure-policy
   contact: mailto:security@vanmoof.com
   rewards: []
+- company: Vanthal
+  url: https://vanthal.com/seguridad/divulgacion
+  contact: mailto:contacto@vanthal.com
+  rewards: []
+  safe_harbor: full
 - company: Varo Money
   url: https://varomoney.responsibledisclosure.com/hc/en-us
   contact: https://varomoney.responsibledisclosure.com/hc/en-us/requests/new
@@ -24939,6 +25074,7 @@ companies:
   - '*bounty'
   managed: true
   domains:
+  - io.walt.app
   - p2p.walletbot.me
   - pay.wallet.tg
   - t.me
@@ -24963,12 +25099,28 @@ companies:
   rewards:
   - '*bounty'
   max_payout: 5000.0
-  min_payout: 50.0
+  min_payout: 25.0
   currency: EUR
   domains:
+  - adelta.be
+  - aquawardsoperate.water-link.be
+  - aquawardsspatial.water-link.be
   - aww.be
+  - aww.eu
+  - desktop.water-link.be
+  - induss.eu
+  - indussiibis.water-link.be
+  - mijnwater-link.be
+  - pit.water-link.be
+  - rio-link.be
+  - water-kracht-levering.be
+  - water-kracht-levering.eu
   - water-link-jaarverslag.be
   - water-link.be
+  - waterkracht-levering.be
+  - waterkracht-levering.eu
+  - waterlink.be
+  - waterstoringen.be
 - company: Watsons
   url: https://www.intigriti.com/programs/aswatson/watsons/detail
   handle: watsons
