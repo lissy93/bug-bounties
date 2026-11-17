@@ -946,6 +946,7 @@
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Jito](https://immunefi.com/bug-bounty/jito/) 💰
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Jito - BAM Client](https://immunefi.com/bug-bounty/jito-bam-client/) 💰
 - <img src='https://icon.horse/icon/jivochat.com' width='16'/> [Jivochat](https://jivochat.com/bugbounty/) 💰
+- <img src='https://icon.horse/icon/public-jsmd.s3.eu-central-1.amazonaws.com' width='16'/> [Jochen Schweizer mydays Group](https://public-jsmd.s3.eu-central-1.amazonaws.com/Bug-Bounty-Policy-1.3.pdf) 💰
 - <img src='https://icon.horse/icon/www.deere.com' width='16'/> [John Deere](https://www.deere.com/en/digital-security/responsible-disclosure/) 🏅 🎁
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Jora](https://bugcrowd.com/jora) 💰
 - <img src='https://icon.horse/icon/judge.me' width='16'/> [Judge.me](https://judge.me) 💰 🎁
