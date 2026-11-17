@@ -2520,6 +2520,46 @@ companies:
   - Informational disclosure of non-sensitive data
   - Self-XSS with a user-defined payload
 
+- company: Jochen Schweizer mydays Group
+  url: https://public-jsmd.s3.eu-central-1.amazonaws.com/Bug-Bounty-Policy-1.3.pdf
+  contact: mailto:it-security@jsmd-group.com
+  rewards:
+  - '*bounty'
+  program_type: bounty
+  status: active
+  allows_disclosure: false
+  description: Jochen Schweizer mydays Group pays bounties for vulnerabilities in its websites under *.jochen-schweizer.de, *.mydays.de and *.jsmd-group.com, up to 500 EUR for a critical. Reports go to it-security@jsmd-group.com with a proof of concept, and only the first reporter qualifies. Rewards follow the group's own risk assessment, not just CVSS, and are paid by bank transfer against an invoice. Current and former employees, including those of its contractors, can't take part.
+  excluded_methods:
+  - dos
+  - social_engineering
+  scope:
+  - target: '*.jochen-schweizer.de'
+    type: web
+  - target: '*.mydays.de'
+    type: web
+  - target: '*.jsmd-group.com'
+    type: web
+  out_of_scope:
+  - '*.jochen-schweizer-arena.com (a different company)'
+  - '*.jochen-schweizer-group.com (a different company)'
+  - Subdomains that are DNS aliases for third-party services, such as kundenservice.mydays.de and partner.jochen-schweizer.de
+  - Third-party products the group can't fix itself, such as Atlassian
+  - End-of-life systems due to be shut down, such as service.jochen-schweizer.de
+  - Clickjacking
+  - SPF, DKIM and DMARC issues
+  - Missing or misconfigured HTTP headers and cookies
+  - CORS misconfigurations
+  - TLS misconfigurations
+  - Potential DoS or DDoS
+  - Outdated software versions
+  max_payout: 500
+  currency: EUR
+  payout_table:
+    critical: 500
+    high: 200
+    medium: 100
+    low: 50
+
 - company: Juicebox
   url: https://juicebox.ai/responsible-disclosure
   contact: mailto:security@juicebox.work
@@ -2933,8 +2973,7 @@ companies:
   response_sla_days: 1
   requires_account: true
   preferred_languages: English
-  description: |-
-    Mishmar checks every order a trading bot or AI agent proposes against its owner's limits and co-signs it with half of a split exchange key. Test on the testnet console with your own accounts. Most wanted: an order signed that shouldn't have been, a key share that leaks, acting as someone else, a ledger that lies. Until 13 Dec 2026 the Break the limits contest pays up to $500: https://mishmar.io/contest
+  description: 'Mishmar checks every order a trading bot or AI agent proposes against its owner''s limits and co-signs it with half of a split exchange key. Test on the testnet console with your own accounts. Most wanted: an order signed that shouldn''t have been, a key share that leaks, acting as someone else, a ledger that lies. Until 13 Dec 2026 the Break the limits contest pays up to $500: https://mishmar.io/contest'
   scope:
   - target: mishmar.io
     type: web
