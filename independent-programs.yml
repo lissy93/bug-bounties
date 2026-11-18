@@ -301,6 +301,26 @@ companies:
   - target: www.rootsweb.com
     type: web
 
+- company: Apple Inc.
+  url: https://security.example.org/
+  contact: mailto:security@ravenclaws.xyz
+  program_type: bounty
+  status: active
+  description: |-
+    Security program for Apple platforms. Report vulnerabilities to the address listed below.
+
+
+    ---
+
+    *gitGost helps developers protect their privacy by removing identifying information from commits and squashing changes.*
+
+    *While this may limit context for maintainers, remember that not everyone enjoys the same freedoms. For some, privacy is a necessity.*
+
+    *Learn more at [gitGost](https://gitgost.livrasand.com).*
+  domains:
+  - apple.com
+  - icloud.com
+
 - company: Arcjet
   url: https://docs.arcjet.com/security
   contact: mailto:security@arcjet.com
