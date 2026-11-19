@@ -1030,9 +1030,34 @@ companies:
 
 - company: ClosedLoop AI
   url: https://closedloop.sh/vulnerability-disclosure
+  contact: mailto:security@closedloop.sh
   rewards:
   - '*recognition'
   program_type: vdp
+  status: active
+  safe_harbor: full
+  allows_disclosure: true
+  preferred_languages: English
+  description: ClosedLoop AI covers everything under closedloop.sh, including its web apps, APIs and backend services. There is no cash bounty, but researchers are credited publicly with their permission. Good-faith testing within the policy is treated as authorized under the CFAA, reports are acknowledged within five business days, and researchers are asked to wait at least 90 days before going public.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - physical_access
+  domains:
+  - '*.closedloop.sh'
+  out_of_scope:
+  - Third-party services and integrations not operated by ClosedLoop AI, such as Gong, HubSpot and Salesforce
+  - Cloud providers such as Microsoft Azure, unless the issue is specific to ClosedLoop AI's configuration
+  - Third-party libraries, unless the issue is specific to ClosedLoop AI's implementation
+  - Issues requiring physical access to a user's device or unlikely user interaction
+  - Missing best practices or HTTP security headers without a demonstrated security impact
+  - Vulnerabilities in outdated or unsupported browsers
+  - Content injection without a demonstrated security impact
+  - CSRF on forms that are not security-sensitive
+  - Clickjacking on pages with no sensitive actions
+  response_sla_days: 5
+  disclosure_timeline_days: 90
 
 - company: CodeRabbit
   url: https://www.coderabbit.ai/vulnerability-disclosure
