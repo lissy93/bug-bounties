@@ -1028,6 +1028,12 @@ companies:
   response_sla_days: 3
   disclosure_timeline_days: 90
 
+- company: ClosedLoop AI
+  url: https://closedloop.sh/vulnerability-disclosure
+  rewards:
+  - '*recognition'
+  program_type: vdp
+
 - company: CodeRabbit
   url: https://www.coderabbit.ai/vulnerability-disclosure
   contact: https://www.coderabbit.ai/vulnerability-disclosure/submit-vulnerability
