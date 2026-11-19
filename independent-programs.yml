@@ -5377,6 +5377,40 @@ companies:
   - target: TI product software and documentation
     type: other
 
+- company: Ticko
+  url: https://docs.ticko.xyz/resources/ticko-bug-bounty.md
+  contact: mailto:security@ticko.market
+  rewards:
+  - '*bounty'
+  program_type: bounty
+  status: active
+  description: Ticko is a decentralized perpetuals exchange. Long-term bug bounty paying up to 200,000 USDT for Critical, 25,000 USDT for High, and 3,000 USDT for Medium. Scope covers loss or freezing of user funds, incorrect matching, margin, liquidation and funding errors, oracle manipulation, and session key misuse. Testing on testnet only; reports go directly to security@ticko.market.
+  excluded_methods:
+  - dos
+  - social_engineering
+  - phishing
+  - physical_access
+  scope:
+  - target: testnet.ticko.xyz
+    type: web
+  out_of_scope:
+  - Ticko Mainnet
+  - Beta Mainnet
+  - Third-party services
+  domains:
+  - testnet.ticko.xyz
+  - ticko.xyz
+  - docs.ticko.xyz
+  min_payout: 50
+  max_payout: 200000
+  payout_table:
+    critical: 200000
+    high: 25000
+    medium: 3000
+    low: 50
+  testing_policy_url: https://docs.ticko.xyz/resources/ticko-bug-bounty.md
+  requires_account: true
+
 - company: Tidal Cyber
   url: https://www.tidalcyber.com/vulnerability-reporting-policy
   contact: mailto:security@tidalcyber.com
