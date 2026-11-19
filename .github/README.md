@@ -370,6 +370,7 @@
 - <img src='https://icon.horse/icon/clickup.com' width='16'/> [Clickup](https://clickup.com/bug-bounty) 💰
 - <img src='https://icon.horse/icon/support.clio.com' width='16'/> [Clio](https://support.clio.com/hc/en-us/articles/360001114273-How-do-I-Claim-a-Bug-Bounty-or-Report-a-Vulnerability-) 💰
 - <img src='https://icon.horse/icon/clipperz.is' width='16'/> [Clipperz](https://clipperz.is/security_privacy/responsible_disclosure_policy/) 🏅
+- <img src='https://icon.horse/icon/closedloop.sh' width='16'/> [ClosedLoop AI](https://closedloop.sh/vulnerability-disclosure) 🏅
 - <img src='https://icon.horse/icon/support.getcloudapp.com' width='16'/> [Cloudapp](https://support.getcloudapp.com/article/260-responsible-disclosure-report-found-vulnerabilities) 🏅
 - <img src='https://icon.horse/icon/cloudcannon.com' width='16'/> [CloudCannon](https://cloudcannon.com/bug-bounty/) 💰
 - <img src='https://icon.horse/icon/www.cloudflare.com' width='16'/> [CloudFlare](https://www.cloudflare.com/en-gb/disclosure/) 💰 🏅
