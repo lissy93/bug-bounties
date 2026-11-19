@@ -5378,7 +5378,7 @@ companies:
     type: other
 
 - company: Ticko
-  url: https://docs.ticko.xyz/resources/ticko-bug-bounty.md
+  url: https://docs.ticko.xyz/resources/ticko-bug-bounty
   contact: mailto:security@ticko.market
   rewards:
   - '*bounty'
@@ -5408,7 +5408,7 @@ companies:
     high: 25000
     medium: 3000
     low: 50
-  testing_policy_url: https://docs.ticko.xyz/resources/ticko-bug-bounty.md
+  testing_policy_url: https://docs.ticko.xyz/resources/ticko-bug-bounty
   requires_account: true
 
 - company: Tidal Cyber
