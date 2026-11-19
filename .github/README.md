@@ -1836,6 +1836,7 @@
 - <img src='https://icon.horse/icon/yeswehack.com' width='16'/> [Thüringer Aufbaubank Bug Bounty Program](https://yeswehack.com/programs/thuringer-aufbaubank-bug-bounty-program) 💰
 - <img src='https://icon.horse/icon/tiaa.responsibledisclosure.com' width='16'/> [TIAA](https://tiaa.responsibledisclosure.com/hc/en-us) 🏅
 - <img src='https://icon.horse/icon/www.ticketswap.com' width='16'/> [TicketSwap](https://www.ticketswap.com/content/responsible-disclosure) 🏅
+- <img src='https://icon.horse/icon/docs.ticko.xyz' width='16'/> [Ticko](https://docs.ticko.xyz/resources/ticko-bug-bounty) 💰
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [TIDAL](https://bugcrowd.com/tidal-bugbounty) 💰
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [Tide](https://hackerone.com/tide) 💰
 - <img src='https://icon.horse/icon/www.tigerdata.com' width='16'/> [Tiger Data](https://www.tigerdata.com/security/vulnerability-disclosure) 🏅
