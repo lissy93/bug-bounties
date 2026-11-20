@@ -12501,7 +12501,7 @@ companies:
   rewards:
   - '*recognition'
 - company: Knowledgeowl
-  url: https://www.knowledgeowl.com/home/vulnerability-disclosure-policy
+  url: https://support.knowledgeowl.com/help/vulnerability-disclosure-policy
   contact: mailto:security@knowledgeowl.com
   rewards:
   - '*recognition'
