@@ -1,5 +1,6 @@
 ---
 import Tooltip from "@components/Tooltip.svelte";
+import { safeHref } from "@lib/format";
 
 export interface DefListItem {
   label: string;
@@ -14,7 +15,10 @@ interface Props {
   items: DefListItem[];
 }
 
-const { items } = Astro.props;
+const items = Astro.props.items.map((item) => ({
+  ...item,
+  href: safeHref(item.href),
+}));
 ---
 
 <dl>

@@ -139,7 +139,7 @@ def parse_scope(raw):
         line = line.strip()
         if "|" not in line:
             continue
-        parts = line.split("|", 1)
+        parts = line.rsplit("|", 1)
         target = parts[0].strip()
         asset_type = parts[1].strip()
         if target and asset_type:

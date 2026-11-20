@@ -38,8 +38,11 @@ export async function resolveDomain(input: string): Promise<ResolvedDomain> {
       .filter((h) => h !== hostname)
       .map((h) => lookup(h, { all: true }).catch(() => [])),
   );
-  for (const { address } of [addresses, ...derived].flat()) {
-    if (isPrivateAddress(address)) {
+  /* A host whose only address is :: would connect back to this machine */
+  for (const list of [addresses, ...derived]) {
+    const ips = list.map((a) => a.address);
+    const onlyUnspecified = ips.length > 0 && ips.every((ip) => ip === "::");
+    if (onlyUnspecified || ips.some(isPrivateAddress)) {
       throw new Error("Private/reserved addresses are not allowed");
     }
   }
