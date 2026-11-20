@@ -1,6 +1,7 @@
 ---
 import { Mail, ExternalLink, Phone, Lock } from "lucide-svelte";
 import type { ContactInfo } from "@lib/lookup/types";
+import { safeHref } from "@lib/format";
 
 interface Props {
   contacts: ContactInfo[];
@@ -8,10 +9,10 @@ interface Props {
 
 const { contacts } = Astro.props;
 
-function getHref(c: ContactInfo): string {
+function getHref(c: ContactInfo): string | undefined {
   if (c.type === "email") return `mailto:${c.value}`;
   if (c.type === "phone") return `tel:${c.value}`;
-  return c.value;
+  return safeHref(c.value);
 }
 
 function isExternal(c: ContactInfo): boolean {

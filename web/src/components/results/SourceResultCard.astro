@@ -8,7 +8,7 @@ import ResultSection from "./ResultSection.astro";
 import DefList from "./DefList.astro";
 import RewardBadges from "@components/RewardBadges.svelte";
 import { DollarSign, ShieldCheck } from "lucide-svelte";
-import { formatDate } from "@lib/format";
+import { formatDate, safeHref } from "@lib/format";
 import { SOURCE_META } from "@lib/lookup/source-meta";
 import type { LookupResult } from "@lib/lookup/types";
 import type { DefListItem } from "./DefList.astro";
@@ -252,7 +252,7 @@ const programs = result.metadata
     {
       result.url && (
         <a
-          href={result.url}
+          href={safeHref(result.url)}
           target="_blank"
           rel="noopener noreferrer"
           class="text-link-muted source-link"
@@ -282,7 +282,7 @@ const programs = result.metadata
             <span class="program-name">{p.name}</span>
             {p.url && (
               <a
-                href={p.url}
+                href={safeHref(p.url)}
                 target="_blank"
                 rel="noopener noreferrer"
                 class="text-link program-url"

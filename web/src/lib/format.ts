@@ -50,6 +50,17 @@ export function getHostname(url: string): string {
   }
 }
 
+const SAFE_PROTOCOLS = new Set(["http:", "https:", "mailto:"]);
+
+export function safeHref(url?: string): string | undefined {
+  if (!url) return undefined;
+  try {
+    return SAFE_PROTOCOLS.has(new URL(url).protocol) ? url : undefined;
+  } catch {
+    return undefined;
+  }
+}
+
 export function formatPayoutTable(
   table?: { critical?: number; high?: number; medium?: number; low?: number },
   currency?: string,
