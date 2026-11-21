@@ -58,6 +58,17 @@ companies:
   domains:
   - --your-own-1password-account--.1password.com
   - events.1password.com
+- company: 1Password Bug Bounty Program
+  url: https://www.intigriti.com/programs/onepassword/1passwordbugbountyprogram/detail
+  handle: 1passwordbugbountyprogram
+  contact: https://www.intigriti.com/programs/onepassword/1passwordbugbountyprogram/detail
+  rewards:
+  - '*bounty'
+  max_payout: 30000.0
+  min_payout: 50.0
+  currency: USD
+  domains:
+  - events.1password.com
 - company: 1Password Game
   url: https://bugcrowd.com/agilebits
   contact: https://bugcrowd.com/agilebits/report
@@ -321,7 +332,6 @@ companies:
   - abnamroinvestmentsolutions.com
   - abnamrolease.com
   - abnamroprivatebanking.be
-  - alfam.nl
   - bethmannbank.de
   - buut.com
   - bux.com
@@ -1072,6 +1082,7 @@ companies:
   - cisa.com
   - cisasmartaccess.allegion.com
   - com.allegion.access.store
+  - com.allegion.airscanner
   - com.allegion.cisa.openx
   - com.allegion.cisa.openxkey
   - com.allegion.cisa.smartaccess
@@ -1079,7 +1090,6 @@ companies:
   - com.allegion.ifkey
   - com.allegion.leopard
   - com.allegion.schlagemobileaccess
-  - com.allegion.sense.store
 - company: Allegro
   url: https://hackerone.com/allegro
   handle: allegrobugbounty
@@ -1115,6 +1125,7 @@ companies:
   managed: false
   domains:
   - alohi.com
+  - dial.plus
   - fax.plus
   - plus.fax.android
   - plus.fax.faxplus
@@ -2667,7 +2678,6 @@ companies:
   - binance.tr
   - binance.us
   - coinmarketcap.com
-  - github.com
   - portal-api.coinmarketcap.com
   - pro-api.coinmarketcap.com
   - pro.coinmarketcap.com
@@ -2881,13 +2891,11 @@ companies:
   - com.8bit.bitwarden
   - com.bitwarden.authenticator
   - com.x8bit.bitwarden
-  - docs.passwordless.dev
   - github.com
   - help.bitwarden.com
   - identity.bitwarden.com
   - npmjs.com
   - safari-extensions.apple.com
-  - v4.passwordless.dev
   - vault.bitwarden.com
 - company: Bizmerlin
   url: https://www.bizmerlin.com/responsible-disclosure-policy/
@@ -3281,6 +3289,19 @@ companies:
   url: https://www.bostonscientific.com/en-US/customer-service/product-security/responsible-disclosure.html
   contact: mailto:product.security@bsci.com
   rewards: []
+- company: BoursoBank Bug Bounty Program
+  url: https://yeswehack.com/programs/boursobank-bug-bounty-program
+  contact: https://yeswehack.com/programs/boursobank-bug-bounty-program
+  rewards:
+  - '*bounty'
+  max_payout: 3000.0
+  domains:
+  - api.boursobank.com
+  - apps.apple.com
+  - boursobank.com
+  - clients.boursobank.com
+  - play.google.com
+  - tradingboard.boursobank.com
 - company: Box
   url: https://www.box.com/about-us/security/
   handle: box_private
@@ -4155,6 +4176,14 @@ companies:
   currency: EUR
   domains:
   - challenge-1026.challenges.intigriti.io
+- company: Challenge 1126
+  url: https://www.intigriti.com/programs/intigriti/challenge1126/detail
+  handle: challenge1126
+  contact: https://www.intigriti.com/programs/intigriti/challenge1126/detail
+  rewards: []
+  currency: EUR
+  domains:
+  - challenge-1126.challenges.intigriti.io
 - company: Chameleon
   url: https://www.trychameleon.com/security/disclosure
   contact: https://www.trychameleon.com/security/disclosure
@@ -5314,6 +5343,39 @@ companies:
   url: https://success.coupa.com/Trust/Security_Policies/02_Vulnerability_Reporting_Policy
   contact: mailto:security@coupa.com
   rewards: []
+- company: Coupang
+  url: https://hackerone.com/coupang
+  handle: coupang
+  contact: https://hackerone.com/coupang
+  rewards:
+  - '*bounty'
+  managed: true
+  domains:
+  - api.coupangeats.com
+  - api.coupangstreaming.com
+  - as.coupang.com
+  - cart.coupang.com
+  - cash.coupang.com
+  - cast.coupangstreaming.com
+  - centaurs-rest.coupang.com
+  - centaurs.coupang.com
+  - checkout.coupang.com
+  - cmapi.coupang.com
+  - cmapi.coupang.kr
+  - coupang.com
+  - coupangeats.com
+  - coupangplay.com
+  - cousms.coupang.com
+  - csmessenger.coupang.com
+  - dco.coupang.com
+  - dfs.coupang.com
+  - discover.coupangstreaming.com
+  - eats-mobile-web.coupang.com
+  - egift.coupang.com
+  - feed-web.coupang.com
+  - fileupload.coupang.com
+  - id.coupang.com
+  - img.coupangstreaming.com
 - company: Coupang Taiwan
   url: https://www.tw.coupang.com
   handle: coupang_tw
@@ -6871,7 +6933,7 @@ companies:
   contact: https://www.intigriti.com/programs/dstny/dstnybugbounty/detail
   rewards:
   - '*bounty'
-  max_payout: 1500.0
+  max_payout: 1100.0
   currency: EUR
   domains:
   - docs.google.com
@@ -8377,7 +8439,6 @@ companies:
   - mystreetscape.com
   - streetscape.com
   - wealthscape.com
-  - web.fidsafe.com
 - company: Fifth Third Bank VDP
   url: http://53.com
   handle: fifth_third_bank_vdp
@@ -9984,7 +10045,7 @@ companies:
   contact: https://yeswehack.com/programs/harman-international-web-applications
   rewards:
   - '*bounty'
-  max_payout: 2000.0
+  max_payout: 2500.0
   domains:
   - akg.com
   - be.harmanaudio.com
@@ -13633,6 +13694,8 @@ companies:
   max_payout: 2500.0
   domains:
   - maf-holding-prod.apigee.net
+  - mallofegypt.com
+  - malloftheemirates.com
   - premogiftcards.com
   - production.maf.auth0.com
   - sharerewards.com
@@ -13684,10 +13747,7 @@ companies:
   max_payout: 2500.0
   domains:
   - api.mafshoppingmalls.com
-  - apps.apple.com
-  - citycentremalls.com
   - maf-properties-prod.apigee.net
-  - malloftheemirates.com
   - play.google.com
   - smbu-api.maf.ae
 - company: Majid Al Futtaim Retail
@@ -14173,7 +14233,11 @@ companies:
   - admin.meeshosupply.com
   - affiliate.meesho.com
   - com.meesho.supply
+  - com.valmo.ops
+  - com.valmo.rider
   - com.valmo.valmo
+  - console.valmo.in
+  - grocery-supplier.meesho.com
   - investor.meesho.com
   - meesho.com
   - meesho.io
@@ -15526,7 +15590,7 @@ companies:
   - '*bounty'
   managed: true
   safe_harbor: full
-  max_payout: 4500.0
+  max_payout: 2500.0
   domains:
   - vwfs.co.in
   - vwfs.co.za
@@ -15604,7 +15668,7 @@ companies:
   - pmtcards.newegg.com
   - secure.newegg.ca
   - secure.newegg.com
-  - sellerportal.newegg.com
+  - sellingpilot.com
 - company: Newfold Builder VDP
   url: https://bugcrowd.com/newfold-builder-vdp
   contact: https://bugcrowd.com/newfold-builder-vdp
@@ -15830,6 +15894,14 @@ companies:
   contact: https://hackerone.com/nordsecurity
   rewards:
   - '*bounty'
+- company: Nord Security Managed Bug Bounty Engagement
+  url: https://bugcrowd.com/engagements/nord-security-mbb
+  contact: https://bugcrowd.com/engagements/nord-security-mbb
+  rewards:
+  - '*bounty'
+  managed: true
+  safe_harbor: full
+  max_payout: 50000.0
 - company: NordVPN
   url: https://hackerone.com/nordsecurity
   contact: https://hackerone.com/nordsecurity
@@ -20612,7 +20684,6 @@ companies:
   safe_harbor: full
   max_payout: 6000.0
   domains:
-  - api.prd.commerce.simplisafe.com
   - bb1.simplisafe.com
   - bb2.simplisafe.com
   - cb.simplisafe.com
@@ -22330,10 +22401,8 @@ companies:
   - mittforetag.telenor.se
   - ownit.se
   - play.google.com
-  - play.ownit.se
   - profile.telenor.se
   - signin.telenor.se
-  - stream.telenor.se
   - telenor.se
   - telenorinpli.se
   - vimla.io
@@ -22498,9 +22567,31 @@ companies:
   rewards: []
   currency: USD
   domains:
+  - coupdepousseinnocent.fr
   - fairlife.com
   - fofbrands.com
   - goodcow.com
+  - innocent-bees.com
+  - innocent-drinks.ch
+  - innocent-international.com
+  - innocent-sports.com
+  - innocent-unplugged.co.uk
+  - innocent-unplugged.com
+  - innocent-wiesenwildnis.at
+  - innocent-wiesenwildnis.ch
+  - innocent-wiesenwildnis.com
+  - innocent-wiesenwildnis.de
+  - innocent-wilde-wiesen.at
+  - innocent-wilde-wiesen.ch
+  - innocent-wilde-wiesen.com
+  - innocent-wilde-wiesen.de
+  - innocent.asia
+  - innocent.co
+  - innocent.com.es
+  - innocent.com.gr
+  - innocent.com.pl
+  - innocent.com.pt
+  - innocent.cz
 - company: The Dutch Security Cluster
   url: https://www.thehaguesecuritydelta.com/responsible-disclosure
   contact: mailto:joris.denbruinen@thehaguesecuritydelta.com
@@ -23801,8 +23892,9 @@ companies:
   domains:
   - accountshomolog.acesso.io
   - api.humantoken.unico.app
+  - backend-sdk.prod.private.unico.run
   - backend-sdk.uat.private.unico.run
-  - blog.unico.io
+  - cadastro.unico.app
   - dashboard.unico.app
   - developer.unico.io
   - humantoken.unico.app
@@ -23810,7 +23902,6 @@ companies:
   - identityhomolog.acesso.io
   - idpay-uat.unico.io
   - issuer.idpay-uat.unico.io
-  - openfinance.unico.io
   - sdk-h1.unico.io
   - secure.unico.io
   - uat.unico.app
@@ -25102,25 +25193,9 @@ companies:
   min_payout: 25.0
   currency: EUR
   domains:
-  - adelta.be
-  - aquawardsoperate.water-link.be
-  - aquawardsspatial.water-link.be
   - aww.be
-  - aww.eu
-  - desktop.water-link.be
-  - induss.eu
-  - indussiibis.water-link.be
-  - mijnwater-link.be
-  - pit.water-link.be
-  - rio-link.be
-  - water-kracht-levering.be
-  - water-kracht-levering.eu
   - water-link-jaarverslag.be
   - water-link.be
-  - waterkracht-levering.be
-  - waterkracht-levering.eu
-  - waterlink.be
-  - waterstoringen.be
 - company: Watsons
   url: https://www.intigriti.com/programs/aswatson/watsons/detail
   handle: watsons
