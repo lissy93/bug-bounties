@@ -270,6 +270,7 @@
 - <img src='https://icon.horse/icon/www.boozt.com' width='16'/> [Boozt Fashion](https://www.boozt.com) 💰
 - <img src='https://icon.horse/icon/psirt.bosch.com' width='16'/> [Bosch](https://psirt.bosch.com/bosch-responsible-disclosure-policy/) 🏅
 - <img src='https://icon.horse/icon/global.bose.com' width='16'/> [Bose](https://global.bose.com/en_us/product_security_vulnerability_response.html) 💰
+- <img src='https://icon.horse/icon/yeswehack.com' width='16'/> [BoursoBank Bug Bounty Program](https://yeswehack.com/programs/boursobank-bug-bounty-program) 💰
 - <img src='https://icon.horse/icon/www.box.com' width='16'/> [Box](https://www.box.com/about-us/security/) 💰
 - <img src='https://icon.horse/icon/www.intigriti.com' width='16'/> [Bpost](https://www.intigriti.com/programs/bpost/dummy/detail) 💰
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [BProtocol](https://immunefi.com/bug-bounty/bprotocol/) 💰
@@ -429,6 +430,7 @@
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [Cornershop](https://hackerone.com/cornershop) 💰
 - <img src='https://icon.horse/icon/cosmoslabs.io' width='16'/> [Cosmos](https://cosmoslabs.io) 💰
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Council on Foreign Relations](https://bugcrowd.com/engagements/cfr) 💰
+- <img src='https://icon.horse/icon/hackerone.com' width='16'/> [Coupang](https://hackerone.com/coupang) 💰
 - <img src='https://icon.horse/icon/www.tw.coupang.com' width='16'/> [Coupang Taiwan](https://www.tw.coupang.com) 💰
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [Coursera](https://hackerone.com/coursera) 🏅 🎁
 - <img src='https://icon.horse/icon/immunefi.com' width='16'/> [Cove](https://immunefi.com/bug-bounty/cove/) 💰
@@ -1235,6 +1237,7 @@
 - <img src='https://icon.horse/icon/nodejs.org' width='16'/> [no.de](https://nodejs.org/en/security/) 💰
 - <img src='https://icon.horse/icon/www.nokia.com' width='16'/> [Nokia](https://www.nokia.com/responsible-disclosure/) 🏅
 - <img src='https://icon.horse/icon/nordsecurity.com' width='16'/> [Nord Security](https://nordsecurity.com/) 💰
+- <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [Nord Security Managed Bug Bounty Engagem...](https://bugcrowd.com/engagements/nord-security-mbb) 💰
 - <img src='https://icon.horse/icon/www.nordnet.se' width='16'/> [Nordnet](https://www.nordnet.se/security-disclosure) 🏅
 - <img src='https://icon.horse/icon/hackerone.com' width='16'/> [NordVPN](https://hackerone.com/nordsecurity) 💰
 - <img src='https://icon.horse/icon/www.northseaport.com' width='16'/> [North Sea Port](https://www.northseaport.com/responsible-disclosure) 🏅
@@ -2146,6 +2149,7 @@
 - <img src='https://icon.horse/icon/blog.0xproject.com' width='16'/> [0x Project](https://blog.0xproject.com/announcing-the-0x-protocol-bug-bounty-b0559d2738c) 💰
 - <img src='https://icon.horse/icon/www.123contactform.com' width='16'/> [123 Contact Form](https://www.123contactform.com/security-acknowledgements.htm) 🏅
 - <img src='https://icon.horse/icon/1password.com' width='16'/> [1Password - CTF](http://1password.com) 💰
+- <img src='https://icon.horse/icon/www.intigriti.com' width='16'/> [1Password Bug Bounty Program](https://www.intigriti.com/programs/onepassword/1passwordbugbountyprogram/detail) 💰
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [1Password Game](https://bugcrowd.com/agilebits) 💰
 - <img src='https://icon.horse/icon/1win.com' width='16'/> [1win](https://1win.com) 💰
 - <img src='https://icon.horse/icon/bugcrowd.com' width='16'/> [20 Minuten](https://bugcrowd.com/engagements/twentyminuten) 💰
